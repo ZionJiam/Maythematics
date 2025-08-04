@@ -1,0 +1,82 @@
+@use '../../app/styles/variables' as *;
+
+
+.ctaSection{
+    background-color: #fffcf3;
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+}
+
+
+.ctaTextWrapper{
+    margin-top: 2rem;
+    width: 90%;
+    max-width: 600px;
+    margin:0 auto;
+
+    .ctaParagraph {
+        font-size: 1rem;
+        color: $color-text;
+        font-weight: 200;
+
+
+        @media (min-width: 768px) {
+            font-size: 1.125rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 1.3rem;
+        }
+        @media (min-width: 1280px) {
+            font-size: 1.625rem;
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .ctaTextWrapper{
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .ctaTextWrapper{
+        max-width: 900px;
+    }
+
+}
+
+.ctaSectionButton{
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.3rem;
+    max-width: 300px;
+}
+
+.sloganTitle{
+    margin-bottom: 0;
+    text-align: center;
+    width: 100%;
+
+.red {
+    color: $color-red;
+  }
+
+  .teal {
+    color: $color-teal;
+  }
+
+
+  .yellow {
+    color: $color-yellow;
+  }
+
+  .blue {
+    color: $color-blue;
+  }
+}
+

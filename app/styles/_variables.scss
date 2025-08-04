@@ -1,0 +1,36 @@
+// Fonts
+$font-family-sans: 'Okta Neue', sans-serif;
+
+// Colors
+$color-blue: #9fd8ff; // Maythematics Blue
+$color-red: #ff988a; // Maythematics Red
+$color-yellow: #ffd97b; // Maythematics Yellow
+
+
+$color-blue-light: #d4eeff;
+$color-red-light: #ffc8c0;
+$color-yellow-light: #ffefb8;
+
+
+$color-teal: #99d1c9; // Maythematics Teal
+$color-text: #494949; // Maythematics Teal
+
+$text-shadow:
+    1px 1px 0 black,
+    2px 2px 0 black,
+    3px 3px 0 black;
+
+
+$text-shadow-white:
+    3px 3px 0 white,
+    3px 3px 0 white,
+    3px 3px 0 white,
+    3px 3px 0 white;
+
+
+
+// Breakpoints
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;

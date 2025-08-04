@@ -1,0 +1,209 @@
+@use '../../app/styles/variables' as variables;
+
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+  background: #fff;
+  padding: 0.25rem 0;
+
+}
+
+.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbarContainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1124px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  img{
+    width:100px;
+  }
+}
+
+
+
+.logoSmall {
+  img{
+  }
+}
+
+.navbarLogoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: variables.$color-blue;
+  text-decoration: none;
+}
+
+.navbarNav {
+  display: flex;
+  align-items: center;
+  margin:0 1.5rem;
+  gap: 1  .75rem;
+}
+
+.navLink {
+  position: relative;
+  color: variables.$color-text;
+  padding: 0rem 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &:hover .dropdownContent {
+    display: block;
+  }
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: variables.$color-text;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      background-color: #f9f9f9;
+      color: variables.$color-red;
+    }
+  }
+}
+
+.ctaButton {
+  background-color: variables.$color-red;
+  color: #ffffff;
+  padding: 1rem 1.125rem;
+  border-radius: 200px;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover { // SCSS Nesting for hover state
+    background-color: variables.$color-teal;
+  }
+}
+
+.linkBlue {
+  &:hover {
+    color: variables.$color-blue;
+  }
+
+  &::after {
+    background-color: variables.$color-blue;
+  }
+}
+
+.linkRed {
+  &:hover {
+    color: variables.$color-red;
+  }
+
+  &::after {
+    background-color: variables.$color-red;
+  }
+}
+
+.linkYellow {
+  &:hover {
+    color: variables.$color-yellow;
+  }
+
+  &::after {
+    background-color: variables.$color-yellow;
+  }
+}
+
+.mobileMenuButton {
+  display: none;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: variables.$color-text;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none; // For accessibility focus ring
+
+  svg { // Nesting for SVG styles
+    height: 1.5rem;
+    width: 1.5rem;
+    stroke: currentColor;
+  }
+}
+
+
+
+
+// Media Queries for Responsiveness
+@media (max-width: 1024px) {
+
+.navbarContainer {
+  width: 95%;
+}
+
+.logo {
+  img{
+    width:50px;
+  }
+}
+
+
+
+
+
+  .navbarNav {
+    display: none;
+  }
+
+  .ctaButton{
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,187 @@
+@use '../../app/styles/variables' as *;
+
+
+
+.googleReviews {
+  position: relative;
+  text-align: center;
+
+
+  .reviewMascot{
+    position: absolute;
+    overflow: clip;
+    width: 125px;
+    top: -56px;
+    right: -20px;
+    z-index: 1;
+
+        @media (min-width: 768px) {
+            width: 175px;
+            top: -73px;
+            right: -23px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 200px;
+        }
+        @media (min-width: 1280px) {
+            width: 19.531vw;
+            top: -6.875vw;
+            right: -2.5vw;
+        }
+    
+  }
+  
+
+  .reviewContainer{
+    background-color: $color-blue;
+    padding: 3rem 0;
+    position: relative;
+    z-index: 2;
+    margin-top: -1px;
+  }
+
+  .marqueeWrapper {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .marquee {
+    display: flex;
+    gap: 1.5rem;
+    animation: scrollLeft 20s linear infinite;
+    cursor: pointer;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  .card {
+    min-width: 200px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.125rem;
+    }
+
+    .snippet {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 300;
+    }
+
+    .stars {
+        margin-top: 1rem;
+        color: $color-yellow; // gold star color
+        font-size: 1.2rem;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        gap: 0.15rem;
+    }
+
+    .star {
+        text-shadow: 0 0 2px rgba(0,0,0,0.15);
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+
+    .modalContent {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      border-radius: 12px;
+      text-align: left;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        font-weight: 300;
+      }
+
+      button {
+        padding: 0.5rem 1.5rem;
+        background: $color-blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+
+
+  .bubbleTop,
+  .bubbleBottom {
+    width: 100%;
+    height: 40px;
+    background: $color-blue;
+    border-radius: 0 0 100% 100%;
+    margin-bottom: 1.5rem;
+
+    &.bubbleBottom {
+      border-radius: 100% 100% 0 0;
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+
+    .dividerTop,
+  .dividerBottom {
+    width: 100%;
+    display: block;
+        z-index: 2;
+        position: relative;
+
+  }
+
+  .dividerTop {
+    transform: rotate(180deg); // flip for bottom
+    margin-top: -1px; // remove small overlap gap
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,99 @@
+@use '../../app/styles/variables' as *;
+
+.lessonsSection {
+  padding: 4rem 1rem;
+  max-width: 450px;
+  margin: auto;
+}
+
+
+.lessonList {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.lessonCard {
+  display: flex;
+  flex-direction: column; // Mobile default
+  border-radius: 24px;
+  overflow: hidden;
+  // border: 10px solid #f7e5c8;
+  
+
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch; // Ensures equal height
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 40%;
+  }
+}
+
+.textContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.3rem;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+}
+
+.textContent {
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.45rem;
+    color: #ec635e;
+    
+  }
+
+  p {
+    color: #555;
+    font-weight: 200;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.ctaButton {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+  padding: 0.5rem;
+
+  @media (min-width: 768px) {
+    align-self: flex-end;
+    margin-top: auto;
+    width: 40%;
+
+  }
+}
+
+
+  @media screen and (min-width: 768px) {
+    
+
+    .lessonsSection{
+      max-width: 1024px;
+      width: 90%;
+    }
+  }
