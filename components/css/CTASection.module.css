@@ -1,0 +1,68 @@
+.ctaSection {
+  background-color: #fffcf3;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.ctaTextWrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ctaTextWrapper .ctaParagraph {
+  font-size: 1rem;
+  color: #494949;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  .ctaTextWrapper .ctaParagraph {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .ctaTextWrapper .ctaParagraph {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .ctaTextWrapper .ctaParagraph {
+    font-size: 1.625rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaTextWrapper {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1280px) {
+  .ctaTextWrapper {
+    max-width: 900px;
+  }
+}
+.ctaSectionButton {
+  margin-top: 2rem;
+  width: 80%;
+  font-size: 1.3rem;
+  max-width: 300px;
+}
+
+.sloganTitle {
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.sloganTitle .red {
+  color: #ff988a;
+}
+.sloganTitle .teal {
+  color: #99d1c9;
+}
+.sloganTitle .yellow {
+  color: #ffd97b;
+}
+.sloganTitle .blue {
+  color: #9fd8ff;
+}

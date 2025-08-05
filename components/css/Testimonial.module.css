@@ -1,16 +1,10 @@
-@use '../../app/styles/variables' as *;
-
 .testimonialSection {
   padding: 4rem 1rem;
-//   margin-bottom: 5rem;
   text-align: center;
 }
 
-
-
 .letterRainbow span {
   display: inline-block;
-
 }
 
 /* Themed colors */
@@ -40,7 +34,7 @@
 .card {
   display: block;
   align-items: center;
-  background: $color-yellow-light;
+  background: #ffefb8;
   padding: 2rem;
   border-radius: 20px;
   max-width: 1024px;
@@ -49,14 +43,15 @@
 
 .image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 0 auto;
   border-radius: 10px;
 }
 
 .textContent {
   text-align: center;
-  margin-top:1.3rem;
+  margin-top: 1.3rem;
 }
 
 .familyName {
@@ -71,7 +66,6 @@
   margin-bottom: 1rem;
   color: #555;
   min-height: 225px;
-
 }
 
 .school {
@@ -104,15 +98,13 @@
   justify-content: center;
   padding: 0.5rem;
   transition: color 0.2s ease;
-
-  &:hover {
-    color: $color-yellow; // Your theme color
-  }
-
-  svg {
-    width: 2rem;
-    height: 2rem;
-  }
+}
+.arrow:hover {
+  color: #ffd97b;
+}
+.arrow svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 .dot {
@@ -124,70 +116,43 @@
   margin: 0 6px;
   cursor: pointer;
   transition: all 0.3s;
-
-  &.active {
-    background: $color-yellow;
-  }
+}
+.dot.active {
+  background: #ffd97b;
 }
 
-// Active color sequence classes
 .activeBlue {
-  background-color: $color-blue;
+  background-color: #9fd8ff;
 }
 
 .activeRed {
-  background-color: $color-red;
+  background-color: #ff988a;
 }
 
 .activeYellow {
-  background-color: $color-yellow;
+  background-color: #ffd97b;
 }
 
-// Media Queries for Responsiveness
-@media (min-width: 450px) {
-
-
-}
-
-// Media Queries for Responsiveness
 @media (min-width: 768px) {
-
-    .card{
-        display: flex;
-    }
-
-    .quote{
-        min-height: none;
-    }
-
-    .image{
-        width:45%;  
-    }
-
-    .textContent{
-        padding: 1rem 1.3rem;
-        margin-top: 0;
-    }
-
+  .card {
+    display: flex;
+  }
+  .quote {
+    min-height: none;
+  }
+  .image {
+    width: 45%;
+  }
+  .textContent {
+    padding: 1rem 1.3rem;
+    margin-top: 0;
+  }
 }
-
-// Media Queries for Responsiveness
 @media (min-width: 1024px) {
-
-
-    .familyName {
+  .familyName {
     font-size: 1.75rem;
-    }
-
-    .quote {
+  }
+  .quote {
     font-size: 1.125rem;
-    }
+  }
 }
-
-// Media Queries for Responsiveness
-@media (min-width: 1280px) {
-
-}
-
-
-

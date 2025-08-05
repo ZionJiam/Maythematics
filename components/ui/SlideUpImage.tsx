@@ -3,27 +3,28 @@
 import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const slideUpVariants: Variants = {
-    hidden: { y: 80 },
-    visible: {
-        y: 0,
-        transition: {
-            duration: 0.9,
-            ease: [0.42, 0, 0.58, 1], // cubic-bezier for ease-in-out
-        },
-    },
-};
-
-export default function SlideUpImage({
-    src,
-    alt,
-    className = '',
-}: {
+interface SlideUpImageProps {
     src: string;
     alt: string;
     className?: string;
-}) {
+    delay?: number; // delay in seconds
+}
+
+export default function SlideUpImage({ src, alt, className = '', delay = 0 }: SlideUpImageProps) {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.4 });
+
+    const slideUpVariants: Variants = {
+        hidden: { y: 80, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                delay,
+                duration: 0.6,
+                ease: [0.42, 0, 0.58, 1],
+            },
+        },
+    };
 
     return (
         <motion.img

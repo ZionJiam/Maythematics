@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Okta Neue";
+  src: url("../../public/fonts/OktaNeue-Regular.woff2") format("woff2"), url("../../public/fonts/OktaNeue-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Okta Neue";
+  src: url("../../public/fonts/OktaNeue-Bold.woff2") format("woff2"), url("../../public/fonts/OktaNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Okta Neue", sans-serif;
+}
+
+html, body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Okta Neue", sans-serif;
+  overflow-x: hidden;
+  font-weight: 800;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mobileOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  will-change: opacity;
+  z-index: 999;
+}
+
+.mobileOverlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.red {
+  color: #ff988a;
+}
+
+.teal {
+  color: #99d1c9;
+}
+
+.yellow {
+  color: #ffd97b;
+}
+
+.blue {
+  color: #9fd8ff;
+}
+
+.shadow-box {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #494949;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.sectionTitle .red {
+  color: #ff988a;
+}
+.sectionTitle .teal {
+  color: #99d1c9;
+}
+.sectionTitle .yellow {
+  color: #ffd97b;
+}
+.sectionTitle .blue {
+  color: #9fd8ff;
+}
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .sectionTitle {
+    font-size: 3.5rem;
+  }
+}
+
+.buttonYellow {
+  background-color: #ffd97b;
+  color: #494949;
+}
+.buttonYellow:hover {
+  background-color: #99d1c9;
+  color: #fff;
+}
+
+.buttonRed {
+  background-color: #ff988a;
+  color: #fff;
+}
+.buttonRed:hover {
+  background-color: #99d1c9;
+  color: #fff;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 80px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .ctaButton {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .ctaButton {
+    font-size: 1.3rem;
+  }
+}

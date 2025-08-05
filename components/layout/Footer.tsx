@@ -12,6 +12,7 @@ const Footer = () => {
                 <SlideUpImage
                     src="/assets/blue-mascot.jpg"
                     alt="Review Mascot"
+                    delay={0.2}
                     className={`${styles.reviewMascot} ${styles.blueMascot}`}
                 />
 
@@ -24,6 +25,7 @@ const Footer = () => {
                 <SlideUpImage
                     src="/assets/yellow-mascot.jpg"
                     alt="Review Mascot"
+                    delay={0.3}
                     className={`${styles.reviewMascot} ${styles.yellowMascot}`}
                 />
             </div>
