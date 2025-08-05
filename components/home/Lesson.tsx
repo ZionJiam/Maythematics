@@ -40,55 +40,64 @@ const lessons = [
 export default function LessonsSection() {
     return (
         <section className={styles.lessonsSection}>
-            <h2 className={`sectionTitle`}>
-                Our{" "}
-                <span className={styles.letterRainbow}>
-                    <span className={`blue`}>S</span>
-                    <span className={`red`}>p</span>
-                    <span className={`yellow`}>e</span>
-                    <span className={`teal`}>c</span>
-                    <span className={`red`}>i</span>
-                    <span className={`blue`}>a</span>
-                    <span className={`yellow`}>l</span>
-                    <span className={`teal`}>i</span>
-                    <span className={`red`}>z</span>
-                    <span className={`blue`}>e</span>
-                    <span className={`yellow`}>d</span>
-                </span>{" "}
-                Programme
-            </h2>
+            <div className={styles.lessonInnerWrapper}>
+                <h2 className={`sectionTitle`}>
+                    Our{" "}
+                    <span className={styles.letterRainbow}>
+                        <span className={`blue`}>S</span>
+                        <span className={`red`}>p</span>
+                        <span className={`yellow`}>e</span>
+                        <span className={`teal`}>c</span>
+                        <span className={`red`}>i</span>
+                        <span className={`blue`}>a</span>
+                        <span className={`yellow`}>l</span>
+                        <span className={`teal`}>i</span>
+                        <span className={`red`}>z</span>
+                        <span className={`blue`}>e</span>
+                        <span className={`yellow`}>d</span>
+                    </span>{" "}
+                    Programme
+                </h2>
 
-            <div className={styles.lessonList}>
-                {lessons.map((lesson, index) => (
-                    <div className={`shadow-box ${styles.lessonCard}`} key={index}>
-                        <div className={styles.imageWrapper}>
-                            <img src={lesson.image} alt="" />
-                        </div>
-                        <div className={styles.textContentWrapper}>
-                            <div className={styles.textContent}>
-                                <h3>{lesson.title}</h3>
-                                <p>{lesson.description}</p>
-                                <p><span className='bold'>Duration: </span>{lesson.duration}</p>
-                                <p><span className='bold'>Class size: </span> {lesson.classSize}</p>
+                <div className={styles.lessonList}>
+                    {lessons.map((lesson, index) => (
+                        <div className={`shadow-box ${styles.lessonCard}`} key={index}>
+                            <div className={styles.imageWrapper}>
+                                <img src={lesson.image} alt="" />
                             </div>
-                            <Link href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
+                            <div className={styles.textContentWrapper}>
+                                <div className={styles.textContent}>
+                                    <h3>{lesson.title}</h3>
+                                    <p>{lesson.description}</p>
+                                    <p><span className='bold'>Duration: </span>{lesson.duration}</p>
+                                    <p><span className='bold'>Class size: </span> {lesson.classSize}</p>
+                                </div>
+                                <Link href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
 
-            {/* Video Embed */}
-            <div className={styles.videoWrapper}>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/MBLKwxIfp1U"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
+
+            <div className={styles.videoContainer}>
+                <div className={styles.videoWrapper}>
+                    <iframe
+                        src="https://www.youtube.com/embed/MBLKwxIfp1U"
+                        title="YouTube video player"
+                        width="560"
+                        height="315"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+
+                <div className={styles.videoOverlay}>
+                    {/* Content you want to show overlapping */}
+                </div>
             </div>
+
         </section>
     );
 }

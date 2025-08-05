@@ -1,6 +1,11 @@
 @use '../../app/styles/variables' as *;
 
 .lessonsSection {
+  width: 100%;
+  position: relative;
+}
+
+.lessonInnerWrapper {
   padding: 4rem 1rem;
   max-width: 450px;
   margin: auto;
@@ -93,7 +98,7 @@
 @media screen and (min-width: 768px) {
 
 
-  .lessonsSection {
+  .lessonInnerWrapper {
     max-width: 1024px;
     width: 90%;
   }
@@ -101,17 +106,47 @@
 
 
 
+.videoContainer {
+  position: relative;
+  padding: 1rem;
+  // max-width: 700px; // same max width as videoWrapper for alignment
+  // margin: 3rem auto 0 auto; // margin top and centering
+  // width: 100vw; // full viewport width
+
+  @media (min-width: 768px) {
+    width: 100%; // or keep full width if you want
+  }
+}
+
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%;
+  z-index: 11;
+  padding-bottom: 50vh;
   /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   border-radius: 24px;
-  box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2); // subtle shadow matching red theme
-  margin-top: 5rem;
-  max-width: 100%;
-  background: #000; // black background for the video container
+  box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2);
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+    padding-bottom: 40vw;
+
+
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 700px;
+    padding-bottom: 500px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 900px;
+  }
+
 
   iframe {
     position: absolute;
@@ -121,22 +156,46 @@
     height: 100%;
     border-radius: 24px;
   }
-
-  @media (min-width: 768px) {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: 1024px) {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (min-width: 1280px) {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
+
+/* Overlay covering bottom half of the video */
+.videoOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  /* full viewport width */
+  height: 50%;
+  /* half the height of the video container */
+  background: #fffcf3;
+
+  /* rounded corners matching video bottom */
+  pointer-events: none;
+  /* so clicks go through to video if needed */
+  z-index: 10;
+}
+
+
+
+// .videoWrapper {
+//   position: relative;
+//   padding-bottom: 56.25%;
+//   /* 16:9 aspect ratio */
+//   height: 0;
+//   overflow: hidden;
+//   border-radius: 24px;
+//   box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2); // subtle shadow matching red theme
+//   margin-top: 5rem;
+//   max-width: 100%;
+//   background: #000; // black background for the video container
+
+//   iframe {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 24px;
+//   }
+
+// }
