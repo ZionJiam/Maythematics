@@ -64,7 +64,11 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen }) => {
           <Link href="/workshop">Workshop</Link>
 
           <div className={`${styles.ctaButton}`}>
-            <Link href="/about">WhatsApp Us</Link>
+            <Link
+              href="https://wa.me/6589150859"
+              target="_blank"
+              rel="noopener noreferrer">
+              WhatsApp Us</Link>
           </div>
         </div>
       </div>

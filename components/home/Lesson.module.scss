@@ -20,7 +20,7 @@
   border-radius: 24px;
   overflow: hidden;
   // border: 10px solid #f7e5c8;
-  
+
 
 
   @media (min-width: 768px) {
@@ -31,6 +31,7 @@
 
 .imageWrapper {
   width: 100%;
+
   img {
     width: 100%;
     height: auto;
@@ -64,7 +65,7 @@
     margin-bottom: 0.5rem;
     font-size: 1.45rem;
     color: #ec635e;
-    
+
   }
 
   p {
@@ -89,11 +90,53 @@
 }
 
 
-  @media screen and (min-width: 768px) {
-    
+@media screen and (min-width: 768px) {
 
-    .lessonsSection{
-      max-width: 1024px;
-      width: 90%;
-    }
+
+  .lessonsSection {
+    max-width: 1024px;
+    width: 90%;
   }
+}
+
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2); // subtle shadow matching red theme
+  margin-top: 5rem;
+  max-width: 100%;
+  background: #000; // black background for the video container
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

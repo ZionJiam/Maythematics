@@ -91,7 +91,7 @@ const GoogleReviews = () => {
                     </div>
                 </div>
 
-                <Link href="/about" className={`buttonYellow ctaButton`}>
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?sca_esv=6a0c8dcac5ff226c&hl=en-GB&sxsrf=AE3TifNcLjsLr5besEZGCWSaDXzYBkQJ0g:1754356690149&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E8TbVFSNsxIX4BKvto6miI3zK3MzrbgAjcuQyeWEbIbhH5hddhSRR3JsN3vbbobbFBySMy56msroU-pHa-Ru_3c7fmksWdUtRTNRmakmOrQrRkk0HA%3D%3D&q=Maythematics+Math+Tuition+Reviews&sa=X&ved=2ahUKEwiUpM36v_KOAxU5WEEAHaGRObIQ0bkNegQIHxAE&biw=1440&bih=726&dpr=2#lrd=0x31da3dbc275d3c4f:0xd8ad757897ca2aa8,1,,,," className={`buttonYellow ctaButton`}>
                     Check Out More Reviews
                 </Link>
 
