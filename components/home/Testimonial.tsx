@@ -67,6 +67,7 @@ const TestimonialSection = () => {
                         <h3 className={styles.familyName}>{testimonials[current].family}</h3>
                         <p className={styles.quote}>“{testimonials[current].quote}”</p>
                         <p className={styles.school}>{testimonials[current].school}</p>
+
                     </div>
                 </div>
 

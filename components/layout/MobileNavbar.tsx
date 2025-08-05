@@ -11,13 +11,16 @@ interface MobileNavbarProps {
 
 const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen }) => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isLessonsOpen, setIsLessonsOpen] = useState(false);
 
   const toggleAbout = () => setIsAboutOpen(prev => !prev);
+  const toggleLessons = () => setIsLessonsOpen(prev => !prev);
 
-  // Reset About dropdown when mobile navbar closes
+  // Reset dropdowns when mobile navbar closes
   useEffect(() => {
     if (!isOpen) {
       setIsAboutOpen(false);
+      setIsLessonsOpen(false);
     }
   }, [isOpen]);
 
@@ -42,18 +45,30 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen }) => {
           </div>
 
           <Link href="/testimonials">Testimonials</Link>
-          <Link href="/lessons">Lessons</Link>
+
+          {/* Lessons Dropdown */}
+          <div className={styles.dropdown}>
+            <button className={styles.dropdownToggle} onClick={toggleLessons}>
+              Lessons
+              <span className={`${styles.arrow} ${isLessonsOpen ? styles.up : styles.down}`}>▾</span>
+            </button>
+            <div className={`${styles.submenu} ${isLessonsOpen ? styles.submenuOpen : ''}`}>
+              <Link href="/lesson/primary3to4">Primary 3-4</Link>
+              <Link href="/lesson/primary5to6">Primary 5-6</Link>
+              <Link href="/lesson/secondary1to5">Secondary 1-5</Link>
+              <Link href="/lesson/jch1h2">JC H1/H2</Link>
+            </div>
+          </div>
           <Link href="/contact">Contact Us</Link>
           <Link href="/career">Career</Link>
           <Link href="/workshop">Workshop</Link>
 
-          <div className={`${styles.ctaButton}`}  >
+          <div className={`${styles.ctaButton}`}>
             <Link href="/about">WhatsApp Us</Link>
           </div>
         </div>
-
       </div>
-    </div >
+    </div>
   );
 };
 

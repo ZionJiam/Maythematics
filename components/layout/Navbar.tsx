@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                         <Link href="/about" className={`${styles.navLink} ${styles.linkRed}`}>
                             About Us
                         </Link>
-                        <div className={styles.dropdownContent}>
+                        <div className={`${styles.dropdownContent} ${styles.dropdownContentRed}`}>
                             <Link href="/about/story" className={styles.dropdownLink}>Story and Team</Link>
                             <Link href="/about/space" className={styles.dropdownLink}>Our Space</Link>
                         </div>
@@ -45,9 +45,18 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                     <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow}`}>
                         Testimonials
                     </Link>
-                    <Link href="/Lessons" className={`${styles.navLink} ${styles.linkBlue}`}>
-                        Lessons
-                    </Link>
+                    <div className={styles.dropdown}>
+                        <Link href="/about" className={`${styles.navLink} ${styles.linkBlue}`}>
+                            Lessons
+                        </Link>
+                        <div className={`${styles.dropdownContent} ${styles.dropdownContentBlue}`}>
+                            <Link href="/lesson/primary3to4" className={styles.dropdownLink}>Primary 3-4</Link>
+                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>Primary 5-6</Link>
+                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>Secondary 1-5</Link>
+                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>JC H1/H2</Link>
+
+                        </div>
+                    </div>
                     <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed}`}>
                         Contact Us
                     </Link>

@@ -14,7 +14,7 @@
 }
 
 .scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .navbarContainer {
@@ -29,16 +29,15 @@
 }
 
 .logo {
-  img{
-    width:100px;
+  img {
+    width: 100px;
   }
 }
 
 
 
 .logoSmall {
-  img{
-  }
+  img {}
 }
 
 .navbarLogoText {
@@ -51,8 +50,8 @@
 .navbarNav {
   display: flex;
   align-items: center;
-  margin:0 1.5rem;
-  gap: 1  .75rem;
+  margin: 0 1.5rem;
+  gap: 1 .75rem;
 }
 
 .navLink {
@@ -93,7 +92,7 @@
   position: absolute;
   background-color: white;
   min-width: 180px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 1;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -101,16 +100,35 @@
   a {
     display: block;
     padding: 0.75rem 1rem;
-    color: variables.$color-text;
     text-decoration: none;
+    color: variables.$color-text;
+
     font-weight: 500;
 
     &:hover {
       background-color: #f9f9f9;
+    }
+  }
+}
+
+.dropdownContentRed {
+  a {
+
+    &:hover {
       color: variables.$color-red;
     }
   }
 }
+
+.dropdownContentBlue {
+  a {
+
+    &:hover {
+      color: variables.$color-blue;
+    }
+  }
+}
+
 
 .ctaButton {
   background-color: variables.$color-red;
@@ -121,7 +139,8 @@
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
 
-  &:hover { // SCSS Nesting for hover state
+  &:hover {
+    // SCSS Nesting for hover state
     background-color: variables.$color-teal;
   }
 }
@@ -166,7 +185,8 @@
   border: none;
   outline: none; // For accessibility focus ring
 
-  svg { // Nesting for SVG styles
+  svg {
+    // Nesting for SVG styles
     height: 1.5rem;
     width: 1.5rem;
     stroke: currentColor;
@@ -179,15 +199,15 @@
 // Media Queries for Responsiveness
 @media (max-width: 1024px) {
 
-.navbarContainer {
-  width: 95%;
-}
-
-.logo {
-  img{
-    width:50px;
+  .navbarContainer {
+    width: 95%;
   }
-}
+
+  .logo {
+    img {
+      width: 50px;
+    }
+  }
 
 
 
@@ -197,7 +217,7 @@
     display: none;
   }
 
-  .ctaButton{
+  .ctaButton {
     display: none;
   }
 
