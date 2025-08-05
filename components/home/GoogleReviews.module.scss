@@ -50,7 +50,9 @@
   .marquee {
     display: flex;
     gap: 1.5rem;
-    animation: scrollLeft 20s linear infinite;
+    animation: scrollLeft 40s linear infinite;
+    width: max-content; // Ensure full width even on mobile
+    min-width: 200%; // Force longer scrolling distance
     cursor: pointer;
 
     &:hover {

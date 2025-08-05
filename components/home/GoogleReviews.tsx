@@ -50,7 +50,7 @@ const GoogleReviews = () => {
     return (
         <section className={styles.googleReviews}>
 
-            <SlideUpImage className={styles.reviewMascot} src="/assets/review-mascot.png" />
+            <SlideUpImage alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.png" />
 
             {/* <img
                 src="/assets/review-mascot.png"

@@ -68,7 +68,8 @@
 @media (min-width: 768px) {
 
   .banner{
-    height: 44vh;
+    height: 44vw;
+    max-height: 720px;
   }
 
   .slogan{
@@ -84,7 +85,7 @@
 // Media Queries for Responsiveness
 @media (min-width: 1024px) {
   .banner{
-    height: 40vh;
+    // height: 40vh;
   }
 
   .slogan{

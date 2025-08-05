@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './Footer.module.scss';
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
+import SlideUpImage from '../ui/SlideUpImage';
 
 const Footer = () => {
     return (
@@ -8,19 +9,19 @@ const Footer = () => {
 
 
             <div className={styles.mascotContainer}>
-                <img
+                <SlideUpImage
                     src="/assets/blue-mascot.jpg"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.blueMascot}`}
                 />
 
-                <img
+                <SlideUpImage
                     src="/assets/red-mascot.jpg"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
 
-                <img
+                <SlideUpImage
                     src="/assets/yellow-mascot.jpg"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.yellowMascot}`}

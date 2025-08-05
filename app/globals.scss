@@ -62,7 +62,6 @@ html, body {
   }
 
 
-
   .shadow-box {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
@@ -132,14 +131,10 @@ html, body {
   display: inline-block;
   padding: 0.75rem 1.75rem;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   border-radius: 80px;
   transition: all 0.3s ease;
   text-decoration: none;
-
-  @media (min-width: 450px) {
-    font-size: 0.9rem;
-  }
 
   @media (min-width: 768px) {
     font-size: 1rem;
