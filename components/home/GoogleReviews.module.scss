@@ -47,7 +47,7 @@
   .marquee {
     display: flex;
     gap: 1.5rem;
-    animation: scrollLeft 15s linear infinite;
+    animation: scrollLeft 40s linear infinite;
     width: max-content;
     min-width: 200%;
     cursor: pointer;
@@ -240,6 +240,8 @@
         font-size: 1rem;
         line-height: 1.6;
         font-weight: 300;
+        max-height: 300px;
+        overflow-y: scroll;
       }
 
       button {
@@ -276,6 +278,6 @@
   }
 
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-40%);
   }
 }

@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                         href="https://wa.me/6589150859"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.ctaButton}>
+                        className={`ctaButton ${styles.ctaButton}`}>
                         WhatsApp Us
                     </Link>
                 </div>

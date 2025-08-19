@@ -20,7 +20,7 @@
 .navbarContainer {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 95%;
   max-width: 1124px;
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@
   position: relative;
   color: variables.$color-text;
   padding: 0rem 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
@@ -137,11 +137,9 @@
 .ctaButton {
   background-color: variables.$color-red;
   color: #ffffff;
-  padding: 1rem 1.125rem;
-  border-radius: 200px;
-  font-size: 1.125rem;
-  text-decoration: none;
-  transition: background-color 0.2s ease-in-out;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  font-size: 1rem;
 
   &:hover {
     // SCSS Nesting for hover state
@@ -229,5 +227,17 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .navLink{
+    font-size: 1.125rem;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 2.25rem;
+    font-size: 1.125rem;
   }
 }
