@@ -22,6 +22,7 @@
         width: 250px;
     }
 
+
 }
 
 .letterRainbow span {
@@ -50,6 +51,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .card {
@@ -73,6 +76,8 @@
 .textContent {
     text-align: center;
     margin-top: 1.3rem;
+      white-space: pre-line;
+
 }
 
 .familyName {
@@ -170,16 +175,19 @@
     }
 
     .quote {
-        min-height: none;
+        min-height:auto;
     }
 
     .image {
-        width: 45%;
+        width: 40%;
     }
 
     .textContent {
         padding: 2rem 3rem;
         margin-top: 0;
+        display: flex
+;
+    flex-direction: column;
     }
 
 }
@@ -193,7 +201,7 @@
     }
 
     .quote {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 }
 
