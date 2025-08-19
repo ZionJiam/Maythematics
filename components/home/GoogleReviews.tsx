@@ -81,7 +81,7 @@ const reviews = [
 
     {
         id: 10,
-        name: "Chloe Teo",
+        name: "JIMIN CHOI",
         profileImage: "/images/google-pfp/pfp-10.png",
         content:
         "I have been sending my daughter, who is in Primary 6, to this place for six months, and her math score has improved significantly from AL4 to AL1. Teacher May is both professional and passionate, and thanks to her, math has now become my daughter’s favorite subject—something I never expected. I highly recommend this place for anyone looking to boost their child’s math skills!"
