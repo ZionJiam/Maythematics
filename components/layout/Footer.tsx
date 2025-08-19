@@ -1,34 +1,11 @@
 import Link from 'next/link';
 import styles from './Footer.module.scss';
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
-import SlideUpImage from '../ui/SlideUpImage';
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
 
-
-            <div className={styles.mascotContainer}>
-                <SlideUpImage
-                    src="/assets/blue-mascot.jpg"
-                    alt="Review Mascot"
-                    delay={0.2}
-                    className={`${styles.reviewMascot} ${styles.blueMascot}`}
-                />
-
-                <SlideUpImage
-                    src="/assets/red-mascot.jpg"
-                    alt="Review Mascot"
-                    className={`${styles.reviewMascot} ${styles.redMascot}`}
-                />
-
-                <SlideUpImage
-                    src="/assets/yellow-mascot.jpg"
-                    alt="Review Mascot"
-                    delay={0.3}
-                    className={`${styles.reviewMascot} ${styles.yellowMascot}`}
-                />
-            </div>
 
 
             {/* <img

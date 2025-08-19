@@ -11,7 +11,8 @@
   // transition: all 0.5s ease;
 }
 
-html, body {
+html,
+body {
   background-color: #fff; // Example background color
   color: #333; // Example text color
   font-family: $font-family-sans;
@@ -41,29 +42,29 @@ html, body {
   pointer-events: auto;
 }
 
-.bold{
+.bold {
   font-weight: 600;
 }
 
-  .red {
-    color: $color-red;
-  }
+.red {
+  color: $color-red;
+}
 
-  .teal {
-    color: $color-teal;
-  }
-
-
-  .yellow {
-    color: $color-yellow;
-  }
-
-  .blue {
-    color: $color-blue;
-  }
+.teal {
+  color: $color-teal;
+}
 
 
-  .shadow-box {
+.yellow {
+  color: $color-yellow;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+
+.shadow-box {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -74,7 +75,7 @@ html, body {
   margin-bottom: 3rem;
   text-align: center;
 
-    .red {
+  .red {
     color: $color-red;
   }
 
@@ -97,11 +98,12 @@ html, body {
   }
 
   @media (min-width: 1024px) {
-        font-size: 3rem;
+    font-size: 3rem;
 
   }
+
   @media (min-width: 1280px) {
-      font-size: 3.5rem;
+    font-size: 3.75rem;
 
   }
 }
@@ -130,7 +132,7 @@ html, body {
 
 .ctaButton {
   display: inline-block;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2.25rem;
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 80px;
@@ -142,12 +144,9 @@ html, body {
   }
 
   @media (min-width: 1024px) {
-        font-size: 1.3rem;
+    font-size: 1.3rem;
 
   }
 
-    @media (min-width: 1280px) {
-
-  }
+  @media (min-width: 1280px) {}
 }
-

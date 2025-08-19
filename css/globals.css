@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Okta Neue";
   src: url("../../public/fonts/OktaNeue-Bold.woff2") format("woff2"), url("../../public/fonts/OktaNeue-Bold.woff") format("woff");
@@ -12,6 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 *,
 *::before,
 *::after {
@@ -21,7 +23,8 @@
   font-family: "Okta Neue", sans-serif;
 }
 
-html, body {
+html,
+body {
   background-color: #fff;
   color: #333;
   font-family: "Okta Neue", sans-serif;
@@ -82,28 +85,35 @@ html, body {
   margin-bottom: 3rem;
   text-align: center;
 }
+
 .sectionTitle .red {
   color: #ff988a;
 }
+
 .sectionTitle .teal {
   color: #99d1c9;
 }
+
 .sectionTitle .yellow {
   color: #ffd97b;
 }
+
 .sectionTitle .blue {
   color: #9fd8ff;
 }
+
 @media (min-width: 768px) {
   .sectionTitle {
     font-size: 2.8rem;
   }
 }
+
 @media (min-width: 1024px) {
   .sectionTitle {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 1280px) {
   .sectionTitle {
     font-size: 3.5rem;
@@ -114,6 +124,7 @@ html, body {
   background-color: #ffd97b;
   color: #494949;
 }
+
 .buttonYellow:hover {
   background-color: #99d1c9;
   color: #fff;
@@ -123,6 +134,7 @@ html, body {
   background-color: #ff988a;
   color: #fff;
 }
+
 .buttonRed:hover {
   background-color: #99d1c9;
   color: #fff;
@@ -137,11 +149,13 @@ html, body {
   transition: all 0.3s ease;
   text-decoration: none;
 }
+
 @media (min-width: 768px) {
   .ctaButton {
     font-size: 1rem;
   }
 }
+
 @media (min-width: 1024px) {
   .ctaButton {
     font-size: 1.3rem;

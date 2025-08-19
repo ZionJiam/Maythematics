@@ -40,6 +40,14 @@ const lessons = [
 export default function LessonsSection() {
     return (
         <section className={styles.lessonsSection}>
+
+            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/divide.png" alt="Divide Design Element" />
+            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/minus.png" alt="Minus Design Element" />
+
+            <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/multiply.png" alt="Multiply Design Element" />
+
+            <img className={`${styles.element} ${styles.element4}`} src="/assets/elements/design-element-9.png" alt="Design Element 9" />
+
             <div className={styles.lessonInnerWrapper}>
                 <h2 className={`sectionTitle`}>
                     Our{" "}
@@ -79,7 +87,6 @@ export default function LessonsSection() {
                 </div>
             </div>
 
-
             <div className={styles.videoContainer}>
                 <div className={styles.videoWrapper}>
                     <iframe
@@ -97,6 +104,7 @@ export default function LessonsSection() {
                     {/* Content you want to show overlapping */}
                 </div>
             </div>
+
 
         </section>
     );

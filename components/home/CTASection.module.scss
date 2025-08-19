@@ -1,19 +1,75 @@
 @use '../../app/styles/variables' as *;
 
 
-.ctaSection{
+.ctaSection {
     background-color: #fffcf3;
     text-align: center;
     padding: 6rem 1rem;
     position: relative;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 5rem;
+
+    }
+}
+
+.elementContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+
+    .elements {
+        // position: ;
+        width: 50%;
+        height: 100%;
+    }
+
+    .elementRight {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        right: -80px;
+
+        @media (min-width: 768px) {
+            width: 300px;
+            right: -90px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 400px;
+        }
+
+    }
+
+    .elementLeft {
+        position: absolute;
+        width: 180px;
+        height: auto;
+        left: -100px;
+
+        @media (min-width: 768px) {
+            width: 300px;
+            right: -30px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 380px;
+        }
+
+    }
 }
 
 
-.ctaTextWrapper{
+.ctaTextWrapper {
     margin-top: 2rem;
     width: 90%;
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
+
 
     .ctaParagraph {
         font-size: 1rem;
@@ -28,6 +84,7 @@
         @media (min-width: 1024px) {
             font-size: 1.3rem;
         }
+
         @media (min-width: 1280px) {
             font-size: 1.625rem;
 
@@ -37,46 +94,125 @@
 
 @media (min-width: 1024px) {
 
-    .ctaTextWrapper{
+    .ctaTextWrapper {
         max-width: 700px;
     }
 }
 
 @media (min-width: 1280px) {
 
-    .ctaTextWrapper{
+    .ctaTextWrapper {
         max-width: 900px;
     }
 
 }
 
-.ctaSectionButton{
+.ctaSectionButton {
     margin-top: 2rem;
     width: 80%;
     font-size: 1.3rem;
     max-width: 300px;
+    position: relative;
+    z-index: 2;
 }
 
-.sloganTitle{
+.sloganTitle {
     margin-bottom: 0;
     text-align: center;
     width: 100%;
 
-.red {
-    color: $color-red;
-  }
+    .red {
+        color: $color-red;
+    }
 
-  .teal {
-    color: $color-teal;
-  }
+    .teal {
+        color: $color-teal;
+    }
 
 
-  .yellow {
-    color: $color-yellow;
-  }
+    .yellow {
+        color: $color-yellow;
+    }
 
-  .blue {
-    color: $color-blue;
-  }
+    .blue {
+        color: $color-blue;
+    }
 }
 
+
+.mascotContainer {
+    position: absolute;
+    bottom: -50px;
+    background-color: #fffcf3;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        bottom: -76px;
+    }
+
+    @media (min-width: 1024px) {
+        bottom: -103px;
+    }
+
+}
+
+.reviewMascot {
+    height: 100%;
+    height: auto;
+
+
+}
+
+
+
+.yellowMascot {
+    width: 92px;
+    position: relative;
+    right: 34px;
+    top: 10px;
+    height: auto;
+
+    @media (min-width: 768px) {
+        width: 120px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 145px;
+        right: 46px;
+    }
+}
+
+.redMascot {
+    width: 120px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        width: 160px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 194px;
+
+    }
+
+
+}
+
+.blueMascot {
+    width: 107px;
+    position: relative;
+    top: 6px;
+    left: 23px;
+
+    @media (min-width: 768px) {
+        width: 140px;
+        top: 16px
+    }
+
+    @media (min-width: 1024px) {
+        width: 165px;
+        left: 30px;
+    }
+
+}

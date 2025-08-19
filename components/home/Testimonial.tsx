@@ -47,6 +47,8 @@ const TestimonialSection = () => {
 
     return (
         <section className={styles.testimonialSection}>
+            <img className={`${styles.cardDesignElement}`} src="/assets/elements/design-element-2.png" alt="Card Design Element" />
+
             <h2 className={`sectionTitle`}>
                 What{" "}
                 <span className={styles.letterRainbow}>
@@ -61,7 +63,9 @@ const TestimonialSection = () => {
                 Say About Us
             </h2>
             <div className={styles.carousel}>
+
                 <div className={styles.card}>
+
                     <img src={testimonials[current].image} alt="Family" className={styles.image} />
                     <div className={styles.textContent}>
                         <h3 className={styles.familyName}>{testimonials[current].family}</h3>
@@ -69,6 +73,7 @@ const TestimonialSection = () => {
                         <p className={styles.school}>{testimonials[current].school}</p>
 
                     </div>
+
                 </div>
 
             </div>

@@ -1,18 +1,23 @@
 import styles from './CTASection.module.scss';
 import Link from 'next/link';
+import SlideUpImage from '../ui/SlideUpImage';
 
 
 
 export default function CTASection() {
     return (
         <section className={styles.ctaSection}>
+            <div className={styles.elementContainer}>
+                <img className={`${styles.elements} ${styles.elementRight}`} src="/assets/elements/design-element-3.png" alt="FLoating Design Element 3" />
+                <img className={`${styles.elements} ${styles.elementLeft}`} src="/assets/elements/design-element-6.png" alt="FLoating Design Element 6" />
+            </div>
+
+
             <div className={styles.ctaTextWrapper}>
                 <h2 className={`${styles.sloganTitle} sectionTitle`}>
                     <span className={styles.red}>Ready</span>
 
-
                     {" "}to{" "}
-
                     <span className={styles.yellow}>See</span>
 
 
@@ -33,6 +38,28 @@ export default function CTASection() {
             </div>
 
             <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
+            <div className={styles.mascotContainer}>
+                <SlideUpImage
+                    src="/assets/blue-mascot.jpg"
+                    alt="Review Mascot"
+                    delay={0.2}
+                    className={`${styles.reviewMascot} ${styles.blueMascot}`}
+                />
+
+                <SlideUpImage
+                    src="/assets/red-mascot.jpg"
+                    alt="Review Mascot"
+                    className={`${styles.reviewMascot} ${styles.redMascot}`}
+                />
+
+                <SlideUpImage
+                    src="/assets/yellow-mascot.jpg"
+                    alt="Review Mascot"
+                    delay={0.3}
+                    className={`${styles.reviewMascot} ${styles.yellowMascot}`}
+                />
+            </div>
+
         </section>
     );
 }

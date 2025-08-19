@@ -90,7 +90,7 @@
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: white;
+  // background-color: white;
   min-width: 180px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 1;
@@ -99,11 +99,10 @@
 
   a {
     display: block;
-    padding: 0.75rem 1rem;
+    padding: 1.3rem 1rem;
     text-decoration: none;
     color: variables.$color-text;
 
-    font-weight: 500;
 
     &:hover {
       background-color: #f9f9f9;
@@ -112,19 +111,24 @@
 }
 
 .dropdownContentRed {
+  background-color: variables.$color-red-light;
+
   a {
 
     &:hover {
-      color: variables.$color-red;
+      background-color: variables.$color-red;
+      // color: variables.$color-red;
     }
   }
 }
 
 .dropdownContentBlue {
+  background-color: variables.$color-blue-light;
+
   a {
 
     &:hover {
-      color: variables.$color-blue;
+      background-color: variables.$color-blue;
     }
   }
 }

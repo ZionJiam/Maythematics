@@ -4,9 +4,25 @@
     padding: 4rem 1rem;
     //   margin-bottom: 5rem;
     text-align: center;
+    position: relative;
 }
 
 
+.cardDesignElement {
+    position: absolute;
+    left: -50px;
+    top: 10%;
+    width: 50%;
+    z-index: 1;
+
+    // Media Queries for Responsiveness
+    @media (min-width: 450px) {
+        left: -80px;
+        top: 10%;
+        width: 250px;
+    }
+
+}
 
 .letterRainbow span {
     display: inline-block;
@@ -34,18 +50,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .card {
     display: block;
     align-items: center;
     background: $color-yellow-light;
-    padding: 2rem;
+    padding: 1.3rem;
     border-radius: 20px;
     max-width: 1024px;
     width: 95%;
 }
+
 
 .image {
     width: 100%;
@@ -162,7 +178,7 @@
     }
 
     .textContent {
-        padding: 1rem 1.3rem;
+        padding: 2rem 3rem;
         margin-top: 0;
     }
 
