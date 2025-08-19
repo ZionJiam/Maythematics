@@ -244,6 +244,17 @@
         overflow-y: scroll;
       }
 
+      .fullReview::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+}
+
+.fullReview::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(102, 102, 102, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
       button {
         align-self: flex-end;
         padding: 0.5rem 1.5rem;
