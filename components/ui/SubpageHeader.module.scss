@@ -1,0 +1,22 @@
+// components/ui/CTAButton.module.scss
+@use '../../app/styles/variables' as *;
+
+
+
+.red {
+    background-color: $color-red;
+}
+
+.headerWrapper {
+    max-height: 1550px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitle {
+    margin-bottom: 0;
+    color: white;
+
+}

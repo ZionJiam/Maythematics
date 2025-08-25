@@ -1,0 +1,78 @@
+@use '../../app/styles/variables' as *;
+
+
+.dotContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 300px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+}
+
+
+
+.dot1 {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.dot2 {
+    width: 66.6%;
+    height: 66.6%;
+    border-radius: 50%;
+
+    background-color: white;
+}
+
+.dot3 {
+    width: 33.3%;
+    height: 33.3%;
+    border-radius: 50%;
+}
+
+.red {
+
+    .dot1,
+    .dot3,
+    .line {
+        background-color: $color-red;
+    }
+}
+
+.blue {
+
+    .dot1,
+    .dot3,
+    .line {
+        background-color: $color-blue;
+    }
+}
+
+.yellow {
+
+
+    .dot1,
+    .dot3,
+    .line {
+        background-color: $color-yellow;
+    }
+}

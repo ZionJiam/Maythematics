@@ -1,0 +1,253 @@
+@use '../../app/styles/variables' as *;
+
+
+.storyContainer {
+    padding: 3rem 0;
+    position: relative;
+}
+
+
+.content {
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+
+.historyContainer {
+
+    margin: 1.5rem 0;
+
+    @media (min-width: 1024px) {
+        margin: 3rem 0;
+    }
+
+    .innerContainer {
+        max-width: 450px;
+        width: 95%;
+        margin: 0 auto;
+        // display: flex;
+        // flex-direction: column;
+        // gap: 10rem;
+        position: relative;
+
+        @media (min-width: 1024px) {
+            max-width: 1124px;
+        }
+    }
+
+
+    .timelineWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .timelineBg {
+        height: 50%;
+        width: 0.5rem;
+        background-color: $color-text;
+        opacity: 0.4;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .timeline {
+        height: 90%;
+        width: 0.3rem;
+        background-color: #b5b5b5;
+        border-radius: 5px;
+        position: relative;
+
+        // .subTimeline1 {
+        //     position: absolute;
+        //     height: 50%;
+        //     width: 0.5rem;
+        //     top: 0;
+        // }
+
+        // .subTimeline2 {
+        //     position: absolute;
+        //     height: 50%;
+        //     width: 0.5rem;
+        //     bottom: 0;
+        // }
+
+        /* important for scaleY animation */
+
+
+        @media (min-width: 1024px) {
+            height: 75%;
+        }
+    }
+
+
+    .row {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2rem 0;
+        z-index: 2;
+        // gap: 5rem;
+
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            padding: 5rem 0;
+
+        }
+
+
+
+        .textWrapper,
+        .imageContainer {
+            width: 95%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+
+
+            @media (min-width: 1024px) {
+                width: 40%;
+            }
+        }
+
+
+
+        .textWrapper {
+
+
+
+            .storyMascot {
+                position: absolute;
+                top: -70px;
+
+                width: 110px;
+                z-index: 1;
+            }
+
+            .storyMascot1 {}
+
+
+            .storyMascot.left {
+                left: 20px;
+            }
+
+            .storyMascot.right {
+                right: 20px;
+            }
+
+            .yellow {
+                background-color: $color-yellow;
+            }
+
+            .red {
+                background-color: $color-red;
+            }
+
+            .blue {
+                background-color: $color-blue;
+            }
+        }
+
+        .textInnerWrapper {
+            height: min-content;
+            padding: 2rem;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            z-index: 2;
+
+
+            h2 {
+                margin-bottom: 1rem;
+                line-height: 1.9rem;
+            }
+
+            p {
+                font-weight: 300;
+            }
+
+            @media (min-width: 1024px) {
+                flex-direction: row-reverse;
+                border-radius: 10px;
+
+            }
+
+
+        }
+    }
+
+    .rowOdd {
+        flex-direction: column;
+
+        @media (min-width: 1024px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    .imageContainer {
+
+        .image {
+
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+
+        }
+    }
+}
+
+
+.element {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        top: 0;
+
+    }
+
+}
+
+.floatElement1 {
+    left: -30px;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        width: 30%;
+
+    }
+}
+
+.floatElement2 {
+    right: -30px;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        width: 36%;
+    }
+}
+
+.floatElement3 {
+    left: -10px;
+    transform: rotate(30deg);
+    width: 100%;
+
+    @media (min-width: 1024px) {
+        width: 30%;
+    }
+}

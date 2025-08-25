@@ -1,0 +1,44 @@
+@use '../../app/styles/variables' as *;
+
+.visionSection {
+    position: relative;
+    text-align: center;
+
+    .sectionTitle {
+        background-color: $color-blue;
+
+    }
+
+
+    .visionContainer {
+        background-color: $color-blue;
+        padding-bottom: 5rem;
+    }
+
+    .visionCard {
+        max-width: 1024px;
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.625rem;
+        font-weight: 300;
+        padding: 3rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .dividerTop,
+    .dividerBottom {
+        width: 100%;
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+
+    .dividerTop {
+        transform: rotate(180deg);
+        margin-top: -1px;
+    }
+}

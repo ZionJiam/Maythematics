@@ -1,0 +1,25 @@
+.teamCard {
+    max-width: 300px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+
+    &:hover {
+        .descriptionContainer {
+            height: 60%;
+        }
+    }
+}
+
+.descriptionContainer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.cardTitle {
+    font-size: 1.75rem;
+}

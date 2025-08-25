@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                             About Us
                         </Link>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContentRed}`}>
-                            <Link href="/about/story" className={styles.dropdownLink}>Story and Team</Link>
+                            <Link href="/about" className={styles.dropdownLink}>Story and Team</Link>
                             <Link href="/about/space" className={styles.dropdownLink}>Our Space</Link>
                         </div>
                     </div>
