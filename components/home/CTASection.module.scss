@@ -72,24 +72,8 @@
 
 
     .ctaParagraph {
-        font-size: 1rem;
         color: $color-text;
-        font-weight: 200;
 
-
-
-        @media (min-width: 768px) {
-            font-size: 1.125rem;
-        }
-
-        @media (min-width: 1024px) {
-            font-size: 1.3rem;
-        }
-
-        @media (min-width: 1280px) {
-            font-size: 1.625rem;
-
-        }
     }
 }
 
@@ -118,9 +102,9 @@
 }
 
 .sloganTitle {
-    margin-bottom: 0;
     text-align: center;
     width: 100%;
+
 
     .red {
         color: $color-red;

@@ -30,8 +30,8 @@
     }
 
     .footerInnerwrapper {
-        width: 100%;
-        max-width: 1024px;
+        width: 90%;
+        max-width: 1124px;
         margin: 0 auto;
         gap: 2.2rem;
         display: flex;
@@ -44,12 +44,12 @@
             gap: 0.5rem;
 
             h4 {
-                font-size: 1.125rem;
+                font-size: 1.25rem;
                 font-weight: bold;
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 color: #555;
                 font-weight: 200;
             }
@@ -71,7 +71,7 @@
 
 .link {
     color: #444;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 200;
 

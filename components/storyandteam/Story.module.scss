@@ -1,8 +1,11 @@
 @use '../../app/styles/variables' as *;
 
 
+.story {
+    margin: 3rem auto;
+}
+
 .storyContainer {
-    padding: 3rem 0;
     position: relative;
 }
 
@@ -10,25 +13,17 @@
 .content {
     max-width: 1024px;
     width: 95%;
-    margin: 0 auto;
+    margin: 3rem auto;
     text-align: center;
-    font-size: 1.625rem;
-    font-weight: 300;
 }
 
 
 .historyContainer {
 
-    margin: 1.5rem 0;
-
-    @media (min-width: 1024px) {
-        margin: 3rem 0;
-    }
-
     .innerContainer {
         max-width: 450px;
         width: 95%;
-        margin: 0 auto;
+        margin: 3rem auto;
         // display: flex;
         // flex-direction: column;
         // gap: 10rem;
@@ -96,18 +91,13 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        padding: 2rem 0;
+        padding: 3.5rem 0;
         z-index: 2;
-        // gap: 5rem;
 
 
         @media (min-width: 1024px) {
             flex-direction: row;
-            padding: 5rem 0;
-
         }
-
-
 
         .textWrapper,
         .imageContainer {
@@ -124,11 +114,7 @@
             }
         }
 
-
-
         .textWrapper {
-
-
 
             .storyMascot {
                 position: absolute;
@@ -138,15 +124,13 @@
                 z-index: 1;
             }
 
-            .storyMascot1 {}
-
 
             .storyMascot.left {
-                left: 20px;
+                left: 30px;
             }
 
             .storyMascot.right {
-                right: 20px;
+                right: 30px;
             }
 
             .yellow {
@@ -197,8 +181,61 @@
         }
     }
 
+    .row {
+        .numbering {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            z-index: 5;
+            font-size: 1.25rem;
+            top: -10px;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+        }
+    }
+
+    .rowOdd {
+        .numbering {
+            right: -10px;
+        }
+    }
+
+    .rowRed {
+        .numbering {
+            border: 5px solid $color-blue;
+        }
+    }
+
+    .rowBlue {
+        .numbering {
+            border: 5px solid $color-yellow;
+        }
+    }
+
+    .rowYellow {
+        .numbering {
+            border: 5px solid $color-red;
+        }
+    }
+
+    .rowEven {
+        .numbering {
+            left: -10px;
+        }
+    }
+
 
     .imageContainer {
+        border-radius: 10px;
 
         .image {
 

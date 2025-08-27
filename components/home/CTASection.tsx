@@ -34,7 +34,7 @@ export default function CTASection() {
                     <span className={styles.teal}>?</span>
                 </h2>
 
-                <p className={`${styles.ctaParagraph}`}>Join hundreds of students who trust us weekly — whether it’s PSLE prep, building problem-solving skills, or just gaining back confidence.</p>
+                <p className={`${styles.ctaParagraph} text-lg`}>Join hundreds of students who trust us weekly — whether it’s PSLE prep, building problem-solving skills, or just gaining back confidence.</p>
             </div>
 
             <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>

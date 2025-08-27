@@ -55,20 +55,20 @@ const reviews = [
             "When i first failed math with a D7, for my EOY in 2023 i didn't know what to do. Not alot of people can help me and i had no tution. I didn't really trust tutions as i don't really inprove in them . So i wouldn't know what to do, thats when my friend recommended me maythematics. I was abit skeptical but I couldn't keep failing math so i gave it a try. During the trial lesson, when she first started teaching, I was actually able to understand. When teacher may teaches she individually helps students whenever they have questions. She will take the time to explain over and over again to make sure ur'e able to understand the material. After the trial i actl felt that i was starting to improve, so I signed up for it. Which was one of the best things I did. The next exam i scored A1. I was so happy I was able to make such a significant improvement in such a short time all thanks to teacher may. Without her i still be struggling with math but now i not. Within the years I was with them, I was also taught by other teachers, teacher eunice and teacher lucas. Their all excellent teachers all their lessons allow me understand math because of all of these i overall improve in math alot. The atmosphere of the classes are so lively and brightly and i made friends there. I never regret joining maythematics and hope to stay in that tution all the way to JC. I currently taking sec 3 A math and E math and I able to understand all the materials better then my own school teachers thank you to all teachers for helping me improve in math and allow me to understand and get better grades.❤️",
     },
 
-        {
+    {
         id: 7,
         name: "Jeraldine Tan",
         profileImage: "/images/google-pfp/pfp-7.png",
         content:
-        "Maythematics has been a game-changer for my daughter, who previously struggled with primary school maths and wasn’t doing well. We were worried about her transition to secondary school, so we enrolled her with Maythematics Secondary Maths. Under Teacher May and Teacher Claire’s guidance, my daughter gained confidence and achieved great results (A1 for all her papers!)  in her Secondary 1 G3 maths. We feel reassured knowing she’s building a strong foundation and are confident she’ll continue to excel with the right support. Highly recommend Maythematics for anyone seeking effective and compassionate maths tutoring!"
+            "Maythematics has been a game-changer for my daughter, who previously struggled with primary school maths and wasn’t doing well. We were worried about her transition to secondary school, so we enrolled her with Maythematics Secondary Maths. Under Teacher May and Teacher Claire’s guidance, my daughter gained confidence and achieved great results (A1 for all her papers!)  in her Secondary 1 G3 maths. We feel reassured knowing she’s building a strong foundation and are confident she’ll continue to excel with the right support. Highly recommend Maythematics for anyone seeking effective and compassionate maths tutoring!"
     },
 
-        {
+    {
         id: 8,
         name: "claudia sng",
         profileImage: "/images/google-pfp/pfp-8.png",
         content:
-        "Teacher May is a patient teacher with strong passion in teaching which really inspired students to push themselves to do well. She will take time off for students who have more doubts after lesson physically or even through texts. She’s fun and well liked by most of her students in class."
+            "Teacher May is a patient teacher with strong passion in teaching which really inspired students to push themselves to do well. She will take time off for students who have more doubts after lesson physically or even through texts. She’s fun and well liked by most of her students in class."
     },
 
     {
@@ -76,7 +76,7 @@ const reviews = [
         name: "Chloe Teo",
         profileImage: "/images/google-pfp/pfp-1.png",
         content:
-        "I attended the sec4 amath lesson, and through the lessons i managed to improve from a F9 to B3 in olevels. Super thankful for Teacher May and Teacher Claire for guiding me through the olevel journey. They are very patient and would always be so willing to help me improve!"
+            "I attended the sec4 amath lesson, and through the lessons i managed to improve from a F9 to B3 in olevels. Super thankful for Teacher May and Teacher Claire for guiding me through the olevel journey. They are very patient and would always be so willing to help me improve!"
     },
 
     {
@@ -84,9 +84,9 @@ const reviews = [
         name: "JIMIN CHOI",
         profileImage: "/images/google-pfp/pfp-10.png",
         content:
-        "I have been sending my daughter, who is in Primary 6, to this place for six months, and her math score has improved significantly from AL4 to AL1. Teacher May is both professional and passionate, and thanks to her, math has now become my daughter’s favorite subject—something I never expected. I highly recommend this place for anyone looking to boost their child’s math skills!"
+            "I have been sending my daughter, who is in Primary 6, to this place for six months, and her math score has improved significantly from AL4 to AL1. Teacher May is both professional and passionate, and thanks to her, math has now become my daughter’s favorite subject—something I never expected. I highly recommend this place for anyone looking to boost their child’s math skills!"
     },
-    
+
 ];
 
 const GoogleReviews = () => {
@@ -130,7 +130,7 @@ const GoogleReviews = () => {
                                             alt="Google Verified"
                                             className={styles.googleBadge}
                                         />
-                                        </div>
+                                    </div>
                                     <div className={styles.info}>
                                         <p className={styles.name}>{review.name}</p>
                                         <div className={styles.stars}>
@@ -162,18 +162,18 @@ const GoogleReviews = () => {
                     <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
                         <div className={styles.modalHeader}>
 
-                                                                <div className={styles.profileWrapper}>
-                            <img
-                                src={`${selectedReview.profileImage}`}
-                                alt={`${selectedReview.name} profile`}
-                                className={styles.profileImage}
-                            />
-                                        <img
-                                            src="/images/google-logo.svg"
-                                            alt="Google Verified"
-                                            className={styles.googleBadge}
-                                        />
-                                        </div>
+                            <div className={styles.profileWrapper}>
+                                <img
+                                    src={`${selectedReview.profileImage}`}
+                                    alt={`${selectedReview.name} profile`}
+                                    className={styles.profileImage}
+                                />
+                                <img
+                                    src="/images/google-logo.svg"
+                                    alt="Google Verified"
+                                    className={styles.googleBadge}
+                                />
+                            </div>
 
                             <div className={styles.info}>
                                 <h3 className={styles.name}>{selectedReview.name}</h3>

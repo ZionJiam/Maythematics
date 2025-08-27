@@ -9,7 +9,7 @@ import SubPageHeader from '@/components/ui/SubpageHeader'
 export default function About() {
   return (
     <main className={styles.main}>
-      {/* <SubPageHeader color="red" header="Story and Team" /> */}
+      <SubPageHeader color="red" header="Story and Team" />
       <StorySection />
       <VisionSection />
       <TeamSection />

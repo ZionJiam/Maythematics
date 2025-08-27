@@ -22,9 +22,11 @@ const Vision = () => {
             <div className={styles.visionContainer}>
                 <h2 className={`${styles.sectionTitle} sectionTitle white-text-outline`}>Our Vision</h2>
 
-                <div className={styles.visionCard}>
+                <div className={`text-lg ${styles.visionCard}`}>
                     <p>To foster a positive and safe environment for students to learn Math under the belt of the
                         most positive, patient and passionate tutors with effective teaching methodologies</p>
+                    <img src="/images/maythematics-watermark.png" alt="watermark" className={styles.watermark} />
+
                 </div>
 
             </div>

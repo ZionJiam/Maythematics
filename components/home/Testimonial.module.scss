@@ -63,6 +63,8 @@
     border-radius: 20px;
     max-width: 1024px;
     width: 95%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -76,7 +78,7 @@
 .textContent {
     text-align: center;
     margin-top: 1.3rem;
-      white-space: pre-line;
+    white-space: pre-line;
 
 }
 
@@ -105,7 +107,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
 }
 
 .dots {
@@ -175,7 +176,7 @@
     }
 
     .quote {
-        min-height:auto;
+        min-height: auto;
     }
 
     .image {
@@ -185,9 +186,8 @@
     .textContent {
         padding: 2rem 3rem;
         margin-top: 0;
-        display: flex
-;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
 }

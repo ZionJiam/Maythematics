@@ -1,0 +1,18 @@
+.teamSection {
+    margin: 6rem auto;
+}
+
+.teamContainer {
+    max-width: 1124px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.teamCardContainer {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 3rem auto;
+}
