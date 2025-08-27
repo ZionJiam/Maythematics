@@ -5,6 +5,7 @@ import { useState } from "react";
 import SlideUpImage from "@/components/ui/SlideUpImage";
 import styles from "./Team.module.scss";
 import TeamCard from "@/components/ui/TeamCard";
+import TeamModal from "@/components/ui/TeamModal";
 
 
 const teamMembers = [
@@ -41,6 +42,8 @@ const teamMembers = [
 
 
 const Team = () => {
+    const [selectedMember, setSelectedMember] = useState<any | null>(null);
+
 
     return (
         <section className={styles.teamSection}>
@@ -70,13 +73,17 @@ const Team = () => {
                             degree={member.degree}
                             description={member.description}
                             studentReview={member.studentReview}
+                            onClick={() => setSelectedMember(member)}
                         />
                     ))}
                 </div>
 
-
-
-
+                {selectedMember && (
+                    <TeamModal
+                        member={selectedMember}
+                        onClose={() => setSelectedMember(null)}
+                    />
+                )}
             </div>
         </section >
     );

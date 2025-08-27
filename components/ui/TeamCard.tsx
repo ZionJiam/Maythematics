@@ -14,6 +14,8 @@ interface TeamCardProp {
     degree: string;
     description: string;
     studentReview: string;
+    onClick: () => void;
+
 }
 
 
@@ -26,20 +28,26 @@ const TeamCard: React.FC<TeamCardProp> = ({
     degree,
     description,
     studentReview,
+    onClick
 }) => {
 
     const [bgImage, setBgImage] = useState(imageUrl);
 
     return (
 
-        <div className={styles.teamCard}>
-            <div className={styles.teamCardBorder}></div>
+        <div
+            className={styles.teamCard}
+            onClick={onClick}
+        >
+            <img className={`${styles.element} ${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" />
+
             <div
                 className={styles.teamCardWrapper}
                 style={{ backgroundImage: `url(${bgImage})` }}
                 onMouseEnter={() => setBgImage(imageUrlHover)}
                 onMouseLeave={() => setBgImage(imageUrl)}
             >
+
                 <div className={styles.descriptionContainer}>
                     <h4 className={styles.cardTitle}>{name}</h4>
                     <p className={styles.cardSubTitle}>{role}</p>

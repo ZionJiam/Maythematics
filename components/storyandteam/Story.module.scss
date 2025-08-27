@@ -3,6 +3,7 @@
 
 .story {
     margin: 3rem auto;
+    position: relative;
 }
 
 .storyContainer {
@@ -246,45 +247,60 @@
     }
 }
 
-
 .element {
     position: absolute;
+    width: 100px;
     z-index: 1;
-    top: -10px;
-    width: 100%;
+    opacity: 0.5;
 
-    @media (min-width: 1024px) {
-        top: 0;
+    @media (min-width: 768px) {
+        width: 150px;
+    }
 
+
+    /* or left top / right top depending on how you want it to pivot */
+}
+
+.element1 {
+    top: 10%;
+    left: -50px;
+
+    @media (min-width: 768px) {
+        //left: -20px;
     }
 
 }
 
-.floatElement1 {
-    left: -30px;
-    width: 100%;
+.element2 {
+    top: 35%;
+    right: -50px;
+    transform: rotate(20deg);
+    transform-origin: center;
 
-    @media (min-width: 1024px) {
-        width: 30%;
-
+    @media (min-width: 768px) {
+        // right: 20px;
     }
 }
 
-.floatElement2 {
-    right: -30px;
-    width: 100%;
+.element3 {
+    top: 50%;
+    left: -50px;
+    transform: rotate(-50deg);
+    transform-origin: center;
 
-    @media (min-width: 1024px) {
-        width: 36%;
+    @media (min-width: 768px) {
+        // left: 20px;
     }
 }
 
-.floatElement3 {
-    left: -10px;
-    transform: rotate(30deg);
-    width: 100%;
+.element4 {
+    top: 70%;
+    right: -60px;
+    width: 150px;
+    transform: rotate(80deg);
+    transform-origin: center;
 
-    @media (min-width: 1024px) {
-        width: 30%;
+    @media (min-width: 768px) {
+        width: 250px;
     }
 }
