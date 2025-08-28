@@ -8,14 +8,28 @@
 
 .storyContainer {
     position: relative;
+    text-align: center;
 }
 
 
-.content {
+
+.slogan {
+    font-weight: 600;
+
+}
+
+.content,
+.slogan {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     max-width: 1024px;
     width: 95%;
-    margin: 3rem auto;
-    text-align: center;
+    margin: 0 auto;
+}
+
+.content {
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -33,6 +47,37 @@
         @media (min-width: 1024px) {
             max-width: 1124px;
         }
+    }
+
+    .timelineStart,
+    .timelineEnd {
+        text-align: center;
+        font-weight: 600;
+        margin-top: 3rem;
+    }
+
+    .timelineStartDot {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: 3;
+        background-color: $color-pink;
+    }
+
+    .timelineEndDot {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: 3;
+        background-color: $color-pink;
     }
 
 
@@ -58,32 +103,11 @@
     }
 
     .timeline {
-        height: 90%;
+        height: 100%;
         width: 0.3rem;
         background-color: #b5b5b5;
         border-radius: 5px;
         position: relative;
-
-        // .subTimeline1 {
-        //     position: absolute;
-        //     height: 50%;
-        //     width: 0.5rem;
-        //     top: 0;
-        // }
-
-        // .subTimeline2 {
-        //     position: absolute;
-        //     height: 50%;
-        //     width: 0.5rem;
-        //     bottom: 0;
-        // }
-
-        /* important for scaleY animation */
-
-
-        @media (min-width: 1024px) {
-            height: 75%;
-        }
     }
 
 
@@ -211,24 +235,6 @@
         }
     }
 
-    // .rowRed {
-    //     .numbering {
-    //         border: 5px solid $color-blue;
-    //     }
-    // }
-
-    // .rowBlue {
-    //     .numbering {
-    //         border: 5px solid $color-yellow;
-    //     }
-    // }
-
-    // .rowYellow {
-    //     .numbering {
-    //         border: 5px solid $color-red;
-    //     }
-    // }
-
     .rowEven {
         .numbering {
             left: -10px;
@@ -248,63 +254,122 @@
     }
 }
 
-.element {
+.videoContainer {
+    position: relative;
+    padding: 1rem;
+    // max-width: 700px; // same max width as videoWrapper for alignment
+    // margin: 3rem auto 0 auto; // margin top and centering
+    // width: 100vw; // full viewport width
+
+    @media (min-width: 768px) {
+        width: 100%; // or keep full width if you want
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    z-index: 11;
+    padding-bottom: 250px;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2);
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    @media (min-width: 768px) {
+        max-width: 600px;
+        padding-bottom: 40vw;
+
+
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 700px;
+        padding-bottom: 500px;
+    }
+
+    @media (min-width: 1280px) {
+        max-width: 900px;
+    }
+
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+
+.videoMascot1,
+.videoMascot2 {
     position: absolute;
+    z-index: 1;
+}
+
+.videoMascot1 {
+    top: -28px;
+    left: -15px;
+    transform: scaleX(-1);
+    width: 85px;
+
+
+    @media (min-width: 1024px) {
+        width: 185px;
+        top: -98px;
+        left: -65px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 235px;
+        top: -130px;
+        left: -65px;
+    }
+}
+
+.videoMascot2 {
+    top: -58px;
+    right: -35px;
+    transform: rotate(-10deg);
     width: 100px;
-    z-index: 0;
-    opacity: 0.5;
 
-    @media (min-width: 768px) {
-        width: 150px;
+
+
+    @media (min-width: 1024px) {
+        width: 200px;
+        top: -128px;
+        right: -55px;
     }
 
-
-    /* or left top / right top depending on how you want it to pivot */
-}
-
-.element1 {
-    top: 10%;
-    left: -70px;
-    width: 200px;
-
-
-
-    @media (min-width: 768px) {
-        //left: -20px;
-    }
-
-}
-
-.element2 {
-    top: 35%;
-    right: -50px;
-    transform: rotate(20deg);
-    transform-origin: center;
-
-    @media (min-width: 768px) {
-        // right: 20px;
-    }
-}
-
-.element3 {
-    top: 50%;
-    left: -50px;
-    transform: rotate(-50deg);
-    transform-origin: center;
-
-    @media (min-width: 768px) {
-        // left: 20px;
-    }
-}
-
-.element4 {
-    top: 70%;
-    right: -60px;
-    width: 150px;
-    transform: rotate(80deg);
-    transform-origin: center;
-
-    @media (min-width: 768px) {
+    @media (min-width: 1280px) {
         width: 250px;
+        top: -160px;
+        right: -55px;
     }
+
+}
+
+/* Overlay covering bottom half of the video */
+.videoOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* full viewport width */
+    height: 70%;
+    /* half the height of the video container */
+    // background: #fffcf3;
+    background-color: $color-yellow-light;
+
+    /* rounded corners matching video bottom */
+    pointer-events: none;
+    /* so clicks go through to video if needed */
+    z-index: 0;
 }

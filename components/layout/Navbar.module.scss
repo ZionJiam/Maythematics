@@ -59,23 +59,10 @@
   color: variables.$color-text;
   padding: 0rem 0.5rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    transition: width 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
 }
 
 .dropdown {
@@ -100,6 +87,8 @@
   a {
     display: block;
     padding: 1.3rem 1rem;
+    font-weight: 500;
+
     text-decoration: none;
     color: variables.$color-text;
 
@@ -244,18 +233,13 @@
 
 .linkRed.active {
   color: variables.$color-red; // or highlight color
-  border-bottom: 2px solid variables.$color-red;
-  ;
+
 }
 
 .linkYellow.active {
   color: variables.$color-yellow; // or highlight color
-  border-bottom: 2px solid variables.$color-yellow;
-  ;
 }
 
 .linkBlue.active {
   color: variables.$color-blue; // or highlight color
-  border-bottom: 2px solid variables.$color-blue;
-  ;
 }

@@ -92,7 +92,7 @@
 .lessonCard {
   display: flex;
   flex-direction: column; // Mobile default
-  border-radius: 24px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: white;
   // border: 10px solid #f7e5c8;
@@ -196,7 +196,7 @@
   /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2);
   background: #000;
   margin-left: auto;
@@ -225,7 +225,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 24px;
+    border-radius: 10px;
   }
 }
 
@@ -245,28 +245,3 @@
   /* so clicks go through to video if needed */
   z-index: 10;
 }
-
-
-
-// .videoWrapper {
-//   position: relative;
-//   padding-bottom: 56.25%;
-//   /* 16:9 aspect ratio */
-//   height: 0;
-//   overflow: hidden;
-//   border-radius: 24px;
-//   box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2); // subtle shadow matching red theme
-//   margin-top: 5rem;
-//   max-width: 100%;
-//   background: #000; // black background for the video container
-
-//   iframe {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 24px;
-//   }
-
-// }

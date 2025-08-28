@@ -11,7 +11,7 @@ export default function About() {
     <main className={styles.main}>
       <SubPageHeader color="red" header="Story and Team" />
       <StorySection />
-      <VisionSection />
+      {/* <VisionSection /> */}
       <TeamSection />
 
     </main>

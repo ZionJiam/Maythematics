@@ -60,12 +60,14 @@
     display: block;
     align-items: center;
     background: $color-yellow-light;
-    padding: 1.3rem;
-    border-radius: 20px;
+    // padding: 1.3rem;
+    border-radius: 10px;
     max-width: 1024px;
     width: 95%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -73,7 +75,7 @@
     width: 100%;
     object-fit: cover;
     margin-right: 0 auto;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .textContent {

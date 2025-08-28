@@ -27,14 +27,15 @@ export default function SlideUpImage({ src, alt, className = '', delay = 0 }: Sl
     };
 
     return (
-        <motion.img
+        <img
             ref={ref}
             src={src}
             alt={alt}
+            data-aos="fade-up"
             className={`absolute ${className}`}
-            variants={slideUpVariants}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
+        // variants={slideUpVariants}
+        // initial="hidden"
+        // animate={inView ? 'visible' : 'hidden'}
         />
     );
 }

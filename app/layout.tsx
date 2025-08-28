@@ -7,6 +7,9 @@ import Navbar from "@/components/layout/Navbar";
 import MobileNavbar from "@/components/layout/MobileNavbar";
 import Footer from "@/components/layout/Footer";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function RootLayout({
   children,
@@ -22,6 +25,13 @@ export default function RootLayout({
   const closeMobileNav = () => {
     setIsMobileNavOpen(false);
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once
+    });
+  }, []);
 
   // Close mobile nav on window resize if width >= 768px
   useEffect(() => {

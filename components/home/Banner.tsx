@@ -37,7 +37,7 @@ const Banner = () => {
           <span className={styles.yellow}>5</span>
           <span className={styles.blue}>0</span>
           <span className={styles.blue}>+</span>
-          {" "}Happy Students Since{" "}
+          {" "}Happy Students <br />Since{" "}
           <span className={styles.red}>2</span>
           <span className={styles.yellow}>0</span>
           <span className={styles.blue}>20</span>

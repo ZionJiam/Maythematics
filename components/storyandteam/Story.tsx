@@ -46,47 +46,56 @@ const Story = () => {
 
     return (
         <section className={styles.story}>
-            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Design Element 7" />
-            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/multiply.png" alt="Multiply Design Element" />
-            <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/divide.png" alt="Divide Design Element" />
-            <img className={`${styles.element} ${styles.element4}`} src="/assets/elements/design-element-9.png" alt="Design Element 9" />
 
             <div className={styles.storyContainer}>
-                <h2 className={`sectionTitle`}>
-                    Our{" "}
-                    <span className={styles.letterRainbow}>
-                        <span className={`blue`}>S</span>
-                        <span className={`red`}>t</span>
-                        <span className={`yellow`}>o</span>
-                        <span className={`teal`}>r</span>
-                        <span className={`red`}>y</span>
-                    </span>
-                </h2>
-                <p className={`text-lg ${styles.content}`}>
+                <p className={`text-lg ${styles.slogan}`}>
                     It all started from the passion of sharing Math Knowledge to help as many students & parents as possible.
-                    <br /> <br />
-                    Thank you for loving our regular Tiktok live teaching sessions and Math videos.
-                    <br /> <br />
-
-                    The beneficial Tiktok Live sessions as well as videos have propelled hundreds of students all over Singapore to take up online / physical lessons with us weekly.
-                    <br /> <br />
-
-                    From home-based to opening our first flagship centre opposite Kembangan MRT in 2023 to expanding to a bigger centre in 2025, it has been our greatest honour for being able to inspire children & parents from all over Singapore to gain more confidence in Math.
-                    <br /> <br />
-
-                    We promise to give our all to help each and every child to reach their best potential.
                 </p>
+
+                <div className={styles.videoContainer}>
+                    <div className={styles.videoWrapper}>
+                        <iframe
+                            src="https://www.youtube.com/embed/MBLKwxIfp1U"
+                            title="YouTube video player"
+                            width="560"
+                            height="315"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+
+                    <div className={styles.videoOverlay}>
+                        {/* <SlideUpImage alt="Red Mascot Teaching" className={styles.videoMascot} src="/assets/red-mascot-teach.png" /> */}
+                        <img alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.png" />
+                        <img alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
+
+                        {/* Content you want to show overlapping */}
+                    </div>
+
+                    <p className={`text-lg ${styles.content}`}>
+
+                        From home-based to opening our first flagship centre opposite Kembangan MRT in 2023 to expanding to a bigger centre in 2025, it has been our greatest honour for being able to inspire children & parents from all over Singapore to gain more confidence in Math.
+                    </p>
+                </div>
+
+
+
             </div>
 
             <div className={styles.historyContainer}>
+                <p className={`text-lg ${styles.timelineStart}`}>How it all started</p>
+
                 <div className={styles.innerContainer}>
+                    <div className={styles.timelineEndDot} />
+
+                    <div className={styles.timelineStartDot} />
                     <div className={styles.timelineWrapper}>
-                        <div className={styles.timeline}>
-                            <div className={styles.subTimeline1}></div>
-                            <div className={styles.subTimeline2}></div>
-                        </div>
+                        <div className={styles.timeline} />
+
                     </div>
-                    <div className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
                         <TimelineDot styleColor='yellow' extendLine='left' />
                         <div className={`${styles.textWrapper}`}>
 
@@ -103,7 +112,7 @@ const Story = () => {
                             <img className={`${styles.image}`} src="/images/storyteam/image-1.png" alt="FLoating Design Element 3" />
                         </div>
                     </div>
-                    <div className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
                         <TimelineDot styleColor='red' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
@@ -120,7 +129,7 @@ const Story = () => {
                         </div>
 
                     </div>
-                    <div className={`${styles.row} ${styles.rowOdd} ${styles.rowBlue}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowBlue}`}>
                         <TimelineDot styleColor='blue' extendLine='left' />
 
                         <div className={`${styles.textWrapper}`}>
@@ -141,7 +150,7 @@ const Story = () => {
 
                     </div>
 
-                    <div className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
                         <TimelineDot styleColor='yellow' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
@@ -160,10 +169,10 @@ const Story = () => {
                         </div>
 
                     </div>
-
-
-
                 </div>
+
+                <p className={`text-lg  ${styles.timelineEnd}`}>Continuously Helping <br />More Students</p>
+
             </div>
 
 

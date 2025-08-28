@@ -39,7 +39,7 @@ const TeamCard: React.FC<TeamCardProp> = ({
             className={styles.teamCard}
             onClick={onClick}
         >
-            <img className={`${styles.element} ${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" />
+            {/* <img className={`${styles.element} ${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" /> */}
 
             <div
                 className={styles.teamCardWrapper}
@@ -54,22 +54,6 @@ const TeamCard: React.FC<TeamCardProp> = ({
                 </div>
             </div>
         </div>
-        // <div className={`${styles.teamCard}`}>
-        //     <div className={styles.teamCardBorder}></div>
-
-        //     {/* <img src="/assets/elements/design-element-3.png" alt="Card Design Element" className={styles.cardDesignElement} /> */}
-        //     <div className={`${styles.teamCardWrapper}`}>
-        //         <div className={styles.descriptionContainer}>
-        //             <h4 className={styles.cardTitle}>Tyler</h4>
-        //             <p className={styles.cardSubTitle}>Math Teacher (Primary 3-5)</p>
-        //             {/* <div className={styles.subDescriptionContainer}>
-        //                 <p>Growth Architect</p>
-        //                 <p>Double Degree</p>
-        //                 <p>Math Teacher</p>
-        //             </div> */}
-        //         </div>
-        //     </div>
-        // </div>
     );
 };
 

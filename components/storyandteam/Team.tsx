@@ -15,8 +15,8 @@ const teamMembers = [
         imageUrl: "/images/team/tyler.png",
         imageUrlHover: "/images/team/tyler-2.png",
         degree: "B.Sc. in Mathematics, NUS",
-        description: "Specializes in foundational concepts and problem-solving techniques for young learners.",
-        studentReview: "Mr. Tyler makes math so fun and easy to understand!",
+        description: "I’m passionate and driven about teaching my students Physics in a simple, concise yet interesting way! I’m always ready to give my all for my kids! Which is why I make it a point to build an individual relationship with every student, no matter how big my classes are. I’m sure to always make myself available for my students, even if it’s in the middle of the night (even at 4am 😇) , to help with any panic Physics calls! ",
+        studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
     },
     {
         name: "Sophia",
@@ -70,19 +70,18 @@ const Team = () => {
             <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" />
 
             <div className={styles.teamContainer}>
-                <h2 className={`${styles.sectionTitle} sectionTitle white-text-outline`}>Meet the
-                    {" "}
-                    <span className={styles.letterRainbow}>
-                        <span className={`blue`}>T</span>
-                        <span className={`red`}>u</span>
-                        <span className={`yellow`}>t</span>
-                        <span className={`teal`}>o</span>
-                        <span className={`red`}>r</span>
-                        <span className={`yellow`}>s</span>
-                    </span>
-                </h2>
 
                 <div className={styles.teamCardContainer}>
+                    <div className={styles.CtaCard}>
+                        <h2 className={styles.title}>
+                            Meet the Tutors
+                        </h2>
+                        <p className={styles.slogan}>
+                            Passionate educators striving to inspire the next
+                            generation.
+                        </p>
+
+                    </div>
                     {teamMembers.map((member, index) => (
                         <TeamCard
                             key={index}

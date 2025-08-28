@@ -15,7 +15,7 @@
   color: white;
 }
 
-.bannerOverlay{
+.bannerOverlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -24,16 +24,16 @@
 }
 
 .bannerContainer {
-    text-align: center;
-    z-index: 2;
-    position: relative;
-    width: 95%;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  width: 95%;
 
 }
 
 .slogan {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   color: #fff;
   text-shadow: variables.$text-shadow;
@@ -59,24 +59,21 @@
 
 
 // Media Queries for Responsiveness
-@media (min-width: 450px) {
-
-
-}
+@media (min-width: 450px) {}
 
 // Media Queries for Responsiveness
 @media (min-width: 768px) {
 
-  .banner{
+  .banner {
     height: 44vw;
     max-height: 720px;
   }
 
-  .slogan{
+  .slogan {
     font-size: 2.5rem;
   }
 
-  .ctaButton{
+  .ctaButton {
     font-size: 1.125rem;
   }
 
@@ -84,30 +81,30 @@
 
 // Media Queries for Responsiveness
 @media (min-width: 1024px) {
-  .banner{
+  .banner {
     // height: 40vh;
   }
 
-  .slogan{
+  .slogan {
     font-size: 3rem;
   }
 
-  .ctaButton{
+  .ctaButton {
     font-size: 1.3rem;
   }
 }
 
 // Media Queries for Responsiveness
 @media (min-width: 1280px) {
-  .banner{
+  .banner {
     height: 80vh;
   }
 
-  .slogan{
+  .slogan {
     font-size: 4rem;
   }
 
-  .ctaButton{
+  .ctaButton {
     font-size: 1.3rem;
   }
 }
