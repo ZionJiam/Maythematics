@@ -251,7 +251,7 @@
 .element {
     position: absolute;
     width: 100px;
-    z-index: 1;
+    z-index: 0;
     opacity: 0.5;
 
     @media (min-width: 768px) {
@@ -264,8 +264,9 @@
 
 .element1 {
     top: 10%;
-    left: -50px;
-    transform: rotate(-30deg);
+    left: -70px;
+    width: 200px;
+
 
 
     @media (min-width: 768px) {

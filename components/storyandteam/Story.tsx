@@ -46,12 +46,9 @@ const Story = () => {
 
     return (
         <section className={styles.story}>
-            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/minus.png" alt="Minus Design Element" />
+            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Design Element 7" />
             <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/multiply.png" alt="Multiply Design Element" />
-
             <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/divide.png" alt="Divide Design Element" />
-
-
             <img className={`${styles.element} ${styles.element4}`} src="/assets/elements/design-element-9.png" alt="Design Element 9" />
 
             <div className={styles.storyContainer}>
