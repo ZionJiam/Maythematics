@@ -4,8 +4,17 @@ import styles from './Story.module.scss';
 import React, { useEffect, useRef, useState } from "react";
 import TimelineDot from '../ui/TimelineDot';
 import SlideUpImage from "@/components/ui/SlideUpImage";
+import { motion, Variants } from "framer-motion";
 
 
+// const fadeInUp = {
+
+// };
+
+const fadeInUp: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    show: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+};
 
 const Story = () => {
 
@@ -37,10 +46,11 @@ const Story = () => {
 
     return (
         <section className={styles.story}>
-            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/divide.png" alt="Divide Design Element" />
-            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/minus.png" alt="Minus Design Element" />
+            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/minus.png" alt="Minus Design Element" />
+            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/multiply.png" alt="Multiply Design Element" />
 
-            <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/multiply.png" alt="Multiply Design Element" />
+            <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/divide.png" alt="Divide Design Element" />
+
 
             <img className={`${styles.element} ${styles.element4}`} src="/assets/elements/design-element-9.png" alt="Design Element 9" />
 
@@ -79,37 +89,36 @@ const Story = () => {
                             <div className={styles.subTimeline2}></div>
                         </div>
                     </div>
-                    <div className={`${styles.row} ${styles.rowOdd} ${styles.rowYellow}`}>
+                    <div className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
                         <TimelineDot styleColor='yellow' extendLine='left' />
                         <div className={`${styles.textWrapper}`}>
-                            <div className={`${styles.numbering}`}>
-                                <span>1</span>
-                            </div>
+
 
                             <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>1</span>
+                                </div>
                                 <h2>Home-Based Setup</h2>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
                         <div className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/banner1.jpg" alt="FLoating Design Element 3" />
-
+                            <img className={`${styles.image}`} src="/images/storyteam/image-1.png" alt="FLoating Design Element 3" />
                         </div>
-
                     </div>
                     <div className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
                         <TimelineDot styleColor='red' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
-                            <div className={`${styles.numbering}`}>
-                                <span>2</span>
-                            </div>
                             <SlideUpImage alt="Story Mascot 1" className={`${styles.storyMascot} ${styles.storyMascot1} ${styles.left}`} src="/assets/blue-mascot-2.png" />
                             <div className={`${styles.textInnerWrapper} ${styles.red}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>2</span>
+                                </div>
                                 <h2>Early Small <br />Group Classes</h2>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>                        </div>                        <div className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/banner1.jpg" alt="FLoating Design Element 3" />
+                            <img className={`${styles.image}`} src="/images/storyteam/image-2.png" alt="FLoating Design Element 3" />
 
                         </div>
 
@@ -118,16 +127,19 @@ const Story = () => {
                         <TimelineDot styleColor='blue' extendLine='left' />
 
                         <div className={`${styles.textWrapper}`}>
-                            <div className={`${styles.numbering}`}>
-                                <span>3</span>
-                            </div>
+
                             <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.png" />
 
                             <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>3</span>
+                                </div>
                                 <h2>Flagship Centre <br />(Opened in 2023)</h2>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
-                            </div>                        </div>                        <div className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/banner1.jpg" alt="FLoating Design Element 3" />
+                            </div>
+                        </div>
+                        <div className={styles.imageContainer}>
+                            <img className={`${styles.image}`} src="/images/storyteam/image-3.png" alt="FLoating Design Element 3" />
                         </div>
 
                     </div>
@@ -137,14 +149,17 @@ const Story = () => {
 
                         <div className={`${styles.textWrapper}`}>
                             <SlideUpImage alt="Story Mascot 3" className={`${styles.storyMascot} ${styles.left}`} src="/assets/red-mascot-2.png" />
-                            <div className={`${styles.numbering}`}>
-                                <span>4</span>
-                            </div>
+
                             <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>4</span>
+                                </div>
                                 <h2>New Bigger Centre <br />(2025 Expansion)</h2>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
-                            </div>                        </div>                        <div className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/banner1.jpg" alt="FLoating Design Element 3" />
+                            </div>
+                        </div>
+                        <div className={styles.imageContainer}>
+                            <img className={`${styles.image}`} src="/images/storyteam/image-4.png" alt="FLoating Design Element 3" />
                         </div>
 
                     </div>

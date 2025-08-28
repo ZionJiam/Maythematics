@@ -29,6 +29,25 @@ const teamMembers = [
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
+        name: "Sophia",
+        role: "Math Teacher (Primary 3-5)",
+        imageUrl: "/images/team/tyler.png",
+        imageUrlHover: "/images/team/tyler-2.png",
+
+        degree: "B.Sc. in Science Education, NTU",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+    {
+        name: "Tyler",
+        role: "Math Teacher (Primary 3-5)",
+        imageUrl: "/images/team/tyler.png",
+        imageUrlHover: "/images/team/tyler-2.png",
+        degree: "B.Sc. in Mathematics, NUS",
+        description: "Specializes in foundational concepts and problem-solving techniques for young learners.",
+        studentReview: "Mr. Tyler makes math so fun and easy to understand!",
+    },
+    {
         name: "Tyler",
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/tyler.png",
@@ -47,6 +66,8 @@ const Team = () => {
 
     return (
         <section className={styles.teamSection}>
+            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Minus Design Element" />
+            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" />
 
             <div className={styles.teamContainer}>
                 <h2 className={`${styles.sectionTitle} sectionTitle white-text-outline`}>Meet the
@@ -58,7 +79,6 @@ const Team = () => {
                         <span className={`teal`}>o</span>
                         <span className={`red`}>r</span>
                         <span className={`yellow`}>s</span>
-
                     </span>
                 </h2>
 
@@ -85,6 +105,7 @@ const Team = () => {
                     />
                 )}
             </div>
+
         </section >
     );
 };

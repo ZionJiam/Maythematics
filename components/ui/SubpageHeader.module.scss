@@ -19,12 +19,30 @@
 
 .headerWrapper {
     max-height: 1550px;
-    height: 60vh;
+    height: 35vh;
     min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    // Media Queries for Responsiveness
+    @media (min-width: 450px) {}
+
+    // Media Queries for Responsiveness
+    @media (min-width: 768px) {
+        height: 34vw;
+        max-height: 500px;
+
+    }
+
+    // Media Queries for Responsiveness
+    @media (min-width: 1280px) {
+        height: 60vh;
+
+    }
+
+
 }
 
 .sectionTitle {

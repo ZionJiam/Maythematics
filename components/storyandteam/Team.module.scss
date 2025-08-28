@@ -1,5 +1,7 @@
 .teamSection {
-    margin: 6rem auto;
+    margin: 3rem auto;
+    margin-bottom: 6rem;
+    position: relative;
 }
 
 .teamContainer {
@@ -10,9 +12,48 @@
 
 .teamCardContainer {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
     margin: 3rem auto;
+}
+
+.element {
+    position: absolute;
+    width: 100px;
+    z-index: 1;
+    opacity: 0.5;
+
+    @media (min-width: 768px) {
+        width: 150px;
+    }
+
+
+    /* or left top / right top depending on how you want it to pivot */
+}
+
+.element1 {
+    top: 10%;
+    left: -50px;
+    transform: rotate(-30deg);
+
+
+    @media (min-width: 768px) {
+        //left: -20px;
+    }
+
+}
+
+
+.element2 {
+    top: 70%;
+    right: -60px;
+    width: 150px;
+    transform: rotate(80deg);
+    transform-origin: center;
+
+    @media (min-width: 768px) {
+        width: 250px;
+    }
 }
