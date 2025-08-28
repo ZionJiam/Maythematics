@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import { usePathname } from "next/navigation"; // <-- Import hook
 import styles from './Navbar.module.scss';
 
 interface NavbarProps {
     onMobileNavOpen: () => void;
-    className?: string; // Add className to the interface
+    className?: string;
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname(); // <-- Get current path
 
     useEffect(() => {
         const onScroll = () => {
@@ -21,49 +23,65 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
+    const isActive = (path: string) => pathname.startsWith(path); // Match route
+
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} ${className || ''}`}>
             <div className={styles.navbarContainer}>
-                {/* Logo */}
                 <div className={`${styles.logo} ${scrolled ? styles.logoSmall : ""}`}>
                     <Link href="/">
                         <img src="/logo.png" alt="Maythematics Logo" />
                     </Link>
                 </div>
 
-                {/* Desktop Nav */}
                 <div className={styles.navbarNav}>
                     <div className={styles.dropdown}>
-                        <Link href="/about" className={`${styles.navLink} ${styles.linkRed}`}>
+                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/about") ? styles.active : ""}`}>
                             About Us
-                        </Link>
+                        </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContentRed}`}>
-                            <Link href="/about" className={styles.dropdownLink}>Story and Team</Link>
-                            <Link href="/about/space" className={styles.dropdownLink}>Our Space</Link>
+                            <Link href="/about" className={`${styles.dropdownLink} ${isActive("/about") ? styles.active : ""}`}>
+                                Story and Team
+                            </Link>
+                            <Link href="/about/space" className={`${styles.dropdownLink} ${isActive("/about/space") ? styles.active : ""}`}>
+                                Our Space
+                            </Link>
                         </div>
                     </div>
-                    <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow}`}>
+
+                    <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/testimonials") ? styles.active : ""}`}>
                         Testimonials
                     </Link>
+
                     <div className={styles.dropdown}>
-                        <Link href="/about" className={`${styles.navLink} ${styles.linkBlue}`}>
+                        <Link href="/lesson" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/lesson") ? styles.active : ""}`}>
                             Lessons
                         </Link>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContentBlue}`}>
-                            <Link href="/lesson/primary3to4" className={styles.dropdownLink}>Primary 3-4</Link>
-                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>Primary 5-6</Link>
-                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>Secondary 1-5</Link>
-                            <Link href="/lesson/primary5to6" className={styles.dropdownLink}>JC H1/H2</Link>
-
+                            <Link href="/lesson/primary3to4" className={`${styles.dropdownLink} ${isActive("/lesson/primary3to4") ? styles.active : ""}`}>
+                                Primary 3-4
+                            </Link>
+                            <Link href="/lesson/primary5to6" className={`${styles.dropdownLink} ${isActive("/lesson/primary5to6") ? styles.active : ""}`}>
+                                Primary 5-6
+                            </Link>
+                            <Link href="/lesson/secondary1to5" className={`${styles.dropdownLink} ${isActive("/lesson/secondary1to5") ? styles.active : ""}`}>
+                                Secondary 1-5
+                            </Link>
+                            <Link href="/lesson/jc" className={`${styles.dropdownLink} ${isActive("/lesson/jc") ? styles.active : ""}`}>
+                                JC H1/H2
+                            </Link>
                         </div>
                     </div>
-                    <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed}`}>
+
+                    <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contactus") ? styles.active : ""}`}>
                         Contact Us
                     </Link>
-                    <Link href="/career" className={`${styles.navLink} ${styles.linkYellow}`}>
+
+                    <Link href="/career" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/career") ? styles.active : ""}`}>
                         Career
                     </Link>
-                    <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue}`}>
+
+                    <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/workshop") ? styles.active : ""}`}>
                         Workshop
                     </Link>
                 </div>
@@ -78,7 +96,6 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                     </Link>
                 </div>
 
-                {/* Hamburger */}
                 <div className={styles.mobileMenuButton}>
                     <button
                         type="button"

@@ -232,7 +232,7 @@
 
 @media (min-width: 1280px) {
 
-  .navLink{
+  .navLink {
     font-size: 1.125rem;
   }
 
@@ -240,4 +240,22 @@
     padding: 0.75rem 2.25rem;
     font-size: 1.125rem;
   }
+}
+
+.linkRed.active {
+  color: variables.$color-red; // or highlight color
+  border-bottom: 2px solid variables.$color-red;
+  ;
+}
+
+.linkYellow.active {
+  color: variables.$color-yellow; // or highlight color
+  border-bottom: 2px solid variables.$color-yellow;
+  ;
+}
+
+.linkBlue.active {
+  color: variables.$color-blue; // or highlight color
+  border-bottom: 2px solid variables.$color-blue;
+  ;
 }

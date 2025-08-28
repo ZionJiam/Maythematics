@@ -4,9 +4,11 @@
 .mobileNavbar {
   position: fixed;
   top: 0;
-  left: -75%; /* Start off-screen by 75% */
-  width: 75%; /* Occupy 75% of the screen width */
-  max-width:280px;
+  left: -75%;
+  /* Start off-screen by 75% */
+  width: 75%;
+  /* Occupy 75% of the screen width */
+  max-width: 280px;
   height: 100%;
   background-color: #fff;
   transition: left 0.3s ease-in-out;
@@ -43,31 +45,31 @@
   font-size: 18px;
   color: $color-text;
 
-  
+
 }
 
 .ctaButton {
   text-align: center;
   width: 100%;
 
-  a{
-  background-color: $color-red;
-  color: #ffffff;
+  a {
+    background-color: $color-red;
+    color: #ffffff;
     width: 100%;
 
-  padding: 0.75rem 0;
-  border-radius: 200px;
-  font-size: 1.125rem;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  transition: background-color 0.2s ease-in-out;
+    padding: 0.75rem 0;
+    border-radius: 200px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
 
-  &:hover {
-    background-color: $color-teal;
+    &:hover {
+      background-color: $color-teal;
+    }
   }
-}
 
 }
 
@@ -126,9 +128,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-weight:300;
+  font-weight: 300;
   max-height: 0;
-  margin-top:0;
+  margin-top: 0;
   overflow: hidden;
   // transition: margin-top 0.75s ease, max-height 1s ease, opacity 1s ease;
   opacity: 0;
@@ -136,7 +138,7 @@
 
 .submenuOpen {
   max-height: 200px; // Adjust height as needed to fit your content
-  margin-top:1rem;
+  margin-top: 1rem;
   opacity: 1;
 }
 
