@@ -15,7 +15,8 @@
 }
 
 .modalContent.open {
-    max-height: 60%;
+    max-height: 70%;
+    opacity: 1;
 
     @media (min-width: 768px) {
         max-height: 60vh;
@@ -34,7 +35,10 @@
     flex-direction: column;
     overflow: hidden;
     height: auto; // Adjust as needed
-    transition: all 0.4s ease;
+    opacity: 0;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+
+
 
 
     position: absolute;
@@ -49,6 +53,8 @@
         position: relative;
         width: 90%;
         bottom: auto;
+        transition: opacity 0.4s ease;
+
     }
 
 }
