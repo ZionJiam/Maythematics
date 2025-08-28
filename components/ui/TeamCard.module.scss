@@ -3,6 +3,7 @@
 
 .teamCard {
     position: relative;
+    z-index: 1;
     width: 95%;
     aspect-ratio: 3 / 4; // Maintains height as 4/3 of the width
     // margin-bottom: 300px;
