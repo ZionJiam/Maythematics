@@ -28,7 +28,8 @@ const TeamCard: React.FC<TeamCardProp> = ({
     degree,
     description,
     studentReview,
-    onClick
+    onClick,
+    ...rest
 }) => {
 
     const [bgImage, setBgImage] = useState(imageUrl);
@@ -38,6 +39,7 @@ const TeamCard: React.FC<TeamCardProp> = ({
         <div
             className={styles.teamCard}
             onClick={onClick}
+            {...rest}
         >
             {/* <img className={`${styles.element} ${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" /> */}
 

@@ -3,6 +3,8 @@
 import styles from './Story.module.scss';
 import React, { useEffect, useRef, useState } from "react";
 import TimelineDot from '../ui/TimelineDot';
+import TimelineLine from '../ui/TimelineLine';
+
 import SlideUpImage from "@/components/ui/SlideUpImage";
 import { motion, Variants } from "framer-motion";
 
@@ -53,7 +55,7 @@ const Story = () => {
                 </p>
 
                 <div className={styles.videoContainer}>
-                    <div className={styles.videoWrapper}>
+                    <div className={styles.videoWrapper} data-aos="fade-in">
                         <iframe
                             src="https://www.youtube.com/embed/MBLKwxIfp1U"
                             title="YouTube video player"
@@ -68,8 +70,8 @@ const Story = () => {
 
                     <div className={styles.videoOverlay}>
                         {/* <SlideUpImage alt="Red Mascot Teaching" className={styles.videoMascot} src="/assets/red-mascot-teach.png" /> */}
-                        <img alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.png" />
-                        <img alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
+                        <img data-aos="fade-right" alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.png" />
+                        <img data-aos="fade-left" alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
 
                         {/* Content you want to show overlapping */}
                     </div>
@@ -96,9 +98,8 @@ const Story = () => {
 
                     </div>
                     <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
-                        <TimelineDot styleColor='yellow' extendLine='left' />
+                        <TimelineDot data-aos="fade-up" styleColor='yellow' extendLine='left' />
                         <div className={`${styles.textWrapper}`}>
-
 
                             <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
                                 <div className={`${styles.numbering}`}>
@@ -108,7 +109,7 @@ const Story = () => {
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
-                        <div className={styles.imageContainer}>
+                        <div data-aos="fade-right" className={styles.imageContainer}>
                             <img className={`${styles.image}`} src="/images/storyteam/image-1.png" alt="FLoating Design Element 3" />
                         </div>
                     </div>
@@ -123,9 +124,9 @@ const Story = () => {
                                 </div>
                                 <h2>Early Small <br />Group Classes</h2>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
-                            </div>                        </div>                        <div className={styles.imageContainer}>
+                            </div>                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
                             <img className={`${styles.image}`} src="/images/storyteam/image-2.png" alt="FLoating Design Element 3" />
-
                         </div>
 
                     </div>
@@ -133,6 +134,7 @@ const Story = () => {
                         <TimelineDot styleColor='blue' extendLine='left' />
 
                         <div className={`${styles.textWrapper}`}>
+                            <TimelineLine styleColor='blue' extendLine='left' />
 
                             <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.png" />
 
@@ -144,7 +146,7 @@ const Story = () => {
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
-                        <div className={styles.imageContainer}>
+                        <div data-aos="fade-right" className={styles.imageContainer}>
                             <img className={`${styles.image}`} src="/images/storyteam/image-3.png" alt="FLoating Design Element 3" />
                         </div>
 
@@ -164,7 +166,7 @@ const Story = () => {
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
-                        <div className={styles.imageContainer}>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
                             <img className={`${styles.image}`} src="/images/storyteam/image-4.png" alt="FLoating Design Element 3" />
                         </div>
 

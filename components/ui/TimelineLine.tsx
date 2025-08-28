@@ -17,11 +17,7 @@ const TimelineDot: React.FC<TimelineDotProp> = ({ styleColor, extendLine }) => {
     // }
 
     return (
-        <div className={`${styles.dotContainer} ${styles[styleColor]} ${styles[extendLine]}`}>
-            <div className={`${styles.line}`}></div>
-            <div className={`${styles.dot} ${styles.dot1}`}></div>
-            <div className={`${styles.dot} ${styles.dot2}`}></div>
-            <div className={`${styles.dot} ${styles.dot3}`}></div>
+        <div className={`${styles.line} ${styles[styleColor]} ${styles[extendLine]}`}>
         </div >
     );
 };

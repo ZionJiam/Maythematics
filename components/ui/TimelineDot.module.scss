@@ -17,13 +17,25 @@
     transform: translate(-50%, -50%);
 }
 
+
+.right {
+    .line {
+        right: 0;
+    }
+}
+
+.left {
+    .line {
+        left: 0;
+    }
+}
+
 .line {
     position: absolute;
     top: 50%;
-    left: 0;
-    width: 300px;
+    width: 100px;
     height: 6px;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     background-color: aqua;
 }
 
@@ -76,3 +88,15 @@
         background-color: $color-yellow;
     }
 }
+
+// .extendLine {
+//     .left {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         // transform: translate(-50%, -50%);
+//         height: 2px;
+//         width: 5px;
+//         background-color: aqua;
+//     }
+// }

@@ -72,7 +72,7 @@ const Team = () => {
             <div className={styles.teamContainer}>
 
                 <div className={styles.teamCardContainer}>
-                    <div className={styles.CtaCard}>
+                    <div data-aos="fade-in" className={styles.CtaCard}>
                         <h2 className={styles.title}>
                             Meet the Tutors
                         </h2>
@@ -93,6 +93,9 @@ const Team = () => {
                             description={member.description}
                             studentReview={member.studentReview}
                             onClick={() => setSelectedMember(member)}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
+
                         />
                     ))}
                 </div>
