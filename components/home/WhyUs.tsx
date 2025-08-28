@@ -8,7 +8,7 @@ const reasons = [
         title: 'Experienced Tutors Who Care',
         description: 'Our dedicated team brings years of classroom and tutoring experience — plus the patience and strategies that make learning click.',
         cta: 'DISCOVER OUR TUTORS >',
-        href: '/team',
+        href: '/about#team',
     },
     {
         image: '/images/banner2.jpg',

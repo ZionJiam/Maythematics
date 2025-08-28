@@ -65,7 +65,7 @@ const Team = () => {
 
 
     return (
-        <section className={styles.teamSection}>
+        <section id="team" className={styles.teamSection}>
             <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Minus Design Element" />
             <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" />
 
