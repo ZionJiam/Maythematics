@@ -3,20 +3,8 @@
 import styles from './Story.module.scss';
 import React, { useEffect, useRef, useState } from "react";
 import TimelineDot from '../ui/TimelineDot';
-import TimelineLine from '../ui/TimelineLine';
-
 import SlideUpImage from "@/components/ui/SlideUpImage";
-import { motion, Variants } from "framer-motion";
 
-
-// const fadeInUp = {
-
-// };
-
-const fadeInUp: Variants = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
-};
 
 const Story = () => {
 
@@ -134,7 +122,6 @@ const Story = () => {
                         <TimelineDot styleColor='blue' extendLine='left' />
 
                         <div className={`${styles.textWrapper}`}>
-                            <TimelineLine styleColor='blue' extendLine='left' />
 
                             <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.png" />
 
