@@ -36,9 +36,17 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                         <img src={member.imageUrl} alt={member.name} />
                     </div>
                     <div className={styles.textContainer}>
-                        <h2 className={styles.name}>{member.name}</h2>
-                        <h4 className={styles.role}>{member.role}</h4>
-                        <p className={styles.degree}>{member.degree}</p>
+                        <div className={styles.mainteamInfoWrapper}>
+                            <div className={styles.teamImageWrapper}>
+                                <img src={member.imageUrl} alt={member.name} />
+                            </div>
+                            <div className={styles.mainInfo}>
+                                <h2 className={styles.name}>{member.name}</h2>
+                                <h4 className={styles.role}>{member.role}</h4>
+                                <p className={styles.degree}>{member.degree}</p>
+                            </div>
+
+                        </div>
                         <div className={styles.teaches}>
                             <h6>Teaches:</h6>
                             <div className={styles.teachLevel}>P1-P2</div>

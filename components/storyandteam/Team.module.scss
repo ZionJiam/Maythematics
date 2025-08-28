@@ -9,7 +9,7 @@
 
 .teamContainer {
     max-width: 1124px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@
 
 
 .CtaCard {
-    width: 300px;
+    width: 95%;
     height: 400px;
     // margin-bottom: 300px;
     border-radius: 10px;
@@ -78,6 +78,10 @@
     padding: 1rem 1.5rem;
     color: white;
     z-index: 2;
+
+    @media (min-width: 768px) {
+        width: 300px;
+    }
 
     .title {
         font-size: 2rem;

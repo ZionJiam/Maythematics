@@ -3,12 +3,15 @@
 
 .teamCard {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 95%;
+    aspect-ratio: 3 / 4; // Maintains height as 4/3 of the width
     // margin-bottom: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
+    @media (min-width: 768px) {
+        width: 300px;
+    }
 
     &:hover {
         .cardDesignElement {
