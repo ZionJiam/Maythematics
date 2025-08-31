@@ -1,0 +1,166 @@
+@use '../../app/styles/variables' as *;
+
+
+
+
+.slogan {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.ourSpace {
+    padding: 4rem 2rem;
+    // background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // max-width: 1124px;
+    // width: 95%;
+    margin: 0 auto;
+    position: relative;
+
+    // Overlay color at bottom half
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        left: 0;
+        width: 100%;
+        height: 50%; // Half of container
+        background-color: rgba(0, 0, 0, 0.4); // Change to desired color
+        pointer-events: none; // Ensure it doesn't block interactions
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .row {
+        display: flex;
+        // align-items: stretch; // makes children match the tallest item
+        // justify-content: space-between;
+        // gap: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .red {
+            // background-color: $color-red-light;
+
+            h3 {
+                color: $color-red-dark
+            }
+        }
+
+        .blue {
+            // background-color: $color-blue-light;
+
+            h3 {
+                color: $color-blue-dark
+            }
+        }
+
+        .yellow {
+            // background-color: $color-yellow-light;
+
+            h3 {
+                color: $color-yellow-dark
+            }
+        }
+
+        .textContainer {
+            // border-radius: 10px;
+            // color: white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            // Media Queries for Responsiveness
+            @media (min-width: 768px) {
+                width: 45%;
+
+            }
+
+
+            .textInnerContainer {
+                padding: 2rem 1rem;
+
+
+                // Media Queries for Responsiveness
+                @media (min-width: 768px) {
+                    padding: 1.5rem;
+
+                }
+
+
+            }
+
+
+            h3 {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+                color: $color-red-dark;
+                width: 100%;
+
+                // Media Queries for Responsiveness
+                @media (min-width: 768px) {
+                    font-size: 1.75rem;
+
+                }
+
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+                font-weight: 300;
+
+
+                // Media Queries for Responsiveness
+                @media (min-width: 768px) {
+                    font-size: 1.25rem;
+
+                }
+
+            }
+        }
+
+        .imageContainer {
+            aspect-ratio: 4/4;
+            // width: 100%;
+            // height: 400px; // Adjust height as needed
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            // Media Queries for Responsiveness
+            @media (min-width: 768px) {
+                width: 55%;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column !important;
+        text-align: center;
+    }
+}

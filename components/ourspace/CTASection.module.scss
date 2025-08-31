@@ -3,11 +3,14 @@
 
 .ctaSection {
     background-color: #fffcf3;
-
     text-align: center;
-    padding: 6rem 0;
+    padding-bottom: 6rem;
+
     position: relative;
     margin-bottom: 2rem;
+    margin-top: 9rem;
+
+
 
     @media (min-width: 768px) {
         margin-bottom: 5rem;
@@ -31,17 +34,17 @@
 
     .elementRight {
         position: absolute;
-        width: 200px;
+        width: 150px;
         height: auto;
         right: -80px;
 
         @media (min-width: 768px) {
-            width: 300px;
+            width: 250px;
             right: -90px;
         }
 
         @media (min-width: 1024px) {
-            width: 400px;
+            // width: 0px;
         }
 
     }
@@ -58,11 +61,12 @@
         }
 
         @media (min-width: 1024px) {
-            width: 380px;
+            // width: 350px;
         }
 
     }
 }
+
 
 
 .ctaTextWrapper {
@@ -74,6 +78,13 @@
 
     .ctaParagraph {
         color: $color-text;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        @media (min-width: 1024px) {
+            font-size: 2rem;
+
+        }
 
     }
 }
@@ -133,7 +144,7 @@
     width: 100%;
 
     @media (min-width: 768px) {
-        bottom: -76px;
+        bottom: -100px;
     }
 
     @media (min-width: 1024px) {

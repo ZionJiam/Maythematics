@@ -59,7 +59,7 @@
 .card {
     display: block;
     align-items: center;
-    background: $color-yellow-light;
+    background: $color-yellow;
     // padding: 1.3rem;
     border-radius: 10px;
     max-width: 1024px;
@@ -88,7 +88,7 @@
 
 .familyName {
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 

@@ -1,0 +1,113 @@
+.carouselWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navButton {
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border: none;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.75);
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.stage {
+    position: relative;
+    flex: 1 1 auto;
+    height: 420px;
+    /* portrait stage height */
+    perspective: 1000px;
+    overflow: visible;
+    /* we want sides visible outside center */
+    touch-action: pan-y;
+    /* allow vertical page scroll */
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 320px;
+    /* portrait ratio feel */
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    transition: transform 450ms ease, opacity 450ms ease, z-index 0ms linear 0ms;
+    will-change: transform, opacity;
+    pointer-events: none;
+    /* avoid accidental taps on side cards */
+}
+
+.visible {
+    pointer-events: auto;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* ——— Make center pop a bit more ——— */
+.card[style*="scale(1.1)"] {
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+}
+
+/* ——— Responsive ——— */
+@media (max-width: 900px) {
+    .stage {
+        height: 380px;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+/* On small screens, hide the ±2 ring so you see exactly 3 cards */
+@media (max-width: 640px) {
+    .stage {
+        height: 340px;
+    }
+
+    .card {
+        width: 180px;
+        height: 270px;
+    }
+
+    /* If transform includes ±2 * spacing (~440px), fade them out */
+    .card {
+        /* This is a hint; we're already setting opacity=0 for farther items in TSX.
+       Keeping here to ensure they don't peek on small widths. */
+    }
+}
+
+
+.background {
+    position: absolute;
+    width: 100%;
+    background-color: aqua;
+    bottom: 0;
+}

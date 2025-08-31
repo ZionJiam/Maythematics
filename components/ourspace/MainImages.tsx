@@ -33,19 +33,8 @@ const sections: Section[] = [
     },
 ];
 
-const features = [
-    { img: "/images/banner2.jpg", text: "Near MRT" },
-    { img: "/images/banner1.jpg", text: "Nice Ambient Light" },
-    { img: "/images/banner3.jpg", text: "Big TV Screen" },
-    { img: "/images/banner2.jpg", text: "Comfortable Table & Seats" },
-    { img: "/images/banner1.jpg", text: "Colorful Vibrant Design" },
-    { img: "/images/banner3.jpg", text: "Free Refreshments & Snacks" },
-    { img: "/images/banner3.jpg", text: "Free Refreshments & Snacks" },
-    { img: "/images/banner3.jpg", text: "Free Refreshments & Snacks" },
 
-];
-
-export default function OurSpace() {
+export default function MainImages() {
     return (
         <section className={styles.ourSpace}>
             <p className={`text-lg ${styles.slogan}`}>
@@ -72,30 +61,6 @@ export default function OurSpace() {
                     </div>
                 </div>
             ))}
-
-
-            <div className={styles.container}>
-                <div className={styles.imageRow}>
-                    <div className={styles.imageWrapper}>
-                        <img src="/images/space/test.png" alt="Image 1" />
-                    </div>
-                    <div className={styles.imageWrapper}>
-                        <img src="/images/space/test.png" alt="Image 2" />
-                    </div>
-                    <div className={styles.imageWrapper}>
-                        <img src="/images/space/test.png" alt="Image 3" />
-                    </div>
-                    <div className={styles.imageWrapper}>
-                        <img src="/images/space/test.png" alt="Image 4" />
-                    </div>
-                </div>
-                <div className={styles.textSection}>
-                    <h2>Your Inspiring Slogan Here</h2>
-                    <p>Short description about the images or your brand's message.</p>
-                </div>
-            </div>
-
-
         </section>
     );
 }
