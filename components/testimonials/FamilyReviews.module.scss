@@ -1,0 +1,25 @@
+.familyReviews {
+    text-align: center;
+    padding: 4rem 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .quotes {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .quote {
+        font-style: italic;
+        background: #fafafa;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+}

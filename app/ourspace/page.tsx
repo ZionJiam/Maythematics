@@ -1,6 +1,7 @@
 import styles from './page.module.css'
 // import OurSpaceSection from '@/components/ourspace/ourspace'
 import SubPageHeader from '@/components/ui/SubpageHeader'
+
 import MainImages from '@/components/ourspace/MainImages'
 
 import SideImages from '@/components/ourspace/SideImages'

@@ -59,7 +59,8 @@
 .card {
     display: block;
     align-items: center;
-    background: $color-yellow;
+    // background: $color-yellow;
+    // background-color: #eef;
     // padding: 1.3rem;
     border-radius: 10px;
     max-width: 1024px;
@@ -90,6 +91,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: $color-red-dark;
 }
 
 .quote {

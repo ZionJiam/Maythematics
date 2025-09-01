@@ -1,5 +1,5 @@
 "use client";
-import styles from "./ourspace.module.scss";
+import styles from "./MainImages.module.scss";
 import { motion } from "framer-motion";
 import SpaceCarousel from "../ui/SpaceCarousel"
 

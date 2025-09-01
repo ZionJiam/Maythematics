@@ -1,0 +1,24 @@
+.myMasonryGrid {
+    display: flex;
+    margin: 0 auto;
+    // margin-left: -15px;
+    /* gutter size offset */
+    max-width: 1124px;
+    width: 95%;
+
+}
+
+.myMasonryGridColumn {
+    padding-left: 15px;
+    background-clip: padding-box;
+}
+
+.gridItem {
+    margin-bottom: 15px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+    }
+}
