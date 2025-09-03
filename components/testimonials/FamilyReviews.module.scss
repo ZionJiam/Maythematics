@@ -1,25 +1,43 @@
-.familyReviews {
-    text-align: center;
+.studentReview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
     padding: 4rem 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.videoContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 280px;
+    /* Narrow width for vertical style */
+    height: 500px;
+    /* Taller height for TikTok style */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.textContainer {
+    flex: 1;
+    max-width: 500px;
 
     h2 {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
-    .quotes {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-    .quote {
-        font-style: italic;
-        background: #fafafa;
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #444;
     }
 }

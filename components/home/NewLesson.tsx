@@ -1,0 +1,99 @@
+"use client";
+
+import React from "react";
+import styles from "./NewLesson.module.scss";
+import Link from "next/link";
+
+const lessons = [
+    {
+        title: 'Primary 1–2',
+        description:
+            'Strong fundamentals and the right learning mindset are cultivated from the start. With a maximum of 4 students per class, every child receives close guidance and attention to nurture confidence and curiosity in mathematics.',
+        duration: '1.5 hours',
+        classSize: '4',
+        image: '/images/elementaryschool.jpg',
+    },
+    {
+        title: 'Primary 3–4',
+        description:
+            'Key mathematical concepts are strengthened and expanded, with an emphasis on problem-solving skills. Small groups of 6–8 students provide opportunities for interactive learning, peer support, and personalised feedback.',
+        duration: '1.5 hours',
+        classSize: '6-8',
+        image: '/images/elementaryschool.jpg',
+    },
+    {
+        title: 'Primary 5–6',
+        description:
+            'Challenging problem sums and higher-order thinking questions are introduced to build confidence and prepare students for the PSLE. Classes of 6–10 balance individual guidance with collaborative learning. ',
+        duration: '2 hours',
+        classSize: '6-10',
+        image: '/images/elementary2.jpg',
+    },
+    {
+        title: `Secondary Math 
+        (Sec 1–5)`,
+        description:
+            'Algebra, geometry, graphs, and advanced problem-solving are taught with structured strategies to tackle exam-style questions effectively. Class sizes of 8–14 encourage discussion, exposure to varied question types, and development of analytical thinking. ',
+        duration: '2 hours',
+        classSize: '8-14',
+        image: '/images/middleschool.jpg',
+    },
+    {
+        title: 'JC Math (H1/H2)',
+        description:
+            'Rigorous training in H1 and H2 Mathematics ensures mastery of advanced topics such as calculus, statistics, and complex numbers. Classes are designed to sharpen conceptual understanding, problem-solving speed, and exam readiness in groups of 8–14 students.',
+        duration: '2 hours',
+        classSize: '8-14',
+        image: '/images/highschol.jpg',
+    },
+];
+
+const NewLesson = () => {
+    return (
+        <section className={styles.lesson}>
+            <h2 className={`sectionTitle`}>
+                Our{" "}
+                <span className={styles.letterRainbow}>
+                    <span className={`blue`}>S</span>
+                    <span className={`red`}>p</span>
+                    <span className={`yellow`}>e</span>
+                    <span className={`teal`}>c</span>
+                    <span className={`red`}>i</span>
+                    <span className={`blue`}>a</span>
+                    <span className={`yellow`}>l</span>
+                    <span className={`teal`}>i</span>
+                    <span className={`red`}>z</span>
+                    <span className={`blue`}>e</span>
+                    <span className={`yellow`}>d</span>
+                </span>{" "}
+                Programme
+            </h2>
+
+            <div className={styles.lessonWrapper}>
+                {lessons.map((lesson, index) => (
+                    <div className={`${styles.lessonContainer}`} key={index}>
+                        <div className={styles.imageContainer}
+                            style={{ backgroundImage: `url(${lesson.image})` }}>
+                            {/* <img src={lesson.image} alt={`${lesson.title} Image`} /> */}
+                        </div>
+                        <div className={styles.textContainer}>
+                            <div className={styles.textContent}>
+                                <h2 className="text-xl">{lesson.title}</h2>
+                                <div className={styles.descriptionContainer}>
+                                    <p className={styles.description}>{lesson.description}</p>
+                                    <p className={styles.classInfo}><span className='bold'>Duration: </span>{lesson.duration}</p>
+                                    <p className={styles.classInfo}><span className='bold'>Class size: </span> {lesson.classSize}</p>
+                                </div>
+
+                            </div>
+                            <Link href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
+                        </div>
+                    </div>
+                ))
+                }
+            </div>
+        </section >
+    );
+};
+
+export default NewLesson;

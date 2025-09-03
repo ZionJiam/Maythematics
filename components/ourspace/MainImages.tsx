@@ -40,27 +40,8 @@ export default function MainImages() {
             <p className={`text-lg ${styles.slogan}`}>
                 At our center, we believe that the right environment enhances learning.
                 From cozy study corners to high-tech classrooms, our space is designed
-                to help students stay focused and motivated.            </p>
-
-            {sections.map((section, index) => (
-                <div
-                    key={index}
-                    className={`${styles.row} ${index % 2 === 1 ? styles.reverse : ""}`}
-                >
-                    <div className={`${styles.textContainer} ${styles[section.bgColor]}`}>
-                        <div className={styles.textInnerContainer}>
-                            <h3>{section.title}</h3>
-                            <p>{section.description}</p>
-                        </div>
-                    </div>
-                    <div className={styles.imageContainer}
-                        style={{ backgroundImage: `url(${section.imageUrl})` }}
-
-                    >
-                        {/* <img src={section.imageUrl} alt={section.title} /> */}
-                    </div>
-                </div>
-            ))}
+                to help students stay focused and motivated.
+            </p>
         </section>
     );
 }

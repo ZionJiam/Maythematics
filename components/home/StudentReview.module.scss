@@ -1,0 +1,67 @@
+@use '../../app/styles/variables' as *;
+
+
+.studentReview {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 3rem;
+    padding: 6rem 2rem;
+    margin: 0 auto;
+    max-width: 1124px;
+    width: 95%;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        flex-direction: row-reverse;
+    }
+}
+
+.videoContainer {
+    // flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    min-width: 280px;
+    aspect-ratio: 9/12;
+    border-radius: 10px;
+    /* Narrow width for vertical style */
+    /* Taller height for TikTok style */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.textContainer {
+    // flex: 1;
+    max-width: 500px;
+
+    h2 {
+        // font-size: 2rem;
+        // margin-bottom: 1rem;
+        text-align: center;
+        color: $color-red-dark;
+        margin-bottom: 1rem;
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: $color-text;
+        font-weight: 300;
+        margin-bottom: 2rem;
+
+    }
+
+    .button {
+        font-size: 1rem;
+        // float: right;
+    }
+}

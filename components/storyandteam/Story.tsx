@@ -38,10 +38,6 @@ const Story = () => {
         <section className={styles.story}>
 
             <div className={styles.storyContainer}>
-                <p className={`text-lg ${styles.slogan}`}>
-                    It all started from the passion of sharing Math Knowledge to help as many students & parents as possible.
-                </p>
-
                 <div className={styles.videoContainer}>
                     <div className={styles.videoWrapper} data-aos="fade-in">
                         <iframe

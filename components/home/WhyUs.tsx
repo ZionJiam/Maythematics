@@ -5,22 +5,22 @@ import Link from 'next/link';
 const reasons = [
     {
         image: '/images/banner1.jpg',
-        title: 'Experienced Tutors Who Care',
-        description: 'Our dedicated team brings years of classroom and tutoring experience — plus the patience and strategies that make learning click.',
+        title: 'Tutors Who Truly Get Students',
+        description: 'A dynamic team of tutors who make Math clear, relatable, and even enjoyable — because we’ve been in your shoes not too long ago.',
         cta: 'DISCOVER OUR TUTORS >',
         href: '/about#team',
     },
     {
         image: '/images/banner2.jpg',
-        title: 'Mastery of Paper 2 Problem Sums',
-        description: 'We place strong emphasis on Paper 2 questions, giving students the tools and techniques to tackle complex problem sums with confidence.',
+        title: 'Master the Heuristics ',
+        description: 'We empower students to apply proven heuristics — powerful strategies that make even the toughest problem sums manageable.',
         cta: 'LEARN ABOUT OUR LESSONS >',
         href: '/lessons',
     },
     {
         image: '/images/banner3.jpg',
-        title: 'Proven Results in Just 6 Months',
-        description: '9 in 10 students show measurable improvement within half a year — often with higher grades and renewed confidence in math.',
+        title: 'Visible Results in Just Half a Year',
+        description: 'With the right strategies, 9 in 10 students achieve better results in 6 months or less.',
         cta: 'SEE MORE RESULTS >',
         href: '/results',
     }

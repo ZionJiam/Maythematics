@@ -33,7 +33,7 @@
 
   .reviewContainer {
     background-color: $color-blue;
-    padding: 3rem 0;
+    padding: 3rem 0 3rem 0;
     position: relative;
     z-index: 2;
     margin-top: -1px;
@@ -63,10 +63,9 @@
     min-width: 250px;
     max-width: 320px;
     flex: 0 0 auto;
-    background-color: #f5f5f5;
+    background-color: #fff;
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
     transition: transform 0.3s ease;
     display: flex;

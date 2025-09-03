@@ -1,5 +1,7 @@
 import styles from './page.module.css'
 import StorySection from '@/components/storyandteam/Story'
+import Slogan from '@/components/ui/Slogan'
+
 import VisionSection from '@/components/storyandteam/Vision'
 import TeamSection from '@/components/storyandteam/Team'
 
@@ -10,6 +12,7 @@ export default function About() {
   return (
     <main className={styles.main}>
       <SubPageHeader color="red" header="Story and Team" />
+      <Slogan />
       <StorySection />
       {/* <VisionSection /> */}
       <TeamSection />

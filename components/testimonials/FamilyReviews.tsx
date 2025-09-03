@@ -1,23 +1,31 @@
-// components/testimonials/FamilyReviews.tsx
+"use client";
+
+import React from "react";
 import styles from "./FamilyReviews.module.scss";
 
-const reviews = [
-    { family: "Wong Family", quote: "Teacher May helped my daughter excel!" },
-    { family: "Tan Family", quote: "We saw amazing progress in 3 months!" },
-];
-
-export default function FamilyReviews() {
+const StudentReview = () => {
     return (
-        <section className={styles.familyReviews}>
-            <h2>What Families Say</h2>
-            <div className={styles.quotes}>
-                {reviews.map((r, i) => (
-                    <blockquote key={i} className={styles.quote}>
-                        <p>{r.quote}</p>
-                        <cite>— {r.family}</cite>
-                    </blockquote>
-                ))}
+        <section className={styles.studentReview}>
+            <div className={styles.videoContainer}>
+                <iframe
+                    className={styles.video}
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    title="Student Review"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                />
+            </div>
+
+            <div className={styles.textContainer}>
+                <h2>What Our Students Say</h2>
+                <p>
+                    Hear directly from our students about their learning journey, progress,
+                    and how our programme helped them achieve their academic goals.
+                </p>
             </div>
         </section>
     );
-}
+};
+
+export default StudentReview;

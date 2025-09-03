@@ -33,14 +33,16 @@ const Banner = () => {
       }}>
       <div className={styles.bannerContainer}>
         <h1 className={`${styles.slogan}`}>
-          <span className={styles.red}>3</span>
+
+          8 out of 10 students from different corners of Singapore choose to travel weekly for our Math tuition.
+          {/* <span className={styles.red}>3</span>
           <span className={styles.yellow}>5</span>
           <span className={styles.blue}>0</span>
           <span className={styles.blue}>+</span>
           {" "}Happy Students <br />Since{" "}
           <span className={styles.red}>2</span>
           <span className={styles.yellow}>0</span>
-          <span className={styles.blue}>20</span>
+          <span className={styles.blue}>20</span> */}
         </h1>
         <Link href="/about" className={`buttonYellow ctaButton`}>
           Find out why students choose us
