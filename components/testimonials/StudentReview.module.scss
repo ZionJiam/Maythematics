@@ -41,12 +41,21 @@
 }
 
 .video {
-    min-width: 280px;
     aspect-ratio: 9/12;
     border-radius: 10px;
     /* Narrow width for vertical style */
     /* Taller height for TikTok style */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    width: 100%;
+    aspect-ratio: 3/4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    @media (min-width: 768px) {
+        width: 300px;
+
+    }
 }
 
 .textContainer {

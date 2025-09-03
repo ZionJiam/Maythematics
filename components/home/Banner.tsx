@@ -34,7 +34,12 @@ const Banner = () => {
       <div className={styles.bannerContainer}>
         <h1 className={`${styles.slogan}`}>
 
-          8 out of 10 students from different corners of Singapore choose to travel weekly for our Math tuition.
+          <span className={styles.red}>8</span> out of
+          <span className={styles.yellow}> 10 </span> students from
+          <span className={styles.blue}> different corners of Singapore</span> choose to travel
+          <span className={styles.red}> weekly </span> for our
+          <span className={styles.yellow}> Math tuition</span>.
+
           {/* <span className={styles.red}>3</span>
           <span className={styles.yellow}>5</span>
           <span className={styles.blue}>0</span>
@@ -44,8 +49,8 @@ const Banner = () => {
           <span className={styles.yellow}>0</span>
           <span className={styles.blue}>20</span> */}
         </h1>
-        <Link href="/about" className={`buttonYellow ctaButton`}>
-          Find out why students choose us
+        <Link href="/testimonials" className={`buttonYellow ctaButton`}>
+          Discover Why
         </Link>
       </div>
       <div className={styles.bannerOverlay}></div>

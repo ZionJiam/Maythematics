@@ -42,10 +42,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 100%;
     aspect-ratio: 3/4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+
+    @media (min-width: 768px) {
+        width: 300px;
+
+    }
 
 }
 
