@@ -31,7 +31,8 @@ const WhyUsSection = () => {
         <section className={styles.whyUs}>
             <div className={styles.grid}>
                 {reasons.map((reason, index) => (
-                    <div key={index} className={styles.item}>
+                    <div data-aos="fade-up" data-aos-delay={index * 150}
+                        key={index} className={styles.item}>
                         <div className={styles.imageWrapper}>
                             <img src={reason.image} alt={reason.title} />
                         </div>

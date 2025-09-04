@@ -103,9 +103,9 @@ const GoogleReviews = () => {
             />
 
             <div className={styles.reviewContainer}>
-                <h2 className={`sectionTitle white-text-outline`}>Google Reviews</h2>
+                <h2 data-aos="fade-up" className={`sectionTitle white-text-outline`}>Google Reviews</h2>
 
-                <div className={styles.marqueeWrapper}>
+                <div data-aos="fade-up" className={styles.marqueeWrapper}>
                     <div className={styles.marquee}>
                         {[...reviews, ...reviews].map((review, index) => (
                             <div
@@ -148,6 +148,7 @@ const GoogleReviews = () => {
 
                 <Link
                     target="_blank"
+                    data-aos="fade-in"
                     rel="noopener noreferrer"
                     href="https://www.google.com/search?sca_esv=63ad467223b51100&sxsrf=AE3TifOpsTdfoMI-1PN4HwIa9AbKt1PdWg:1755628692846&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E8TbVFSNsxIX4BKvto6miI3zK3MzrbgAjcuQyeWEbIbhH5hddhSRR3JsN3vbbobbFBySMy56msroU-pHa-Ru_3c7fmksWdUtRTNRmakmOrQrRkk0HA%3D%3D&q=Maythematics+Math+Tuition+Reviews&sa=X&ved=2ahUKEwiA0ODEwpePAxXZzjgGHQtpAFQQ0bkNegQIPRAE&biw=1720&bih=652&dpr=2"
                     className={`buttonYellow ctaButton`}

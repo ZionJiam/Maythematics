@@ -1,0 +1,25 @@
+.videoSection {
+    width: 100%;
+    position: relative;
+}
+
+.videoContainer {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1024px;
+    z-index: 2;
+    position: relative;
+}
+
+.videoWrapper {
+    margin: 0 auto;
+}
+
+.videoOverlay {
+
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    background-color: aqua;
+}

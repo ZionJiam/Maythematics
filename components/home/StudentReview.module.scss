@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     padding: 6rem 2rem;
     margin: 0 auto;
     max-width: 1124px;
@@ -21,15 +21,23 @@
     // flex: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
+
 }
 
 .video {
     min-width: 280px;
     aspect-ratio: 9/12;
     border-radius: 10px;
+    width: 100%;
+
     /* Narrow width for vertical style */
     /* Taller height for TikTok style */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    @media (min-width: 768px) {
+        width: auto;
+    }
 }
 
 .textContainer {

@@ -49,6 +49,7 @@
     aspect-ratio: 3/4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    max-width: 500px;
 
     @media (min-width: 768px) {
         min-width: 280px;

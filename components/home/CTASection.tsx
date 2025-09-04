@@ -14,7 +14,7 @@ export default function CTASection() {
 
 
             <div className={styles.ctaTextWrapper}>
-                <h2 className={`${styles.sloganTitle} sectionTitle`}>
+                <h2 data-aos="fade-up" className={`${styles.sloganTitle} sectionTitle`}>
                     <span className={styles.red}>Ready</span>
 
                     {" "}to{" "}
@@ -22,7 +22,6 @@ export default function CTASection() {
 
 
                     {" "}the<br />
-
                     <span className={styles.blue}>Difference</span>
 
                     {" "}in{" "}
@@ -34,10 +33,10 @@ export default function CTASection() {
                     <span className={styles.teal}>?</span>
                 </h2>
 
-                <p className={`${styles.ctaParagraph} text-lg`}>Join hundreds of students who trust us weekly — whether it’s PSLE prep, building problem-solving skills, or just gaining back confidence.</p>
+                <p data-aos="fade-up" className={`${styles.ctaParagraph} text-lg`}>Join hundreds of students who trust us weekly — whether it’s PSLE prep, building problem-solving skills, or just gaining back confidence.</p>
             </div>
 
-            <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
+            <Link data-aos="fade-in" className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
             <div className={styles.mascotContainer}>
                 <SlideUpImage
                     src="/assets/blue-mascot.jpg"

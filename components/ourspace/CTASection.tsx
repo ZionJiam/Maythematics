@@ -1,7 +1,6 @@
 import styles from './CTASection.module.scss';
 import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
-import SideImages from './SideImages';
 
 
 
@@ -9,9 +8,6 @@ import SideImages from './SideImages';
 export default function CTASection() {
     return (
         <section className={styles.ctaSection}>
-
-            <SideImages />
-
             <div className={styles.elementContainer}>
                 <img className={`${styles.elements} ${styles.elementRight}`} src="/assets/elements/design-element-2.png" alt="FLoating Design Element 3" />
                 <img className={`${styles.elements} ${styles.elementLeft}`} src="/assets/elements/design-element-5.png" alt="FLoating Design Element 6" />

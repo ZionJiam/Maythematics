@@ -72,21 +72,21 @@ const NewLesson = () => {
             <div className={styles.lessonWrapper}>
                 {lessons.map((lesson, index) => (
                     <div className={`${styles.lessonContainer}`} key={index}>
-                        <div className={styles.imageContainer}
+                        <div data-aos="fade-up" className={styles.imageContainer}
                             style={{ backgroundImage: `url(${lesson.image})` }}>
                             {/* <img src={lesson.image} alt={`${lesson.title} Image`} /> */}
                         </div>
                         <div className={styles.textContainer}>
                             <div className={styles.textContent}>
-                                <h2 className="text-xl">{lesson.title}</h2>
-                                <div className={styles.descriptionContainer}>
+                                <h2 data-aos="fade-up" className="text-xl">{lesson.title}</h2>
+                                <div data-aos="fade-up" className={styles.descriptionContainer}>
                                     <p className={styles.description}>{lesson.description}</p>
                                     <p className={styles.classInfo}><span className='bold'>Duration: </span>{lesson.duration}</p>
                                     <p className={styles.classInfo}><span className='bold'>Class size: </span> {lesson.classSize}</p>
                                 </div>
 
                             </div>
-                            <Link href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
+                            <Link data-aos="fade-in" href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
                         </div>
                     </div>
                 ))

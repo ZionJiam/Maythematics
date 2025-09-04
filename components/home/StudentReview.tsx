@@ -8,7 +8,7 @@ const StudentReview = () => {
     return (
         <section className={styles.studentReview}>
 
-            <div className={styles.videoContainer}>
+            <div data-aos="fade-up" className={styles.videoContainer}>
                 {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                 <iframe
                     className={styles.video}
@@ -22,12 +22,12 @@ const StudentReview = () => {
             </div>
 
             <div className={styles.textContainer}>
-                <h2 className="sectionTitle">What Our <br /> Student Say</h2>
-                <p>
+                <h2 data-aos="fade-up" className="sectionTitle">What Our <br /> Student Say</h2>
+                <p data-aos="fade-up">
                     Hear directly from our student about their learning journey, progress,
                     and how our programme helped them achieve their academic goals.
                 </p>
-                <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
+                <Link data-aos="fade-in" href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
             </div>
         </section>
     );
