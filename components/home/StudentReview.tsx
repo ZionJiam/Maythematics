@@ -11,6 +11,8 @@ const StudentReview = () => {
             <div data-aos="fade-up" className={styles.videoContainer}>
                 {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                 <iframe
+                    loading="lazy"
+
                     className={styles.video}
                     src="https://youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI"
                     title="YouTube video player"

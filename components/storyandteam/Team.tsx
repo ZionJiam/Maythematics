@@ -66,15 +66,15 @@ const Team = () => {
 
     return (
         <section id="team" className={styles.teamSection}>
-            <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Minus Design Element" />
-            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" />
+            {/* <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Minus Design Element" />
+            <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" /> */}
 
             <div className={styles.teamContainer}>
 
                 <div className={styles.teamCardContainer}>
                     <div data-aos="fade-in" className={styles.CtaCard}>
                         <h2 className={styles.title}>
-                            Meet the Tutors
+                            Meet the Team
                         </h2>
                         <p className={styles.slogan}>
                             Passionate educators striving to inspire the next

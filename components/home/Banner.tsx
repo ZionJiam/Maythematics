@@ -6,9 +6,9 @@ import { useEffect, useState } from 'react';
 
 
 const images = [
-  '/images/banner1.jpg',
-  '/images/banner2.jpg',
-  '/images/banner3.jpg',
+  '/images/banner1.webp',
+  // '/images/banner2.jpg',
+  // '/images/banner3.jpg',
 ];
 
 const Banner = () => {

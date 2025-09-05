@@ -4,12 +4,12 @@ import LessonSection from '@/components/home/NewLesson';
 import CTASection from '@/components/home/CTASection';
 
 import WhyUsSection from '@/components/home/WhyUs';
-import TestimonialSection from '@/components/home/Testimonial';
 import StudentReview from '@/components/home/StudentReview';
 
 import Banner from '../components/home/Banner';
 
 import styles from './page.module.css';
+import LessonVideo from '@/components/home/LessonVideo';
 
 
 export default function Home() {
@@ -21,6 +21,8 @@ export default function Home() {
       <StudentReview />
       <GoogleReviewSection />
       <LessonSection />
+      <LessonVideo />
+
       <CTASection />
 
     </main>

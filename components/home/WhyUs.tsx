@@ -4,21 +4,21 @@ import Link from 'next/link';
 
 const reasons = [
     {
-        image: '/images/banner1.jpg',
+        image: '/images/banner1.webp',
         title: 'Tutors Who Truly Get Students',
         description: 'A dynamic team of tutors who make Math clear, relatable, and even enjoyable — because we’ve been in your shoes not too long ago.',
         cta: 'DISCOVER OUR TUTORS >',
         href: '/about#team',
     },
     {
-        image: '/images/banner2.jpg',
+        image: '/images/banner1.webp',
         title: 'Master the Heuristics ',
         description: 'We empower students to apply proven heuristics — powerful strategies that make even the toughest problem sums manageable.',
         cta: 'LEARN ABOUT OUR LESSONS >',
         href: '/lessons',
     },
     {
-        image: '/images/banner3.jpg',
+        image: '/images/banner1.webp',
         title: 'Visible Results in Just Half a Year',
         description: 'With the right strategies, 9 in 10 students achieve better results in 6 months or less.',
         cta: 'SEE MORE RESULTS >',
