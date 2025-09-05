@@ -7,9 +7,81 @@
 
 .lessonWrapper {
     margin-top: 3rem;
+    position: relative;
 }
 
+.elementContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    .element {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
+        width: 100px;
+
+
+        @media (min-width: 768px) {}
+
+
+        /* or left top / right top depending on how you want it to pivot */
+    }
+
+    .element1 {
+        top: 10%;
+        left: -50px;
+        transform: rotate(-20deg);
+
+        @media (min-width: 768px) {
+            width: 150px;
+
+        }
+
+    }
+
+
+    .element2 {
+        top: 35%;
+        right: -60px;
+        transform: rotate(20deg);
+        transform-origin: center;
+
+        @media (min-width: 768px) {
+            width: 150px;
+
+        }
+    }
+
+    .element3 {
+        top: 60%;
+        left: -60px;
+        transform: rotate(-60deg);
+        transform-origin: center;
+
+        @media (min-width: 768px) {
+            width: 150px;
+        }
+    }
+
+    .element4 {
+        top: 85%;
+        right: -60px;
+        transform: rotate(-120deg);
+        transform-origin: center;
+
+        @media (min-width: 768px) {
+            width: 200px;
+
+        }
+    }
+}
+
+
 .lessonContainer {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -18,16 +90,12 @@
     gap: 1.5rem;
     padding: 0 2rem 6rem 2rem;
     margin: 0 auto;
-    max-width: 1124px;
+    max-width: 450px;
     width: 95%;
 
-    // @media (min-width: 450px) {
-    //     width: 60%;
-
-    // }
 
     @media (min-width: 768px) {
-
+        max-width: 1124px;
         text-align: left;
         flex-direction: row-reverse;
 
@@ -49,7 +117,7 @@
     aspect-ratio: 3/4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    max-width: 500px;
+    max-width: 450px;
 
     @media (min-width: 768px) {
         min-width: 280px;
@@ -66,7 +134,7 @@
     h2 {
         // margin-bottom: 1rem;
         text-align: left;
-        color: $color-red-dark;
+        color: $color-red;
         margin-bottom: 1rem;
         white-space: pre-line;
 

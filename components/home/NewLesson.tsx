@@ -53,23 +53,22 @@ const NewLesson = () => {
         <section className={styles.lesson}>
             <h2 className={`sectionTitle`}>
                 Our{" "}
-                <span className={styles.letterRainbow}>
-                    <span className={`blue`}>S</span>
-                    <span className={`red`}>p</span>
-                    <span className={`yellow`}>e</span>
-                    <span className={`teal`}>c</span>
-                    <span className={`red`}>i</span>
-                    <span className={`blue`}>a</span>
-                    <span className={`yellow`}>l</span>
-                    <span className={`teal`}>i</span>
-                    <span className={`red`}>z</span>
-                    <span className={`blue`}>e</span>
-                    <span className={`yellow`}>d</span>
+                <span className={styles.red}>
+                    Specialized
                 </span>{" "}
                 Programme
             </h2>
 
             <div className={styles.lessonWrapper}>
+
+                <div className={styles.elementContainer}>
+                    <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/minus.png" alt="Minus Design Element" />
+                    <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/divide.png" alt="Design Element 9" />
+                    <img className={`${styles.element} ${styles.element3}`} src="/assets/elements/multiply.png" alt="Design Element 9" />
+                    <img className={`${styles.element} ${styles.element4}`} src="/assets/elements/design-element-9.png" alt="Design Element 9" />
+
+                </div>
+
                 {lessons.map((lesson, index) => (
                     <div className={`${styles.lessonContainer}`} key={index}>
                         <div data-aos="fade-up" className={styles.imageContainer}

@@ -10,6 +10,7 @@ export default function SpaceVideoHighlights() {
             <div className={styles.videoContainer}>
                 <div className={styles.videoWrapper} data-aos="fade-in">
                     <iframe
+                        className={styles.video}
                         src="https://www.youtube.com/embed/MBLKwxIfp1U"
                         title="YouTube video player"
                         width="560"

@@ -5,7 +5,6 @@
 
     margin-top: 3rem;
     margin-bottom: 3rem;
-
 }
 
 .reviewItem {
@@ -13,19 +12,17 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column-reverse;
-    text-align: center;
-    gap: 1rem;
-    padding-bottom: 2rem;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    padding-bottom: 3rem;
     margin: 0 auto;
-    max-width: 1124px;
-    width: 95%;
-    padding-top: 3rem;
-
+    max-width: 450px;
 
 
     @media (min-width: 768px) {
+        max-width: 1124px;
+
         gap: 3rem;
-        text-align: left;
         flex-direction: row-reverse;
 
         &:nth-child(even) {
@@ -36,25 +33,28 @@
 
 .videoContainer {
     // flex: 1;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+
+
+    @media (min-width: 768px) {
+        min-width: 280px;
+        max-width: 300px;
+    }
+
 }
 
 .video {
-    aspect-ratio: 9/12;
+    min-width: 280px;
+    aspect-ratio: 3/4;
     border-radius: 10px;
+    width: 100%;
+
     /* Narrow width for vertical style */
     /* Taller height for TikTok style */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
-    width: 100%;
-    aspect-ratio: 3/4;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
 
     @media (min-width: 768px) {
-        width: 300px;
-
+        width: auto;
     }
 }
 
@@ -65,13 +65,9 @@
     h2 {
         // font-size: 2rem;
         margin-bottom: 1rem;
-        text-align: center;
         color: $color-red-dark;
+        text-align: left;
 
-        @media (min-width: 768px) {
-            text-align: left;
-
-        }
 
     }
 

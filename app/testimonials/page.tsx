@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 export default function TestimonialsPage() {
     return (
         <main className={styles.testimonialsPage}>
-            <SubPageHeader color="red" header="Our Space" />
+            <SubPageHeader color="red" header="Testimonials" />
             <StudentReview />
             <WhatsappWall />
         </main>

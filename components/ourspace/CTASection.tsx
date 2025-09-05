@@ -13,6 +13,8 @@ export default function CTASection() {
                 <img className={`${styles.elements} ${styles.elementLeft}`} src="/assets/elements/design-element-5.png" alt="FLoating Design Element 6" />
             </div>
 
+
+
             <div className={styles.ctaTextWrapper}>
                 <p className={`${styles.ctaParagraph} text-lg`}>
                     Step into a place where curiosity thrives and confidence grows.

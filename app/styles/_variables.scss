@@ -1,22 +1,17 @@
 // Fonts
 $font-family-sans: 'Poppins', sans-serif;
 
-$color-blue: #9fd8ff;
-$color-blue-dark: #6ab1e1;
-
-$color-red: #ff988a;
-$color-red-dark: #ec635e;
-
-$color-yellow: #ffd97b;
-$color-yellow-dark: #e6b84f;
-
 // Original Colors
 $color-blue: #9fd8ff; // Maythematics Blue
 $color-red: #ff988a; // Maythematics Red
 $color-yellow: #ffd97b; // Maythematics Yellow
 
+// $color-blue: #66c2ff; // Darker Maythematics Blue
+// $color-red: #ff6f61; // Darker Maythematics Red
+// $color-yellow: #ffc94d; // Darker Maythematics Yellow
+
 // Dark Versions
-$color-red-dark: #ec635e;
+$color-red-dark: #ff988a;
 $color-blue-dark: #66b2e8;
 $color-yellow-dark: #f2b54b;
 
@@ -34,6 +29,10 @@ $color-text: #494949; // Maythematics Text
 $text-shadow: 1px 1px 0 black,
     2px 2px 0 black,
     3px 3px 0 black;
+
+$text-shadow-2: 1px 1px 0 $color-text,
+    2px 2px 0 $color-text,
+    3px 3px 0 $color-text;
 
 
 $text-shadow-white: 3px 3px 0 white,
