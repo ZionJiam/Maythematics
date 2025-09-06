@@ -38,23 +38,26 @@ export default function CTASection() {
 
             <Link data-aos="fade-in" className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
             <div className={styles.mascotContainer}>
-                <SlideUpImage
+                <img
                     src="/assets/blue-mascot.jpg"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
                     alt="Review Mascot"
-                    delay={0.2}
                     className={`${styles.reviewMascot} ${styles.blueMascot}`}
                 />
 
-                <SlideUpImage
+                <img
                     src="/assets/red-mascot.jpg"
+                    data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
 
-                <SlideUpImage
+                <img
                     src="/assets/yellow-mascot.jpg"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
                     alt="Review Mascot"
-                    delay={0.3}
                     className={`${styles.reviewMascot} ${styles.yellowMascot}`}
                 />
             </div>

@@ -43,13 +43,14 @@
 
 
     .element2 {
-        top: 35%;
+        top: 30%;
         right: -60px;
-        transform: rotate(20deg);
+        transform: rotate(-20deg);
         transform-origin: center;
 
         @media (min-width: 768px) {
             width: 150px;
+            top: 35%;
 
         }
     }

@@ -6,19 +6,19 @@ import Link from "next/link";
 
 const spaceHighlights = [
     {
-        title: "Study in the Best Light",
-        description: "Our classrooms are equipped with optimal lighting that reduces eye strain and keeps students alert, ensuring every study session is comfortable and productive.",
-        image: "/images/banner3.jpg",
-    },
-    {
         title: "A Space That Inspires",
         description: "We use warm, pastel-inspired colors that stimulate creativity and focus, creating a welcoming atmosphere that motivates students to learn and participate actively.",
-        image: "/images/banner3.jpg",
+        image: "/images/space/image-2.webp",
     },
     {
         title: "Comfort Meets Focus",
         description: "Each student has access to ergonomic tables and chairs designed for proper posture, making long study sessions more comfortable and effective.",
-        image: "/images/banner3.jpg",
+        image: "/images/space/image-3.webp",
+    },
+    {
+        title: "Study in the Best Light",
+        description: "Our classrooms are equipped with optimal lighting that reduces eye strain and keeps students alert, ensuring every study session is comfortable and productive.",
+        image: "/images/space/image-1.webp",
     },
 ];
 
