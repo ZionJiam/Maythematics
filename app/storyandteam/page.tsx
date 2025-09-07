@@ -15,7 +15,7 @@ export default function About() {
       <Slogan text="To foster a positive and safe environment for students to learn Math under the belt of the most positive, patient and passionate tutors with effective teaching methodologies." />
 
       <StorySection />
-      {/* <VisionSection /> */}
+      <VisionSection />
       <TeamSection />
 
     </main>

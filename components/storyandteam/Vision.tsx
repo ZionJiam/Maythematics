@@ -20,11 +20,8 @@ const Vision = () => {
             />
 
             <div className={styles.visionContainer}>
-                <h2 className={`${styles.sectionTitle} sectionTitle white-text-outline`}>Our Vision</h2>
-
                 <div className={`text-lg ${styles.visionCard}`}>
-                    <p>To foster a positive and safe environment for students to learn Math under the belt of the
-                        most positive, patient and passionate tutors with effective teaching methodologies</p>
+                    <p>To become Singapore’s leading math tuition centre — trusted by parents and loved by students. We aim to deliver the clearest explanations, the best learning materials, and engaging methods that bring out every child’s confidence and results.</p>
                     <img src="/images/maythematics-watermark.png" alt="watermark" className={styles.watermark} />
 
                 </div>

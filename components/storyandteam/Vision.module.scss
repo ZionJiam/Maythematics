@@ -5,13 +5,13 @@
     text-align: center;
 
     .sectionTitle {
-        background-color: $color-blue;
+        background-color: $color-blue-mascot;
 
     }
 
 
     .visionContainer {
-        background-color: $color-blue;
+        background-color: $color-blue-mascot;
         padding: 3rem 0;
     }
 
@@ -22,12 +22,12 @@
         padding: 2rem 1.25rem;
         background-color: white;
         border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         position: relative;
 
         p {
             z-index: 2;
             position: relative;
+            font-weight: 500;
         }
 
         @media (min-width: 1024px) {
@@ -55,6 +55,8 @@
         display: block;
         z-index: 2;
         position: relative;
+        max-height: 100px;
+
     }
 
     .dividerTop {

@@ -5,6 +5,7 @@
     position: relative;
     z-index: 1;
     width: 95%;
+    max-width: 450px;
     aspect-ratio: 3 / 4; // Maintains height as 4/3 of the width
     // margin-bottom: 300px;
     border-radius: 10px;
@@ -79,7 +80,7 @@
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
-    background-size: 100%;
+    background-size: 120%;
     transition: all 0.25s ease-in-out;
     /* Resize the background image to cover the entire container */
     /* The image used */

@@ -168,8 +168,6 @@ const Team = () => {
                             studentReview={member.studentReview}
                             onClick={() => setSelectedMember(member)}
                             data-aos="fade-up"
-                            data-aos-delay={index * 100}
-
                         />
                     ))}
                 </div>
