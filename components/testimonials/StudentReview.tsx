@@ -36,6 +36,7 @@ const StudentReview = () => {
     return (
         <section className={styles.studentReview}>
 
+
             {reviews.map((review, index) => (
                 <div key={index} className={styles.reviewItem}>
                     <div className={styles.videoContainer}>
@@ -45,7 +46,7 @@ const StudentReview = () => {
                             src={review.videoUrl}
                             title={`${review.name} Video`}
                             frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
                             allowFullScreen
                         ></iframe>
                     </div>

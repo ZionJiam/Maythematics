@@ -1,42 +1,45 @@
-.whatsappMasonry {
-    padding: 3rem 1.5rem;
-    background: #fafafa;
+.resultsMasonry {
+    padding: 4rem 2rem;
+    background: #f9fafb;
 
     h2 {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
     }
 }
 
 .myMasonryGrid {
     display: flex;
     margin: 0 auto;
-    // margin-left: -1rem; // gutter size offset
-    max-width: 1024px;
-    width: 95%;
-    gap: 1rem;
+    /* gutter size offset */
+    width: 1124px;
 }
 
 .myMasonryGridColumn {
+    padding-left: 1rem;
+    /* gutter size */
     background-clip: padding-box;
 }
 
 .gridItem {
-    background: #fff;
-    border-radius: 12px;
-    // padding: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     }
 
     img {
         width: 100%;
-        border-radius: 8px 8px 0 0;
+        height: auto;
+        display: block;
     }
 
     .caption {

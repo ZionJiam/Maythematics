@@ -2,9 +2,33 @@
 
 
 .studentReview {
-
-    margin-top: 3rem;
+    margin-top: 6rem;
     margin-bottom: 3rem;
+    position: relative;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     inset: 0;
+    //     /* top:0; right:0; bottom:0; left:0 */
+    //     background-image: url("/images/bg-yellow.webp");
+
+    //     // background-image: url("/assets/elements/design-element-8.png"); // replace with your image path
+    //     background-size: 100%;
+    //     background-position: top;
+    //     background-repeat: no-repeat;
+    //     opacity: 0.1;
+    //     /* change this to your preferred transparency */
+    //     z-index: 0;
+    //     /* behind content */
+    // }
+
+    >* {
+        position: relative;
+        z-index: 1;
+        /* ensures text/video appear above overlay */
+    }
+
 }
 
 .reviewItem {
@@ -20,7 +44,7 @@
 
 
     @media (min-width: 768px) {
-        max-width: 1124px;
+        max-width: 1280px;
 
         gap: 3rem;
         flex-direction: row-reverse;
@@ -65,7 +89,7 @@
     h2 {
         // font-size: 2rem;
         margin-bottom: 1rem;
-        color: $color-red-dark;
+        color: $color-red;
         text-align: left;
 
 

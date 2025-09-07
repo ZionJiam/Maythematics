@@ -36,14 +36,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
 
                 <div className={styles.navbarNav}>
                     <div className={styles.dropdown}>
-                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/about") ? styles.active : ""}`}>
+                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/storyandteam") ? styles.active : ""}`}>
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContentRed}`}>
-                            <Link href="/about" className={`${styles.dropdownLink} ${isActive("/about") ? styles.active : ""}`}>
+                            <Link href="/storyandteam" className={`${styles.dropdownLink} ${isActive("/storyandteam") ? styles.active : ""}`}>
                                 Story and Team
                             </Link>
-                            <Link href="/ourspace" className={`${styles.dropdownLink} ${isActive("/about/space") ? styles.active : ""}`}>
+                            <Link href="/ourspace" className={`${styles.dropdownLink} ${isActive("/ourspace") ? styles.active : ""}`}>
                                 Our Space
                             </Link>
                         </div>
@@ -54,9 +54,9 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                     </Link>
 
                     <div className={styles.dropdown}>
-                        <Link href="/lesson" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/lesson") ? styles.active : ""}`}>
+                        <div className={`${styles.navLink} ${styles.linkBlue} ${isActive("/lesson") ? styles.active : ""}`}>
                             Lessons
-                        </Link>
+                        </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContentBlue}`}>
                             <Link href="/lesson/primary3to4" className={`${styles.dropdownLink} ${isActive("/lesson/primary3to4") ? styles.active : ""}`}>
                                 Primary 3-4

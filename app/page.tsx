@@ -22,9 +22,7 @@ export default function Home() {
       <GoogleReviewSection />
       <LessonSection />
       <LessonVideo />
-
       <CTASection />
-
     </main>
   );
 }

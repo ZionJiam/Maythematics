@@ -20,7 +20,7 @@ const SubPageHeader: React.FC<SubPageHeaderProp> = ({ color, header }) => {
             <div className={styles.headerWrapper}>
                 <h2 className={`${styles.sectionTitle} sectionTitle white-text-outline`}>{header}</h2>
             </div>
-            <img src="/images/subpage-header-wave.png" alt="subpageWave" className={styles.subpageWave} />
+            <img fetchPriority="high" src="/images/subpage-header-wave.png" alt="subpageWave" className={styles.subpageWave} />
         </section>
     );
 };

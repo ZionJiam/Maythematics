@@ -1,37 +1,47 @@
-'use client'
+"use client";
 
-// components/testimonials/WhatsappMasonry.tsx
-import styles from "./WhatsappWall.module.scss";
+import styles from "./ResultMasonry.module.scss";
 import Masonry from "react-masonry-css";
 
-const testimonials = [
+const results = [
     {
-        image: "/images/testimonials/whatsapp-test.png",
+        src: "/images/testimonials/results-1.webp",
+        student: "Alicia",
+        school: "Nan Hua High School",
+        achievement: "Improved from B3 → A1 in Math"
+    },
+    {
+        src: "/images/testimonials/results-2.webp",
+        student: "Marcus",
+        school: "Commonwealth Sec",
+        achievement: "From C5 → A2 in just 3 months"
+    },
+    {
+        src: "/images/testimonials/results-3.webp",
+        student: "Chloe",
+        school: "Fuhua Secondary",
+        achievement: "Maintained A1 throughout Sec 4"
+    },
+    {
+        src: "/images/testimonials/results-4.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test2.png",
+        src: "/images/testimonials/results-5.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test.png",
+        src: "/images/testimonials/results-6.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test2.png",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    }
-    ,
-    {
-        image: "/images/testimonials/whatsapp-test2.png",
+        src: "/images/testimonials/results-7.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
@@ -44,24 +54,23 @@ const breakpointColumnsObj = {
     767: 1,
 };
 
-export default function WhatsappMasonry() {
+export default function ResultsMasonry() {
     return (
-        <section className={styles.whatsappMasonry}>
-            <h2 className="sectionTitle">Heartfelt Messages</h2>
+        <section className={styles.resultsMasonry}>
+            <h2 className="sectionTitle">Our Hall of Fame</h2>
             <Masonry
                 breakpointCols={breakpointColumnsObj}
                 className={styles.myMasonryGrid}
                 columnClassName={styles.myMasonryGridColumn}
             >
-                {testimonials.map((item, index) => (
+                {results.map((item, index) => (
                     <div data-aos="fade-up" key={index} className={styles.gridItem}>
-                        <img loading="lazy" src={item.image} alt={`Testimonial ${index + 1}`} />
+                        <img src={item.src} alt={`Result ${index + 1}`} loading="lazy" />
                         <div className={styles.caption}>
                             <p className={styles.student}>{item.student}</p>
                             <p className={styles.school}>{item.school}</p>
                             <p className={styles.achievement}>{item.achievement}</p>
                         </div>
-
                     </div>
                 ))}
             </Masonry>

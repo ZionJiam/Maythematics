@@ -16,12 +16,12 @@ export default function CTASection() {
 
 
             <div className={styles.ctaTextWrapper}>
-                <p className={`${styles.ctaParagraph} text-lg`}>
+                <p data-aos="fade-up" className={`${styles.ctaParagraph} text-lg`}>
                     Step into a place where curiosity thrives and confidence grows.
                 </p>
             </div>
 
-            <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
+            <Link data-aos="fade-in" className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
             <div className={styles.mascotContainer}>
 
                 <SlideUpImage

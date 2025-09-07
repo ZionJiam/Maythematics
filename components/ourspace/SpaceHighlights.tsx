@@ -28,14 +28,14 @@ const SpaceHighlights = () => {
             <div className={styles.lessonWrapper}>
                 {spaceHighlights.map((spaceHighlights, index) => (
                     <div className={`${styles.lessonContainer}`} key={index}>
-                        <div className={styles.imageContainer}
+                        <div data-aos="fade-up" className={styles.imageContainer}
                             style={{ backgroundImage: `url(${spaceHighlights.image})` }}>
                             {/* <img src={lesson.image} alt={`${lesson.title} Image`} /> */}
                         </div>
                         <div className={styles.textContainer}>
                             <div className={styles.textContent}>
-                                <h2 className="text-xl">{spaceHighlights.title}</h2>
-                                <div className={styles.descriptionContainer}>
+                                <h2 data-aos="fade-up" className="text-xl">{spaceHighlights.title}</h2>
+                                <div data-aos="fade-up" className={styles.descriptionContainer}>
                                     <p className={styles.description}>{spaceHighlights.description}</p>
                                 </div>
 
