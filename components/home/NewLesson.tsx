@@ -76,10 +76,10 @@ const NewLesson = () => {
                             style={{ backgroundImage: `url(${lesson.image})` }}>
                             {/* <img src={lesson.image} alt={`${lesson.title} Image`} /> */}
                         </div>
-                        <div className={styles.textContainer}>
+                        <div data-aos="fade-up" className={styles.textContainer}>
                             <div className={styles.textContent}>
-                                <h2 data-aos="fade-up" className="text-xl">{lesson.title}</h2>
-                                <div data-aos="fade-up" className={styles.descriptionContainer}>
+                                <h2 className="text-xl">{lesson.title}</h2>
+                                <div className={styles.descriptionContainer}>
                                     <p className={styles.description}>{lesson.description}</p>
                                     <p className={styles.classInfo}>
                                         <FaRegClock className={styles.icon} />
@@ -93,7 +93,7 @@ const NewLesson = () => {
                                 </div>
 
                             </div>
-                            <Link data-aos="fade-in" href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
+                            <Link href="/about" className={`${styles.ctaButton} buttonYellow ctaButton`}>Read More</Link>
                         </div>
                     </div>
                 ))

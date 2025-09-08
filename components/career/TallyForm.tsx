@@ -30,14 +30,24 @@ const TallyForm: React.FC<TallyFormProps> = ({ formId, layout = "modal", width =
 
     return (
         <div className={styles.tallyWrapper}>
-            <button
+            {/* <button
                 data-tally-open={formId}
                 data-tally-layout={layout}
                 data-tally-width={width}
                 className={styles.tallyButton}
             >
                 Open Form
-            </button>
+            </button> */}
+
+            <iframe
+                src="https://tally.so/embed/wARzD0" // replace with your Tally embed link
+                width="100%"
+                height="1800"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                title="Career Application Form"
+            ></iframe>
         </div>
     );
 };

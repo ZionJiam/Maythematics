@@ -75,14 +75,14 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          <Link href="/contact" className={`${isActive("/contact") ? styles.active : ""} ${styles.linkRed}`} onClick={handleLinkClick}>Contact Us</Link>
+          <Link href="/contact" className={`${isActive("/contactus") ? styles.active : ""} ${styles.linkRed}`} onClick={handleLinkClick}>Contact Us</Link>
           <Link href="/career" className={`${isActive("/career") ? styles.active : ""} ${styles.linkYellow}`} onClick={handleLinkClick}>Career</Link>
           <Link href="/workshop" className={`${isActive("/workshop") ? styles.active : ""} ${styles.linkBlue}`} onClick={handleLinkClick}>Workshop</Link>
 
           <div className={styles.ctaButton}>
-            <Link href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">
               WhatsApp Us
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import TallyForm from '@/components/career/TallyForm'
 
 
 
-export default function About() {
+export default function Career() {
     return (
         <main className={styles.main}>
             <SubPageHeader color="red" header="Career" />

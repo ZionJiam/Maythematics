@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link';
 import styles from './Footer.module.scss';
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';

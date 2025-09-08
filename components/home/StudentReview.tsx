@@ -22,13 +22,13 @@ const StudentReview = () => {
 
             </div>
 
-            <div className={styles.textContainer}>
-                <h2 data-aos="fade-up" className="sectionTitle">What Our <br /> Student Say</h2>
-                <p data-aos="fade-up">
+            <div data-aos="fade-up" className={styles.textContainer}>
+                <h2 className="sectionTitle">What Our <br /> Student Say</h2>
+                <p>
                     Hear directly from our student about their learning journey, progress,
                     and how our programme helped them achieve their academic goals.
                 </p>
-                <Link data-aos="fade-in" href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
+                <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
             </div>
         </section>
     );

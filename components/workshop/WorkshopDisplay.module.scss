@@ -1,0 +1,95 @@
+@use '../../app/styles/variables' as *;
+
+
+.workshopSection {
+    padding: 4rem 2rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        max-width: 1124px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            max-width: 550px;
+
+        }
+    }
+
+    .poster {
+        img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    .info {
+        .title {
+            text-align: left;
+            color: $color-red;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .details {
+            font-weight: 600;
+            margin-bottom: 2rem;
+
+            p {
+                margin: 0.5rem 0;
+                font-size: 1rem;
+                color: #555;
+
+                .icon {
+                    margin-right: 0.5rem;
+                }
+            }
+
+
+            .note {
+                font-weight: 800;
+                font-size: 1.05rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .ctaLink {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+
+        .ctaButton {
+            // background: #2c7be5;
+            // text-decoration: none;
+            // color: #fff;
+            // padding: 0.75rem 1.5rem;
+            // border: none;
+            // border-radius: 8px;
+            // font-size: 1rem;
+            // font-weight: 600;
+            // cursor: pointer;
+            // transition: background 0.25s ease;
+            border: none;
+
+            &:hover {
+                background: $color-teal;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+
+}

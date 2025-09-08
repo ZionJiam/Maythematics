@@ -1,0 +1,65 @@
+@use '../../app/styles/variables' as *;
+
+
+.benefitsSection {
+    width: 100%;
+    background-color: $color-yellow-light; // soft yellow
+    padding: 4rem 1.5rem;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        color: #333;
+    }
+
+    .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 2rem;
+        text-align: left;
+        /* Two columns on desktop */
+        /* Fixed 2 columns and 2 rows on desktop */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; // stack on mobile
+            grid-template-rows: auto;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            }
+
+            .icon {
+                color: #28a745; // green check
+                margin-right: 1rem;
+                font-size: 1.25rem;
+                flex-shrink: 0;
+            }
+
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+}

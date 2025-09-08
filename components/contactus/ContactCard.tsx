@@ -30,7 +30,7 @@ const StudentReview = () => {
                         </li>
 
                         <li>
-                            <FaWhatsapp /> <a href="https://wa.me/6591234567">WhatsApp</a>
+                            <FaWhatsapp /> <a href="https://wa.me/6589150859">WhatsApp</a>
                         </li>
                         <li>
                             <FaTelegramPlane /> <a href="https://t.me/yourhandle">Telegram(Primary)</a>
