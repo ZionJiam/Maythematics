@@ -69,14 +69,27 @@
     // margin-bottom: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: $color-red;
+    // background-color: $color-red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     padding: 1rem 1.5rem;
+    background-color: #f9fafb;
+    overflow: hidden;
+
     // color: $color-text;
     z-index: 2;
+    position: relative;
+
+    .cardMascot {
+        position: absolute;
+        bottom: 0;
+        width: 125px;
+        bottom: -15px;
+        left: -10px;
+        transform: rotate(20deg);
+    }
 
     @media (min-width: 768px) {
         width: 300px;
@@ -87,12 +100,12 @@
         margin-bottom: 1rem;
         line-height: 1.2;
         font-weight: 600;
-        color: white;
+        color: $color-red;
     }
 
     .slogan {
         font-weight: 300;
-        color: white;
+        color: $color-text;
 
     }
 }

@@ -10,19 +10,24 @@ import Banner from '../components/home/Banner';
 
 import styles from './page.module.css';
 import LessonVideo from '@/components/home/LessonVideo';
+import WorkshopPopup from "@/components/ui/WorkshopPopup";
 
 
 export default function Home() {
 
   return (
-    <main className={styles.main}>
-      <Banner />
-      <WhyUsSection />
-      <StudentReview />
-      <GoogleReviewSection />
-      <LessonSection />
-      <LessonVideo />
-      <CTASection />
-    </main>
+    <>
+
+      <main className={styles.main}>
+        <Banner />
+        <WhyUsSection />
+        <StudentReview />
+        <GoogleReviewSection />
+        <LessonSection />
+        <LessonVideo />
+        <CTASection />
+      </main>
+      {/* <WorkshopPopup /> */}
+    </>
   );
 }

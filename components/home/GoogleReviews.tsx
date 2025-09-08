@@ -94,7 +94,7 @@ const GoogleReviews = () => {
 
     return (
         <section className={styles.googleReviews}>
-            <SlideUpImage alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.png" />
+            <img data-aos="fade-up" alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.png" />
 
             <img
                 src="/divider/bubble-side-divider-blue.png"
@@ -109,9 +109,9 @@ const GoogleReviews = () => {
             </div> */}
 
             <div className={styles.reviewContainer}>
-                <h2 data-aos="fade-up" className={`sectionTitle white-text-outline`}>Google Reviews</h2>
+                <h2 className={`sectionTitle white-text-outline`}>Google Reviews</h2>
 
-                <div data-aos="fade-up" className={styles.marqueeWrapper}>
+                <div data-aos="fade-in" className={styles.marqueeWrapper}>
                     <div className={styles.marquee}>
                         {[...reviews, ...reviews].map((review, index) => (
                             <div

@@ -41,7 +41,6 @@ const TeamCard: React.FC<TeamCardProp> = ({
             onClick={onClick}
             {...rest}
         >
-            {/* <img className={`${styles.element} ${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" /> */}
 
             <div
                 className={styles.teamCardWrapper}

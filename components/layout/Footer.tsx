@@ -56,9 +56,9 @@ const Footer = () => {
 
                 <div className={styles.socialIcons}>
                     <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
                     <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </div>
 
                 {/* Bottom Line */}

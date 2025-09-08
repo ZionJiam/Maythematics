@@ -6,7 +6,6 @@ import "./globals.scss";
 import Navbar from "@/components/layout/Navbar";
 import MobileNavbar from "@/components/layout/MobileNavbar";
 import Footer from "@/components/layout/Footer";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 

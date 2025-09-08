@@ -1,0 +1,69 @@
+"use client";
+
+import React from "react";
+import styles from "./ContactCard.module.scss";
+import Link from "next/link";
+import { FaTelegramPlane, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaTiktok, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+
+const StudentReview = () => {
+    return (
+        <section data-aos="fade-up" className={styles.studentReview}>
+            <div className={styles.mapContainer}>
+                {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.760348692577!2d103.90973967674459!3d1.3194947986679955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3dbc275d3c4f%3A0xd8ad757897ca2aa8!2sMaythematics%20Math%20Tuition!5e0!3m2!1sen!2ssg!4v1757246942685!5m2!1sen!2ssg" className={styles.mapIframe}
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+
+            <div className={styles.textContainer}>
+                <img alt="Contact Mascot" className={styles.contactMascot} src="/assets/contact-mascot.webp" />
+
+                <div className={styles.cotactContainer}>
+                    <h3>Get in Touch With Us</h3>
+                    <ul className={styles.contactList}>
+                        <li className={styles.telephone}>
+                            <FaPhoneAlt /> <a href="tel:+6591234567">+65 9123 4567</a>
+                        </li>
+
+                        <li>
+                            <FaWhatsapp /> <a href="https://wa.me/6591234567">WhatsApp</a>
+                        </li>
+                        <li>
+                            <FaTelegramPlane /> <a href="https://t.me/yourhandle">Telegram(Primary)</a>
+                        </li>
+                        <li>
+                            <FaTelegramPlane /> <a href="https://t.me/yourhandle">Telegram(Secondary)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className={styles.socialsContainer}>
+
+                    <h3>Join Our Community</h3>
+
+                    <ul className={styles.socialList}>
+                        <li className={styles.telephone}>
+                            <FaTiktok /> <a href="tel:+6591234567">Tiktok</a>
+                        </li>
+
+                        <li>
+                            <FaInstagram /> <a href="https://wa.me/6591234567">Instagram</a>
+                        </li>
+                        <li>
+                            <FaFacebook /> <a href="https://t.me/yourhandle">Facebook</a>
+                        </li>
+                        <li>
+                            <FaYoutube /> <a href="https://t.me/yourhandle">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default StudentReview;
