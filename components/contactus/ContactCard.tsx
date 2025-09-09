@@ -8,7 +8,7 @@ import { FaTiktok, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 const StudentReview = () => {
     return (
-        <section data-aos="fade-up" className={styles.studentReview}>
+        <section data-aos="fade-up" data-aos-offset="-200" className={styles.studentReview}>
             <div className={styles.mapContainer}>
                 {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                 <iframe

@@ -3,7 +3,7 @@
 
 .benefitsSection {
     width: 100%;
-    background-color: $color-yellow-light; // soft yellow
+    background-color: $color-blue-mascot; // soft yellow
     padding: 4rem 1.5rem;
 
     .container {
@@ -45,11 +45,6 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-            &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-            }
-
             .icon {
                 color: #28a745; // green check
                 margin-right: 1rem;
@@ -57,9 +52,32 @@
                 flex-shrink: 0;
             }
 
+
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr; // stack on mobile
+                grid-template-rows: auto;
+                font-size: 1rem;
+            }
+
             font-size: 1.25rem;
             font-weight: 500;
             color: #333;
         }
     }
+}
+
+
+.dividerTop,
+.dividerBottom {
+    width: 100%;
+    display: block;
+    z-index: 2;
+    position: relative;
+    max-height: 100px;
+
+}
+
+.dividerTop {
+    transform: rotate(180deg);
+    margin-top: -1px;
 }

@@ -2,7 +2,6 @@
 
 
 .workshopSection {
-    padding: 4rem 2rem;
 
     .container {
         display: grid;
@@ -10,12 +9,17 @@
         gap: 2rem;
         align-items: center;
         max-width: 1124px;
+        padding: 6rem 1rem;
         margin: 0 auto;
+        width: 95%;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1023px) {
             grid-template-columns: 1fr;
-            max-width: 550px;
+            max-width: 650px;
+        }
 
+        @media (max-width: 767px) {
+            max-width: 450px;
         }
     }
 

@@ -48,14 +48,14 @@ export default function CTASection() {
                 />
 
                 <img
-                    src="/assets/red-mascot.jpg"
+                    src="/assets/red-mascot-teach.png"
                     data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
 
                 <img
-                    src="/assets/yellow-mascot.jpg"
+                    src="/assets/yellow-mascot-2.png"
                     data-aos="fade-up"
                     data-aos-delay="100"
                     alt="Review Mascot"

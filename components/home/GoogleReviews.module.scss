@@ -33,7 +33,7 @@
 
   .reviewContainer {
     background-color: $color-blue-mascot;
-    padding: 6rem 0 6rem 0;
+    padding: 4rem 0 4rem 0;
     position: relative;
     z-index: 2;
     margin-top: -1px;
@@ -296,13 +296,4 @@
   100% {
     transform: translateX(-40%);
   }
-}
-
-.custom-shape-divider-top-1757190219 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
 }

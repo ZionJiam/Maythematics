@@ -13,17 +13,31 @@ const benefits = [
 
 export default function WorkshopBenefits() {
     return (
-        <section className={styles.benefitsSection}>
-            <div className={styles.container}>
-                <h2 className={styles.title}>Why Join This Workshop?</h2>
-                <ul className={styles.list}>
-                    {benefits.map((item, index) => (
-                        <li key={index}>
-                            <FaCheckCircle className={styles.icon} /> {item}
-                        </li>
-                    ))}
-                </ul>
+
+        <section className={styles.WorkshopBenefits}>
+            <img
+                src="/divider/bubble-side-divider-blue.png"
+                alt="wave divider top"
+                className={styles.dividerTop}
+            />
+            <div className={styles.benefitsSection}>
+
+                <div className={styles.container}>
+                    <h2 className={styles.title}>Why Join This Workshop?</h2>
+                    <ul className={styles.list}>
+                        {benefits.map((item, index) => (
+                            <li key={index}>
+                                <FaCheckCircle className={styles.icon} /> {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
+            <img
+                src="/divider/bubble-side-divider-blue.png"
+                alt="wave divider top"
+                className={styles.dividerBottom}
+            />
         </section>
     );
 }

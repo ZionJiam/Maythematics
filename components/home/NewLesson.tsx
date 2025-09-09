@@ -55,9 +55,7 @@ const NewLesson = () => {
         <section className={styles.lesson}>
             <h2 className={`sectionTitle`}>
                 Our{" "}
-                <span className={styles.red}>
-                    Specialized
-                </span>{" "}
+                Specialized
                 Programme
             </h2>
 

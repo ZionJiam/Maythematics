@@ -1,0 +1,16 @@
+@use '../../app/styles/variables' as *;
+
+.faqSection {
+  background-color: #fffcf3;
+  min-height: 100vh;
+
+  h2 {
+    padding: 3rem 0;
+  }
+}
+
+.accordionWrapper {
+  max-width: 800px;
+  width: 95%;
+  margin: 0 auto;
+}
