@@ -94,7 +94,7 @@ const GoogleReviews = () => {
 
     return (
         <section className={styles.googleReviews}>
-            <img data-aos="fade-up" alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.png" />
+            <img data-aos="fade-up" alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.webp" />
 
             <img
                 src="/divider/bubble-side-divider-blue.png"

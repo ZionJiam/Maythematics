@@ -10,7 +10,6 @@ import Banner from '../components/home/Banner';
 
 import styles from './page.module.css';
 import LessonVideo from '@/components/home/LessonVideo';
-import WorkshopPopup from "@/components/ui/WorkshopPopup";
 
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
         <LessonVideo />
         <CTASection />
       </main>
-      {/* <WorkshopPopup /> */}
     </>
   );
 }

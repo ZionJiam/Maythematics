@@ -24,14 +24,12 @@ export default function CTASection() {
 
 
             <div className={styles.mascotContainer}>
-
                 <img
-                    src="/assets/red-mascot-teach.png"
+                    src="/assets/red-mascot-teach.webp"
                     data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
-
             </div>
 
         </section>

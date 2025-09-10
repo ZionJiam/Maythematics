@@ -9,6 +9,7 @@ import Footer from "@/components/layout/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsappButton';
+import WorkshopPopup from "@/components/ui/WorkshopPopup";
 
 
 export default function RootLayout({
@@ -58,6 +59,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <FloatingWhatsApp />
+          {/* <WorkshopPopup /> */}
         </main>
       </body>
     </html>

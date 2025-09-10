@@ -7,18 +7,17 @@ export default function WorkshopPopup() {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
-        // prevent showing multiple times per session
+        // check if popup was already shown this session
         const seen = sessionStorage.getItem("workshopPopupSeen");
-        if (seen) return;
+        if (seen) return; // already shown, do nothing
 
-        // preload the image
         const img = new Image();
         img.src = "/images/workshop-promo.webp";
         img.onload = () => {
             setTimeout(() => {
                 setShow(true);
                 sessionStorage.setItem("workshopPopupSeen", "true");
-            }, 2500); // wait 2.5s after image loads
+            }, 2000); // small delay if you want
         };
     }, []);
 
@@ -26,26 +25,21 @@ export default function WorkshopPopup() {
 
     return (
         <div className={styles.overlay}>
-            <div className={styles.popup} data-aos="zoom-in">
+            <div className={styles.popup}>
                 <button className={styles.closeBtn} onClick={() => setShow(false)}>
                     ✕
                 </button>
                 <img
                     src="/images/workshop-promo.webp"
-                    alt="Monthly Workshop Promo"
-                    loading="lazy"
+                    alt="Monthly Workshop Poster"
+                    className={styles.poster}
                 />
                 <div className={styles.content}>
-                    <h2>Join Our Monthly Workshop!</h2>
-                    <p>
-                        Gain valuable strategies and practice for the upcoming exams. Seats
-                        are limited — sign up today!
-                    </p>
                     <a
                         href="https://tally.so/r/your-form-id"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.signupBtn}
+                        className={`ctaButton ${styles.signupBtn} buttonRed`}
                     >
                         Sign Up Now
                     </a>

@@ -40,7 +40,7 @@ export default function CTASection() {
 
             <div className={styles.mascotContainer}>
                 <img
-                    src="/assets/blue-mascot.jpg"
+                    src="/assets/blue-mascot.webp"
                     data-aos="fade-up"
                     data-aos-delay="200"
                     alt="Review Mascot"
@@ -48,14 +48,14 @@ export default function CTASection() {
                 />
 
                 <img
-                    src="/assets/red-mascot-teach.png"
+                    src="/assets/red-mascot-teach.webp"
                     data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
 
                 <img
-                    src="/assets/yellow-mascot-2.png"
+                    src="/assets/yellow-mascot-2.webp"
                     data-aos="fade-up"
                     data-aos-delay="100"
                     alt="Review Mascot"

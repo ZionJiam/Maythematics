@@ -54,7 +54,7 @@ const Story = () => {
 
                     <div className={styles.videoOverlay}>
                         {/* <SlideUpImage alt="Red Mascot Teaching" className={styles.videoMascot} src="/assets/red-mascot-teach.png" /> */}
-                        <img data-aos="fade-right" alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.png" />
+                        <img data-aos="fade-right" alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.webp" />
                         <img data-aos="fade-left" alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
 
                         {/* Content you want to show overlapping */}
@@ -110,7 +110,7 @@ const Story = () => {
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-2.png" alt="FLoating Design Element 3" />
+                            <img className={`${styles.image}`} src="/images/storyteam/image-2.png" alt="Story Image 2" />
                         </div>
 
                     </div>
@@ -119,7 +119,7 @@ const Story = () => {
 
                         <div className={`${styles.textWrapper}`}>
 
-                            <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.png" />
+                            <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.webp" />
 
                             <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
                                 <div className={`${styles.numbering}`}>
@@ -130,7 +130,7 @@ const Story = () => {
                             </div>
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-3.png" alt="FLoating Design Element 3" />
+                            <img className={`${styles.image}`} src="/images/storyteam/image-3.png" alt="Story Image 3" />
                         </div>
 
                     </div>

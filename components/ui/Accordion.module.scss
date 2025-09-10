@@ -15,7 +15,7 @@
     text-align: left;
     font-size: 1.1rem;
     font-weight: 600;
-    background: #ffffff;
+    background: $color-yellow-light;
     border: none;
     outline: none;
     display: flex;
@@ -25,12 +25,12 @@
     transition: background 0.25s ease;
 
     &:hover {
-        background: $color-yellow-light;
+        background: $color-yellow;
     }
 }
 
 .accordionButton.active {
-    background: $color-yellow-light;
+    background: $color-yellow;
 }
 
 .icon {

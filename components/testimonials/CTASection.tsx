@@ -26,7 +26,7 @@ export default function CTASection() {
             <div className={styles.mascotContainer}>
 
                 <img
-                    src="/assets/review-mascot.png"
+                    src="/assets/review-mascot.webp"
                     data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}

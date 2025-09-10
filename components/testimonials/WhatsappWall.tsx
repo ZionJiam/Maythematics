@@ -56,11 +56,11 @@ export default function WhatsappMasonry() {
                 {testimonials.map((item, index) => (
                     <div data-aos="fade-up" key={index} className={styles.gridItem}>
                         <img loading="lazy" src={item.image} alt={`Testimonial ${index + 1}`} />
-                        <div className={styles.caption}>
+                        {/* <div className={styles.caption}>
                             <p className={styles.student}>{item.student}</p>
                             <p className={styles.school}>{item.school}</p>
                             <p className={styles.achievement}>{item.achievement}</p>
-                        </div>
+                        </div> */}
 
                     </div>
                 ))}

@@ -166,7 +166,7 @@ const Team = () => {
                         <p className={styles.slogan}>
                             Click on each profile to know how we support every students's learning journey
                         </p>
-                        <img className={`${styles.cardMascot}`} src="/assets/red-mascot-teach.png" alt="Red Mascot Teaching" />
+                        <img className={`${styles.cardMascot}`} src="/assets/red-mascot-teach.webp" alt="Red Mascot Teaching" />
 
 
                     </div>

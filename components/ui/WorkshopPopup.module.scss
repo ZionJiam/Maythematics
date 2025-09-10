@@ -6,15 +6,15 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.25s ease;
 }
 
 .popup {
     background: #fff;
     border-radius: 12px;
-    max-width: 500px;
+    max-width: 450px;
     width: 90%;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     position: relative;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -27,7 +27,10 @@
 }
 
 .closeBtn {
-    position: absolute;
+    // position: absolute;
+    display: flex;
+    justify-content: right;
+    width: 100%;
     top: 12px;
     right: 12px;
     background: transparent;
@@ -41,28 +44,9 @@
     }
 }
 
-.content {
-    h2 {
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-        margin-bottom: 1.2rem;
-        color: #555;
-    }
-}
 
 .signupBtn {
-    display: inline-block;
-    background: #2c7be5;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.2s ease;
+
 
     &:hover {
         background: #1e63c5;

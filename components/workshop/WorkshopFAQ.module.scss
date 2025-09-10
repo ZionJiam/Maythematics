@@ -1,8 +1,7 @@
 @use '../../app/styles/variables' as *;
 
 .faqSection {
-  background-color: #fffcf3;
-  min-height: 100vh;
+  position: relative;
 
   h2 {
     padding: 3rem 0;
@@ -13,4 +12,44 @@
   max-width: 800px;
   width: 95%;
   margin: 0 auto;
+}
+
+.mascotContainer {
+  position: relative;
+  bottom: -30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  // @media (min-width: 768px) {
+  //   bottom: -76px;
+  // }
+
+  // @media (min-width: 1024px) {
+  //   bottom: -103px;
+  // }
+
+}
+
+.reviewMascot {
+  height: 100%;
+  height: auto;
+}
+
+
+
+.redMascot {
+  width: 100px;
+  position: relative;
+  z-index: 2;
+  left: 10px;
+
+  @media (min-width: 768px) {
+    width: 120px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 150px;
+
+  }
 }

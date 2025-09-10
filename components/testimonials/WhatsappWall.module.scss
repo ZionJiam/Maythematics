@@ -1,6 +1,9 @@
+@use '../../app/styles/variables' as *;
+
 .whatsappMasonry {
+
     padding: 3rem 1.5rem;
-    background: #fafafa;
+    background-color: #fffcf3;
 
     h2 {
         text-align: center;
@@ -26,39 +29,38 @@
     border-radius: 12px;
     // padding: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     }
 
     img {
         width: 100%;
-        border-radius: 8px 8px 0 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
     }
 
     .caption {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
-        color: #333;
+        color: $color-text;
 
         .student {
             font-weight: 600;
             font-size: 1rem;
-            color: #111;
         }
 
         .school {
-            color: #555;
             font-size: 0.85rem;
+            font-weight: 300;
             margin-bottom: 0.3rem;
         }
 
         .achievement {
-            color: #0070f3;
-            font-weight: 500;
+            color: $color-red;
+            font-weight: 600;
             font-size: 0.9rem;
         }
     }

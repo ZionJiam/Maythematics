@@ -14,8 +14,8 @@ export default function Workshop() {
             <SubPageHeader color="red" header="Workshop" />
             <WorkshopDisplay />
             <WorkshopBenefits />
+            <WorkshopFAQ />
             <WorkshopGallery />
-            {/* <WorkshopFAQ /> */}
             <CTASection />
         </main>
     )

@@ -38,7 +38,7 @@ export default function WorkshopFAQ() {
 
     return (
         <section className={styles.faqSection}>
-            <h2 className="sectionTitle">Workshop Enquiries</h2>
+            <h2 className="sectionTitle">Workshop FAQ</h2>
             <div className={styles.accordionWrapper}>
                 {faqs.map((faq, idx) => (
                     <Accordion
@@ -49,6 +49,15 @@ export default function WorkshopFAQ() {
                         onToggle={() => handleToggle(idx)}
                     />
                 ))}
+            </div>
+
+            <div className={styles.mascotContainer}>
+                <img
+                    src="/assets/yellow-mascot.webp"
+                    data-aos="fade-up"
+                    alt="Review Mascot"
+                    className={`${styles.reviewMascot} ${styles.redMascot}`}
+                />
             </div>
         </section>
     );

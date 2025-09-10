@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./ResultMasonry.module.scss";
 import Masonry from "react-masonry-css";
 
@@ -55,6 +56,12 @@ const breakpointColumnsObj = {
 };
 
 export default function ResultsMasonry() {
+    const [visibleCount, setVisibleCount] = useState(6); // show 3 initially
+
+    const handleSeeMore = () => {
+        setVisibleCount(results.length); // reveal all
+    };
+
     return (
         <section className={styles.resultsMasonry}>
             <h2 className="sectionTitle">Our Hall of Fame</h2>
@@ -63,7 +70,7 @@ export default function ResultsMasonry() {
                 className={styles.myMasonryGrid}
                 columnClassName={styles.myMasonryGridColumn}
             >
-                {results.map((item, index) => (
+                {results.slice(0, visibleCount).map((item, index) => (
                     <div data-aos="fade-up" key={index} className={styles.gridItem}>
                         <img src={item.src} alt={`Result ${index + 1}`} loading="lazy" />
                         <div className={styles.caption}>
@@ -74,6 +81,15 @@ export default function ResultsMasonry() {
                     </div>
                 ))}
             </Masonry>
+
+            {/* Show See More button only if there are more results */}
+            {/* {visibleCount < results.length && (
+                <div className={styles.seeMoreWrapper}>
+                    <button className={`${styles.seeMoreBtn} ctaButton buttonRed`} onClick={handleSeeMore}>
+                        See More
+                    </button>
+                </div>
+            )} */}
         </section>
     );
 }

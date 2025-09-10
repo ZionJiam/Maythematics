@@ -1,83 +1,125 @@
 @use '../../app/styles/variables' as *;
 
 
-.benefitsSection {
-    width: 100%;
-    background-color: $color-blue-mascot; // soft yellow
-    padding: 4rem 1.5rem;
+.WorkshopBenefits {
+
+    .dividerTop,
+    .dividerBottom {
+        width: 100%;
+        display: block;
+        z-index: 2;
+        position: relative;
+        max-height: 100px;
+
+    }
+
+    .dividerTop {
+        transform: rotate(180deg);
+        margin-top: -1px;
+    }
+
+    .benefitsSection {
+        padding: 3rem 0;
+        background-color: $color-blue-mascot ;
+    }
 
     .container {
-        max-width: 1200px;
         margin: 0 auto;
-        text-align: center;
+        width: 100%;
     }
 
     .title {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .carouselWrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .track {
+        display: flex;
+        will-change: transform;
+    }
+
+    .slide {
+        flex: 0 0 calc(100% / 5); // show 3 at once by default
+        padding: 0.75rem;
+        box-sizing: border-box;
+    }
+
+    .slideInner {
+        height: 100%;
+        background: #fff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        text-align: center;
+    }
+
+    .quoteIcon {
+        color: #3b82f6;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text {
+        font-size: 1rem;
         color: #333;
+        margin: 0.5rem 0;
     }
 
-    .list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        gap: 2rem;
-        text-align: left;
-        /* Two columns on desktop */
-        /* Fixed 2 columns and 2 rows on desktop */
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
+    .author {
+        font-weight: 700;
+        color: #555;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
 
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr; // stack on mobile
-            grid-template-rows: auto;
+    /* Responsive: adjust number of visible slides */
+    @media (max-width: 1279px) {
+        .slide {
+            flex: 0 0 calc(100% / 4); // 2 visible
         }
+    }
 
-        li {
-            display: flex;
-            align-items: center;
-            background: #fff;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Responsive: adjust number of visible slides */
+    @media (max-width: 1023px) {
+        .slide {
+            flex: 0 0 calc(100% / 3); // 2 visible
+        }
+    }
 
-            .icon {
-                color: #28a745; // green check
-                margin-right: 1rem;
-                font-size: 1.25rem;
-                flex-shrink: 0;
-            }
-
-
-            @media (max-width: 767px) {
-                grid-template-columns: 1fr; // stack on mobile
-                grid-template-rows: auto;
-                font-size: 1rem;
-            }
-
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: #333;
+    @media (max-width: 767px) {
+        .slide {
+            flex: 0 0 100%; // 1 visible
         }
     }
 }
 
-
-.dividerTop,
-.dividerBottom {
-    width: 100%;
-    display: block;
-    z-index: 2;
-    position: relative;
-    max-height: 100px;
-
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
 }
 
-.dividerTop {
-    transform: rotate(180deg);
-    margin-top: -1px;
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot:hover {
+    background: $color-text;
+}
+
+.active {
+    background: $color-yellow-mascot; // highlight active dot
 }

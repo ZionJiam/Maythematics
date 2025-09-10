@@ -12,8 +12,8 @@ export default function TestimonialsPage() {
         <main className={styles.main}>
             <SubPageHeader color="red" header="Testimonials" />
             <StudentReview />
-            <WhatsappWall />
             <ResultsMasonry />
+            <WhatsappWall />
             <CTASection />
         </main>
     );

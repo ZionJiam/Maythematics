@@ -151,10 +151,15 @@
 
             .storyMascot {
                 position: absolute;
-                top: -55px;
+                top: -65px;
 
                 width: 110px;
                 z-index: 1;
+
+                @media (min-width: 1024px) {
+                    top: -55px;
+                }
+
             }
 
 

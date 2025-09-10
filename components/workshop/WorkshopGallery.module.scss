@@ -4,10 +4,12 @@
 .gallerySection {
     padding-bottom: 5rem;
     background-color: #fffcf3;
+    position: relative;
+    z-index: 2;
 
 
     h2 {
-        margin: 3rem 0;
+        padding: 3rem 0;
 
     }
 }

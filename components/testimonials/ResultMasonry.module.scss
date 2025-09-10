@@ -1,6 +1,8 @@
+@use '../../app/styles/variables' as *;
+
+
 .resultsMasonry {
-    padding: 4rem 2rem;
-    background-color: #fffcf3;
+    padding: 0rem 2rem;
 }
 
 .myMasonryGrid {
@@ -8,6 +10,7 @@
     margin: 3rem auto;
     gap: 1rem;
     /* gutter size offset */
+    //width: 95%;
     max-width: 1124px;
 }
 
@@ -37,24 +40,44 @@
     .caption {
         padding: 0.8rem 1rem;
         font-size: 0.9rem;
-        color: #333;
+        color: $color-text;
 
         .student {
             font-weight: 600;
             font-size: 1rem;
-            color: #111;
         }
 
         .school {
-            color: #555;
             font-size: 0.85rem;
+            font-weight: 300;
             margin-bottom: 0.3rem;
         }
 
         .achievement {
-            color: #0070f3;
-            font-weight: 500;
+            color: $color-red;
+            font-weight: 600;
             font-size: 0.9rem;
         }
     }
 }
+
+.seeMoreWrapper {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.seeMoreBtn {
+    border: none;
+    // background-color: #ff5a5f;
+    // color: #fff;
+    // padding: 0.75rem 1.5rem;
+    // border-radius: 0.5rem;
+    // font-weight: bold;
+    // border: none;
+    // cursor: pointer;
+    // transition: background-color 0.3s;
+}
+
+// .seeMoreBtn:hover {
+//     background-color: #e04e53;
+// }
