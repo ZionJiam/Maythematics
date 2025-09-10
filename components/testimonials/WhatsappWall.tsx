@@ -46,7 +46,7 @@ const breakpointColumnsObj = {
 
 export default function WhatsappMasonry() {
     return (
-        <section className={styles.whatsappMasonry}>
+        <section id="messages" className={styles.whatsappMasonry}>
             <h2 className="sectionTitle">Heartfelt Messages</h2>
             <Masonry
                 breakpointCols={breakpointColumnsObj}

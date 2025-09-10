@@ -48,6 +48,10 @@
     border-radius: 10px;
 
     @media (min-width: 768px) {
+        width: 500px;
+    }
+
+    @media (min-width: 1024px) {
         width: 300px;
 
     }
@@ -66,8 +70,6 @@
         margin-bottom: 1rem;
         white-space: pre-line;
         font-weight: 600;
-
-
     }
 
     .descriptionContainer {

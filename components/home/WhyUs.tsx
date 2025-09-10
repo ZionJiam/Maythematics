@@ -8,7 +8,7 @@ const reasons = [
         title: 'Tutors Who Truly Get Students',
         description: 'A dynamic team of tutors who make Math clear, relatable, and even enjoyable — because we’ve been in your shoes not too long ago.',
         cta: 'DISCOVER OUR TUTORS >',
-        href: '/about#team',
+        href: '/storyandteam#team',
     },
     {
         image: '/images/banner1.webp',
@@ -22,7 +22,7 @@ const reasons = [
         title: 'Visible Results in Just Half a Year',
         description: 'With the right strategies, 9 in 10 students achieve better results in 6 months or less.',
         cta: 'SEE MORE RESULTS >',
-        href: '/results',
+        href: '/testimonials#messages',
     }
 ];
 

@@ -148,19 +148,13 @@
   text-decoration: none;
 }
 
-.active {
+.submenu {
+  .active {
+    color: $color-red; // or highlight color
+  }
+}
+
+.mobileNavLinks .active {
   font-weight: 700;
-}
-
-.linkRed.active {
   color: $color-red; // or highlight color
-
-}
-
-.linkYellow.active {
-  color: $color-yellow; // or highlight color
-}
-
-.linkBlue.active {
-  color: $color-blue; // or highlight color
 }

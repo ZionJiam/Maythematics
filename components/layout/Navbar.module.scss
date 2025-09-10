@@ -99,7 +99,7 @@
   }
 }
 
-.dropdownContentRed {
+.dropdownContent {
   background-color: variables.$color-red-light;
 
   a {
@@ -111,16 +111,16 @@
   }
 }
 
-.dropdownContentBlue {
-  background-color: variables.$color-blue-light;
+// .dropdownContentBlue {
+//   background-color: variables.$color-blue-light;
 
-  a {
+//   a {
 
-    &:hover {
-      background-color: variables.$color-blue;
-    }
-  }
-}
+//     &:hover {
+//       background-color: variables.$color-blue;
+//     }
+//   }
+// }
 
 
 .ctaButton {
@@ -136,35 +136,14 @@
   }
 }
 
-.linkBlue {
+.navLink {
   &:hover {
-    color: variables.$color-blue;
-  }
-
-  &::after {
-    background-color: variables.$color-blue;
-  }
-}
-
-.linkRed {
-  &:hover {
+    cursor: pointer;
     color: variables.$color-red;
   }
-
-  &::after {
-    background-color: variables.$color-red;
-  }
 }
 
-.linkYellow {
-  &:hover {
-    color: variables.$color-yellow;
-  }
 
-  &::after {
-    background-color: variables.$color-yellow;
-  }
-}
 
 .mobileMenuButton {
   display: none;
@@ -233,17 +212,6 @@
 
 .active {
   font-weight: 700;
-}
-
-.linkRed.active {
   color: variables.$color-red; // or highlight color
 
-}
-
-.linkYellow.active {
-  color: variables.$color-yellow; // or highlight color
-}
-
-.linkBlue.active {
-  color: variables.$color-blue; // or highlight color
 }

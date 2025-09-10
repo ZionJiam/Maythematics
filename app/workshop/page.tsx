@@ -15,7 +15,7 @@ export default function Workshop() {
             <WorkshopDisplay />
             <WorkshopBenefits />
             <WorkshopGallery />
-            <WorkshopFAQ />
+            {/* <WorkshopFAQ /> */}
             <CTASection />
         </main>
     )

@@ -44,7 +44,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
           {/* About Us Dropdown */}
           <div className={styles.dropdown}>
             <button
-              className={`${styles.dropdownToggle} ${isActive("/about") ? styles.active : ""} ${styles.linkRed}`}
+              className={`${styles.dropdownToggle} ${isActive("/ourspace") ? styles.active : ""} ${isActive("/storyandteam") ? styles.active : ""} ${styles.linkRed}`}
               onClick={toggleAbout}
             >
               About Us
@@ -52,16 +52,16 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </button>
             <div className={`${styles.submenu} ${isAboutOpen ? styles.submenuOpen : ''}`}>
               <Link href="/storyandteam" className={`${isActive("/storyandteam") ? styles.active : ""}`} onClick={handleLinkClick}>Story and Team</Link>
-              <Link href="/ourspace" className={isActive("/ourspace") ? styles.active : ""} onClick={handleLinkClick}>Our Space</Link>
+              <Link href="/ourspace" className={`${isActive("/ourspace") ? styles.active : ""}`} onClick={handleLinkClick}>Our Space</Link>
             </div>
           </div>
 
-          <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""} ${styles.linkYellow}`} onClick={handleLinkClick}>Testimonials</Link>
+          <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""}`} onClick={handleLinkClick}>Testimonials</Link>
 
           {/* Lessons Dropdown */}
           <div className={styles.dropdown}>
             <button
-              className={`${styles.dropdownToggle} ${isActive("/lesson") ? styles.active : ""} ${styles.linkBlue}`}
+              className={`${styles.dropdownToggle} ${isActive("/lesson") ? styles.active : ""}`}
               onClick={toggleLessons}
             >
               Lessons
