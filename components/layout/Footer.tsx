@@ -23,8 +23,8 @@ const Footer = () => {
                     {/* About Section */}
                     <div className={styles.column}>
                         <h4>About Us</h4>
-                        <Link href="/about/story" className={styles.link}>Story and Team</Link>
-                        <Link href="/about/space" className={styles.link}>Our Space</Link>
+                        <Link href="/storyandteam" className={styles.link}>Story and Team</Link>
+                        <Link href="/ourspace" className={styles.link}>Our Space</Link>
                     </div>
 
                     {/* Lessons Section */}

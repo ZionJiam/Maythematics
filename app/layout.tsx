@@ -8,6 +8,7 @@ import MobileNavbar from "@/components/layout/MobileNavbar";
 import Footer from "@/components/layout/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FloatingWhatsApp from '@/components/ui/FloatingWhatsappButton';
 
 
 export default function RootLayout({
@@ -56,6 +57,7 @@ export default function RootLayout({
           <MobileNavbar isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
           {children}
           <Footer />
+          <FloatingWhatsApp />
         </main>
       </body>
     </html>

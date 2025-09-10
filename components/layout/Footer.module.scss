@@ -22,7 +22,7 @@
     z-index: 2;
     background-color: $color-teal;
     width: 100%;
-    padding: 2rem 1rem 0rem 2rem;
+    padding: 2rem 1rem;
 
     @media (min-width: 768px) {
         padding-top: 4rem;
@@ -45,12 +45,13 @@
 
             h4 {
                 font-size: 1.25rem;
-                font-weight: bold;
+                font-weight: 600;
+                color: $color-text;
             }
 
             p {
                 font-size: 1rem;
-                color: #555;
+                color: $color-text;
                 font-weight: 200;
             }
 
