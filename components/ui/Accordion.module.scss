@@ -17,11 +17,12 @@
     font-weight: 600;
     background: $color-yellow-light;
     border: none;
-    outline: none;
+    color: $color-text;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    outline: none;
     transition: background 0.25s ease;
 
     &:hover {
