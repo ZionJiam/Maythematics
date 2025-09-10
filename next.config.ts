@@ -14,6 +14,10 @@ const nextConfig = {
             key: 'X-Robots-Tag',
             value: 'noindex',
           },
+          {
+            key: 'Permissions-Policy',
+            value: 'picture-in-picture=(self "https://www.youtube.com")',
+          },
         ],
         source: '/:path*',
       });
