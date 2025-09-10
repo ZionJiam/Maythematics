@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className={`${styles.column} col-30`}>
                         <h4>Our Location</h4>
                         <p>5 Jalan Masjid, Kembangan Court #01-13</p>
-                        <p>Phone: +65 XXXX XXXX</p>
+                        <p>Phone: +65 8915 0859</p>
                         <p>Hours: Mon–Sun, 10am–8pm</p>
                     </div>
 
@@ -65,8 +65,8 @@ const Footer = () => {
 
                 {/* Bottom Line */}
                 <div className={styles.bottomLine}>
-                    <Link href="/privacy">Privacy Policy</Link>
-                    <span>© {new Date().getFullYear()} Maythematics Pte Ltd</span>
+                    {/* <Link href="/privacy">Privacy Policy</Link> */}
+                    <span>© {new Date().getFullYear()} Maythematics. All rights reserved.</span>
                 </div>
             </div>
         </footer>

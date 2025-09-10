@@ -23,6 +23,7 @@
     background-color: $color-teal;
     width: 100%;
     padding: 2rem 1rem;
+    padding-bottom: 0;
 
     @media (min-width: 768px) {
         padding-top: 4rem;
@@ -101,6 +102,7 @@
 
 .bottomLine {
     font-size: 0.9rem;
+    font-weight: 500;
     color: #999;
     border-top: 1px solid #ddd;
     padding: 0.5rem;

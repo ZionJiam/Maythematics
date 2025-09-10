@@ -26,7 +26,7 @@ const StudentReview = () => {
                     <h3>Get in Touch With Us</h3>
                     <ul className={styles.contactList}>
                         <li className={styles.telephone}>
-                            <FaPhoneAlt /> <a href="tel:+6591234567">+65 9123 4567</a>
+                            <FaPhoneAlt /> <a href="tel:+6589150859">+65 8915 0859</a>
                         </li>
 
                         <li>
