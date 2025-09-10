@@ -4,23 +4,23 @@ import Link from 'next/link';
 
 const reasons = [
     {
-        image: '/images/banner1.webp',
+        image: '/images/workshop/workshop-8P.webp',
         title: 'Tutors Who Truly Get Students',
         description: 'A dynamic team of tutors who make Math clear, relatable, and even enjoyable — because we’ve been in your shoes not too long ago.',
         cta: 'DISCOVER OUR TUTORS >',
         href: '/storyandteam#team',
     },
     {
-        image: '/images/banner1.webp',
+        image: '/images/workshop/workshop-5.webp',
         title: 'Master the Heuristics ',
         description: 'We empower students to apply proven heuristics — powerful strategies that make even the toughest problem sums manageable.',
         cta: 'LEARN ABOUT OUR LESSONS >',
         href: '/lessons',
     },
     {
-        image: '/images/banner1.webp',
+        image: '/images/workshop/workshop-2.webp',
         title: 'Visible Results in Just Half a Year',
-        description: 'With the right strategies, 9 in 10 students achieve better results in 6 months or less.',
+        description: 'With the right strategies, 9 in 10 students achieve better results on their PSLE and Secondary School Math Test in 6 months or less in our Tuition Centre.',
         cta: 'SEE MORE RESULTS >',
         href: '/testimonials#messages',
     }

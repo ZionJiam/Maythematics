@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react';
 
 const images = [
   '/images/banner1.webp',
+  // '/images/workshop/workshop-1.webp',
+  // '/images/workshop/workshop-2.webp',
   // '/images/banner2.jpg',
   // '/images/banner3.jpg',
 ];
@@ -40,14 +42,6 @@ const Banner = () => {
           <span className={styles.red}> weekly </span> for our
           <span className={styles.yellow}> Math tuition</span>.
 
-          {/* <span className={styles.red}>3</span>
-          <span className={styles.yellow}>5</span>
-          <span className={styles.blue}>0</span>
-          <span className={styles.blue}>+</span>
-          {" "}Happy Students <br />Since{" "}
-          <span className={styles.red}>2</span>
-          <span className={styles.yellow}>0</span>
-          <span className={styles.blue}>20</span> */}
         </h1>
         <Link href="/testimonials" className={`buttonYellow ctaButton`}>
           Discover Why

@@ -13,7 +13,7 @@ const lessons = [
             'Strong fundamentals and the right learning mindset are cultivated from the start. With a maximum of 4 students per class, every child receives close guidance and attention to nurture confidence and curiosity in mathematics.',
         duration: '1.5 hours',
         classSize: '4',
-        image: '/images/elementaryschool.jpg',
+        image: '/images/workshop/workshop-1.webp',
     },
     {
         title: 'Primary 3–4',
@@ -21,7 +21,7 @@ const lessons = [
             'Key mathematical concepts are strengthened and expanded, with an emphasis on problem-solving skills. Small groups of 6–8 students provide opportunities for interactive learning, peer support, and personalised feedback.',
         duration: '1.5 hours',
         classSize: '6-8',
-        image: '/images/elementaryschool.jpg',
+        image: '/images/workshop/workshop-10.webp',
     },
     {
         title: 'Primary 5–6',
@@ -29,7 +29,7 @@ const lessons = [
             'Challenging problem sums and higher-order thinking questions are introduced to build confidence and prepare students for the PSLE. Classes of 6–10 balance individual guidance with collaborative learning. ',
         duration: '2 hours',
         classSize: '6-10',
-        image: '/images/elementary2.jpg',
+        image: '/images/workshop/workshop-9P.webp',
     },
     {
         title: `Secondary Math 
@@ -38,7 +38,7 @@ const lessons = [
             'Algebra, geometry, graphs, and advanced problem-solving are taught with structured strategies to tackle exam-style questions effectively. Class sizes of 8–14 encourage discussion, exposure to varied question types, and development of analytical thinking. ',
         duration: '2 hours',
         classSize: '8-14',
-        image: '/images/middleschool.jpg',
+        image: '/images/workshop/workshop-11P.webp',
     },
     {
         title: 'JC Math (H1/H2)',
@@ -46,7 +46,7 @@ const lessons = [
             'Rigorous training in H1 and H2 Mathematics ensures mastery of advanced topics such as calculus, statistics, and complex numbers. Classes are designed to sharpen conceptual understanding, problem-solving speed, and exam readiness in groups of 8–14 students.',
         duration: '2 hours',
         classSize: '8-14',
-        image: '/images/highschol.jpg',
+        image: '/images/workshop/workshop-12P.webp',
     },
 ];
 
