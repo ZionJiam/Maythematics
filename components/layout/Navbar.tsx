@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
 
                 <div className={styles.navbarNav}>
                     <div className={styles.dropdown}>
-                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/storyandteam") ? styles.active : ""}`}>
+                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/ourspace") ? styles.active : ""} ${isActive("/storyandteam") ? styles.active : ""}`}>
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
