@@ -1,25 +1,17 @@
 .resultsMasonry {
     padding: 4rem 2rem;
-    background: #f9fafb;
-
-    h2 {
-        text-align: center;
-        margin-bottom: 2.5rem;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #222;
-    }
+    background-color: #fffcf3;
 }
 
 .myMasonryGrid {
     display: flex;
-    margin: 0 auto;
+    margin: 3rem auto;
+    gap: 1rem;
     /* gutter size offset */
-    width: 1124px;
+    max-width: 1124px;
 }
 
 .myMasonryGridColumn {
-    padding-left: 1rem;
     /* gutter size */
     background-clip: padding-box;
 }

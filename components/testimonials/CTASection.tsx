@@ -16,9 +16,9 @@ export default function CTASection() {
 
             <div data-aos="fade-up" className={styles.ctaTextWrapper}>
                 <p className={`${styles.ctaParagraph} text-lg`}>
-                    Spots are filling up fast — secure your place today and level up your Math!
+                    Join our community of parents who are celebrating their child’s math progress with us.
                 </p>
-                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Sign Up Now</Link>
+                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book a Trial Class</Link>
 
             </div>
 
@@ -26,7 +26,7 @@ export default function CTASection() {
             <div className={styles.mascotContainer}>
 
                 <img
-                    src="/assets/red-mascot-teach.png"
+                    src="/assets/review-mascot.png"
                     data-aos="fade-up"
                     alt="Review Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}

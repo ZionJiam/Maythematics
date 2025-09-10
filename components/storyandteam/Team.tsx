@@ -12,6 +12,7 @@ const teamMembers = [
     {
         name: "Amy",
         role: "Math Teacher (Primary 3-5)",
+        startYear: 2016,
         imageUrl: "/images/team/Amy_1.webp",
         imageUrlHover: "/images/team/Amy_2.webp",
         degree: "B.Sc. in Mathematics, NUS",
@@ -20,6 +21,7 @@ const teamMembers = [
     },
     {
         name: "Eunice",
+        startYear: 2024,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
@@ -30,6 +32,7 @@ const teamMembers = [
     },
     {
         name: "Joan",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Joan_1.webp",
         imageUrlHover: "/images/team/Joan_2.webp",
@@ -40,6 +43,7 @@ const teamMembers = [
     },
     {
         name: "Jovial",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Jovial_1.webp",
         imageUrlHover: "/images/team/Jovial_2.webp",
@@ -50,6 +54,7 @@ const teamMembers = [
     },
     {
         name: "Kelly",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Kelly_1.webp",
         imageUrlHover: "/images/team/Kelly_2.webp",
@@ -60,6 +65,7 @@ const teamMembers = [
     },
     {
         name: "Leanne",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Leanne_1.webp",
         imageUrlHover: "/images/team/Leanne_2.webp",
@@ -70,6 +76,7 @@ const teamMembers = [
     },
     {
         name: "Lucas",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Lucas_1.webp",
         imageUrlHover: "/images/team/Lucas_2.webp",
@@ -81,6 +88,7 @@ const teamMembers = [
 
     {
         name: "May",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/May_1.webp",
         imageUrlHover: "/images/team/May_2.webp",
@@ -92,6 +100,7 @@ const teamMembers = [
 
     {
         name: "Meisi",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Meisi_2.webp",
         imageUrlHover: "/images/team/Meisi_1.webp",
@@ -102,6 +111,7 @@ const teamMembers = [
     },
     {
         name: "Sammi",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Sammi_1.webp",
         imageUrlHover: "/images/team/Sammi_2.webp",
@@ -112,6 +122,7 @@ const teamMembers = [
     },
     {
         name: "Tyler",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Tyler_1.webp",
         imageUrlHover: "/images/team/Tyler_2.webp",
@@ -122,6 +133,7 @@ const teamMembers = [
     },
     {
         name: "Ven",
+        startYear: 2016,
         role: "Math Teacher (Primary 3-5)",
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
@@ -158,20 +170,21 @@ const Team = () => {
 
 
                     </div>
-                    {teamMembers.map((member, index) => (
-                        <TeamCard
-                            key={index}
-                            name={member.name}
-                            role={member.role}
-                            imageUrl={member.imageUrl}
-                            imageUrlHover={member.imageUrlHover}
-                            degree={member.degree}
-                            description={member.description}
-                            studentReview={member.studentReview}
-                            onClick={() => setSelectedMember(member)}
-                            data-aos="fade-up"
-                        />
-                    ))}
+                    {teamMembers
+                        .map((member, index) => (
+                            <TeamCard
+                                key={index}
+                                name={member.name}
+                                role={member.role}
+                                imageUrl={member.imageUrl}
+                                imageUrlHover={member.imageUrlHover}
+                                degree={member.degree}
+                                description={member.description}
+                                studentReview={member.studentReview}
+                                onClick={() => setSelectedMember(member)}
+                                data-aos="fade-up"
+                            />
+                        ))}
                 </div>
 
                 {selectedMember && (

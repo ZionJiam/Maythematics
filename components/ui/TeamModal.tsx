@@ -2,6 +2,7 @@
 
 import styles from "./TeamModal.module.scss";
 import { useEffect, useState } from "react";
+import { FaUserTie, FaGraduationCap, FaCalendarAlt } from "react-icons/fa";
 
 interface TeamModalProps {
     member: {
@@ -11,6 +12,7 @@ interface TeamModalProps {
         degree: string;
         description: string;
         studentReview: string;
+        startYear: number;
     };
     onClose: () => void;
 }
@@ -23,6 +25,9 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
         // Trigger animation on mount
         setOpen(true);
     }, []);
+
+    const currentYear = new Date().getFullYear();
+
 
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
@@ -42,8 +47,20 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                             </div>
                             <div className={styles.mainInfo}>
                                 <h2 className={styles.name}>{member.name}</h2>
-                                <h4 className={styles.role}>{member.role}</h4>
-                                <p className={styles.degree}>{member.degree}</p>
+                                <h4 className={styles.role}>
+                                    <FaUserTie className={styles.icon} /> {member.role}
+                                </h4>
+
+                                <p className={styles.degree}>
+                                    <FaGraduationCap className={styles.icon} /> {member.degree}
+                                </p>
+
+                                {currentYear - member.startYear >= 3 && (
+                                    <p className={styles.yoe}>
+                                        <FaCalendarAlt className={styles.icon} />{" "}
+                                        {currentYear - member.startYear} years of experience
+                                    </p>
+                                )}
                             </div>
 
                         </div>

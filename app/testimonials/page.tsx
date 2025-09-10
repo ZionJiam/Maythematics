@@ -5,6 +5,7 @@ import SubPageHeader from '@/components/ui/SubpageHeader'
 import styles from "./page.module.css";
 import Slogan from "@/components/ui/Slogan";
 import ResultsMasonry from "@/components/testimonials/ResultMasonry";
+import CTASection from "@/components/testimonials/CTASection";
 
 export default function TestimonialsPage() {
     return (
@@ -13,6 +14,7 @@ export default function TestimonialsPage() {
             <StudentReview />
             <WhatsappWall />
             <ResultsMasonry />
+            <CTASection />
         </main>
     );
 }

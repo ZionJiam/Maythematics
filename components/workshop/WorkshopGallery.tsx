@@ -3,12 +3,15 @@
 import styles from './WorkshopGallery.module.scss';
 
 const workshopImages = [
-    { src: "/images/workshop-promo.webp", alt: 'Workshop 1', className: 'oneByOne' },
-    { src: '/images/banner1.webp', alt: 'Workshop 2', className: 'twoByOne' },
-    { src: "/images/workshop-promo.webp", alt: 'Workshop 3', className: 'twoByOne' },
-    { src: '/images/banner1.webp', alt: 'Workshop 4', className: 'oneByOne' },
-    { src: '/images/workshop-promo.webp', alt: 'Workshop 10', className: 'oneByOne' },
-    { src: '/images/workshop-promo.webp', alt: 'Workshop 5', className: 'twoByOne' },
+    { src: "/images/workshop/workshop-8P.webp", alt: 'Workshop 1', className: 'oneByOne' },
+    { src: '/images/workshop/workshop-3.webp', alt: 'Workshop 2', className: 'twoByOne' },
+    { src: "/images/workshop/workshop-2.webp", alt: 'Workshop 3', className: 'twoByOne' },
+    { src: '/images/workshop/workshop-9P.webp', alt: 'Workshop 5', className: 'oneByOne' },
+    { src: '/images/workshop/workshop-11P.webp', alt: 'Workshop 5', className: 'oneByOne' },
+    { src: "/images/workshop/workshop-1.webp", alt: 'Workshop 4', className: 'twoByOne' },
+    { src: '/images/workshop/workshop-10.webp', alt: 'Workshop 7', className: 'twoByOne' },
+    { src: '/images/workshop/workshop-12P.webp', alt: 'Workshop 6', className: 'oneByOne' },
+
 ];
 
 export default function WorkshopGallery() {

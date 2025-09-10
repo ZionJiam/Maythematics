@@ -38,7 +38,7 @@ export default function WorkshopFAQ() {
 
     return (
         <section className={styles.faqSection}>
-            <h2 className="sectionTitle">Workshop Questions</h2>
+            <h2 className="sectionTitle">Workshop Enquiries</h2>
             <div className={styles.accordionWrapper}>
                 {faqs.map((faq, idx) => (
                     <Accordion

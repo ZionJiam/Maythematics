@@ -181,17 +181,17 @@
 }
 
 .redMascot {
-    width: 120px;
+    width: 160px;
     position: relative;
     z-index: 2;
-    left: 10px;
+    bottom: -30px;
 
     @media (min-width: 768px) {
-        width: 160px;
+        width: 200px;
     }
 
     @media (min-width: 1024px) {
-        width: 194px;
+        width: 234px;
 
     }
 

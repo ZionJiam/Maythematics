@@ -166,11 +166,12 @@
     }
 
     .role,
-    .degree {
+    .degree,
+    .yoe {
         font-size: 0.9rem;
         color: $color-red;
         font-weight: 600;
-        margin-top: 0.75rem;
+        margin-top: 0.5rem;
 
         @media (min-width: 768px) {
             font-size: 1rem;
@@ -182,7 +183,7 @@
         flex-wrap: wrap;
         gap: 0.5rem;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
 
         h6 {
             font-size: 1rem;
