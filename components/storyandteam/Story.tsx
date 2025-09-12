@@ -89,7 +89,7 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>1</span>
                                 </div>
-                                <h2>Home-Based Setup</h2>
+                                <h4>Home-Based Setup</h4>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
@@ -106,7 +106,7 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>2</span>
                                 </div>
-                                <h2>Early Small <br />Group Classes</h2>
+                                <h4>Early Small <br />Group Classes</h4>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
@@ -125,7 +125,7 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>3</span>
                                 </div>
-                                <h2>Flagship Centre <br />(Opened in 2023)</h2>
+                                <h4>Flagship Centre <br />(Opened in 2023)</h4>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>4</span>
                                 </div>
-                                <h2>New Bigger Centre <br />(2025 Expansion)</h2>
+                                <h4>New Bigger Centre <br />(2025 Expansion)</h4>
                                 <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
                             </div>
                         </div>
