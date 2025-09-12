@@ -1,0 +1,105 @@
+@use '../../app/styles/variables' as *;
+
+.career {
+    margin-bottom: 3rem;
+}
+
+.careerWrapper {
+    margin-bottom: 3rem;
+}
+
+.careerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 1124px;
+    width: 95%;
+
+    // each container row
+    &:nth-child(1) .pointList li::before {
+        color: $color-yellow;
+    }
+
+    &:nth-child(2) .pointList li::before {
+        color: $color-blue;
+
+    }
+
+    &:nth-child(3) .pointList li::before {
+        color: $color-red;
+        align-items: center; // align top of icon with first line
+    }
+
+    &:nth-child(3) .pointList li {
+        align-items: center; // align top of icon with first line
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+
+        &.reverse {
+            flex-direction: row-reverse;
+
+            // text-align: right;
+        }
+    }
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    @media (min-width: 768px) {
+        width: 70%;
+    }
+
+    h2 {
+        color: $color-red;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    .pointList {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex; // align icon + text
+            align-items: baseline; // align top of icon with first line
+            gap: 0.5rem; // space between icon and text
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: $color-text;
+            font-weight: 300;
+
+            &::before {
+                // flex-shrink: 0; // icon won't shrink
+                font-weight: bold;
+                content: "■"; // square
+                font-size: 1rem;
+            }
+        }
+
+
+    }
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+    img {
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}

@@ -1,10 +1,30 @@
-.slogan {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    font-weight: 600;
-    text-align: center;
-    max-width: 1024px;
+@use '../../app/styles/variables' as *;
+
+.sloganContainer {
+    max-width: 56rem;
     width: 95%;
-    margin: 0 auto;
-    white-space: pre-line;
+    margin: 0rem auto;
+    padding: 3rem 0;
+    text-align: center;
+
+
+    h3 {
+        font-size: 1.5rem;
+
+        @media (min-width: 1024px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        padding-top: 1rem;
+        font-weight: 500;
+
+        @media (min-width: 1024px) {
+            font-size: 1.5rem;
+        }
+
+        // white-space: pre-line;
+    }
 }

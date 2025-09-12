@@ -11,7 +11,7 @@ export default function OurSpace() {
     return (
         <main className={styles.main}>
             <SubPageHeader color="red" header="Our Space" />
-            <Slogan text="At our center, we believe that the right environment enhances learning. With bright, well-designed classrooms, comfortable study corners, and a supportive atmosphere, every detail is to help students stay engaged and focused on their goals." />
+            <Slogan header="" text="At our center, we believe that the right environment enhances learning. With bright, well-designed classrooms, comfortable study corners, and a supportive atmosphere, every detail is to help students stay engaged and focused on their goals." />
             <SpaceHighlights />
             <SpaceVideoHighlights />
 

@@ -57,7 +57,7 @@ const Footer = () => {
 
 
                 <div className={styles.socialIcons}>
-                    <a href="https://www.tiktok.com/@maythematics" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+                    <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
                     <a href="https://www.instagram.com/maythematics" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     <a href="https://www.facebook.com/Maythematics/" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
                     <a href="https://www.youtube.com/@maythematics" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>

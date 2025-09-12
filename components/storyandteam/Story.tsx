@@ -60,7 +60,7 @@ const Story = () => {
                         {/* Content you want to show overlapping */}
                     </div>
 
-                    <p className={`text-lg ${styles.content}`}>
+                    <p className={`${styles.content}`}>
 
                         From home-based to opening our first flagship centre opposite Kembangan MRT in 2023 to expanding to a bigger centre in 2025, it has been our greatest honour for being able to inspire children & parents from all over Singapore to gain more confidence in Math.
                     </p>

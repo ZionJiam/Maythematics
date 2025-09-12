@@ -2,15 +2,19 @@
 import styles from "./Slogan.module.scss";
 
 interface SloganProps {
+    header: string;
     text: string;
 }
 
-export default function Slogan({ text }: SloganProps) {
+export default function Slogan({ header, text }: SloganProps) {
     return (
         <section className={styles.ourSpace}>
-            <p data-aos="fade-up" className={`text-lg ${styles.slogan}`}>
-                {text}
-            </p>
+            <div className={styles.sloganContainer}>
+                <h3>{header}</h3>
+                <p data-aos="fade-up" className={`${styles.slogan}`}>
+                    {text}
+                </p>
+            </div>
         </section>
     );
 }

@@ -1,0 +1,91 @@
+@use '../../app/styles/variables' as *;
+
+
+.joinUs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 6rem 1rem;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    max-width: 450px;
+    width: 95%;
+
+
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        max-width: 1124px;
+        gap: 3rem;
+
+
+    }
+}
+
+.imageContainer {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 50%;
+
+
+    }
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    /* Narrow width for vertical style */
+    /* Taller height for TikTok style */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.textContainer {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 50%;
+
+
+    }
+
+
+    h2 {
+        // font-size: 2rem;
+        // margin-bottom: 1rem;
+        color: $color-red;
+        margin-bottom: 1rem;
+        text-align: left;
+
+
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: $color-text;
+        font-weight: 300;
+        margin-bottom: 2rem;
+
+    }
+
+    .button {
+        text-align: center;
+        display: block;
+        font-size: 1rem;
+
+        @media (min-width: 768px) {
+            display: initial;
+        }
+
+        // float: right;
+    }
+}
