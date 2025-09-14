@@ -20,10 +20,10 @@ const StudentReview = () => {
             </div>
 
             <div className={styles.textContainer}>
-                <img alt="Contact Mascot" className={styles.contactMascot} src="/assets/contact-mascot.webp" />
-
+                {/* <img alt="Contact Mascot" className={styles.contactMascot} src="/assets/contact-mascot.webp" /> */}
+                <h2 className={`sectionTitle ${styles.sectionTitle}`}>Any Enquiries? <br />Get in Touch</h2>
                 <div className={styles.cotactContainer}>
-                    <h3>Get in Touch With Us</h3>
+                    <h3>Contacts</h3>
                     <ul className={styles.contactList}>
                         <li className={styles.telephone}>
                             <FaPhoneAlt /> <a href="tel:+6589150859">+65 8915 0859</a>
@@ -43,7 +43,7 @@ const StudentReview = () => {
 
                 <div className={styles.socialsContainer}>
 
-                    <h3>Join Our Community</h3>
+                    <h3>Social Media</h3>
 
                     <ul className={styles.socialList}>
                         <li className={styles.telephone}>
@@ -62,7 +62,7 @@ const StudentReview = () => {
                     </ul>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

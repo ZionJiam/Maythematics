@@ -4,12 +4,15 @@ import LessonSection from '@/components/home/NewLesson';
 import CTASection from '@/components/home/CTASection';
 
 import WhyUsSection from '@/components/home/WhyUs';
+import DayInThelife from '@/components/home/DayInTheLife';
+
 import StudentReview from '@/components/home/StudentReview';
 
 import Banner from '../components/home/Banner';
 
 import styles from './page.module.css';
 import LessonVideo from '@/components/home/LessonVideo';
+import Methodologies from '@/components/home/Methodologies';
 
 
 export default function Home() {
@@ -20,6 +23,9 @@ export default function Home() {
       <main className={styles.main}>
         <Banner />
         <WhyUsSection />
+        <Methodologies />
+        {/* <DayInThelife /> */}
+
         <StudentReview />
         <GoogleReviewSection />
         <LessonSection />
