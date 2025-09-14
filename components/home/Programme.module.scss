@@ -1,0 +1,129 @@
+@use '../../app/styles/variables' as *;
+
+
+.programmesSection {
+    // max-width: 1124px;
+    // width: 95%;
+    margin: 3rem auto;
+    // background: #fafafa;
+
+    .heading {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}
+
+.programmesWrapper {
+    background-color: #fffcf3;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 6rem 0;
+
+    @media (min-width: 768px) {
+        margin: 0;
+        margin-left: auto;
+
+    }
+}
+
+.textContainer {
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 768px) {
+        padding-left: 6rem;
+
+    }
+}
+
+.sectionTitle {
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    // font-size: 2rem;
+    // font-weight: 700;
+    text-align: left;
+    color: $color-red;
+    margin-bottom: 1rem;
+}
+
+.subheader {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 300;
+
+}
+
+
+.scrollContainer {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0rem 0rem 0rem 1rem; // <-- added left/right padding
+    scroll-padding-left: 1rem; // <-- ensures first snap aligns with padding
+
+    @media (min-width: 768px) {
+        padding: 0rem 0rem 0rem 6rem; // <-- added left/right padding
+        scroll-padding-left: 6rem; // <-- ensures first snap aligns with padding
+
+    }
+
+}
+
+.cardLink {
+    flex: 0 0 350px;
+    text-decoration: none;
+    color: inherit; // so text doesn’t look like a hyperlink
+    display: block; // ensures the card occupies full clickable space
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+
+        .image {
+            width: 105%;
+        }
+    }
+
+    .image {
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .content {
+        padding: 1rem;
+
+        h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+    }
+}

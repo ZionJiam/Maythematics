@@ -13,6 +13,7 @@ import Banner from '../components/home/Banner';
 import styles from './page.module.css';
 import LessonVideo from '@/components/home/LessonVideo';
 import Methodologies from '@/components/home/Methodologies';
+import Programme from '@/components/home/Programme';
 
 
 export default function Home() {
@@ -28,7 +29,8 @@ export default function Home() {
 
         <StudentReview />
         <GoogleReviewSection />
-        <LessonSection />
+        <Programme />
+        {/* <LessonSection /> */}
         <LessonVideo />
         <CTASection />
       </main>
