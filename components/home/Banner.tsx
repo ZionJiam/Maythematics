@@ -36,19 +36,17 @@ const Banner = () => {
       <div data-aos="fade-up" className={styles.bannerContainer}>
         <h1 className={`${styles.slogan}`}>
 
-          <span className={styles.red}>8</span> out of
-          <span className={styles.yellow}> 10 </span> students from
-          <span className={styles.blue}> different corners of Singapore</span> choose to travel
-          <span className={styles.red}> weekly </span> for our
-          <span className={styles.yellow}> Math tuition</span>.
+          <span className={`${styles.textBigger} ${styles.red}`}>8 out of 10 </span> students from
+          different parts of Singapore choose to travel weekly for our
+          <span className={`${styles.textBigger} ${styles.blue}`}> Math tuition</span>.
 
         </h1>
-        <Link href="/testimonials" className={`buttonYellow ctaButton`}>
-          Discover Why
+        <Link data-aos="fade-in" data-aos-delay="600" href="/testimonials" className={`buttonYellow ctaButton`}>
+          What Makes Us Different
         </Link>
       </div>
       <div className={styles.bannerOverlay}></div>
-    </section>
+    </section >
   );
 };
 
