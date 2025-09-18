@@ -36,9 +36,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
   return (
     <div className={`${styles.mobileNavbar} ${isOpen ? styles.open : ''}`}>
       <div className={styles.mobileNavbarContainer}>
-        <div className={styles.logoWrapper}>
-          <img src="/logo.png" alt="Maythematics Logo" className={styles.mobileLogo} />
-        </div>
 
         <div className={styles.mobileNavLinks}>
           {/* About Us Dropdown */}
@@ -56,7 +53,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""}`} onClick={handleLinkClick}>Testimonials</Link>
 
           {/* Lessons Dropdown */}
           <div className={styles.dropdown}>
@@ -64,7 +60,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
               className={`${styles.dropdownToggle} ${isActive("/lesson") ? styles.active : ""}`}
               onClick={toggleLessons}
             >
-              Lessons
+              Programmes
               <span className={`${styles.arrow} ${isLessonsOpen ? styles.up : styles.down}`}>▾</span>
             </button>
             <div className={`${styles.submenu} ${isLessonsOpen ? styles.submenuOpen : ''}`}>
@@ -74,10 +70,10 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
               <Link href="/lesson/jch1h2" className={isActive("/lesson/jch1h2") ? styles.active : ""} onClick={handleLinkClick}>JC H1/H2</Link>
             </div>
           </div>
+          <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""}`} onClick={handleLinkClick}>Testimonials</Link>
+          <Link href="/workshop" className={`${isActive("/workshop") ? styles.active : ""}`} onClick={handleLinkClick}>Workshop</Link>
 
           <Link href="/contactus" className={`${isActive("/contactus") ? styles.active : ""}`} onClick={handleLinkClick}>Contact Us</Link>
-          <Link href="/career" className={`${isActive("/career") ? styles.active : ""}`} onClick={handleLinkClick}>Career</Link>
-          <Link href="/workshop" className={`${isActive("/workshop") ? styles.active : ""}`} onClick={handleLinkClick}>Workshop</Link>
 
           <div className={styles.ctaButton}>
             <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">

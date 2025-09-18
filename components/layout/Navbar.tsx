@@ -12,6 +12,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false); // <-- state for hamburger
     const pathname = usePathname(); // <-- Get current path
 
     useEffect(() => {
@@ -22,6 +23,11 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
+
+    const handleMenuClick = () => {
+        setMenuOpen(!menuOpen);
+        onMobileNavOpen(); // still call your existing function
+    };
 
     const isActive = (path: string) => pathname.startsWith(path); // Match route
 
@@ -49,13 +55,10 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                         </div>
                     </div>
 
-                    <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/testimonials") ? styles.active : ""}`}>
-                        Testimonials
-                    </Link>
 
                     <div className={styles.dropdown}>
                         <div className={`${styles.navLink} ${styles.linkBlue} ${isActive("/lesson") ? styles.active : ""}`}>
-                            Lessons
+                            Programmes
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
                             <Link href="/lesson/primary3to4" className={`${styles.dropdownLink} ${isActive("/lesson/primary3to4") ? styles.active : ""}`}>
@@ -73,17 +76,19 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                         </div>
                     </div>
 
-                    <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contactus") ? styles.active : ""}`}>
-                        Contact Us
+                    <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/testimonials") ? styles.active : ""}`}>
+                        Testimonials
                     </Link>
 
-                    <Link href="/career" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/career") ? styles.active : ""}`}>
-                        Career
-                    </Link>
 
                     <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/workshop") ? styles.active : ""}`}>
                         Workshop
                     </Link>
+
+                    <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contactus") ? styles.active : ""}`}>
+                        Contact Us
+                    </Link>
+
                 </div>
 
                 <div>
@@ -99,16 +104,23 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                 <div className={styles.mobileMenuButton}>
                     <button
                         type="button"
-                        onClick={onMobileNavOpen}
+                        onClick={handleMenuClick}
                         className={styles.mobileMenuButton}
                         aria-controls="mobile-menu"
-                        aria-expanded="false"
+                        aria-expanded={menuOpen ? "true" : "false"}
                     >
-                        <svg className={styles.mobileMenuButtonSvg} xmlns="http://www.w3.org/2000/svg" fill="none"
+
+                        <div className={`${styles.hamburgerIcon} ${menuOpen ? styles.open : ""}`}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        {/* <svg className={styles.mobileMenuButtonSvg} xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                        </svg> */}
                     </button>
                 </div>
             </div>

@@ -3,12 +3,12 @@
 
 .mobileNavbar {
   position: fixed;
-  top: 0;
-  left: -75%;
+  left: -100%;
+  margin-top: 64px;
   /* Start off-screen by 75% */
-  width: 75%;
+  width: 100%;
   /* Occupy 75% of the screen width */
-  max-width: 280px;
+  //max-width: 280px;
   height: 100%;
   background-color: #fff;
   transition: left 0.3s ease-in-out;
