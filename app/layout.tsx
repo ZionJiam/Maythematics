@@ -54,7 +54,8 @@ export default function RootLayout({
           onClick={toggleMobileNav}
         />
         <main className={`main-content ${isMobileNavOpen ? 'pushed' : ''}`}>
-          <Navbar onMobileNavOpen={toggleMobileNav} className={`${isMobileNavOpen ? 'pushed' : ''}`} />
+          <Navbar onMobileNavOpen={toggleMobileNav} isMobileNavOpen={isMobileNavOpen}
+            className={`${isMobileNavOpen ? 'pushed' : ''}`} />
           <MobileNavbar isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
           {children}
           <Footer />

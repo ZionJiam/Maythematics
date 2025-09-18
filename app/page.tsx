@@ -21,17 +21,18 @@ export default function Home() {
   return (
     <>
 
-      <main className={styles.main}>
+      <main className={`${styles.main} pageMarginTop`} >
         <Banner />
         <WhyUsSection />
         <Methodologies />
-        {/* <DayInThelife /> */}
-
         <StudentReview />
+
         <GoogleReviewSection />
+        <DayInThelife />
         <Programme />
+
         {/* <LessonSection /> */}
-        <LessonVideo />
+        {/* <LessonVideo /> */}
         <CTASection />
       </main>
     </>

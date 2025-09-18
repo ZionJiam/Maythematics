@@ -10,7 +10,7 @@ import CTASection from '@/components/workshop/CTASection'
 
 export default function Workshop() {
     return (
-        <main className={styles.main}>
+        <main className={`${styles.main} pageMarginTop`} >
             <SubPageHeader color="red" header="Workshop" />
             <WorkshopDisplay />
             <WorkshopBenefits />

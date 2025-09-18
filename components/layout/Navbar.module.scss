@@ -9,7 +9,7 @@
   top: 0;
   z-index: 998;
   background: #fff;
-  padding: 0.8rem 0;
+  padding: 0.25rem 0;
 
 }
 
@@ -26,9 +26,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+
+
 }
 
 .logo {
+  display: flex;
+
   img {
     width: 100px;
   }
@@ -154,12 +158,6 @@
   border: none;
   outline: none; // For accessibility focus ring
 
-  svg {
-    // Nesting for SVG styles
-    height: 1.5rem;
-    width: 1.5rem;
-    stroke: currentColor;
-  }
 }
 
 
@@ -167,6 +165,10 @@
 
 // Media Queries for Responsiveness
 @media (max-width: 1023px) {
+
+  .navbar {
+    padding: 0.8rem 0.25rem;
+  }
 
   .navbarContainer {
     width: 95%;
@@ -196,11 +198,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
   }
 
   .hamburgerIcon {
-    width: 36px;
-    height: 28px;
+    width: 30px;
+    height: 20px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -216,7 +219,7 @@
   .hamburgerIcon span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #9a9a9a;
     border-radius: 9px;
@@ -239,11 +242,11 @@
 
   .hamburgerIcon span:nth-child(2),
   .hamburgerIcon span:nth-child(3) {
-    top: 13px;
+    top: 10px;
   }
 
   .hamburgerIcon span:nth-child(4) {
-    top: 26px;
+    top: 20px;
   }
 
 

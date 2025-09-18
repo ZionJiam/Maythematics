@@ -9,7 +9,7 @@ import CTASection from "@/components/testimonials/CTASection";
 
 export default function TestimonialsPage() {
     return (
-        <main className={styles.main}>
+        <main className={`${styles.main} pageMarginTop`} >
             <SubPageHeader color="red" header="Testimonials" />
             <StudentReview />
             <ResultsMasonry />

@@ -30,7 +30,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
 
   // Helper to close navbar on link click
   const handleLinkClick = () => {
-    if (onClose) onClose();
+    onClose(); // closes from RootLayout
   };
 
   return (

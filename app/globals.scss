@@ -29,10 +29,20 @@ body {
 }
 
 
-.mobileOverlay.open {
-  opacity: 1;
-  pointer-events: auto;
+
+
+.pageMarginTop {
+  padding-top: 84px;
+  /* background-color: #fffcf3; */
+
+  @media (max-width: 1023px) {
+    padding-top: 59px;
+
+  }
+
 }
+
+
 
 .bold {
   font-weight: 600;

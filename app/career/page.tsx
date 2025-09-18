@@ -8,7 +8,7 @@ import CareerReason from '@/components/career/CareerReason'
 
 export default function Career() {
     return (
-        <main className={styles.main}>
+        <main className={`${styles.main} pageMarginTop`} >
             <SubPageHeader color="red" header="Career" />
             {/* <TallyForm formId="wARzD0" layout="modal" width="600" /> */}
             <JoinUsSection />

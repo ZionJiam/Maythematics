@@ -9,7 +9,7 @@ import ContactCard from '@/components/contactus/ContactCard'
 
 export default function About() {
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} pageMarginTop`} >
       <SubPageHeader color="red" header="Contact Us" />
       <ContactCard />
       {/* <SocialMedia2 /> */}

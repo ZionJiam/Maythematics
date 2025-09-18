@@ -7,10 +7,11 @@ import styles from './Navbar.module.scss';
 
 interface NavbarProps {
     onMobileNavOpen: () => void;
+    isMobileNavOpen: boolean;
     className?: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
+const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, className }) => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false); // <-- state for hamburger
     const pathname = usePathname(); // <-- Get current path
@@ -29,16 +30,18 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
         onMobileNavOpen(); // still call your existing function
     };
 
+    const handleCloseMenu = () => {
+        setMenuOpen(false); // close hamburger
+    };
+
     const isActive = (path: string) => pathname.startsWith(path); // Match route
 
     return (
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} ${className || ''}`}>
             <div className={styles.navbarContainer}>
-                <div className={`${styles.logo} ${scrolled ? styles.logoSmall : ""}`}>
-                    <Link href="/">
-                        <img src="/logo.png" alt="Maythematics Logo" />
-                    </Link>
-                </div>
+                <Link href="/" className={`${styles.logo} ${scrolled ? styles.logoSmall : ""}`}>
+                    <img src="/logo.png" alt="Maythematics Logo" />
+                </Link>
 
                 <div className={styles.navbarNav}>
                     <div className={styles.dropdown}>
@@ -107,10 +110,10 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, className }) => {
                         onClick={handleMenuClick}
                         className={styles.mobileMenuButton}
                         aria-controls="mobile-menu"
-                        aria-expanded={menuOpen ? "true" : "false"}
+                        aria-expanded={isMobileNavOpen ? "true" : "false"}
                     >
 
-                        <div className={`${styles.hamburgerIcon} ${menuOpen ? styles.open : ""}`}>
+                        <div className={`${styles.hamburgerIcon} ${isMobileNavOpen ? styles.open : ""}`}>
                             <span></span>
                             <span></span>
                             <span></span>
