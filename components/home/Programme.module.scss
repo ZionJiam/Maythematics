@@ -3,7 +3,9 @@
 
 .programmesSection {
     margin: 0rem auto;
-    padding: 6rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
     // background-color: #fffcf3;
 
     .heading {
@@ -23,13 +25,8 @@
     margin: 0 auto;
     width: 95%;
     max-width: 1280px;
-    padding: 3rem 0;
     //border: 1px solid rgb(214, 214, 214);
 
-    @media (min-width: 768px) {
-        padding: 5rem 0;
-
-    }
 }
 
 .textContainer {

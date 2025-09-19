@@ -22,8 +22,8 @@ const programmes = [
 
 export default function ProgrammesSection() {
     return (
-        <section className={styles.programmesSection}>
-            <div className={styles.programmesWrapper}>
+        <section className={`${styles.programmesSection} sectionYPadding`}>
+            <div className={`${styles.programmesWrapper} sectionYPadding`}>
                 <div data-aos="fade-up" className={styles.textContainer}>
                     <h4 className={styles.sectionTitle}>OUR PROGRAMMES</h4>
                     <h3 className={`${styles.header} sectionTitle`}>Lesson for <br />  all grades</h3>
