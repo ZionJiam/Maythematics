@@ -25,11 +25,12 @@ const Footer = () => {
                         <h4>About Us</h4>
                         <Link href="/storyandteam" className={styles.link}>Story and Team</Link>
                         <Link href="/ourspace" className={styles.link}>Our Space</Link>
+                        <Link href="/career" className={styles.link}>Join Us</Link>
                     </div>
 
                     {/* Lessons Section */}
                     <div className={styles.column}>
-                        <h4>Lessons</h4>
+                        <h4>Programmes</h4>
                         <Link href="/lessons/primary" className={styles.link}>Primary 3-4</Link>
                         <Link href="/lessons/primary" className={styles.link}>Primary 5-6</Link>
                         <Link href="/lessons/secondary" className={styles.link}>Secondary 1-5</Link>
@@ -40,9 +41,8 @@ const Footer = () => {
                     <div className={styles.column}>
                         <h4>Explore</h4>
                         <Link href="/testimonials" className={styles.link}>Testimonials</Link>
-                        <Link href="/contactus" className={styles.link}>Contact Us</Link>
-                        <Link href="/career" className={styles.link}>Career</Link>
                         <Link href="/workshop" className={styles.link}>Workshop</Link>
+                        <Link href="/contactus" className={styles.link}>Contact Us</Link>
                     </div>
 
                     {/* Branches + Social Media */}

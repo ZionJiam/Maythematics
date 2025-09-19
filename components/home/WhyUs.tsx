@@ -5,30 +5,30 @@ import Link from 'next/link';
 const reasons = [
     {
         image: '/images/workshop/workshop-8P.webp',
-        title: 'Tutors Who Truly Get Students',
-        description: 'A dynamic team of tutors who make Math clear, relatable, and even enjoyable — because we’ve been in your shoes not too long ago.',
-        cta: 'DISCOVER OUR TUTORS >',
+        title: 'Positive, Patient, and Passionate Tutors',
+        description: 'Our team of math tutors is approachable, relatable, and committed to making every lesson clear and enjoyable. With consistent teaching methods across the team, students always experience structured, easy-to-follow lessons. This way, learning feels seamless and effective — no matter which tutor is taking the class.',
+        cta: 'MEET OUR TUTORS >',
         href: '/storyandteam#team',
     },
     {
         image: '/images/workshop/workshop-5.webp',
-        title: 'Master the Heuristics ',
-        description: 'We empower students to apply proven heuristics — powerful strategies that make even the toughest problem sums manageable.',
-        cta: 'LEARN ABOUT OUR LESSONS >',
+        title: 'Master Challenging Questions',
+        description: 'We equip students with simple, effective strategies to solve even the toughest math problems. Our viral teaching videos and step-by-step methods are praised by parents, students, and even school teachers. To reinforce this, our structured worksheets feature a wide range of challenging questions that sharpen thinking and build exam-ready confidence.',
+        cta: 'EXPLORE OUR APPROACH >',
         href: '/lessons',
     },
     {
         image: '/images/workshop/workshop-2.webp',
         title: 'Visible Results in Just Half a Year',
-        description: 'With the right strategies, 9 in 10 students achieve better results on their PSLE and Secondary School Math Test in 6 months or less in our Tuition Centre.',
-        cta: 'SEE MORE RESULTS >',
+        description: '9 in 10 students see measurable progress in their Math results within 6 months of joining us. For Secondary 1 students, 9 in 10 who start the year in G2 are promoted to G3 by year’s end. With a track record like this, parents can be assured their child is on the right path to success.',
+        cta: 'VIEW OUR RESULTS >',
         href: '/testimonials#messages',
     }
 ];
 
 const WhyUsSection = () => {
     return (
-        <section className={styles.whyUs}>
+        <section className={`${styles.whyUs} sectionYPadding`}>
             <div className={styles.grid}>
                 {reasons.map((reason, index) => (
                     <div data-aos="fade-up" data-aos-delay={index * 150}

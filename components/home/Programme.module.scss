@@ -2,10 +2,9 @@
 
 
 .programmesSection {
-    // max-width: 1124px;
-    // width: 95%;
-    margin: 3rem auto;
-    // background: #fafafa;
+    margin: 0rem auto;
+    padding: 6rem 1rem;
+    background-color: #fffcf3;
 
     .heading {
         font-size: 2rem;
@@ -13,28 +12,37 @@
         margin-bottom: 1.5rem;
         text-align: center;
     }
+
+    @media (min-width: 768px) {}
 }
 
 .programmesWrapper {
-    background-color: #fffcf3;
-    width: 95%;
-    margin: 0 auto;
     border-radius: 10px;
-    padding: 6rem 0;
+    background-color: white;
+    // border: 2px solid rgb(224, 224, 226);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1280px;
+    padding: 3rem 0;
+    //border: 1px solid rgb(214, 214, 214);
 
     @media (min-width: 768px) {
-        margin: 0;
-        margin-left: auto;
+        padding: 5rem 0;
 
     }
 }
 
 .textContainer {
-    padding-left: 1rem;
+    max-width: 1124px;
+    margin: 0 auto;
     margin-bottom: 3rem;
+    padding-left: 1rem;
+    // width: 95%;
 
     @media (min-width: 768px) {
-        padding-left: 6rem;
+        padding-left: 0rem;
 
     }
 }
@@ -51,6 +59,7 @@
     // font-size: 2rem;
     // font-weight: 700;
     text-align: left;
+    color: $color-text;
     color: $color-red;
     margin-bottom: 1rem;
 }
@@ -65,6 +74,8 @@
 
 .scrollContainer {
     display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
     gap: 1.5rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -73,22 +84,22 @@
     scroll-padding-left: 1rem; // <-- ensures first snap aligns with padding
 
     @media (min-width: 768px) {
-        padding: 0rem 0rem 0rem 6rem; // <-- added left/right padding
-        scroll-padding-left: 6rem; // <-- ensures first snap aligns with padding
+        padding: 0rem 0rem 0rem 5rem; // <-- added left/right padding
+        scroll-padding-left: 5rem; // <-- ensures first snap aligns with padding
 
     }
 
 }
 
 .cardLink {
-    flex: 0 0 350px;
+    flex: 0 0 300px;
     text-decoration: none;
     color: inherit; // so text doesn’t look like a hyperlink
     display: block; // ensures the card occupies full clickable space
 }
 
 .card {
-    background: white;
+    background-color: #F0F2F5;
     border-radius: 1rem;
     overflow: hidden;
     scroll-snap-align: start;
@@ -105,7 +116,7 @@
     .image {
         transition: all 0.3s ease;
         width: 100%;
-        height: 180px;
+        height: 150px;
         object-fit: cover;
         object-position: center;
     }
@@ -117,10 +128,11 @@
             margin-bottom: 0.5rem;
             font-size: 1.25rem;
             font-weight: 600;
+            color: $color-red;
         }
 
         p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             line-height: 1.4;
             margin-bottom: 0.5rem;
             font-weight: 300;

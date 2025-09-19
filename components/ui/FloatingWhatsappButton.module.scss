@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: $color-red;
+    background-color: $color-green;
     color: #fff;
     border-radius: 50%;
     padding: 14px;
@@ -17,7 +17,7 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
 
     @media (min-width: 1024px) {
-        display: none; // Only show on desktop
+        // display: none; // Only show on desktop
     }
 }
 

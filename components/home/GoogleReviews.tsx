@@ -93,7 +93,7 @@ const GoogleReviews = () => {
     const [selectedReview, setSelectedReview] = useState<null | typeof reviews[0]>(null);
 
     return (
-        <section className={styles.googleReviews}>
+        <section className={`${styles.googleReviews} sectionYPadding`}>
             <img data-aos="fade-up" alt="Review Mascot thumbs up" className={styles.reviewMascot} src="/assets/review-mascot.webp" />
 
             <img
@@ -108,7 +108,7 @@ const GoogleReviews = () => {
                 </svg>
             </div> */}
 
-            <div className={styles.reviewContainer}>
+            <div className={`${styles.reviewContainer}`}>
                 <h2 className={`sectionTitle white-text-outline`}>Google Reviews</h2>
 
                 <div data-aos="fade-in" className={styles.marqueeWrapper}>
@@ -158,7 +158,7 @@ const GoogleReviews = () => {
                     href="https://www.google.com/search?sca_esv=63ad467223b51100&sxsrf=AE3TifOpsTdfoMI-1PN4HwIa9AbKt1PdWg:1755628692846&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E8TbVFSNsxIX4BKvto6miI3zK3MzrbgAjcuQyeWEbIbhH5hddhSRR3JsN3vbbobbFBySMy56msroU-pHa-Ru_3c7fmksWdUtRTNRmakmOrQrRkk0HA%3D%3D&q=Maythematics+Math+Tuition+Reviews&sa=X&ved=2ahUKEwiA0ODEwpePAxXZzjgGHQtpAFQQ0bkNegQIPRAE&biw=1720&bih=652&dpr=2"
                     className={`buttonYellow ctaButton`}
                 >
-                    Check Out More Reviews
+                    What Parents Say
                 </Link>
 
             </div>

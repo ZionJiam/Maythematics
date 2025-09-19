@@ -13,7 +13,7 @@ const DayInTheLife = () => {
                 <iframe
                     loading="lazy"
                     className={styles.video}
-                    src="https://youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI"
+                    src="https://youtube.com/embed/qfEws8IvGSw?si=slcdBQghTqj3jV23"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -22,7 +22,7 @@ const DayInTheLife = () => {
             </div>
 
             <div data-aos="fade-up" className={styles.textContainer}>
-                <h2 className="sectionTitle">A Day in the Life <br />of a PSLE Math Student</h2>
+                <h2 className="sectionTitle">A Day in the Life <br />of a PSLE Student</h2>
                 <p>
                     Hear directly from our student about their learning journey, progress,
                     and how our programme helped them achieve their academic goals.

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Methodologies.module.scss';
+import { ChevronDown } from "lucide-react";
 
 interface AccordionItem {
     letter: string;
@@ -18,26 +19,28 @@ const data: AccordionItem[] = [
 ];
 
 export default function ShineSection() {
-    const [openStates, setOpenStates] = useState(
-        data.map((item, idx) => idx === 0) // S is open by default
-    );
+    const [openIndex, setOpenIndex] = useState<number | null>(0); // S is open by default
 
     const toggleAccordion = (index: number) => {
-        setOpenStates(prev =>
-            prev.map((isOpen, i) => (i === index ? !isOpen : isOpen))
-        );
+        setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
     return (
-        <section className={styles.section}>
+        <section className={`${styles.section} sectionYPadding`}>
+            <div className={styles.titleContainer}>
+                <h4 className={styles.sectionTitle}>Our Methodologies</h4>
+                <h3 className={`${styles.header} sectionTitle`}>How we help students SHINE</h3>
+            </div>
+
             <div className={styles.container}>
                 {/* Left Column */}
                 <div className={styles.left}>
-                    <h4 className={styles.sectionTitle}>Our Methodologies</h4>
-                    <h3 className={`${styles.header} sectionTitle`}>How we help<br /> students SHINE</h3>
-                    <p className={styles.subheader}>
-                        Our approach empowers students to develop confidence and master PSLE Math through supportive, personalized strategies.
-                    </p>
+                    <img
+                        data-aos="zoom-in-up"
+                        className={styles.image}
+                        src="/images/shine_approach.webp"
+                        alt="Shine Approach illustration"
+                    />
                 </div>
 
                 {/* Right Column */}
@@ -46,23 +49,24 @@ export default function ShineSection() {
                         <div data-aos="fade-up" key={item.letter} className={styles.accordion}>
                             <button
                                 className={`${styles.accordionButton} 
-                                ${openStates[idx] ? styles.active : ''}
-                                    ${styles['color' + ((idx % 3) + 1)]} 
-
-                                `}
+                  ${openIndex === idx ? styles.active : ''}
+                  ${styles['color' + (idx + 1)]}
+                `}
                                 onClick={() => toggleAccordion(idx)}
                             >
                                 <span className={styles.letterContainer}>
-                                    <div className={styles.letter}>
-                                        {item.letter}
-                                    </div>
+                                    <div className={styles.letter}>{item.letter}</div>
                                 </span>
                                 <span>{item.title}</span>
-                                <span className={styles.icon}>{openStates[idx] ? '-' : '+'}</span>
+                                <span
+                                    className={`${styles.icon} ${openIndex === idx ? styles.open : ""}`}
+                                >
+                                    <ChevronDown size={20} />
+                                </span>
                             </button>
                             <div
                                 className={styles.accordionContent}
-                                style={{ maxHeight: openStates[idx] ? '500px' : '0px' }}
+                                style={{ maxHeight: openIndex === idx ? '500px' : '0px' }}
                             >
                                 <p>{item.content}</p>
                             </div>

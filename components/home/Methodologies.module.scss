@@ -1,75 +1,89 @@
 @use '../../app/styles/variables' as *;
 
 
-.section {
-    padding: 4rem 2rem;
+.section {}
+
+
+.titleContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+
+    }
+
+
+    .sectionTitle {
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #888;
+        margin-bottom: 0.5rem;
+    }
+
+    .header {
+        color: $color-red;
+        margin-bottom: 1rem;
+
+    }
 }
 
 .container {
     display: flex;
-    align-items: center;
-    gap: 2rem;
+    // align-items: center;
+    justify-content: space-around;
     width: 95%;
+    gap: 3rem;
     max-width: 1124px;
     margin: 0 auto;
 
     @media (max-width: 767px) {
         flex-direction: column;
+        padding: 0 1rem;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1.5rem;
     }
 }
 
 .left {
+    max-width: 500px;
     flex: 1;
-    max-width: 45%;
 
-    @media (max-width: 768px) {
-        max-width: 100%;
+    @media (max-width: 767px) {
+        text-align: center;
+        max-width: 450px;
     }
 }
 
-.sectionTitle {
-    font-size: 0.9rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 0.5rem;
-}
 
-.header {
-    // font-size: 2rem;
-    // font-weight: 700;
-    text-align: left;
-    color: $color-red;
-    margin-bottom: 1rem;
-}
 
-.subheader {
-    font-size: 1.1rem;
-    color: #555;
-    font-weight: 300;
 
+.image {
+    width: 95%;
 }
 
 .right {
     flex: 1;
-    max-width: 55%;
 
-    @media (max-width: 768px) {
-        max-width: 100%;
-    }
+    @media (max-width: 768px) {}
 }
 
 .accordion {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    border-bottom: 1px solid #ddd;
 
 }
 
 .accordionButton {
     width: 100%;
     position: relative;
-    border-radius: 10px;
     background: none;
     border: none;
     text-align: left;
@@ -82,11 +96,11 @@
     align-items: center;
     cursor: pointer;
     color: $color-text;
-    background-color: $color-blue-mascot;
     transition: all 0.25s ease;
 
+
     &:hover {
-        background-color: $color-teal;
+        background-color: #ddd;
 
     }
 }
@@ -118,7 +132,7 @@
 .accordionContent {
     overflow: hidden;
     transition: max-height 0.3s ease;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 
     p {
         margin: 1rem 0;
@@ -127,21 +141,56 @@
     }
 }
 
-/* Color sequence */
+
 .color1 {
-    background-color: $color-red-mascot; // red
+    .letterContainer {
+        background-color: $color-red-mascot;
+
+    }
 }
 
 .color2 {
-    background-color: $color-yellow-mascot; // yellow
+    .letterContainer {
+        background-color: $color-teal;
+
+    }
 }
+
 
 .color3 {
-    background-color: $color-blue-mascot; // blue
+    .letterContainer {
+        background-color: $color-blue-mascot;
+
+    }
 }
 
-.active {
-    color: #000;
-    border-radius: 10px 10px 0 0;
+.color4 {
+    .letterContainer {
+        background-color: $color-yellow-mascot;
 
+    }
+}
+
+.color5 {
+    .letterContainer {
+        background-color: $color-purple;
+
+    }
+}
+
+
+
+
+.active {
+    background-color: #ddd;
+
+}
+
+.icon {
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: rotate(180deg); // flips arrow upwards when open
 }

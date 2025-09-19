@@ -7,9 +7,7 @@
 }
 
 .videoContainer {
-    margin: 0 auto;
-    width: 95%;
-    max-width: 1024px;
+
     z-index: 2;
     position: relative;
     padding-bottom: 3rem;
@@ -24,7 +22,6 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2);
-    background: #000;
     margin-left: auto;
     margin-right: auto;
     width: 90%;

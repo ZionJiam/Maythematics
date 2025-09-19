@@ -51,8 +51,8 @@ export default function ProgrammesSection() {
         <section className={styles.programmesSection}>
             <div className={styles.programmesWrapper}>
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h4 className={styles.sectionTitle}>OUR SERVICES</h4>
-                    <h3 className={`${styles.header} sectionTitle`}>Pick a Programme<br /> for your child</h3>
+                    <h4 className={styles.sectionTitle}>OUR PROGRAMMES</h4>
+                    <h3 className={`${styles.header} sectionTitle`}>A Lesson<br /> for All Grades</h3>
                 </div>
                 <div data-aos="fade-up" className={styles.scrollContainer}>
                     {programmes.map((programme, idx) => (
@@ -66,12 +66,11 @@ export default function ProgrammesSection() {
                                 />
                                 <div className={styles.content}>
                                     <h3>{programme.title}</h3>
-                                    <p>{programme.description}</p>
                                     <p>
-                                        <strong>Duration:</strong> {programme.duration}
+                                        <span className="bold">Duration:</span> {programme.duration}
                                     </p>
                                     <p>
-                                        <strong>Class Size:</strong> {programme.classSize}
+                                        <span className="bold">Class Size:</span> {programme.classSize}
                                     </p>
                                 </div>
                             </div>

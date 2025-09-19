@@ -21,20 +21,15 @@ export default function CTASection() {
                     <span className={styles.yellow}>See</span>
 
 
-                    {" "}the<br />
-                    <span className={styles.blue}>Difference</span>
+                    {" "}a<br />
+                    <span className={styles.blue}>Change</span>
 
                     {" "}in{" "}
-
-                    <span className={styles.teal}>M</span>
-                    <span className={styles.teal}>a</span>
-                    <span className={styles.teal}>t</span>
-                    <span className={styles.teal}>h</span>
-                    <span className={styles.teal}>?</span>
+                    <span className={styles.teal}>Math?</span>
                 </h2>
 
-                <p className={`${styles.ctaParagraph} text-lg`}>Join hundreds of students who trust us weekly — whether it’s PSLE prep, building problem-solving skills, or just gaining back confidence.</p>
-                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
+                <p className={`${styles.ctaParagraph}`}>Every week, hundreds of students walk through our doors — some to prepare for examinations, others to rebuild confidence, all to discover that Math can be clear and enjoyable. We’d love for your child to be part of this journey too.</p>
+                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Arrange a Trial Class</Link>
 
             </div>
 
