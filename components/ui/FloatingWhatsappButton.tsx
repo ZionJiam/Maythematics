@@ -2,6 +2,10 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./FloatingWhatsappButton.module.scss";
+import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+
+
+const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 export default function FloatingWhatsApp() {
     const [visible, setVisible] = useState(true);
@@ -32,7 +36,7 @@ export default function FloatingWhatsApp() {
 
     return (
         <a
-            href="https://wa.me/6589150859" // replace with your WhatsApp number
+            href={whatsappLink} // replace with your WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.floatingWhatsapp} ${visible ? styles.show : styles.hide}`}

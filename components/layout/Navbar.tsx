@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import Link from 'next/link';
 import { usePathname } from "next/navigation"; // <-- Import hook
 import styles from './Navbar.module.scss';
+import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+
+
+const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 interface NavbarProps {
     onMobileNavOpen: () => void;
@@ -96,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
 
                 <div>
                     <Link
-                        href="https://wa.me/6589150859"
+                        href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`ctaButton ${styles.ctaButton}`}>
@@ -119,11 +123,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                             <span></span>
                             <span></span>
                         </div>
-                        {/* <svg className={styles.mobileMenuButtonSvg} xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg> */}
+
                     </button>
                 </div>
             </div>

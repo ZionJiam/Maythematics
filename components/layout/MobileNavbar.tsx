@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './MobileNavbar.module.scss';
+import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+
+
+
+const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
+
 
 interface MobileNavbarProps {
   isOpen: boolean;
@@ -76,7 +82,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
           <Link href="/contactus" className={`${isActive("/contactus") ? styles.active : ""}`} onClick={handleLinkClick}>Contact Us</Link>
 
           <div className={styles.ctaButton}>
-            <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               WhatsApp Us
             </a>
           </div>
