@@ -36,7 +36,7 @@ export default function ShineSection() {
                 {/* Left Column */}
                 <div className={styles.left}>
                     <img
-                        data-aos="zoom-in-up"
+                        data-aos="fade-in"
                         className={styles.image}
                         src="/images/shine_approach.webp"
                         alt="Shine Approach illustration"

@@ -26,7 +26,7 @@ export default function CTASection() {
 
 
                     {" "}a<br />
-                    <span className={styles.blue}>Change</span>
+                    <span className={styles.blue}>Improvement</span>
 
                     {" "}in{" "}
                     <span className={styles.teal}>Math?</span>

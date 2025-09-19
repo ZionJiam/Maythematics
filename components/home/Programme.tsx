@@ -28,29 +28,33 @@ export default function ProgrammesSection() {
                     <h4 className={styles.sectionTitle}>OUR PROGRAMMES</h4>
                     <h3 className={`${styles.header} sectionTitle`}>Lesson for <br />  all grades</h3>
                 </div>
-                <div data-aos="fade-up" className={styles.scrollContainer}>
-                    {programmes.map((programme, idx) => (
-                        <Link href="/programmes" key={idx} className={styles.cardLink}>
-                            <div key={idx} className={styles.card}>
-                                <img
-                                    src={programme.image}
-                                    alt={programme.title}
-                                    className={styles.image}
-                                    loading="lazy"
-                                />
-                                <div className={styles.content}>
-                                    <h3>{programme.title}</h3>
-                                    <p>
-                                        <span className="bold">Duration:</span> {programme.duration}
-                                    </p>
-                                    <p>
-                                        <span className="bold">Class Size:</span> {programme.classSize}
-                                    </p>
+                <div className={styles.scrollWrapper}>
+
+                    <div data-aos="fade-up" className={styles.scrollContainer}>
+                        {programmes.map((programme, idx) => (
+                            <Link href="/programmes" key={idx} className={styles.cardLink}>
+                                <div key={idx} className={styles.card}>
+                                    <img
+                                        src={programme.image}
+                                        alt={programme.title}
+                                        className={styles.image}
+                                        loading="lazy"
+                                    />
+                                    <div className={styles.content}>
+                                        <h3>{programme.title}</h3>
+                                        <p>
+                                            <span className="bold">Duration:</span> {programme.duration}
+                                        </p>
+                                        <p>
+                                            <span className="bold">Class Size:</span> {programme.classSize}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                    ))}
+                            </Link>
+                        ))}
+                    </div>
                 </div>
+
             </div>
 
         </section>

@@ -30,7 +30,7 @@ const StudentReview = () => {
                         and how our programme helped them achieve their academic goals.
                     </p>
                     {/* <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link> */}
-                    <SecondaryCtaButton text="See More Testimonials" href="/testimonials" />
+                    <SecondaryCtaButton text="See more testimonials" href="/testimonials" />
                 </div>
             </div>
         </section>

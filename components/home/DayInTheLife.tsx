@@ -26,7 +26,7 @@ const StudentReview = () => {
                     <p>
                         Here’s a day in the life of one of our PSLE students at Maythematics — and why parents from different parts of Singapore trust us for results.
                     </p>
-                    <SecondaryCtaButton text="Check out Our Programmes" href="/programmes" />
+                    <SecondaryCtaButton text="Check out our programmes" href="/programmes" />
                 </div>
             </div>
         </section>

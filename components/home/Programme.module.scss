@@ -66,23 +66,28 @@
 }
 
 
-.scrollContainer {
-    display: flex;
-    max-width: 1280px;
-    margin: 0 auto;
-    gap: 1.5rem;
+.scrollWrapper {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 0rem 0rem 0rem 1rem; // <-- added left/right padding
+    padding: 0rem 1rem 0rem 1rem; // <-- added left/right padding
     scroll-padding-left: 1rem; // <-- ensures first snap aligns with padding
+    width: auto;
 
     @media (min-width: 768px) {
-        padding: 0rem 0rem 0rem 5rem; // <-- added left/right padding
+        padding: 0rem 5rem 0rem 5rem; // <-- added left/right padding
         scroll-padding-left: 5rem; // <-- ensures first snap aligns with padding
 
     }
 
+}
+
+.scrollContainer {
+    display: flex;
+    margin: 0 auto;
+    gap: 1.5rem;
+    // overflow-x: auto;
+    padding-bottom: 2rem;
 }
 
 .cardLink {
