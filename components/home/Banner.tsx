@@ -4,6 +4,7 @@ import styles from './Banner.module.scss';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import SecondaryCtaButton from '../ui/SecondaryCTAButton';
+import Image from 'next/image';
 
 
 const images = [
@@ -15,25 +16,16 @@ const images = [
 ];
 
 const Banner = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % images.length);
-    }, 4000); // change every 4s
-    return () => clearInterval(interval);
-  }, []);
-
 
   return (
-    <section className={styles.banner}
-      style={{
-        backgroundImage: `url(${images[currentIndex]})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        transition: 'background-image 1s ease-in-out'
-      }}>
+    <section className={styles.banner}>
+      <Image
+        src="/images/banner1.webp"
+        alt="Main Banner Image"
+        fill
+        priority // <-- ensures fetchpriority=high
+        style={{ objectFit: 'cover' }}
+      />
       <div data-aos="fade-up" className={styles.bannerContainer}>
         <h1 className={`${styles.slogan} sectionTitle`}>
 
