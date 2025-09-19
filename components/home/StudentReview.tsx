@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./StudentReview.module.scss";
 import Link from "next/link";
+import SecondaryCtaButton from "../ui/SecondaryCTAButton";
 
 const StudentReview = () => {
     return (
@@ -13,7 +14,7 @@ const StudentReview = () => {
                     <iframe
                         loading="lazy"
                         className={styles.video}
-                        src="https://youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI"
+                        src="https://youtube.com/embed/E2A8CtSdjAk?si=VKYh5qEHoSgsvJU_"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -23,12 +24,13 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">What Our <br /> Student Say</h2>
+                    <h2 className="sectionTitle">What our <br /> students say</h2>
                     <p>
-                        Hear directly from our student about their learning journey, progress,
+                        Hear directly from our students at Maythematics about their learning journey, progress,
                         and how our programme helped them achieve their academic goals.
                     </p>
-                    <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
+                    {/* <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link> */}
+                    <SecondaryCtaButton text="See More Testimonials" href="/testimonials" />
                 </div>
             </div>
         </section>

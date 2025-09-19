@@ -29,7 +29,7 @@ export default function ShineSection() {
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.titleContainer}>
                 <h4 className={styles.sectionTitle}>Our Methodologies</h4>
-                <h3 className={`${styles.header} sectionTitle`}>How we help students SHINE</h3>
+                <h3 className={`${styles.header} sectionTitle`}>How we help <br /> students SHINE</h3>
             </div>
 
             <div className={styles.container}>

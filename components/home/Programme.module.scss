@@ -4,7 +4,7 @@
 .programmesSection {
     margin: 0rem auto;
     padding: 6rem 1rem;
-    background-color: #fffcf3;
+    // background-color: #fffcf3;
 
     .heading {
         font-size: 2rem;
@@ -13,14 +13,12 @@
         text-align: center;
     }
 
-    @media (min-width: 768px) {}
 }
 
 .programmesWrapper {
     border-radius: 10px;
-    background-color: white;
-    // border: 2px solid rgb(224, 224, 226);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #F0F2F5;
+    // border: 1px solid rgb(224, 224, 226);
 
     margin: 0 auto;
     width: 95%;
@@ -36,13 +34,12 @@
 
 .textContainer {
     max-width: 1124px;
-    margin: 0 auto;
     margin-bottom: 3rem;
     padding-left: 1rem;
     // width: 95%;
 
     @media (min-width: 768px) {
-        padding-left: 0rem;
+        padding-left: 5rem;
 
     }
 }
@@ -92,15 +89,24 @@
 }
 
 .cardLink {
-    flex: 0 0 300px;
+    flex: 0 0 250px;
     text-decoration: none;
     color: inherit; // so text doesn’t look like a hyperlink
     display: block; // ensures the card occupies full clickable space
+
+    @media (min-width: 768px) {
+        flex: 0 0 280px;
+    }
+
+    @media (min-width: 1024px) {
+        flex: 0 0 300px;
+
+    }
 }
 
 .card {
-    background-color: #F0F2F5;
-    border-radius: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
     overflow: hidden;
     scroll-snap-align: start;
     transition: all 0.3s ease;

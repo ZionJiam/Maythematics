@@ -26,9 +26,9 @@ export default function Home() {
         <WhyUsSection />
         <Methodologies />
         <StudentReview />
+        <DayInThelife />
 
         <GoogleReviewSection />
-        <DayInThelife />
         <Programme />
 
         {/* <LessonSection /> */}

@@ -1,0 +1,62 @@
+@use '../../app/styles/variables' as *;
+
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $color-text;
+    cursor: pointer;
+
+}
+
+.text {
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+    padding-bottom: 4px;
+
+    // Default underline only under text
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $color-yellow-mascot;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        transform-origin: left;
+    }
+
+    // Hover state
+    .ctaButton:hover &::after {
+        background-color: $color-yellow;
+        transform: scaleX(0);
+        animation: underline-grow 0.3s forwards;
+    }
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+// Slight arrow slide on hover
+.ctaButton:hover .icon {
+    transform: translateX(4px);
+}
+
+// Keyframes for underline
+@keyframes underline-grow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}

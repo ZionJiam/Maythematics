@@ -19,6 +19,10 @@
     position: relative;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 
+    @media (min-width: 1280px) {
+        max-width: 33vw;
+    }
+
     img {
         width: 100%;
         border-radius: 8px;

@@ -93,6 +93,14 @@
     }
 }
 
+
+@media (max-width: 1023px) {
+    .dotContainer {
+        display: none;
+
+    }
+}
+
 // .extendLine {
 //     .left {
 //         position: absolute;

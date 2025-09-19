@@ -9,7 +9,8 @@
     aspect-ratio: 3 / 4; // Maintains height as 4/3 of the width
     // margin-bottom: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(238, 238, 238);
 
     @media (min-width: 768px) {
         width: 300px;
@@ -23,11 +24,13 @@
         .teamCardWrapper {
             // background-size: 110%;
             cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
 
         }
 
         .descriptionContainer {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             background-color: $color-red;
         }
 

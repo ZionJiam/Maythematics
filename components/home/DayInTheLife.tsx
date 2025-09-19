@@ -3,34 +3,34 @@
 import React from "react";
 import styles from "./DayInTheLife.module.scss";
 import Link from "next/link";
+import SecondaryCtaButton from "../ui/SecondaryCTAButton";
 
-const DayInTheLife = () => {
+const StudentReview = () => {
     return (
-        <section className={styles.studentReview}>
+        <section className={`${styles.studentReview} sectionYPadding`}>
+            <div className={styles.studentContainer}>
+                <div data-aos="fade-up" className={styles.videoContainer}>
+                    {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
+                    <iframe
+                        loading="lazy"
+                        className={styles.video}
+                        src="https://youtube.com/embed/qfEws8IvGSw?si=slcdBQghTqj3jV23"
+                        title="Day in the Life of a PSL Student Vianna"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen></iframe>
+                </div>
 
-            <div data-aos="fade-up" className={styles.videoContainer}>
-                {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
-                <iframe
-                    loading="lazy"
-                    className={styles.video}
-                    src="https://youtube.com/embed/qfEws8IvGSw?si=slcdBQghTqj3jV23"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen></iframe>
-
-            </div>
-
-            <div data-aos="fade-up" className={styles.textContainer}>
-                <h2 className="sectionTitle">A Day in the Life <br />of a PSLE Student</h2>
-                <p>
-                    Hear directly from our student about their learning journey, progress,
-                    and how our programme helped them achieve their academic goals.
-                </p>
-                <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link>
+                <div data-aos="fade-up" className={styles.textContainer}>
+                    <h2 className="sectionTitle"> What makes <br />  us different</h2>
+                    <p>
+                        Here’s a day in the life of one of our PSLE students at Maythematics — and why parents from different parts of Singapore trust us for results.
+                    </p>
+                    <SecondaryCtaButton text="Check out Our Programmes" href="/programmes" />
+                </div>
             </div>
         </section>
     );
 };
 
-export default DayInTheLife;
+export default StudentReview;

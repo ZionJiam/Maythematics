@@ -4,7 +4,7 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 55vh;
+  // max-height: 55vh;
   min-height: 360px;
   transition: background-image 1s ease-in-out;
   background-repeat: no-repeat;
@@ -29,16 +29,18 @@
   z-index: 2;
   position: relative;
   width: 95%;
+  padding: 2rem 1rem;
 }
 
 
 
 .slogan {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   line-height: 1.3;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #fff;
+  text-align: center;
 
   .red {
     color: variables.$color-red;
@@ -59,6 +61,10 @@
 }
 
 
+.textBigger {
+  font-size: 2.25rem;
+}
+
 
 
 
@@ -69,22 +75,28 @@
 // Media Queries for Responsiveness
 @media (min-width: 768px) {
 
+
+
   .banner {
     height: 44vw;
     max-height: 720px;
   }
 
+  .bannerContainer {
+    text-align: center;
+    padding: 2rem 0rem;
+
+  }
+
   .slogan {
-    font-size: 2.25rem;
-    line-height: 1.3;
-    max-width: 1124px;
-    width: 95%;
-    margin: 0 auto;
+    // font-size: 2.25rem;
     margin-bottom: 2rem;
+    text-align: center;
+
   }
 
   .textBigger {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
   }
 
   .ctaButton {
@@ -100,11 +112,11 @@
   }
 
   .slogan {
-    font-size: 2.75rem;
+    // font-size: 3.5rem;
   }
 
   .textBigger {
-    font-size: 3.75rem;
+    font-size: 3rem;
   }
 
   .ctaButton {
@@ -119,13 +131,11 @@
   }
 
   .slogan {
-    font-size: 3.5rem;
-    line-height: 1.2;
-
+    // font-size: 3.5rem;
   }
 
   .textBigger {
-    font-size: 4.75rem;
+    font-size: 3.75rem;
   }
 
 

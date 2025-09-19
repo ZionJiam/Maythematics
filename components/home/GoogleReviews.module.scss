@@ -37,13 +37,15 @@
     position: relative;
     z-index: 2;
     margin-top: -1px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .marqueeWrapper {
     overflow: hidden;
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .marquee {
