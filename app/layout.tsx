@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsappButton';
 import WorkshopPopup from "@/components/ui/WorkshopPopup";
-import ScrollHandler from "./handler/ScrollHandler";
+// import ScrollHandler from "./handler/ScrollHandler";
 
 
 export default function RootLayout({
@@ -58,7 +58,7 @@ export default function RootLayout({
           <Navbar onMobileNavOpen={toggleMobileNav} isMobileNavOpen={isMobileNavOpen}
             className={`${isMobileNavOpen ? 'pushed' : ''}`} />
           <MobileNavbar isOpen={isMobileNavOpen} onClose={() => setIsMobileNavOpen(false)} />
-          <ScrollHandler /> {/* 👈 this makes all hash links smooth */}
+          {/* <ScrollHandler />  */}
           {children}
           <Footer />
           <FloatingWhatsApp />
