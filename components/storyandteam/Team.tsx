@@ -15,7 +15,6 @@ const teamMembers = [
         role: "Math Specialist",
         imageUrl: "/images/team/May_1.webp",
         imageUrlHover: "/images/team/May_2.webp",
-
         degree: "Bachelor of Communications, NUS",
         description: "I’ve been teaching Math for over 14 years and have guided more than 700 students of all levels and abilities. I specialise in breaking down complex problems into clear, step-by-step methods — an approach that has helped many students achieve distinctions and gain confidence. Along the way, I’ve also built a strong following as one of Singapore’s rising Math influencer-tutors, where thousands of parents and students learn from my videos. Today, I lead and train our team of tutors at Maythematics to ensure every lesson is taught with the same clarity, consistency, and care.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
@@ -26,7 +25,7 @@ const teamMembers = [
         role: "Math Specialist",
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
-
+        youtubeUrl: "https://youtube.com/embed/wHIbXQBQnK0?si=oIM8mjyONEbqj5D4",
         degree: "Bachelor of Engineering",
         description: "Math was difficult for me when I was younger, but over time I grew to love the subject — eventually achieving distinctions throughout my academic journey from school to polytechnic to university. Before discovering my passion for teaching, I worked as an engineer, which strengthened my problem-solving skills and precision. Today, I teach Primary Math as well as Secondary 1–5 Emath and Amath, focusing on making concepts simple, structured, and approachable. Outside the classroom, I enjoy collecting figurines from blind boxes and Pop Marts — a hobby that keeps me curious and creative.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
@@ -37,7 +36,7 @@ const teamMembers = [
         role: "Math Specialist",
         imageUrl: "/images/team/Kelly_1.webp",
         imageUrlHover: "/images/team/Kelly_2.webp",
-
+        youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
         degree: "Bachelor of Science (Data Science and Analytics), NUS",
         description: "Having majored in Data Science and Analytics at NUS, I enjoy blending Math with technology to make concepts clearer and more engaging for students. Back in school, I graduated at the top of my cohort for Secondary 4 Additional Math — a subject I still love teaching today. Outside of lessons, you’ll probably find me at karaoke, where I bring the same joy and energy that I bring into the classroom.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
@@ -57,6 +56,7 @@ const teamMembers = [
         role: "Math Specialist",
         startYear: 2016,
         imageUrl: "/images/team/Amy_1.webp",
+        youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
         imageUrlHover: "/images/team/Amy_2.webp",
         degree: "Bachelor of Communications, NUS",
         description: "I’m a Primary Math Teaching Specialist with distinctions in Math from Primary through JC. After graduating from NUS, I found my true calling in teaching — guiding younger students to build strong foundations and confidence in Math. I currently teach Primary Math and up to Secondary 2 Emath, where I focus on making concepts clear and approachable. Before becoming a tutor, I was a journalist, but as a mother of one (and hoping for more!), working with children has become both my passion and joy.",
@@ -69,7 +69,7 @@ const teamMembers = [
         role: "Math Specialist",
         imageUrl: "/images/team/Joan_1.webp",
         imageUrlHover: "/images/team/Joan_2.webp",
-
+        youtubeUrl: "https://youtube.com/embed/o5MWiIY-4ao?si=gHTIlnaJLdkr9r7z",
         degree: "B.Sc. in Science Education, NTU",
         description: "Back in school, I was part of the Gifted Education Programme and have carried that love for learning into my teaching today. Outside of lessons, I volunteer at a pet shelter and am a proud cat lover — something that helps me bring extra patience and care into the classroom.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
@@ -135,6 +135,7 @@ const teamMembers = [
         name: "Tyler",
         startYear: 2016,
         role: "Strategic Growth Architect",
+        youtubeUrl: "https://youtube.com/embed/3lzs-mTaB4E?si=He288-szlUEnjr6s",
         imageUrl: "/images/team/Tyler_1.webp",
         imageUrlHover: "/images/team/Tyler_2.webp",
 

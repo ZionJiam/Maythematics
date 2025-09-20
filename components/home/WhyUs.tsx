@@ -9,14 +9,14 @@ const reasons = [
         title: 'Positive, patient, and passionate',
         description: 'Our team of math tutors is approachable, relatable, and committed to making every lesson clear and enjoyable. With consistent teaching methods across the team, students always experience structured, easy-to-follow lessons.',
         cta: 'Meet our tutors',
-        href: '/storyandteam?goto=team',
+        href: '/story-and-team"?#team',
     },
     {
         image: '/images/workshop/workshop-5.webp',
         title: 'Master challenging questions',
         description: 'We equip students with simple, effective strategies to solve even the toughest math problems. Our viral teaching videos, step-by-step methods, and structured worksheets are praised by parents, students, and even school teachers.',
         cta: 'Explore our approach',
-        href: '/lessons',
+        href: '/programmes#shine',
     },
     {
         image: '/images/workshop/workshop-2.webp',

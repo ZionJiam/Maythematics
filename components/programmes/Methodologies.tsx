@@ -27,12 +27,12 @@ export default function ShineSection() {
     };
 
     return (
-        <section id="shine" className={`${styles.section} sectionYPadding`}>
+        <section className={`${styles.section} sectionYPadding`}>
             <Slogan header="Clarity, Confidence, Consistent Results in Math" text=" A proven blend of structure and personalisation — designed to give your child clarity, confidence, and consistent results in Math." />
 
-            <div data-aos="fade-up" className={styles.titleContainer}>
+            <div id="shine" data-aos="fade-up" className={styles.titleContainer}>
                 <h4 className={styles.sectionTitle}>Our Methodologies</h4>
-                <h3 className={`${styles.header} sectionTitle`}>How we help <br /> students SHINE</h3>
+                <h3 className={`${styles.header} sectionTitle`}>How We Help <br /> Students SHINE</h3>
             </div>
 
             <div className={styles.container}>

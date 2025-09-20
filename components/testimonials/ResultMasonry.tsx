@@ -6,47 +6,47 @@ import Masonry from "react-masonry-css";
 
 const results = [
     {
-        src: "/images/testimonials/results-1.webp",
-        student: "Alicia",
-        school: "Nan Hua High School",
-        achievement: "Improved from B3 → A1 in Math"
+        src: "/images/results/result1.webp",
+        student: "Kia Han",
+        school: "Kong Hua School",
+        achievement: "Achieved 90 out of 100 on Prelims"
     },
-    {
-        src: "/images/testimonials/results-2.webp",
-        student: "Marcus",
-        school: "Commonwealth Sec",
-        achievement: "From C5 → A2 in just 3 months"
-    },
-    {
-        src: "/images/testimonials/results-3.webp",
-        student: "Chloe",
-        school: "Fuhua Secondary",
-        achievement: "Maintained A1 throughout Sec 4"
-    },
-    {
-        src: "/images/testimonials/results-4.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    },
-    {
-        src: "/images/testimonials/results-5.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    },
-    {
-        src: "/images/testimonials/results-6.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    },
-    {
-        src: "/images/testimonials/results-7.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    }
+    // {
+    //     src: "/images/testimonials/results-2.webp",
+    //     student: "Marcus",
+    //     school: "Commonwealth Sec",
+    //     achievement: "From C5 → A2 in just 3 months"
+    // },
+    // {
+    //     src: "/images/testimonials/results-3.webp",
+    //     student: "Chloe",
+    //     school: "Fuhua Secondary",
+    //     achievement: "Maintained A1 throughout Sec 4"
+    // },
+    // {
+    //     src: "/images/testimonials/results-4.webp",
+    //     student: "Darren",
+    //     school: "River Valley High",
+    //     achievement: "Jumped from 60% → 85% in Math"
+    // },
+    // {
+    //     src: "/images/testimonials/results-5.webp",
+    //     student: "Darren",
+    //     school: "River Valley High",
+    //     achievement: "Jumped from 60% → 85% in Math"
+    // },
+    // {
+    //     src: "/images/testimonials/results-6.webp",
+    //     student: "Darren",
+    //     school: "River Valley High",
+    //     achievement: "Jumped from 60% → 85% in Math"
+    // },
+    // {
+    //     src: "/images/testimonials/results-7.webp",
+    //     student: "Darren",
+    //     school: "River Valley High",
+    //     achievement: "Jumped from 60% → 85% in Math"
+    // }
 ];
 
 const breakpointColumnsObj = {
@@ -63,7 +63,7 @@ export default function ResultsMasonry() {
     };
 
     return (
-        <section className={styles.resultsMasonry}>
+        <section className={`${styles.resultsMasonry} sectionYPadding`}>
             <h2 className="sectionTitle">Our Hall of Fame</h2>
             <Masonry
                 breakpointCols={breakpointColumnsObj}

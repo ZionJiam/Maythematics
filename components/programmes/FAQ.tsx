@@ -11,14 +11,18 @@ interface AccordionItem {
 
 const data: AccordionItem[] = [
     { title: "How are your lessons different from school classes?", content: "To be filled" },
-    { title: "Do you offer trial lessons?", content: "To be filled" },
+    { title: "Do you offer trial lessons?", content: "We offer for a single paid trial lesson." },
     { title: "What if my child is very weak in Math?", content: "To be filled" },
     { title: "How do I know if online classes will be effective?", content: "To be filled" },
     { title: "How does the online class work?", content: "To be filled" },
-    { title: "What is the rate?", content: "To be filled" },
-    { title: "How long is one lesson?", content: "To be filled" },
+    {
+        title: "What is the rate?", content: "Our lessons are priced at an average rate of $40 / hour depending on the level. Kindly contact us for the more information."
+    },
+    { title: "How long is one lesson?", content: "1.5 hours for Primary 1 to 4 (inclusive of 5 minutes break) 2 hours for Primary 5 - Secondary 5(inclusive of 10 minutes break) " },
     { title: "Are there classes during Public Holiday or School Holiday?", content: "To be filled" },
-    { title: "What if my child is unable to turn up for class?", content: "To be filled" },
+    {
+        title: "What if my child is unable to turn up for class?", content: "A make-up class can be arranged if possible. Alternatively, a video recording of that lesson will be sent to you for your child to catch up on his/ her own time. We apologise that we do not offer any refund for any missed lesson."
+    },
 ];
 
 export default function FAQ() {

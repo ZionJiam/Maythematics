@@ -23,25 +23,23 @@ const Footer = () => {
                     {/* About Section */}
                     <div className={styles.column}>
                         <h4>About Us</h4>
-                        <Link href="/storyandteam" className={styles.link}>Story and Team</Link>
+                        <Link href="/story-and-team" className={styles.link}>Story and Team</Link>
                         <Link href="/ourspace" className={styles.link}>Our Space</Link>
                         <Link href="/career" className={styles.link}>Join Us</Link>
                     </div>
 
                     {/* Lessons Section */}
                     <div className={styles.column}>
-                        <h4>Programmes</h4>
-                        <Link href="/lessons/primary" className={styles.link}>Primary 3-4</Link>
-                        <Link href="/lessons/primary" className={styles.link}>Primary 5-6</Link>
-                        <Link href="/lessons/secondary" className={styles.link}>Secondary 1-5</Link>
-                        <Link href="/lessons/jc" className={styles.link}>JC Level (H1/H2)</Link>
+                        <h4>Our Services</h4>
+                        <Link href="/programmes" className={styles.link}>Our Programme</Link>
+                        <Link href="/workshop" className={styles.link}>Holiday Programme</Link>
                     </div>
 
                     {/* Other Pages */}
                     <div className={styles.column}>
                         <h4>Explore</h4>
+
                         <Link href="/testimonials" className={styles.link}>Testimonials</Link>
-                        <Link href="/workshop" className={styles.link}>Workshop</Link>
                         <Link href="/contactus" className={styles.link}>Contact Us</Link>
                     </div>
 

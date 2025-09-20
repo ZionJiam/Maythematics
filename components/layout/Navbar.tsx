@@ -53,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
-                            <Link href="/storyandteam" className={`${styles.dropdownLink} ${isActive("/storyandteam") ? styles.active : ""}`}>
+                            <Link href="/story-and-team" className={`${styles.dropdownLink} ${isActive("/storyandteam") ? styles.active : ""}`}>
                                 Story and Team
                             </Link>
                             <Link href="/ourspace" className={`${styles.dropdownLink} ${isActive("/ourspace") ? styles.active : ""}`}>
@@ -64,7 +64,11 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
 
 
                     <Link href="/programmes" className={`${styles.navLink} ${isActive("/programmes") ? styles.active : ""}`}>
-                        Programmes
+                        Our Programme
+                    </Link>
+
+                    <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/workshop") ? styles.active : ""}`}>
+                        Holiday Programme
                     </Link>
 
                     <Link href="/testimonials" className={`${styles.navLink} ${isActive("/testimonials") ? styles.active : ""}`}>
@@ -72,9 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                     </Link>
 
 
-                    <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/workshop") ? styles.active : ""}`}>
-                        Workshop
-                    </Link>
+
 
                     <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contactus") ? styles.active : ""}`}>
                         Contact Us
@@ -98,6 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                         onClick={handleMenuClick}
                         className={styles.mobileMenuButton}
                         aria-controls="mobile-menu"
+                        aria-label="Menu Button"
                         aria-expanded={isMobileNavOpen ? "true" : "false"}
                     >
 

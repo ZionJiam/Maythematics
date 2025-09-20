@@ -22,7 +22,7 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle"> What makes <br />  us different</h2>
+                    <h2 className="sectionTitle"> What Makes <br />  Us Different</h2>
                     <p>
                         Here’s a day in the life of one of our PSLE students at Maythematics — and why parents from different parts of Singapore trust us for results.
                     </p>

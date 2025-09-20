@@ -9,7 +9,7 @@
   top: 0;
   z-index: 998;
   background: #fff;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
 
 }
 
@@ -25,16 +25,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-
-
+  gap: 1.5rem;
 }
 
 .logo {
   display: flex;
 
   img {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -132,7 +130,6 @@
   color: #ffffff;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
-  font-size: 1rem;
 
   &:hover {
     // SCSS Nesting for hover state
@@ -283,13 +280,9 @@
 
 @media (min-width: 1280px) {
 
-  .navLink {
-    font-size: 1.125rem;
-  }
 
   .ctaButton {
     padding: 0.75rem 2.25rem;
-    font-size: 1.125rem;
   }
 }
 

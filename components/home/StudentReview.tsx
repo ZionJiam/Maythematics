@@ -24,7 +24,7 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">What our <br /> students say</h2>
+                    <h2 className="sectionTitle">What Our <br /> Students Say</h2>
                     <p>
                         Hear directly from our students at Maythematics about their learning journey, progress,
                         and how our programme helped them achieve their academic goals.

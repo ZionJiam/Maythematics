@@ -34,29 +34,32 @@ const reviews: Review[] = [
 
 const StudentReview = () => {
     return (
-        <section className={styles.studentReview}>
+        <section className={`${styles.studentReview}`}>
 
+            <div className={`${styles.container} sectionYPadding`}>
+                {reviews.map((review, index) => (
+                    <div key={index} className={`${styles.reviewItem}`}>
+                        <div className={styles.videoContainer}>
+                            <iframe
+                                loading="lazy"
+                                className={styles.video}
+                                src={review.videoUrl}
+                                title={`${review.name} Video`}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
 
-            {reviews.map((review, index) => (
-                <div key={index} className={styles.reviewItem}>
-                    <div className={styles.videoContainer}>
-                        <iframe
-                            loading="lazy"
-                            className={styles.video}
-                            src={review.videoUrl}
-                            title={`${review.name} Video`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
-                            allowFullScreen
-                        ></iframe>
+                        <div className={styles.textContainer}>
+                            <h2 className="sectionTitle">{review.name}</h2>
+                            <p>{review.description}</p>
+                        </div>
                     </div>
+                ))}
+            </div>
 
-                    <div className={styles.textContainer}>
-                        <h2 className="sectionTitle">{review.name}</h2>
-                        <p>{review.description}</p>
-                    </div>
-                </div>
-            ))}
+
         </section>
     );
 };

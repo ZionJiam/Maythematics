@@ -86,7 +86,7 @@ export default function WorkshopBenefits() {
     };
 
     return (
-        <section className={styles.WorkshopBenefits}>
+        <section className={`${styles.WorkshopBenefits} sectionYPadding`}>
             <img src="/divider/bubble-side-divider-blue.png" alt="" className={styles.dividerTop} />
 
             <div className={styles.benefitsSection}>

@@ -2,63 +2,77 @@
 
 import { useState } from 'react';
 import styles from './WorkshopFAQ.module.scss';
-import Accordion from '../ui/Accordion';
+import { ChevronDown } from "lucide-react";
 
-const faqs = [
+interface AccordionItem {
+    title: string;
+    content: string;
+}
+const data: AccordionItem[] = [
     {
-        question: 'Who can attend the workshop?',
-        answer: 'Our workshops are open to students preparing for PSLE and other major exams.'
+        title: 'Who can attend the workshop?',
+        content: 'Our workshops are open to students preparing for PSLE and other major exams.'
     },
     {
-        question: 'Do I need prior knowledge to join?',
-        answer: 'No prior knowledge is needed. We provide worksheets and guidance suitable for all levels.'
+        title: 'Do I need prior knowledge to join?',
+        content: 'No prior knowledge is needed. We provide worksheets and guidance suitable for all levels.'
     },
     {
-        question: 'How do I register for a workshop?',
-        answer: 'Click on the "Sign Up" button on the top section to submit your details via our Tally form.'
+        title: 'How do I register for a workshop?',
+        content: 'Click on the "Sign Up" button on the top section to submit your details via our Tally form.'
     },
     {
-        question: 'Are materials provided?',
-        answer: 'Yes, all students receive practice worksheets and reference materials during the workshop.'
+        title: 'Are materials provided?',
+        content: 'Yes, all students receive practice worksheets and reference materials during the workshop.'
     },
     {
-        question: 'What is the duration of a workshop?',
-        answer: 'Each workshop typically lasts 3-4 hours, depending on the topic and activities planned.'
+        title: 'What is the duration of a workshop?',
+        content: 'Each workshop typically lasts 3-4 hours, depending on the topic and activities planned.'
     },
 ];
 
-export default function WorkshopFAQ() {
-    // Initialize with first FAQ open
-    const [openIndex, setOpenIndex] = useState<number>(0);
 
-    const handleToggle = (index: number) => {
-        // Only allow switching to another FAQ; cannot close all
-        setOpenIndex(index);
+export default function FAQ() {
+    const [openIndex, setOpenIndex] = useState<number | null>(0); // S is open by default
+
+    const toggleAccordion = (index: number) => {
+        setOpenIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
     return (
-        <section className={styles.faqSection}>
-            <h2 className="sectionTitle">Workshop FAQ</h2>
-            <div className={styles.accordionWrapper}>
-                {faqs.map((faq, idx) => (
-                    <Accordion
-                        key={idx}
-                        question={faq.question}
-                        answer={faq.answer}
-                        isOpen={openIndex === idx}
-                        onToggle={() => handleToggle(idx)}
-                    />
-                ))}
+        <section id="shine" className={`${styles.section} sectionYPadding`}>
+            <div className={styles.titleContainer}>
+                <h3 data-aos="fade-up" className={`${styles.header} sectionTitle`}>Frequently Asked Questions</h3>
             </div>
 
-            <div className={styles.mascotContainer}>
-                <img
-                    src="/assets/yellow-mascot.webp"
-                    data-aos="fade-up"
-                    alt="Review Mascot"
-                    className={`${styles.reviewMascot} ${styles.redMascot}`}
-                />
+            <div className={styles.container}>
+
+                {data.map((item, idx) => (
+                    <div data-aos="fade-up" key={idx} className={styles.accordion}>
+                        <button
+                            className={`${styles.accordionButton} 
+                  ${openIndex === idx ? styles.active : ''}
+                  ${styles['color' + (idx + 1)]}
+                `}
+                            onClick={() => toggleAccordion(idx)}
+                        >
+
+                            <span>{item.title}</span>
+                            <span
+                                className={`${styles.icon} ${openIndex === idx ? styles.open : ""}`}
+                            >
+                                <ChevronDown size={20} />
+                            </span>
+                        </button>
+                        <div
+                            className={styles.accordionContent}
+                            style={{ maxHeight: openIndex === idx ? '500px' : '0px' }}
+                        >
+                            <p>{item.content}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
-        </section>
+        </section >
     );
 }

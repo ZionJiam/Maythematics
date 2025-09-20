@@ -7,8 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $font-family-sans;
-  // transition: all 0.5s ease;
+  font-family: $font-family-sans, system-ui, sans-serif;
 }
 
 html,
@@ -46,7 +45,7 @@ body {
 }
 
 .pageMarginTop {
-  padding-top: 84px;
+  padding-top: 78.4px;
   /* background-color: #fffcf3; */
 
   @media (max-width: 1023px) {
@@ -148,7 +147,7 @@ h4 {
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.2;
   font-weight: 600;
   color: $color-text;
@@ -173,13 +172,13 @@ h4 {
 
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     line-height: 1.1;
 
   }
 
   @media (min-width: 1024px) {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     line-height: 4rem;
     line-height: 1.1;
 
@@ -188,7 +187,7 @@ h4 {
   }
 
   @media (min-width: 1280px) {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     line-height: 1.1;
   }
 }
@@ -227,11 +226,4 @@ h4 {
   @media (min-width: 768px) {
     font-size: 1rem;
   }
-
-  @media (min-width: 1024px) {
-    font-size: 1.25rem;
-
-  }
-
-  @media (min-width: 1280px) {}
 }

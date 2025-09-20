@@ -15,7 +15,7 @@ export default function CTASection() {
 
 
             <div data-aos="fade-up" className={styles.ctaTextWrapper}>
-                <p className={`${styles.ctaParagraph} text-lg`}>
+                <p className={`${styles.ctaParagraph}`}>
                     Spots are filling up fast — secure your place today and level up your Math!
                 </p>
                 <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Sign Up Now</Link>

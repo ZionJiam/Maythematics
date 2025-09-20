@@ -6,32 +6,38 @@ import Masonry from "react-masonry-css";
 
 const testimonials = [
     {
-        image: "/images/testimonials/whatsapp-test.png",
+        image: "/images/testimonials/message1.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test2.png",
+        image: "/images/testimonials/message2.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test.png",
+        image: "/images/testimonials/message3.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     },
     {
-        image: "/images/testimonials/whatsapp-test2.png",
+        image: "/images/testimonials/message4.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
     }
     ,
     {
-        image: "/images/testimonials/whatsapp-test2.png",
+        image: "/images/testimonials/message5.webp",
+        student: "Darren",
+        school: "River Valley High",
+        achievement: "Jumped from 60% → 85% in Math"
+    },
+    {
+        image: "/images/testimonials/message6.webp",
         student: "Darren",
         school: "River Valley High",
         achievement: "Jumped from 60% → 85% in Math"
@@ -46,7 +52,7 @@ const breakpointColumnsObj = {
 
 export default function WhatsappMasonry() {
     return (
-        <section id="messages" className={styles.whatsappMasonry}>
+        <section id="messages" className={`${styles.whatsappMasonry} sectionYPadding`}>
             <h2 className="sectionTitle">Heartfelt Messages</h2>
             <Masonry
                 breakpointCols={breakpointColumnsObj}

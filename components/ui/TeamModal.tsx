@@ -13,27 +13,25 @@ interface TeamModalProps {
         description: string;
         studentReview: string;
         startYear: number;
+        youtubeUrl?: string; // <-- new field
     };
     onClose: () => void;
 }
 
 const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
-
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        // Trigger animation on mount
         setOpen(true);
     }, []);
 
     const currentYear = new Date().getFullYear();
 
-
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
             <div
                 className={`${styles.modalContent} ${open ? styles.open : ""}`}
-                onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+                onClick={(e) => e.stopPropagation()}
             >
                 <button className={styles.closeButton} onClick={onClose}>×</button>
                 <div className={styles.modalBody}>
@@ -50,11 +48,9 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                                 <h4 className={styles.role}>
                                     <FaUserTie className={styles.icon} /> {member.role}
                                 </h4>
-
                                 <p className={styles.degree}>
                                     <FaGraduationCap className={styles.icon} /> {member.degree}
                                 </p>
-
                                 {currentYear - member.startYear >= 3 && (
                                     <p className={styles.yoe}>
                                         <FaCalendarAlt className={styles.icon} />{" "}
@@ -62,17 +58,23 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                                     </p>
                                 )}
                             </div>
-
                         </div>
 
                         <p className={styles.description}>{member.description}</p>
                         <blockquote>“{member.studentReview}”</blockquote>
-                        <blockquote>“{member.studentReview}”</blockquote>
 
-                        <blockquote>“{member.studentReview}”</blockquote>
-
-                        <blockquote>“{member.studentReview}”</blockquote>
-
+                        {member.youtubeUrl && (
+                            <div className={styles.videoWrapper}>
+                                <iframe
+                                    className={styles.video}
+                                    src={member.youtubeUrl}
+                                    title="Teacher Video"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export default function ProgrammesSection() {
             <div className={`${styles.programmesWrapper} sectionYPadding`}>
                 <div data-aos="fade-up" className={styles.textContainer}>
                     <h4 className={styles.sectionTitle}>OUR PROGRAMMES</h4>
-                    <h3 className={`${styles.header} sectionTitle`}>Lesson for <br />  all grades</h3>
+                    <h3 className={`${styles.header} sectionTitle`}>Lesson For <br />  All Grades</h3>
                 </div>
                 <div className={styles.scrollWrapper}>
 

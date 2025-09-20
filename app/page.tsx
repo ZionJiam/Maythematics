@@ -19,9 +19,8 @@ export default function Home() {
         <Banner />
         <WhyUsSection />
         <Methodologies />
-        <StudentReview />
         <DayInThelife />
-
+        <StudentReview />
         <GoogleReviewSection />
         <Programme />
 

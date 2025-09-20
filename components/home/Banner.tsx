@@ -35,7 +35,7 @@ const Banner = () => {
           <span className={`${styles.textBigger} ${styles.blue}`}> Math tuition</span>.
 
         </h1>
-        <div data-aos="fade-in" data-aos-delay="600" >
+        <div data-aos="fade-in" data-aos-delay="400" >
           <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>
             What Makes Us Different
           </Link>

@@ -14,7 +14,7 @@ export default function Programmes() {
 
     return (
         <main className={`pageMarginTop`} >
-            <SubPageHeader color="red" header="Our Programmes" />
+            <SubPageHeader color="red" header="Our Programme" />
 
             <Methodologies />
 

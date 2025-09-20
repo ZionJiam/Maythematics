@@ -56,56 +56,59 @@ const WorkshopSection = () => {
     const [mainWorkshop, ...otherWorkshops] = workshops;
 
     return (
-        <section className={styles.workshopSection}>
-            {/* Main Workshop */}
-            <div className={styles.container}>
-                <div className={styles.poster}>
-                    <img src={mainWorkshop.image} alt={mainWorkshop.title} />
-                </div>
+        <section className={`${styles.workshopSection} sectionYPadding`}>
 
-                <div className={styles.info}>
-                    <h2 className={`sectionTitle ${styles.title}`}>{mainWorkshop.title}</h2>
-                    <p className={styles.description}>{mainWorkshop.description}</p>
-
-                    <div className={styles.details}>
-                        <p><span className={styles.icon}></span>{mainWorkshop.dateTime}</p>
-                        <p><span className={styles.icon}></span>{mainWorkshop.location}</p>
-                        <p className={styles.note}>*Limited vacancies! Register early to secure your spot.</p>
+            <div className={styles.workshopContainer}>
+                {/* Main Workshop */}
+                <div className={styles.container}>
+                    <div className={styles.poster}>
+                        <img src={mainWorkshop.image} alt={mainWorkshop.title} />
                     </div>
 
-                    <Link
-                        className={styles.ctaLink}
-                        href={mainWorkshop.formUrl}
-                        target="_blank"
-                    >
-                        <button className={`${styles.ctaButton} ctaButton buttonRed`}>
-                            Sign Up Now
-                        </button>
-                    </Link>
-                </div>
-            </div>
+                    <div className={styles.info}>
+                        <h2 className={`sectionTitle ${styles.title}`}>{mainWorkshop.title}</h2>
+                        <p className={styles.description}>{mainWorkshop.description}</p>
 
-            {/* Other Workshops */}
-            <div className={styles.otherWorkshops}>
-                {otherWorkshops.map((workshop, index) => (
-                    <div key={index} className={styles.card}>
-                        <div className={styles.cardPoster}>
-                            <img src={workshop.image} alt={workshop.title} />
+                        <div className={styles.details}>
+                            <p><span className={styles.icon}></span>{mainWorkshop.dateTime}</p>
+                            <p><span className={styles.icon}></span>{mainWorkshop.location}</p>
+                            <p className={styles.note}>*Limited vacancies! Register early to secure your spot.</p>
                         </div>
-                        <div className={styles.cardInfo}>
-                            <h3>{workshop.title}</h3>
-                            <Link
-                                href={workshop.formUrl}
-                                target="_blank"
-                                className={styles.ctaLink}
-                            >
-                                <button className={`${styles.ctaButton} ctaButton buttonRed`}>
-                                    Sign Up Now
-                                </button>
-                            </Link>
-                        </div>
+
+                        <Link
+                            className={styles.ctaLink}
+                            href={mainWorkshop.formUrl}
+                            target="_blank"
+                        >
+                            <button className={`${styles.ctaButton} ctaButton buttonRed`}>
+                                Sign Up Now
+                            </button>
+                        </Link>
                     </div>
-                ))}
+                </div>
+
+                {/* Other Workshops */}
+                <div className={styles.otherWorkshops}>
+                    {otherWorkshops.map((workshop, index) => (
+                        <div key={index} className={styles.card}>
+                            <div className={styles.cardPoster}>
+                                <img src={workshop.image} alt={workshop.title} />
+                            </div>
+                            <div className={styles.cardInfo}>
+                                <h3>{workshop.title}</h3>
+                                <Link
+                                    href={workshop.formUrl}
+                                    target="_blank"
+                                    className={styles.ctaLink}
+                                >
+                                    <button className={`${styles.ctaButton} ctaButton buttonRed`}>
+                                        Sign Up Now
+                                    </button>
+                                </Link>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
