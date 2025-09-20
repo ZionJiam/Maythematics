@@ -1,11 +1,11 @@
 @use '../../app/styles/variables' as *;
 
 .sloganContainer {
-    max-width: 56rem;
+    max-width: 60rem;
     width: 95%;
     margin: 0rem auto;
-    padding: 3rem 0;
-    text-align: center;
+    padding: 3rem 1rem;
+    text-align: left;
 
 
     p {
@@ -19,4 +19,10 @@
 
         // white-space: pre-line;
     }
+
+    @media (min-width: 768px) {
+        text-align: center;
+
+    }
+
 }

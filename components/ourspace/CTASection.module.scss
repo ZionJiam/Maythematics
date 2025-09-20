@@ -4,7 +4,7 @@
 .ctaSection {
     background-color: #fffcf3;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
 
     position: relative;
     margin-bottom: 2rem;
@@ -71,40 +71,28 @@
 
 .ctaTextWrapper {
     margin-top: 2rem;
-    width: 90%;
-    max-width: 600px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    max-width: 768px;
+    width: 90%;
 
 
     .ctaParagraph {
         color: $color-text;
-        font-weight: 600;
-        font-size: 1.5rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+
 
         @media (min-width: 1024px) {
-            font-size: 2rem;
+            font-size: 1.5rem;
 
         }
 
     }
 }
 
-@media (min-width: 1024px) {
 
-    .ctaTextWrapper {
-        max-width: 700px;
-    }
-}
-
-@media (min-width: 1280px) {
-
-    .ctaTextWrapper {
-        max-width: 900px;
-    }
-
-}
 
 .ctaSectionButton {
     margin-top: 2rem;

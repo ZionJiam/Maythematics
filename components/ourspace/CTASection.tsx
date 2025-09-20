@@ -16,10 +16,9 @@ export default function CTASection() {
 
 
             <div data-aos="fade-up" className={styles.ctaTextWrapper}>
-                <p className={`${styles.ctaParagraph} text-lg`}>
-                    Step into a place where curiosity thrives and confidence grows.
-                </p>
-                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Book A Trial Class</Link>
+                <p className={`${styles.ctaParagraph}`}>
+                    Our classrooms are more than just spaces — they’re safe, inspiring places where students grow in focus, confidence, and results. The best way to experience it is to see it for yourself.                </p>
+                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Chat with Us</Link>
             </div>
 
             <div className={styles.mascotContainer}>

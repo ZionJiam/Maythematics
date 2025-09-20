@@ -275,44 +275,32 @@
 }
 
 .videoWrapper {
-    position: relative;
     z-index: 11;
-    padding-bottom: 250px;
-    /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(236, 99, 94, 0.2);
-    background: #000;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%;
+    max-width: 450px;
+    aspect-ratio: 9 / 6;
+    margin: 0 auto;
+    position: relative;
 
     @media (min-width: 768px) {
-        max-width: 600px;
-        padding-bottom: 40vw;
-
-
+        max-width: 768px;
     }
 
     @media (min-width: 1024px) {
-        max-width: 700px;
-        padding-bottom: 500px;
-    }
-
-    @media (min-width: 1280px) {
-        max-width: 900px;
+        max-width: 768px;
     }
 
 
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
+}
+
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px; // optional: rounded corners
 }
 
 
@@ -343,15 +331,15 @@
 
 .videoMascot2 {
     top: -58px;
-    left: -35px;
-    width: 100px;
+    left: -25px;
+    width: 90px;
 
 
 
     @media (min-width: 1024px) {
-        width: 200px;
+        width: 170px;
         top: -128px;
-        left: -55px;
+        left: -45px;
     }
 
     @media (min-width: 1280px) {
@@ -365,7 +353,6 @@
 /* Overlay covering bottom half of the video */
 .videoOverlay {
     position: absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
     /* full viewport width */

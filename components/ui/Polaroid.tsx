@@ -13,7 +13,7 @@ const Polaroid: React.FC<PolaroidProps> = ({ src, caption, shadowType = "shadow1
         <div className={`${styles.item} ${styles[shadowType]}`}>
             <div className={styles.polaroid}>
                 <div className={styles.imageWrapper}>
-                    <img src={src} alt={caption} />
+                    <img src={src} alt={caption} loading="lazy" />
 
                 </div>
                 {/* <div className={styles.caption}>{caption}</div> */}

@@ -1,10 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
-import SlideUpImage from "@/components/ui/SlideUpImage";
 import styles from "./TeamCard.module.scss";
-
 
 interface TeamCardProp {
     name: string;
@@ -15,10 +12,7 @@ interface TeamCardProp {
     description: string;
     studentReview: string;
     onClick: () => void;
-
 }
-
-
 
 const TeamCard: React.FC<TeamCardProp> = ({
     name,
@@ -31,23 +25,22 @@ const TeamCard: React.FC<TeamCardProp> = ({
     onClick,
     ...rest
 }) => {
-
-    const [bgImage, setBgImage] = useState(imageUrl);
+    const [currentImage, setCurrentImage] = useState(imageUrl);
 
     return (
-
-        <div
-            className={styles.teamCard}
-            onClick={onClick}
-            {...rest}
-        >
-
+        <div className={styles.teamCard} onClick={onClick} {...rest}>
             <div
                 className={styles.teamCardWrapper}
-                style={{ backgroundImage: `url(${bgImage})` }}
-                onMouseEnter={() => setBgImage(imageUrlHover)}
-                onMouseLeave={() => setBgImage(imageUrl)}
+                onMouseEnter={() => setCurrentImage(imageUrlHover)}
+                onMouseLeave={() => setCurrentImage(imageUrl)}
             >
+                {/* Replaced backgroundImage with <img> */}
+                <img
+                    src={currentImage}
+                    alt={`${name} - ${role}`}
+                    className={styles.teamImage}
+                    loading="lazy"
+                />
 
                 <div className={styles.descriptionContainer}>
                     <h4 className={styles.cardTitle}>{name}</h4>
