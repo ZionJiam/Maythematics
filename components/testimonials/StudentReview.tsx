@@ -36,9 +36,9 @@ const StudentReview = () => {
     return (
         <section className={`${styles.studentReview}`}>
 
-            <div className={`${styles.container} sectionYPadding`}>
+            <div className={`${styles.container}`}>
                 {reviews.map((review, index) => (
-                    <div key={index} className={`${styles.reviewItem}`}>
+                    <div key={index} className={`${styles.reviewItem} sectionYPadding`}>
                         <div className={styles.videoContainer}>
                             <iframe
                                 loading="lazy"
