@@ -217,6 +217,8 @@ const Story = () => {
                                 <h4>The Spark of Growth</h4>
                                 <p>Unexpectedly, children began signing up for lessons after watching her TikTok videos. Parents noticed, and the little community started to grow.</p>
                             </div>
+                            <img alt="Story Element 6" className={`${stylesElements.storyMascot} ${stylesElements.element6}`} src="/assets/yellow-mascot-2.webp" />
+
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid

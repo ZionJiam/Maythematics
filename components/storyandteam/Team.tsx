@@ -17,7 +17,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/May_2.webp",
 
         degree: "Bachelor of Communications, NUS",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "I’ve been teaching Math for over 14 years and have guided more than 700 students of all levels and abilities. I specialise in breaking down complex problems into clear, step-by-step methods — an approach that has helped many students achieve distinctions and gain confidence. Along the way, I’ve also built a strong following as one of Singapore’s rising Math influencer-tutors, where thousands of parents and students learn from my videos. Today, I lead and train our team of tutors at Maythematics to ensure every lesson is taught with the same clarity, consistency, and care.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -28,7 +28,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Eunice_2.webp",
 
         degree: "Bachelor of Engineering",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "Math was difficult for me when I was younger, but over time I grew to love the subject — eventually achieving distinctions throughout my academic journey from school to polytechnic to university. Before discovering my passion for teaching, I worked as an engineer, which strengthened my problem-solving skills and precision. Today, I teach Primary Math as well as Secondary 1–5 Emath and Amath, focusing on making concepts simple, structured, and approachable. Outside the classroom, I enjoy collecting figurines from blind boxes and Pop Marts — a hobby that keeps me curious and creative.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -39,7 +39,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Kelly_2.webp",
 
         degree: "Bachelor of Science (Data Science and Analytics), NUS",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "Having majored in Data Science and Analytics at NUS, I enjoy blending Math with technology to make concepts clearer and more engaging for students. Back in school, I graduated at the top of my cohort for Secondary 4 Additional Math — a subject I still love teaching today. Outside of lessons, you’ll probably find me at karaoke, where I bring the same joy and energy that I bring into the classroom.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -59,7 +59,7 @@ const teamMembers = [
         imageUrl: "/images/team/Amy_1.webp",
         imageUrlHover: "/images/team/Amy_2.webp",
         degree: "Bachelor of Communications, NUS",
-        description: "I’m passionate and driven about teaching my students Physics in a simple, concise yet interesting way! I’m always ready to give my all for my kids! Which is why I make it a point to build an individual relationship with every student, no matter how big my classes are. I’m sure to always make myself available for my students, even if it’s in the middle of the night (even at 4am 😇) , to help with any panic Physics calls! ",
+        description: "I’m a Primary Math Teaching Specialist with distinctions in Math from Primary through JC. After graduating from NUS, I found my true calling in teaching — guiding younger students to build strong foundations and confidence in Math. I currently teach Primary Math and up to Secondary 2 Emath, where I focus on making concepts clear and approachable. Before becoming a tutor, I was a journalist, but as a mother of one (and hoping for more!), working with children has become both my passion and joy.",
         studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
     },
 
@@ -71,7 +71,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Joan_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "Back in school, I was part of the Gifted Education Programme and have carried that love for learning into my teaching today. Outside of lessons, I volunteer at a pet shelter and am a proud cat lover — something that helps me bring extra patience and care into the classroom.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -82,7 +82,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Lucas_2.webp",
 
         degree: "Undergraduate of Science (Mathematical Science), NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "I teach everything from Primary Math to Secondary 1–5 Emath and Amath, guiding students with clear, structured methods that build both skill and confidence. A bit of a perfectionist at heart, I put care into every explanation I give. Outside of teaching, I’m known for my big appetite despite my small frame — and for being a huge fan of Taylor Swift!",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -93,7 +93,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Leanne_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "As a mother of three energetic boys, I understand the importance of patience, encouragement, and structure in helping children learn effectively. Outside of teaching, I dedicate time to volunteering with a hamster welfare group — a role that reflects my nurturing nature both inside and outside the classroom.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
 
@@ -105,7 +105,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Meisi_1.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "I love making Math fun and easy to understand, helping students build both confidence and strong foundations. Outside of lessons, I enjoy running — I’ve even completed a half marathon! — and I’m a big animal lover with a soft spot for both cats and dogs.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
 
@@ -117,7 +117,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Sammi_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "From a young age, I worked many part-time jobs, which taught me resilience, responsibility, and the value of hard work — qualities I bring into my teaching every day. I love creating Math notes and worksheets to make learning clearer and more enjoyable for my students. Outside the classroom, I’m a dancer at heart and enjoy building Lego, crafting handmade things, and cooking, which keep me creative and full of energy.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -128,7 +128,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Ven_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "With a degree in Communications and Sociology and a diploma in Applied Drama and Psychology, I bring both empathy and organisation to my role. Outside of work, I love dogs and volunteer regularly at a dog shelter. I also spent two years teaching singing and have performed at various events — music has always been a joyful part of my life.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -139,7 +139,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Tyler_2.webp",
 
         degree: "Bachelor of Computer Science (Artificial Intelligence) & Bachelor of Business, (Analytics), NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "With a Double Degree in Computer Science and Data Analytics from NTU, I not only specialise in teaching Primary and Secondary Math but also support the centre’s operations, finance, marketing, and HR. I’m passionate about helping students succeed in Math while driving the continued growth of Maythematics. Outside of work, you’ll often find me on the basketball court.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
@@ -150,7 +150,7 @@ const teamMembers = [
         imageUrlHover: "/images/team/Jovial_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        description: "From managing systems to keeping everything on track, I’m also the tech guy behind our teaching equipment, student portal, and livestream setups. I enjoy using technology to make learning seamless for both our tutors and students.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
 
