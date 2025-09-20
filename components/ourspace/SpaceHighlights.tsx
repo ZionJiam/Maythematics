@@ -8,7 +8,7 @@ const SpaceHighlights = () => {
     return (
         <section className={`${styles.lesson} sectionYPadding`}>
             <Slogan
-                header=""
+                header="A Learning Environment That Inspires"
                 text="At Maythematics, we’ve designed a learning environment where students feel comfortable, focused, and inspired. From bright classrooms and cosy study corners to a supportive atmosphere created by our tutors, every detail is built to keep students engaged and confident in their learning journey."
             />
 

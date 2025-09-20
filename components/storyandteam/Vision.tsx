@@ -20,7 +20,7 @@ const Vision = () => {
                 className={styles.dividerTop}
             />
 
-            <div className={`${styles.visionContainer} sectionYPadding`}>
+            <div className={`${styles.visionContainer}`}>
                 <Slogan header="Our Vision" text="To become Singapore’s leading math tuition centre — trusted by parents and loved by students. We aim to deliver the clearest explanations, the best learning materials, and engaging methods that bring out every child’s confidence and results." />
 
             </div>

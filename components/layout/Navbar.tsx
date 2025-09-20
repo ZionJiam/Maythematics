@@ -63,27 +63,11 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                     </div>
 
 
-                    <div className={styles.dropdown}>
-                        <div className={`${styles.navLink} ${styles.linkBlue} ${isActive("/lesson") ? styles.active : ""}`}>
-                            Programmes
-                        </div>
-                        <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
-                            <Link href="/lesson/primary3to4" className={`${styles.dropdownLink} ${isActive("/lesson/primary3to4") ? styles.active : ""}`}>
-                                Primary 3-4
-                            </Link>
-                            <Link href="/lesson/primary5to6" className={`${styles.dropdownLink} ${isActive("/lesson/primary5to6") ? styles.active : ""}`}>
-                                Primary 5-6
-                            </Link>
-                            <Link href="/lesson/secondary1to5" className={`${styles.dropdownLink} ${isActive("/lesson/secondary1to5") ? styles.active : ""}`}>
-                                Secondary 1-5
-                            </Link>
-                            <Link href="/lesson/jc" className={`${styles.dropdownLink} ${isActive("/lesson/jc") ? styles.active : ""}`}>
-                                JC H1/H2
-                            </Link>
-                        </div>
-                    </div>
+                    <Link href="/programmes" className={`${styles.navLink} ${isActive("/programmes") ? styles.active : ""}`}>
+                        Programmes
+                    </Link>
 
-                    <Link href="/testimonials" className={`${styles.navLink} ${styles.linkYellow} ${isActive("/testimonials") ? styles.active : ""}`}>
+                    <Link href="/testimonials" className={`${styles.navLink} ${isActive("/testimonials") ? styles.active : ""}`}>
                         Testimonials
                     </Link>
 

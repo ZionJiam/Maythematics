@@ -1,0 +1,196 @@
+@use '../../app/styles/variables' as *;
+
+
+.section {}
+
+
+.titleContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+
+    }
+
+
+    .sectionTitle {
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #888;
+        margin-bottom: 0.5rem;
+    }
+
+    .header {
+        color: $color-text;
+        margin-bottom: 1rem;
+
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    gap: 3rem;
+    max-width: 1124px;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 0 1rem;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1.5rem;
+    }
+}
+
+.left {
+    max-width: 500px;
+    flex: 1;
+
+    @media (max-width: 767px) {
+        text-align: center;
+        max-width: 450px;
+    }
+}
+
+
+
+
+.image {
+    width: 95%;
+}
+
+.right {
+    flex: 1;
+
+    @media (max-width: 768px) {}
+}
+
+.accordion {
+    border-bottom: 1px solid #ddd;
+
+}
+
+.accordionButton {
+    width: 100%;
+    position: relative;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: $color-text;
+    transition: all 0.25s ease;
+
+
+    &:hover {
+        background-color: #F0F2F5;
+
+    }
+}
+
+.letterContainer {
+    position: absolute;
+    left: -1.1rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    background-color: $color-pink;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    font-weight: 700;
+    color: white;
+    // margin-right: 0.5rem;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.accordionContent {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 2rem;
+    background-color: #f9f9f9;
+
+
+    p {
+        margin: 1rem 0;
+        color: #444;
+        font-weight: 300;
+    }
+}
+
+
+.color1 {
+    .letterContainer {
+        background-color: $color-red-mascot;
+
+    }
+}
+
+.color2 {
+    .letterContainer {
+        background-color: $color-teal;
+
+    }
+}
+
+
+.color3 {
+    .letterContainer {
+        background-color: $color-blue-mascot;
+
+    }
+}
+
+.color4 {
+    .letterContainer {
+        background-color: $color-yellow-mascot;
+
+    }
+}
+
+.color5 {
+    .letterContainer {
+        background-color: $color-purple;
+
+    }
+}
+
+
+
+
+.active {
+    background-color: #F0F2F5;
+
+}
+
+.icon {
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+.open {
+    transform: rotate(180deg); // flips arrow upwards when open
+}

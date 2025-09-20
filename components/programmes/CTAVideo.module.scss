@@ -1,7 +1,9 @@
 @use '../../app/styles/variables' as *;
 
 
-.studentReview {}
+.CTAVideo {
+    background-color: #fffcf3;
+}
 
 .studentContainer {
     display: flex;
@@ -25,17 +27,22 @@
 }
 
 .videoContainer {
+    width: 100%;
 
 
-    @media (min-width: 768px) {}
+    @media (min-width: 768px) {
+        min-width: 280px;
+        max-width: 350px;
+    }
 
 }
 
-.image {
+.video {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    min-width: 280px;
+    aspect-ratio: 3/4;
     border-radius: 10px;
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
 
 }
 

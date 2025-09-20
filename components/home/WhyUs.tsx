@@ -9,7 +9,7 @@ const reasons = [
         title: 'Positive, patient, and passionate',
         description: 'Our team of math tutors is approachable, relatable, and committed to making every lesson clear and enjoyable. With consistent teaching methods across the team, students always experience structured, easy-to-follow lessons.',
         cta: 'Meet our tutors',
-        href: '/storyandteam#team',
+        href: '/storyandteam?goto=team',
     },
     {
         image: '/images/workshop/workshop-5.webp',

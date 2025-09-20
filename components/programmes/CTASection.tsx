@@ -6,6 +6,7 @@ import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
 const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 
+
 export default function CTASection() {
     return (
         <section className={styles.ctaSection}>
@@ -18,15 +19,16 @@ export default function CTASection() {
 
             <div data-aos="fade-up" className={styles.ctaTextWrapper}>
                 <p className={`${styles.ctaParagraph}`}>
-                    Our classrooms are more than just spaces — they’re safe, inspiring places where students grow in focus, confidence, and results. The best way to experience it is to see it for yourself.                </p>
-                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Chat with Us</a>
+                    Not sure which class fits best? Have a chat with us. Our team will guide you in finding the right starting point for your child.
+                </p>
+                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Get Started Today</a>
             </div>
 
             <div className={styles.mascotContainer}>
 
                 <img
                     data-aos="fade-up"
-                    src="/assets/blue-mascot-1.png"
+                    src="/assets/red-mascot.jpg"
                     alt="Blue Teaching Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}
                 />
