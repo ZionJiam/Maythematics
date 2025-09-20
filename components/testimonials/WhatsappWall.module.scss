@@ -14,9 +14,17 @@
     display: flex;
     margin: 0 auto;
     // margin-left: -1rem; // gutter size offset
-    max-width: 1024px;
     width: 95%;
     gap: 1rem;
+
+    width: 95%;
+    max-width: 450px;
+    padding: 0 1rem;
+
+    @media (min-width: 768px) {
+        max-width: 1124px;
+
+    }
 }
 
 .myMasonryGridColumn {

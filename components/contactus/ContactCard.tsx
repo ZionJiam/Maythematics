@@ -8,7 +8,7 @@ import { FaTiktok, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 const StudentReview = () => {
     return (
-        <section data-aos="fade-up" data-aos-offset="-200" className={styles.studentReview}>
+        <section data-aos="fade-up" data-aos-offset="-200" className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.mapContainer}>
                 {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                 <iframe
@@ -26,17 +26,17 @@ const StudentReview = () => {
                     <h3>Contacts</h3>
                     <ul className={styles.contactList}>
                         <li className={styles.telephone}>
-                            <FaPhoneAlt /> <a href="tel:+6589150859">+65 8915 0859</a>
+                            <FaPhoneAlt /> <a href="tel:+6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>
                         </li>
 
                         <li>
-                            <FaWhatsapp /> <a href="https://wa.me/6589150859">WhatsApp</a>
+                            <FaWhatsapp /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                         </li>
                         <li>
-                            <FaTelegramPlane /> <a href="https://t.me/yourhandle">Telegram(Primary)</a>
+                            <FaTelegramPlane /> <a href="https://t.me/yourhandle" target="_blank" rel="noopener noreferrer">Telegram(Primary)</a>
                         </li>
                         <li>
-                            <FaTelegramPlane /> <a href="https://t.me/yourhandle">Telegram(Secondary)</a>
+                            <FaTelegramPlane /> <a href="https://t.me/yourhandle" target="_blank" rel="noopener noreferrer">Telegram(Secondary)</a>
                         </li>
                     </ul>
                 </div>

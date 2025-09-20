@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './WorkshopFAQ.module.scss';
+import styles from '../programmes/FAQ.module.scss';
 import { ChevronDown } from "lucide-react";
 
 interface AccordionItem {

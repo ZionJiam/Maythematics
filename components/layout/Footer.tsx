@@ -46,9 +46,9 @@ const Footer = () => {
                     {/* Branches + Social Media */}
                     <div className={`${styles.column} col-30`}>
                         <h4>Our Location</h4>
-                        <p>5 Jalan Masjid, Kembangan Court #01-13</p>
+                        <p>5 Jalan Masjid, Kembangan Court #01-13 (& #01-02)</p>
                         <p>Phone: +65 8915 0859</p>
-                        <p>Hours: Mon–Sun, 10am–8pm</p>
+                        <p>Hours: Mon-Fri 1-9pm, Sat-Sun 9-6pm, Closed on PH</p>
                     </div>
 
                 </div>

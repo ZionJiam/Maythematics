@@ -45,7 +45,8 @@ const testimonials = [
 ];
 
 const breakpointColumnsObj = {
-    default: 3,
+    default: 4,
+    1279: 3,
     1023: 2,
     767: 1,
 };
