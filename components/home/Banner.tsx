@@ -21,6 +21,7 @@ const Banner = () => {
     <section className={styles.banner}>
       <Image
         src="/images/banner1.webp"
+        fetchPriority='high'
         alt="Main Banner Image"
         fill
         priority // <-- ensures fetchpriority=high

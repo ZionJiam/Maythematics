@@ -1,0 +1,87 @@
+.storyMascot {
+    position: absolute;
+    z-index: 1;
+
+}
+
+
+.element4 {
+    top: -5px;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 110px;
+
+    @media (max-width: 1123px) {
+        top: -15px;
+    }
+
+    @media (max-width: 1023px) {
+        top: -75px;
+    }
+
+    @media (max-width: 450px) {
+        top: -18vw;
+    }
+}
+
+.element2 {
+    top: 10px;
+    right: 0;
+    width: 80px;
+    transform: rotate(-50deg);
+}
+
+.element3 {
+    top: 20px;
+    left: -30px;
+    width: 30%;
+    z-index: 1;
+}
+
+
+
+.element5 {
+    left: -20px;
+    top: 30px;
+    width: 20%;
+    z-index: 1;
+    transform: rotate(-50deg);
+}
+
+.element6 {
+    right: -20px;
+    top: 30px;
+    width: 20%;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+.element7 {
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+
+.element8 {
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 120px;
+    z-index: -1;
+
+    @media (max-width: 1123px) {
+        top: 0;
+    }
+
+    @media (max-width: 1023px) {
+        top: -70px;
+    }
+
+
+    @media (max-width: 450px) {
+        top: -16vw;
+    }
+}

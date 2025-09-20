@@ -181,30 +181,6 @@
         }
     }
 
-    .teaches {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        align-items: center;
-        margin-top: 0.5rem;
-
-        h6 {
-            font-size: 1rem;
-            color: $color-text;
-
-        }
-
-        .teachLevel {
-            background: #f1f1f1;
-            color: #333;
-            padding: 0.3rem 0.8rem;
-            border-radius: 9999px; // Pill shape
-            font-size: 0.85rem;
-            // border: 1px solid #ddd;
-            white-space: nowrap;
-            font-weight: 500;
-        }
-    }
 
     .description {
         font-size: 1rem;

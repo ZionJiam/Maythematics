@@ -43,11 +43,8 @@
 
     .innerContainer {
         max-width: 450px;
-        width: 95%;
         margin: 3rem auto;
-        // display: flex;
-        // flex-direction: column;
-        // gap: 10rem;
+        width: 95%;
         position: relative;
 
         @media (min-width: 1024px) {
@@ -61,12 +58,12 @@
         font-weight: 600;
     }
 
-    .timelineStart {
-        margin-top: 6rem;
-    }
 
     .timelineEnd {
-        margin-bottom: 6rem;
+        max-width: 1024px;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .timelineStartDot {
@@ -83,14 +80,16 @@
 
     .timelineEndDot {
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         left: 50%;
         transform: translate(-50%, 0%);
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid $color-pink; // arrow color
         z-index: 3;
-        background-color: $color-pink;
+        border-radius: 6px; // softens the arrow edges
     }
 
 
@@ -127,15 +126,18 @@
     .row {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-direction: column;
-        padding: 3.5rem 0;
+        padding: 4rem 0;
+
         gap: 1rem;
         z-index: 2;
 
 
         @media (min-width: 1024px) {
             flex-direction: row;
+            padding: 3rem 0;
+
         }
 
         .textWrapper,
@@ -147,39 +149,25 @@
             display: flex;
             align-items: center;
 
-
             @media (min-width: 1024px) {
                 width: 40%;
             }
         }
 
+
+        .imageContainer {
+            justify-content: center;
+        }
+
         .textWrapper {
 
-            .storyMascot {
-                position: absolute;
-                top: -65px;
 
-                width: 110px;
-                z-index: 1;
-
-                @media (min-width: 1024px) {
-                    top: -55px;
-                }
-
-            }
-
-
-            .storyMascot.left {
-                left: 30px;
-            }
-
-            .storyMascot.right {
-                right: 30px;
-            }
 
             .yellow {
 
                 background-color: $color-yellow;
+
+
             }
 
             .red {
@@ -264,8 +252,6 @@
 
 
     .imageContainer {
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 
         .image {
@@ -394,4 +380,7 @@
     /* so clicks go through to video if needed */
     z-index: 0;
 
+
+    top: 50%;
+    transform: translate(0%, -50%);
 }

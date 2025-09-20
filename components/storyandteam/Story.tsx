@@ -1,9 +1,12 @@
 "use client";
 
 import styles from './Story.module.scss';
+import stylesElements from './StoryDesign.module.scss';
+
 import React, { useEffect, useRef, useState } from "react";
 import TimelineDot from '../ui/TimelineDot';
-import SlideUpImage from "@/components/ui/SlideUpImage";
+import Polaroid from '../ui/Polaroid';
+import Slogan from '../ui/Slogan';
 
 
 const Story = () => {
@@ -35,9 +38,12 @@ const Story = () => {
     }, []);
 
     return (
-        <section className={styles.story}>
+        <section className={`${styles.story}`}>
 
-            <div className={styles.storyContainer}>
+            <div className={`${styles.storyContainer} sectionYPadding`}>
+                <Slogan header="Our Mission" text="To foster a positive and safe environment for students to learn Math under the belt of the most positive, patient and passionate tutors with effective teaching methodologies." />
+
+
                 <div className={styles.videoContainer}>
                     <div className={styles.videoWrapper} data-aos="fade-in">
                         <iframe
@@ -59,18 +65,13 @@ const Story = () => {
 
                         {/* Content you want to show overlapping */}
                     </div>
-
-                    <p className={`${styles.content}`}>
-
-                        From home-based to opening our first flagship centre opposite Kembangan MRT in 2023 to expanding to a bigger centre in 2025, it has been our greatest honour for being able to inspire children & parents from all over Singapore to gain more confidence in Math.
-                    </p>
                 </div>
 
 
 
             </div>
 
-            <div className={styles.historyContainer}>
+            <div className={`${styles.historyContainer} sectionYPadding`}>
                 <p className={`text-lg ${styles.timelineStart}`}>How it all started</p>
 
                 <div className={styles.innerContainer}>
@@ -89,28 +90,42 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>1</span>
                                 </div>
-                                <h4>Home-Based Setup</h4>
-                                <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
+                                <h4>Passion for Teaching</h4>
+                                <p>From the beginning, May was deeply passionate about teaching. Helping students overcome their fear of Math and watching their confidence grow gave her purpose.</p>
                             </div>
+
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-1.png" alt="FLoating Design Element 3" />
+                            <Polaroid
+                                src="/images/storyteam/story-1.webp"
+                                caption="May posing with her Motorcycle"
+                                shadowType="shadow3"
+                            />
+
+                            {/* <img className={`${styles.image}`} src="/images/storyteam/image-1.png" alt="FLoating Design Element 3" /> */}
                         </div>
                     </div>
+
+
+
                     <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
                         <TimelineDot styleColor='red' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
-                            <SlideUpImage alt="Story Mascot 1" className={`${styles.storyMascot} ${styles.storyMascot1} ${styles.left}`} src="/assets/blue-mascot-2.png" />
                             <div className={`${styles.textInnerWrapper} ${styles.red}`}>
                                 <div className={`${styles.numbering}`}>
                                     <span>2</span>
                                 </div>
-                                <h4>Early Small <br />Group Classes</h4>
-                                <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
+                                <h4>The COVID-19 <br />Crossroads (2021)</h4>
+                                <p>When COVID-19 struck, May was pregnant. Vaccination had not yet been declared safe for expectant mothers. To continue teaching at her established centre, she would have needed to be vaccinated. Faced with the choice between her baby’s health and her career, she chose her baby — and resigned from teaching.</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-2.png" alt="Story Image 2" />
+                            <Polaroid
+                                src="/images/storyteam/story-2.webp"
+                                caption="Image of Baby in MRI Scan"
+                                shadowType="shadow1"
+                            />
+
                         </div>
 
                     </div>
@@ -119,18 +134,22 @@ const Story = () => {
 
                         <div className={`${styles.textWrapper}`}>
 
-                            <SlideUpImage alt="Story Mascot 2" className={`${styles.storyMascot} ${styles.right}`} src="/assets/yellow-mascot-2.webp" />
 
                             <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
                                 <div className={`${styles.numbering}`}>
                                     <span>3</span>
                                 </div>
-                                <h4>Flagship Centre <br />(Opened in 2023)</h4>
-                                <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
+                                <h4>A Season of Struggle</h4>
+                                <p>At the same time, her husband lost his job as a Pilates instructor. With no stable income, the couple survived by doing Grab deliveries — a period filled with humility, fear, and uncertainty.</p>
                             </div>
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-3.png" alt="Story Image 3" />
+                            <Polaroid
+                                src="/images/storyteam/story-3.webp"
+                                caption="Father and Daughter"
+                                shadowType="shadow2"
+                            />
+
                         </div>
 
                     </div>
@@ -139,24 +158,179 @@ const Story = () => {
                         <TimelineDot styleColor='yellow' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
-                            <SlideUpImage alt="Story Mascot 3" className={`${styles.storyMascot} ${styles.left}`} src="/assets/red-mascot-2.png" />
 
                             <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
                                 <div className={`${styles.numbering}`}>
                                     <span>4</span>
                                 </div>
-                                <h4>New Bigger Centre <br />(2025 Expansion)</h4>
-                                <p>Teacher May is a dedicated, patient and amazing teacher. She is able to keep the student engaged even though the lesson was conducted virtually, and this has significantly increased Nathan’s interest in Maths. Thanks to Teacher May, Nathan has improved from 56 marks to 88 marks in 3 months!"</p>
+                                <h4>Teaching From Home</h4>
+                                <p>A few loyal students continued lessons at May’s tiny two-room HDB flat. Each time, her husband carried their baby, Novi, out of the house for hours so students could have a conducive space. May carried the guilt of sacrificing comfort for her child while still giving her best to her students.</p>
+                            </div>
+                            <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
+
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-4.webp"
+                                caption="I Miss London"
+                                shadowType="shadow4"
+                            />
+
+                        </div>
+                    </div>
+
+
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
+                        <TimelineDot styleColor='red' extendLine='left' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.red}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>5</span>
+                                </div>
+                                <h4>The TikTok Experiment</h4>
+                                <p>One day when a student mentioned learning math tricks on TikTok, May decided to try creating short educational videos. She recorded between breastfeeding breaks, sometimes with Novi right beside her. At first, fewer than five viewers tuned in to her live streams. But she held firm: “As long as there is even one student willing to learn, I will teach.”</p>
                             </div>
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
-                            <img className={`${styles.image}`} src="/images/storyteam/image-4.png" alt="FLoating Design Element 3" />
-                        </div>
+                            <Polaroid
+                                src="/images/storyteam/story-5.webp"
+                                caption="May teaching during Covid Period at her home"
+                                shadowType="shadow3"
+                            />
 
+
+                        </div>
                     </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
+                        <TimelineDot styleColor='blue' extendLine='right' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>6</span>
+                                </div>
+                                <h4>The Spark of Growth</h4>
+                                <p>Unexpectedly, children began signing up for lessons after watching her TikTok videos. Parents noticed, and the little community started to grow.</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-6.webp"
+                                caption="Tiktok Live with her daughter"
+                                shadowType="shadow1"
+                            />
+
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
+                        <TimelineDot styleColor='yellow' extendLine='left' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>7</span>
+                                </div>
+                                <h4>50 Students at Home<br /> (End of 2022)</h4>
+                                <p>By the end of 2022, May was teaching 50 students weekly at her home. The demand proved it was time to take a bigger step.</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-7.webp"
+                                caption="More and More Students"
+                                shadowType="shadow2"
+                            />
+
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
+                        <TimelineDot styleColor='red' extendLine='right' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.red}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>8</span>
+                                </div>
+                                <h4>The Leap of Faith (2023)</h4>
+                                <p>
+                                    With a hopeful heart, May poured her life savings into opening the first Maythematics centre, strategically located opposite Kembangan MRT. This marked the official birth of Maythematics.
+                                </p>
+
+                            </div>
+                            <img alt="Story Element 8" className={`${stylesElements.storyMascot} ${stylesElements.element8}`} src="/assets/blue-mascot-1.png" />
+
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-8.webp"
+                                caption="Opening of Maythematics"
+                                shadowType="shadow4"
+                            />
+
+                        </div>
+                    </div>
+
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
+                        <TimelineDot styleColor='blue' extendLine='left' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>9</span>
+                                </div>
+                                <h4>Building Something Better</h4>
+                                <p>Drawing from her past experience, May set out to enhance the student, parent, and tutor experience in ways she had always dreamed of. She built a team of passionate teachers aligned with this mission.</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-9.webp"
+                                caption="Maythematics Team Photo"
+                                shadowType="shadow3"
+                            />
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
+                        <TimelineDot styleColor='yellow' extendLine='right' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>10</span>
+                                </div>
+                                <h4>Transforming Students’ Lives</h4>
+                                <p>Since then, Maythematics has helped countless students improve — from failing to passing, from passes to distinctions. Parents shared how their children finally began to enjoy Math. What began in hardship grew into a community of resilience, love, and belief: with the right guidance, every child can shine in Math.</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-10.webp"
+                                caption="May teaching in workshop"
+                                shadowType="shadow1"
+                            />
+                        </div>
+                    </div>
+
+
+
                 </div>
 
-                <p className={`text-lg  ${styles.timelineEnd}`}>Continuously Helping <br />More Students</p>
+                <p className={`text-lg  ${styles.timelineEnd}`}>
+                    What started as home-based lessons grew into our first flagship centre at Kembangan MRT in 2023, and by 2025, into a bigger space to welcome even more families. Along the way, the true reward has been seeing children and parents from all over Singapore gain confidence and joy in Math.
+                </p>
 
             </div>
 

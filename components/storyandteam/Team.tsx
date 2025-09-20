@@ -10,8 +10,41 @@ import TeamModal from "@/components/ui/TeamModal";
 
 const teamMembers = [
     {
-        name: "Amy",
-        role: "Math Teacher (Primary 3-5)",
+        name: "May",
+        startYear: 2016,
+        role: "Math Specialist",
+        imageUrl: "/images/team/May_1.webp",
+        imageUrlHover: "/images/team/May_2.webp",
+
+        degree: "Bachelor of Communications, NUS",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+    {
+        name: "Eunice",
+        startYear: 2024,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Eunice_1.webp",
+        imageUrlHover: "/images/team/Eunice_2.webp",
+
+        degree: "Bachelor of Engineering",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+    {
+        name: "Kelly",
+        startYear: 2016,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Kelly_1.webp",
+        imageUrlHover: "/images/team/Kelly_2.webp",
+
+        degree: "Bachelor of Science (Data Science and Analytics), NUS",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+    {
+        name: "Jezabel",
+        role: "Math Specialist",
         startYear: 2016,
         imageUrl: "/images/team/Amy_1.webp",
         imageUrlHover: "/images/team/Amy_2.webp",
@@ -20,20 +53,20 @@ const teamMembers = [
         studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
     },
     {
-        name: "Eunice",
-        startYear: 2024,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/Eunice_1.webp",
-        imageUrlHover: "/images/team/Eunice_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        name: "Amy",
+        role: "Math Specialist",
+        startYear: 2016,
+        imageUrl: "/images/team/Amy_1.webp",
+        imageUrlHover: "/images/team/Amy_2.webp",
+        degree: "Bachelor of Communications, NUS",
+        description: "I’m passionate and driven about teaching my students Physics in a simple, concise yet interesting way! I’m always ready to give my all for my kids! Which is why I make it a point to build an individual relationship with every student, no matter how big my classes are. I’m sure to always make myself available for my students, even if it’s in the middle of the night (even at 4am 😇) , to help with any panic Physics calls! ",
+        studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
     },
+
     {
         name: "Joan",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
+        role: "Math Specialist",
         imageUrl: "/images/team/Joan_1.webp",
         imageUrlHover: "/images/team/Joan_2.webp",
 
@@ -42,56 +75,22 @@ const teamMembers = [
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
-        name: "Jovial",
+        name: "Lucas",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/Jovial_1.webp",
-        imageUrlHover: "/images/team/Jovial_2.webp",
+        role: "Math Specialist",
+        imageUrl: "/images/team/Lucas_1.webp",
+        imageUrlHover: "/images/team/Lucas_2.webp",
 
-        degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
-    },
-    {
-        name: "Kelly",
-        startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/Kelly_1.webp",
-        imageUrlHover: "/images/team/Kelly_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
+        degree: "Undergraduate of Science (Mathematical Science), NTU",
         description: "Brings science to life with hands-on experiments and engaging lessons.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
         name: "Leanne",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
+        role: "Math Specialist",
         imageUrl: "/images/team/Leanne_1.webp",
         imageUrlHover: "/images/team/Leanne_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
-    },
-    {
-        name: "Lucas",
-        startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/Lucas_1.webp",
-        imageUrlHover: "/images/team/Lucas_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
-    },
-
-    {
-        name: "May",
-        startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/May_1.webp",
-        imageUrlHover: "/images/team/May_2.webp",
 
         degree: "B.Sc. in Science Education, NTU",
         description: "Brings science to life with hands-on experiments and engaging lessons.",
@@ -101,7 +100,7 @@ const teamMembers = [
     {
         name: "Meisi",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
+        role: "Math Specialist",
         imageUrl: "/images/team/Meisi_2.webp",
         imageUrlHover: "/images/team/Meisi_1.webp",
 
@@ -109,10 +108,11 @@ const teamMembers = [
         description: "Brings science to life with hands-on experiments and engaging lessons.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
+
     {
         name: "Sammi",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
+        role: "Math Specialist",
         imageUrl: "/images/team/Sammi_1.webp",
         imageUrlHover: "/images/team/Sammi_2.webp",
 
@@ -121,20 +121,9 @@ const teamMembers = [
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {
-        name: "Tyler",
-        startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
-        imageUrl: "/images/team/Tyler_1.webp",
-        imageUrlHover: "/images/team/Tyler_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
-        description: "Brings science to life with hands-on experiments and engaging lessons.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
-    },
-    {
         name: "Ven",
         startYear: 2016,
-        role: "Math Teacher (Primary 3-5)",
+        role: "???",
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
 
@@ -142,6 +131,29 @@ const teamMembers = [
         description: "Brings science to life with hands-on experiments and engaging lessons.",
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
+    {
+        name: "Tyler",
+        startYear: 2016,
+        role: "Strategic Growth Architect",
+        imageUrl: "/images/team/Tyler_1.webp",
+        imageUrlHover: "/images/team/Tyler_2.webp",
+
+        degree: "Bachelor of Computer Science (Artificial Intelligence) & Bachelor of Business, (Analytics), NTU",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+    {
+        name: "Jovial",
+        startYear: 2016,
+        role: "???",
+        imageUrl: "/images/team/Jovial_1.webp",
+        imageUrlHover: "/images/team/Jovial_2.webp",
+
+        degree: "B.Sc. in Science Education, NTU",
+        description: "Brings science to life with hands-on experiments and engaging lessons.",
+        studentReview: "Ms. Sophia helped me love science for the first time!",
+    },
+
 
     // Add more members here...
 ];
@@ -152,7 +164,7 @@ const Team = () => {
 
 
     return (
-        <section id="team" className={styles.teamSection}>
+        <section id="team" className={`${styles.teamSection} sectionYPadding`}>
             {/* <img className={`${styles.element} ${styles.element1}`} src="/assets/elements/design-element-7.png" alt="Minus Design Element" />
             <img className={`${styles.element} ${styles.element2}`} src="/assets/elements/design-element-3.png" alt="Design Element 9" /> */}
 

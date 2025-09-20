@@ -64,12 +64,7 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                             </div>
 
                         </div>
-                        <div className={styles.teaches}>
-                            <h6>Teaches:</h6>
-                            <div className={styles.teachLevel}>P1-P2</div>
-                            <div className={styles.teachLevel}>P3-P4</div>
-                            <div className={styles.teachLevel}>Lower Secondary</div>
-                        </div>
+
                         <p className={styles.description}>{member.description}</p>
                         <blockquote>“{member.studentReview}”</blockquote>
                         <blockquote>“{member.studentReview}”</blockquote>

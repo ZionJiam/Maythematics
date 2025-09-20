@@ -12,7 +12,10 @@ const Polaroid: React.FC<PolaroidProps> = ({ src, caption, shadowType = "shadow1
     return (
         <div className={`${styles.item} ${styles[shadowType]}`}>
             <div className={styles.polaroid}>
-                <img src={src} alt={caption} />
+                <div className={styles.imageWrapper}>
+                    <img src={src} alt={caption} />
+
+                </div>
                 {/* <div className={styles.caption}>{caption}</div> */}
             </div>
         </div>
