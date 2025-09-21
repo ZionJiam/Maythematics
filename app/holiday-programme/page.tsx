@@ -6,7 +6,11 @@ import WorkshopGallery from '@/components/workshop/WorkshopGallery'
 import WorkshopFAQ from '@/components/workshop/WorkshopFAQ'
 import CTASection from '@/components/workshop/CTASection'
 
-
+export const metadata = {
+    title: "Holiday Programme | Maythematics (MTM) ",
+    description:
+        "Sign up for our Holiday Programme catered towards PSLE Students to achive stellar results",
+};
 
 export default function Workshop() {
     return (

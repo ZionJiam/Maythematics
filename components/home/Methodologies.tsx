@@ -9,7 +9,7 @@ const StudentReview = () => {
     return (
         <section className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.studentContainer}>
-                <div data-aos="fade-up" className={styles.videoContainer}>
+                <div data-aos="fade-up" className={styles.imageContainer}>
 
                     <img
                         data-aos="fade-in"

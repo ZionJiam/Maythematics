@@ -59,17 +59,17 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </button>
             <div className={`${styles.submenu} ${isAboutOpen ? styles.submenuOpen : ''}`}>
               <Link href="/story-and-team" className={`${isActive("/storyandteam") ? styles.active : ""}`} onClick={handleLinkClick}>Story and Team</Link>
-              <Link href="/ourspace" className={`${isActive("/ourspace") ? styles.active : ""}`} onClick={handleLinkClick}>Our Space</Link>
+              <Link href="/our-space" className={`${isActive("/our-space") ? styles.active : ""}`} onClick={handleLinkClick}>Our Space</Link>
             </div>
           </div>
 
           <Link href="/programmes" className={`${isActive("/programmes") ? styles.active : ""}`} onClick={handleLinkClick}>Our Programme</Link>
 
-          <Link href="/workshop" className={`${isActive("/workshop") ? styles.active : ""}`} onClick={handleLinkClick}>Holiday Programme</Link>
+          <Link href="/holiday-programme" className={`${isActive("/holiday-programme") ? styles.active : ""}`} onClick={handleLinkClick}>Holiday Programme</Link>
 
           <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""}`} onClick={handleLinkClick}>Testimonials</Link>
 
-          <Link href="/contactus" className={`${isActive("/contactus") ? styles.active : ""}`} onClick={handleLinkClick}>Contact Us</Link>
+          <Link href="/contact-us" className={`${isActive("/contact-us") ? styles.active : ""}`} onClick={handleLinkClick}>Contact Us</Link>
 
           <div className={styles.ctaButton}>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">

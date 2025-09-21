@@ -49,14 +49,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
 
                 <div className={styles.navbarNav}>
                     <div className={styles.dropdown}>
-                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/ourspace") ? styles.active : ""} ${isActive("/storyandteam") ? styles.active : ""}`}>
+                        <div className={`${styles.navLink} ${styles.linkRed} ${isActive("/our-space") ? styles.active : ""} ${isActive("/story-and-team") ? styles.active : ""}`}>
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
-                            <Link href="/story-and-team" className={`${styles.dropdownLink} ${isActive("/storyandteam") ? styles.active : ""}`}>
+                            <Link href="/story-and-team" className={`${styles.dropdownLink} ${isActive("/story-and-team") ? styles.active : ""}`}>
                                 Story and Team
                             </Link>
-                            <Link href="/ourspace" className={`${styles.dropdownLink} ${isActive("/ourspace") ? styles.active : ""}`}>
+                            <Link href="/our-space" className={`${styles.dropdownLink} ${isActive("/our-space") ? styles.active : ""}`}>
                                 Our Space
                             </Link>
                         </div>
@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                         Our Programme
                     </Link>
 
-                    <Link href="/workshop" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/workshop") ? styles.active : ""}`}>
+                    <Link href="/holiday-programme" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/holiday-programme") ? styles.active : ""}`}>
                         Holiday Programme
                     </Link>
 
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
 
 
 
-                    <Link href="/contactus" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contactus") ? styles.active : ""}`}>
+                    <Link href="/contact-us" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contact-us") ? styles.active : ""}`}>
                         Contact Us
                     </Link>
 
