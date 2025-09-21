@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "At Maythematics, we help students excel in Math with structured worksheets, engaging lessons, and supportive tutors. Trusted by parents across Singapore.",
   alternates: {
-    canonical: "",
+    // canonical: "",
   },
   authors: [{ name: "Maythematics" }],
   // openGraph: {
