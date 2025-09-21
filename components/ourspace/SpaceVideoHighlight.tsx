@@ -6,7 +6,7 @@ import SlideUpImage from '../ui/SlideUpImage';
 
 export default function SpaceVideoHighlights() {
     return (
-        <section className={`${styles.videoSection}`}>
+        <section className={`${styles.videoSection} sectionYPadding`}>
             <div className={styles.videoWrapper}>
 
                 <iframe

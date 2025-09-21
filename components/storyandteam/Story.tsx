@@ -41,8 +41,6 @@ const Story = () => {
         <section className={`${styles.story}`}>
 
             <div className={`${styles.storyContainer} sectionYPadding`}>
-                <Slogan header="Our Mission" text="To foster a positive and safe environment for students to learn Math under the belt of the most positive, patient and passionate tutors with effective teaching methodologies." />
-
 
                 <div className={styles.videoContainer}>
                     <div className={styles.videoWrapper} data-aos="fade-in">

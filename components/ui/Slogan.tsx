@@ -8,7 +8,7 @@ interface SloganProps {
 
 export default function Slogan({ header, text }: SloganProps) {
     return (
-        <section className={styles.ourSpace}>
+        <section className={`${styles.ourSpace} sectionYPadding`}>
             <div data-aos="fade-up" className={styles.sloganContainer}>
                 <h3>{header}</h3>
                 <p className={`${styles.slogan}`}>

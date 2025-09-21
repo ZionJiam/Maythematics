@@ -8,6 +8,7 @@ import LessonModes from '@/components/programmes/LessonModes'
 import FAQ from '@/components/programmes/FAQ'
 import CTASection from '@/components/programmes/CTASection'
 import CTAVideo from '@/components/programmes/CTAVideo'
+import Slogan from '@/components/ui/Slogan'
 
 
 export default function Programmes() {
@@ -15,6 +16,7 @@ export default function Programmes() {
     return (
         <main className={`pageMarginTop`} >
             <SubPageHeader color="red" header="Our Programme" />
+            <Slogan header="Clarity, Confidence, Consistent Results in Math" text=" A proven blend of structure and personalisation — designed to give your child clarity, confidence, and consistent results in Math." />
 
             <Methodologies />
 

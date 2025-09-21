@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './MobileNavbar.module.scss';
 import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
-
+import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 
 const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
@@ -51,7 +51,11 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
               onClick={toggleAbout}
             >
               About Us
-              <span className={`${styles.arrow} ${isAboutOpen ? styles.up : styles.down}`}>▾</span>
+              {isAboutOpen ? (
+                <BiSolidUpArrow className={styles.arrow} size={12} />
+              ) : (
+                <BiSolidDownArrow className={styles.arrow} size={12} />
+              )}
             </button>
             <div className={`${styles.submenu} ${isAboutOpen ? styles.submenuOpen : ''}`}>
               <Link href="/story-and-team" className={`${isActive("/storyandteam") ? styles.active : ""}`} onClick={handleLinkClick}>Story and Team</Link>
