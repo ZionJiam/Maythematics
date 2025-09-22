@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./FloatingWhatsappButton.module.scss";
-import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
 
 const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;

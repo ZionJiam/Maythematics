@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-// import OurSpaceSection from '@/components/ourspace/ourspace'
 import SubPageHeader from '@/components/ui/SubpageHeader'
 import Slogan from '@/components/ui/Slogan'
 import SpaceHighlights from '@/components/ourspace/SpaceHighlights'
@@ -23,9 +22,7 @@ export default function OurSpace() {
             />
             <SpaceHighlights />
             <SpaceVideoHighlights />
-
             <CTASection />
-
         </main>
     )
 }

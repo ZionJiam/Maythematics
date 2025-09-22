@@ -1,4 +1,4 @@
-@use '../../app/styles/variables' as *;
+@use '../../app/\(public\)/styles/variables' as *;
 
 .googleReviews {
   position: relative;
@@ -21,7 +21,7 @@
 
     @media (min-width: 1024px) {
       width: 300px;
-      top: -53px;
+      top: -63px;
       right: -56px;
     }
 

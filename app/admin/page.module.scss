@@ -1,0 +1,84 @@
+.loginPage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.loginContainer {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.header {
+    margin-bottom: 2rem;
+    color: #ff4d4f;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+
+        &:focus {
+            border-color: #ff4d4f;
+            outline: none;
+        }
+    }
+
+    button {
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        border: none;
+        background-color: #ff4d4f;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #e04346;
+        }
+    }
+}
+
+.passwordWrapper {
+    position: relative;
+
+    input {
+        width: 100%;
+        padding-right: 2.5rem;
+    }
+
+    .eyeIcon {
+        position: absolute;
+        right: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #888;
+        font-size: 1.1rem;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+}

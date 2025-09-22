@@ -1,7 +1,7 @@
 import styles from './CTASection.module.scss';
 import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
-import { trialClassWhatsApp } from '@/app/data/WhatsAppData';
+import { trialClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
 
 

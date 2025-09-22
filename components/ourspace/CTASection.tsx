@@ -1,5 +1,5 @@
 import styles from './CTASection.module.scss';
-import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
 
 

@@ -1,0 +1,27 @@
+@use '../\(public\)/styles/fonts';
+@use '../\(public\)/styles/variables' as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family-sans, system-ui, sans-serif;
+}
+
+html,
+body {
+    color: #333; // Example text color
+    font-family: $font-family-sans;
+    overflow-x: hidden;
+    font-weight: 800;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    scroll-behavior: smooth;
+    /* optional for smooth scroll */
+    scroll-padding-top: 60px;
+    /* offset for fixed header */
+}

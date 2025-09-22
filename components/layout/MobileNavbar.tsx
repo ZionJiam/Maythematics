@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './MobileNavbar.module.scss';
-import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 

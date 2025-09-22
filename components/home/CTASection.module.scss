@@ -1,4 +1,4 @@
-@use '../../app/styles/variables' as *;
+@use '../../app/\(public\)/styles/variables' as *;
 
 
 .ctaSection {
@@ -21,47 +21,55 @@
 .elementContainer {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     opacity: 0.2;
 
+
     .elements {
         // position: ;
         width: 50%;
         height: 100%;
+        position: absolute;
+        top: 10%
     }
 
     .elementRight {
-        position: absolute;
-        width: 200px;
+        width: 180px;
         height: auto;
-        right: -80px;
+        right: -90px;
+        transform: rotate(90deg);
 
         @media (min-width: 768px) {
             width: 300px;
-            right: -90px;
+            right: -150px;
         }
 
         @media (min-width: 1024px) {
             width: 400px;
+            right: -180px;
+
         }
 
     }
 
     .elementLeft {
-        position: absolute;
         width: 180px;
         height: auto;
-        left: -100px;
+        left: -90px;
+        transform: rotate(45deg);
 
         @media (min-width: 768px) {
             width: 300px;
-            right: -30px;
+            left: -150px;
+
         }
 
         @media (min-width: 1024px) {
             width: 380px;
+            left: -180px;
         }
 
     }

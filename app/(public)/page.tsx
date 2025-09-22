@@ -3,7 +3,7 @@ import CTASection from '@/components/home/CTASection';
 import WhyUsSection from '@/components/home/WhyUs';
 import DayInThelife from '@/components/home/DayInTheLife';
 import StudentReview from '@/components/home/StudentReview';
-import Banner from '../components/home/Banner';
+import Banner from '@/components/home/Banner';
 import Methodologies from '@/components/home/Methodologies';
 import Programme from '@/components/home/Programme';
 import styles from './page.module.css';

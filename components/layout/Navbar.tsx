@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from 'next/link';
 import { usePathname } from "next/navigation"; // <-- Import hook
 import styles from './Navbar.module.scss';
-import { generalClassWhatsApp } from '@/app/data/WhatsAppData';
+import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
 
 const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
