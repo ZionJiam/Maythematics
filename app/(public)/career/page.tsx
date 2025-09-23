@@ -1,6 +1,5 @@
 import SubPageHeader from '@/components/ui/SubpageHeader'
 import styles from './page.module.css'
-import TallyForm from '@/components/career/TallyForm'
 import JoinUsSection from '@/components/career/JoinUsSection'
 import CareerReason from '@/components/career/CareerReason'
 
