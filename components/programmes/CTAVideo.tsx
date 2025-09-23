@@ -24,9 +24,9 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">'Impossible' <br /> PSLE Question</h2>
+                    <h2 className="sectionTitle">The "Impossible" PSLE Question, Made Easy</h2>
                     <p>
-                        Check out this video on how we tackle and explain the question many parents and students find the most difficult in PSLE 2019
+                        Watch how we tackle and explain one of the most challenging PSLE 2019 questions — and show how simple it can be with the right strategies.
                     </p>
                 </div>
             </div>

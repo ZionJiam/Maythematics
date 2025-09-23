@@ -22,9 +22,9 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle"> What Makes <br />  Us Different</h2>
+                    <h2 className="sectionTitle"> The Maythematics <br />Experience</h2>
                     <p>
-                        Here’s a day in the life of one of our PSLE students at Maythematics — and why parents from different parts of Singapore trust us for results.
+                        Step into the daily journey of a student at Maythematics and discover how our unique environment and teaching approach make learning engaging — and why students genuinely look forward to every class
                     </p>
                     <SecondaryCtaButton text="Check out our programmes" href="/programmes" />
                 </div>

@@ -58,16 +58,19 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
               )}
             </button>
             <div className={`${styles.submenu} ${isAboutOpen ? styles.submenuOpen : ''}`}>
-              <Link href="/story-and-team" className={`${isActive("/storyandteam") ? styles.active : ""}`} onClick={handleLinkClick}>Story and Team</Link>
+              <Link href="/our-story" className={`${isActive("/our-story") ? styles.active : ""}`} onClick={handleLinkClick}>Our Story</Link>
+              <Link href="/our-team" className={`${isActive("/our-team") ? styles.active : ""}`} onClick={handleLinkClick}>Our Team</Link>
               <Link href="/our-space" className={`${isActive("/our-space") ? styles.active : ""}`} onClick={handleLinkClick}>Our Space</Link>
             </div>
           </div>
 
           <Link href="/programmes" className={`${isActive("/programmes") ? styles.active : ""}`} onClick={handleLinkClick}>Our Programme</Link>
 
-          <Link href="/holiday-programme" className={`${isActive("/holiday-programme") ? styles.active : ""}`} onClick={handleLinkClick}>Holiday Programme</Link>
+          {/* <Link href="/holiday-programme" className={`${isActive("/holiday-programme") ? styles.active : ""}`} onClick={handleLinkClick}>Holiday Programme</Link> */}
 
           <Link href="/testimonials" className={`${isActive("/testimonials") ? styles.active : ""}`} onClick={handleLinkClick}>Testimonials</Link>
+
+          <Link href="/faq" className={`${isActive("/faq") ? styles.active : ""}`} onClick={handleLinkClick}>FAQs</Link>
 
           <Link href="/contact-us" className={`${isActive("/contact-us") ? styles.active : ""}`} onClick={handleLinkClick}>Contact Us</Link>
 

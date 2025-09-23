@@ -1,0 +1,174 @@
+@use '../../app/\(public\)/styles/variables' as *;
+
+
+.ctaSection {
+    background-color: #fffcf3;
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-top: 6rem;
+
+    position: relative;
+    margin-bottom: 2rem;
+
+
+
+    @media (min-width: 768px) {
+        margin-bottom: 5rem;
+            padding-top: 10rem;
+
+    }
+}
+
+.elementContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+    top: 20%;
+
+    .elements {
+        // position: ;
+        width: 50%;
+        height: 100%;
+    
+    }
+
+    .elementRight {
+        position: absolute;
+        width: 150px;
+        height: auto;
+        right: -80px;
+
+        @media (min-width: 768px) {
+            width: 250px;
+            right: -90px;
+        }
+
+        @media (min-width: 1024px) {
+            // width: 0px;
+        }
+
+    }
+
+    .elementLeft {
+        position: absolute;
+        width: 180px;
+        height: auto;
+        left: -100px;
+
+        @media (min-width: 768px) {
+            width: 300px;
+            right: -30px;
+        }
+
+        @media (min-width: 1024px) {
+            // width: 350px;
+        }
+
+    }
+}
+
+
+
+.ctaTextWrapper {
+    margin-top: 2rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    max-width: 768px;
+    width: 90%;
+
+
+    .ctaParagraph {
+        color: $color-text;
+        font-weight: 500;
+        font-size: 1.25rem;
+
+
+        @media (min-width: 1024px) {
+            font-size: 1.5rem;
+
+        }
+    }
+}
+
+
+
+.ctaSectionButton {
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.3rem;
+    max-width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.sloganTitle {
+    text-align: center;
+    width: 100%;
+
+
+    .red {
+        color: $color-red;
+    }
+
+    .teal {
+        color: $color-teal;
+    }
+
+
+    .yellow {
+        color: $color-yellow;
+    }
+
+    .blue {
+        color: $color-blue;
+    }
+}
+
+
+.mascotContainer {
+    position: absolute;
+        bottom: -60px;
+    background-color: #fffcf3;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        bottom: -120px;
+    }
+
+    @media (min-width: 1024px) {
+        bottom: -120px;
+    }
+
+}
+
+.reviewMascot {
+    height: 100%;
+    height: auto;
+
+
+}
+
+
+
+
+.yellowMascot {
+    width: 100px;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+        width: 130px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 150px;
+
+    }
+
+
+}
+

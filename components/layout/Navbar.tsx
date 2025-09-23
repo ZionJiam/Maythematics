@@ -53,8 +53,11 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
-                            <Link href="/story-and-team" className={`${styles.dropdownLink} ${isActive("/story-and-team") ? styles.active : ""}`}>
-                                Story and Team
+                            <Link href="/our-story" className={`${styles.dropdownLink} ${isActive("/our-story") ? styles.active : ""}`}>
+                                Our Story
+                            </Link>
+                            <Link href="/our-team" className={`${styles.dropdownLink} ${isActive("/our-team") ? styles.active : ""}`}>
+                                Our Team
                             </Link>
                             <Link href="/our-space" className={`${styles.dropdownLink} ${isActive("/our-space") ? styles.active : ""}`}>
                                 Our Space
@@ -67,15 +70,17 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                         Our Programme
                     </Link>
 
-                    <Link href="/holiday-programme" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/holiday-programme") ? styles.active : ""}`}>
+                    {/* <Link href="/holiday-programme" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/holiday-programme") ? styles.active : ""}`}>
                         Holiday Programme
-                    </Link>
+                    </Link> */}
 
                     <Link href="/testimonials" className={`${styles.navLink} ${isActive("/testimonials") ? styles.active : ""}`}>
                         Testimonials
                     </Link>
 
-
+                    <Link href="/faq" className={`${styles.navLink} ${isActive("/faq") ? styles.active : ""}`}>
+                        FAQs
+                    </Link>
 
 
                     <Link href="/contact-us" className={`${styles.navLink} ${styles.linkRed} ${isActive("/contact-us") ? styles.active : ""}`}>

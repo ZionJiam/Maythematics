@@ -12,11 +12,28 @@ const teamMembers = [
     {
         name: "May",
         startYear: 2016,
-        role: "Math Specialist",
+        role: "Founder of Maythematics",
         imageUrl: "/images/team/May_1.webp",
         imageUrlHover: "/images/team/May_2.webp",
         degree: "Bachelor of Communications, NUS",
-        description: "I’ve been teaching Math for over 14 years and have guided more than 700 students of all levels and abilities. I specialise in breaking down complex problems into clear, step-by-step methods — an approach that has helped many students achieve distinctions and gain confidence. Along the way, I’ve also built a strong following as one of Singapore’s rising Math influencer-tutors, where thousands of parents and students learn from my videos. Today, I lead and train our team of tutors at Maythematics to ensure every lesson is taught with the same clarity, consistency, and care.",
+        description: `I’m May, founder of Maythematics and a Math educator with over 14 years of teaching experience.\nMany parents and students know me from TikTok, where I am recognised as a rising Math
+                        tutor-influencer for my clear, step-by-step explanations of even the toughest problems. I am
+                        passionate about making education fun, simple, and results-driven, and I have received
+                        consistent positive feedback that my lessons are easy to follow — with many students and
+                        parents attesting to real improvements through my regular teaching.
+                        \nBack in school, I achieved an A* for PSLE and Distinctions in both E-Math and A-Math
+                        not because I was the smartest, but because I worked the hardest — a value I now strive to
+                        instill in every student I teach. Over the years, I have had the privilege of guiding more than
+                        1,000 students across different levels and abilities, and today I also mentor and train our
+                        tutors to ensure every lesson at Maythematics is delivered with clarity, quality, and
+                        consistency.
+                        \nBeyond the classroom, I am a proud mother of three and hold Class 2B, 2A, 2, and 3
+                        licenses — meaning I can ride or drive almost anything on the road!
+                        \nPeople around me describe me as a bubbly and energetic person, while those who work
+                        closely with me also know that I am a perfectionist who sets very high standards for myself
+                        and my team.
+                        \nFun fact: I often receive compliments on my handwriting — a small reflection of the care
+                        and attention I put into every detail.`,
         studentReview: "Ms. Sophia helped me love science for the first time!",
     },
     {

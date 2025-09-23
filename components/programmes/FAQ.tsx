@@ -10,18 +10,27 @@ interface AccordionItem {
 }
 
 const data: AccordionItem[] = [
-    { title: "How are your lessons different from school classes?", content: "To be filled" },
-    { title: "Do you offer trial lessons?", content: "We offer for a single paid trial lesson." },
-    { title: "What if my child is very weak in Math?", content: "To be filled" },
-    { title: "How do I know if online classes will be effective?", content: "To be filled" },
-    { title: "How does the online class work?", content: "To be filled" },
+    { title: "Does Maythematics Provide Physical and Online Math Tuitions?", content: "Yes. Students can choose between physical and online math tuitions." },
+    { title: "Are Online Math Tuitions effective?", content: "Online Math tuitions are effective if students pay attention, actively engage during lessons, and proactively submit their work for our teachers to check and mark." },
+    { title: "How long is each lesson?", content: "Primary 1 to 4: 1.5 hours (inclusive of 5 minutes break) \n\nPrimary 5 and 6: 2 hours (inclusive of 10 minutes break)\n\nSecondary 1 to 4: 2 hours (inclusive of 10 minutes break)\n\nJunior College 1 and 2: 2 hours (inclusive of 10 minutes break)" },
+    { title: "How many lessons are there per month?", content: "Lessons are typically conducted once a week. There are usually 4–5 lessons per month depending on how many weeks there are in a month. Under some special circumstances, students who are very weak in Math might be advised to attend twice a week." },
+    { title: "Where	are	the	physical lessons conducted?", content: "Kembangan Court #01-13 and #01-02\n5 Jln Masjid, Singapore 418924 \n(Right opposite Kembangan MRT)" },
     {
-        title: "What is the rate?", content: "Our lessons are priced at an average rate of $40 / hour depending on the level. Kindly contact us for the more information."
+        title: "How	much are the lessons?", content: "Our lessons are priced at an average rate of $40/hour depending on the level.\nKindly contact us for more information."
     },
-    { title: "How long is one lesson?", content: "1.5 hours for Primary 1 to 4 (inclusive of 5 minutes break) 2 hours for Primary 5 - Secondary 5(inclusive of 10 minutes break) " },
-    { title: "Are there classes during Public Holiday or School Holiday?", content: "To be filled" },
+    { title: "Do you offer trial lesson?", content: "We offer for a single paid trial lesson" },
+    { title: "How can I pay?", content: "We	accept payment through PayNow via our UEN 202239371C" },
     {
-        title: "What if my child is unable to turn up for class?", content: "A make-up class can be arranged if possible. Alternatively, a video recording of that lesson will be sent to you for your child to catch up on his/ her own time. We apologise that we do not offer any refund for any missed lesson."
+        title: "What If my child is unavailable to come for class?", content: "A video recording of the lesson will be uploaded to our portal after 3 days for your child to review at their own pace. We also understand that not every child learns best from recordings. That’s why we offer discretionary replacement classes — subject to availability of class slots and suitability of the content covered. \n\nPlease note that we are unable to provide refunds for missed lessons."
+    },
+
+        {
+        title: "How do I arrange for a replacement class?", content: `All make-up lessons are arranged via our Whatsapp Customer Support Hotline <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>`
+    },
+            {
+        title: "When are there no classes?", content: `We are closed on all Public Holidays and also the last 2 weeks of December from 16th December to 1st January.
+\nRegular classes will continue as usual during School Holidays.
+\nFor the latest list of Public Holidays, please refer to the Ministry of Manpower <a href="https://www.mom.gov.sg/employment-practices/public-holidays" target="_blank" rel="noopener noreferrer">website.</a>`
     },
 ];
 
@@ -35,7 +44,7 @@ export default function FAQ() {
     return (
         <section id="shine" className={`${styles.section} sectionYPadding`}>
             <div className={styles.titleContainer}>
-                <h3 data-aos="fade-up" className={`${styles.header} sectionTitle`}>Frequently Asked Questions</h3>
+                <h3 data-aos="fade-up" className={`text-xl`}>Frequently Asked Questions</h3>
             </div>
 
             <div className={styles.container}>
@@ -61,7 +70,7 @@ export default function FAQ() {
                             className={styles.accordionContent}
                             style={{ maxHeight: openIndex === idx ? '500px' : '0px' }}
                         >
-                            <p>{item.content}</p>
+                            <p dangerouslySetInnerHTML={{ __html: item.content }}></p>
                         </div>
                     </div>
                 ))}

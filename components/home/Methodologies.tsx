@@ -7,7 +7,7 @@ import SecondaryCtaButton from "../ui/SecondaryCTAButton";
 
 const StudentReview = () => {
     return (
-        <section className={`${styles.studentReview} sectionYPadding`}>
+        <section id="shine" className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.studentContainer}>
                 <div data-aos="fade-up" className={styles.imageContainer}>
 
@@ -21,12 +21,15 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">Our Unique Approach</h2>
+                    <h2 className="sectionTitle">Our SHINE Approach</h2>
                     <p>
-                        At Maythematics, every learning resource is thoughtfully designed to support your child’s journey in Math. Our worksheets are MOE-aligned and customised to match school exam timelines — from Weighted Assessments (WA1, WA2, WA3) to major exams like the End-of-Year, PSLE, and O-Levels. By weaving in commonly tested exam questions, we ensure students feel fully prepared and confident when it matters most.
+                        At MTM, we believe every child has the potential to SHINE.
+                        Our SHINE Approach is what makes learning effective, enjoyable, and resultsdriven.
+                        We don’t just teach Math — we care about the entire learning experience. We want
+                        our students to shine by                    
                     </p>
                     {/* <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link> */}
-                    <SecondaryCtaButton text="Learn more about SHINE" href="/programmes?#shine" />
+                    <SecondaryCtaButton text="Learn more about Our SHINE Approach" href="/programmes?#shine" />
                 </div>
             </div>
         </section>

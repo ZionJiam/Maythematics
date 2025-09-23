@@ -1,0 +1,42 @@
+@use '../../app/\(public\)/styles/variables' as *;
+
+
+.programmesSection {
+    background-color: #fffcf3;
+  text-align: center;
+  width: 100%;
+    padding-top: 0;
+    
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 95%;
+    padding:0 1rem;
+  }
+
+
+
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: $color-text;
+    font-weight: 300;
+  }
+
+  .ctaButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffb800;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #ffa500;
+    }
+  }
+}

@@ -38,37 +38,7 @@ const Story = () => {
     }, []);
 
     return (
-        <section className={`${styles.story}`}>
-
-            <div className={`${styles.storyContainer} sectionYPadding`}>
-
-                <div className={styles.videoContainer}>
-                    <div className={styles.videoWrapper} data-aos="fade-in">
-                        <iframe
-                            className={styles.video}
-                            src="https://www.youtube.com/embed/MBLKwxIfp1U"
-                            title="YouTube video player"
-                            width="560"
-                            height="315"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-
-
-                    <div className={styles.videoOverlay}>
-                        {/* <SlideUpImage alt="Red Mascot Teaching" className={styles.videoMascot} src="/assets/red-mascot-teach.png" /> */}
-                        <img data-aos="fade-right" alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.webp" />
-                        <img data-aos="fade-left" alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
-
-                        {/* Content you want to show overlapping */}
-                    </div>
-                </div>
-
-
-
-            </div>
+        <section className={`${styles.story} sectionYPadding`}>
 
             <div className={`${styles.historyContainer} sectionYPadding`}>
                 <p className={`text-lg ${styles.timelineStart}`}>How it all started</p>
@@ -89,15 +59,15 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>1</span>
                                 </div>
-                                <h4>Passion for Teaching</h4>
-                                <p>From the beginning, May was deeply passionate about teaching. Helping students overcome their fear of Math and watching their confidence grow gave her purpose.</p>
+                                <h4>Where It All Began — Teaching from the Heart</h4>
+                                <p>Teaching has always been my passion. Helping students overcome their fear of Math and watching their confidence grow gave me a deep sense of purpose. <br/><br/>My journey began at home, teaching my younger siblings. After junior college, I started part-time tutoring. What began as just a way to earn extra money soon became my calling.</p>
                             </div>
 
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-1.webp"
-                                caption="May posing with her Motorcycle"
+                                src="/images/storyteam/story-7.webp"
+                                caption="May teaching her younger siblings"
                                 shadowType="shadow3"
                             />
 
@@ -115,14 +85,14 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>2</span>
                                 </div>
-                                <h4>The COVID-19 <br />Crossroads (2021)</h4>
-                                <p>When COVID-19 struck, May was pregnant. Vaccination had not yet been declared safe for expectant mothers. To continue teaching at her established centre, she would have needed to be vaccinated. Faced with the choice between her baby’s health and her career, she chose her baby — and resigned from teaching.</p>
+                                <h4>Riding Across Singapore</h4>
+                                <p>During my university years, I went the extra mile — literally. I got my motorcycle license so I could travel across Singapore, rain or shine, to teach. <br/><br/>I often spent more time teaching than studying, but every moment was worth it. Those years shaped me as a teacher and deepened my love for this work.</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-2.webp"
-                                caption="Image of Baby in MRI Scan"
-                                shadowType="shadow1"
+                                src="/images/storyteam/story-1.webp"
+                                caption="May posing with her Motorcycle"
+                                shadowType="shadow4"
                             />
 
                         </div>
@@ -138,14 +108,17 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>3</span>
                                 </div>
-                                <h4>A Season of Struggle</h4>
-                                <p>At the same time, her husband lost his job as a Pilates instructor. With no stable income, the couple survived by doing Grab deliveries — a period filled with humility, fear, and uncertainty.</p>
+                                <h4>Gaining Experience</h4>
+                                <p>After graduation, I joined an established Math tuition centre. There, I spent years refining my teaching methods, building experience, and learning what truly helps students thrive.</p>
                             </div>
+                                                        <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
+
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
-                            <Polaroid
-                                src="/images/storyteam/story-3.webp"
-                                caption="Father and Daughter"
+
+                                                        <Polaroid
+                                src="/images/storyteam/story-4.webp"
+                                caption="May teaching at her home"
                                 shadowType="shadow2"
                             />
 
@@ -162,17 +135,22 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>4</span>
                                 </div>
-                                <h4>Teaching From Home</h4>
-                                <p>A few loyal students continued lessons at May’s tiny two-room HDB flat. Each time, her husband carried their baby, Novi, out of the house for hours so students could have a conducive space. May carried the guilt of sacrificing comfort for her child while still giving her best to her students.</p>
+                                <h4>The Crossroads of 2021</h4>
+                                <p>Then COVID-19 struck. At that time, I was pregnant, and vaccines for expectant mothers were not yet declared safe. To continue at my workplace, I would have needed to be vaccinated.
+<br/><br/>
+I faced a heartbreaking choice: continue my career and risk my baby’s health, or step away from the job I loved.
+<br/><br/>
+I chose my baby. I quit.
+<br/><br/>
+My husband also lost his job as a Pilates instructor. Overnight, we had no stable income and survived by doing Grab deliveries. It was a season of humility, fear, and uncertainty.</p>
                             </div>
-                            <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
 
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-4.webp"
-                                caption="I Miss London"
-                                shadowType="shadow4"
+                                src="/images/storyteam/story-2.webp"
+                                caption="May, Husband and Baby Novi"
+                                shadowType="shadow1"
                             />
 
                         </div>
@@ -189,18 +167,19 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>5</span>
                                 </div>
-                                <h4>The TikTok Experiment</h4>
-                                <p>One day when a student mentioned learning math tricks on TikTok, May decided to try creating short educational videos. She recorded between breastfeeding breaks, sometimes with Novi right beside her. At first, fewer than five viewers tuned in to her live streams. But she held firm: “As long as there is even one student willing to learn, I will teach.”</p>
+                                <h4>Teaching from a Tiny Home</h4>
+                                <p>Amidst the struggle, a small lifeline appeared: a few loyal students continued coming to my tiny two-room HDB for lessons.
+<br/><br/>
+Each time, my husband would carry baby Novi out of the house for hours, just so students could learn in a “conducive” space. I felt torn between wanting the best for my students and the guilt of sacrificing my own child’s comfort.</p>
                             </div>
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
+
                             <Polaroid
-                                src="/images/storyteam/story-5.webp"
-                                caption="May teaching during Covid Period at her home"
+                                src="/images/storyteam/story-3.webp"
+                                caption="Father and Daughter"
                                 shadowType="shadow3"
                             />
-
-
                         </div>
                     </div>
 
@@ -213,8 +192,14 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>6</span>
                                 </div>
-                                <h4>The Spark of Growth</h4>
-                                <p>Unexpectedly, children began signing up for lessons after watching her TikTok videos. Parents noticed, and the little community started to grow.</p>
+                                <h4>Discovering TikTok</h4>
+                                <p>One day, a student mentioned learning math tricks from TikTok. That sparked an idea: if I wanted to reach more students again, I had to go where they already were.
+<br/><br/>
+So, between breastfeeding breaks, I started creating short educational videos. I even went live on TikTok — at first, fewer than five people tuned in.
+<br/><br/>
+But I held onto one belief: as long as there was even one student willing to learn, I would teach.
+<br/><br/>
+Slowly, children began signing up for lessons after discovering my videos. To my surprise, TikTok became the bridge to my students.</p>
                             </div>
                             <img alt="Story Element 6" className={`${stylesElements.storyMascot} ${stylesElements.element6}`} src="/assets/yellow-mascot-2.webp" />
 
@@ -238,13 +223,17 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>7</span>
                                 </div>
-                                <h4>50 Students at Home<br /> (End of 2022)</h4>
-                                <p>By the end of 2022, May was teaching 50 students weekly at her home. The demand proved it was time to take a bigger step.</p>
+                                <h4>Outgrowing My Home</h4>
+                                <p>By the end of 2022, I was teaching 50 students at home every week.
+<br/><br/>
+That was when I knew it was time to take a leap of faith.
+<br/><br/>
+In 2023, I poured out my life savings and opened my first tuition centre — right opposite Kembangan MRT. That single step marked the official beginning of Maythematics.</p>
                             </div>
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-7.webp"
+                                src="/images/storyteam/story-8.webp"
                                 caption="More and More Students"
                                 shadowType="shadow2"
                             />
@@ -261,9 +250,13 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>8</span>
                                 </div>
-                                <h4>The Leap of Faith (2023)</h4>
+                                <h4>Growing into a Team</h4>
                                 <p>
-                                    With a hopeful heart, May poured her life savings into opening the first Maythematics centre, strategically located opposite Kembangan MRT. This marked the official birth of Maythematics.
+                                    From there, Maythematics grew into a team of passionate teachers. Together, we’ve helped students transform — from failing to passing, from passes to distinctions.
+
+Parents told us their children finally enjoyed Math, and word of mouth spread quickly.
+
+Maythematics was born out of hardship, but it has grown through love, resilience, and an unshakable belief: with the right guidance, every child can shine in Math.
                                 </p>
 
                             </div>
@@ -272,59 +265,13 @@ const Story = () => {
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-8.webp"
-                                caption="Opening of Maythematics"
+                                src="/images/storyteam/story-9.webp"
+                                caption="Maythematics Team"
                                 shadowType="shadow4"
                             />
 
                         </div>
                     </div>
-
-
-                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
-                        <TimelineDot styleColor='blue' extendLine='left' />
-
-                        <div className={`${styles.textWrapper}`}>
-
-                            <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
-                                <div className={`${styles.numbering}`}>
-                                    <span>9</span>
-                                </div>
-                                <h4>Building Something Better</h4>
-                                <p>Drawing from her past experience, May set out to enhance the student, parent, and tutor experience in ways she had always dreamed of. She built a team of passionate teachers aligned with this mission.</p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" className={styles.imageContainer}>
-                            <Polaroid
-                                src="/images/storyteam/story-9.webp"
-                                caption="Maythematics Team Photo"
-                                shadowType="shadow3"
-                            />
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
-                        <TimelineDot styleColor='yellow' extendLine='right' />
-
-                        <div className={`${styles.textWrapper}`}>
-
-                            <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
-                                <div className={`${styles.numbering}`}>
-                                    <span>10</span>
-                                </div>
-                                <h4>Transforming Students’ Lives</h4>
-                                <p>Since then, Maythematics has helped countless students improve — from failing to passing, from passes to distinctions. Parents shared how their children finally began to enjoy Math. What began in hardship grew into a community of resilience, love, and belief: with the right guidance, every child can shine in Math.</p>
-                            </div>
-                        </div>
-                        <div data-aos="fade-left" className={styles.imageContainer}>
-                            <Polaroid
-                                src="/images/storyteam/story-10.webp"
-                                caption="May teaching in workshop"
-                                shadowType="shadow1"
-                            />
-                        </div>
-                    </div>
-
 
 
                 </div>
@@ -334,6 +281,33 @@ const Story = () => {
                 </p>
 
             </div>
+
+
+                        {/* <div className={`${styles.storyContainer} sectionYPadding`}>
+
+                <div className={styles.videoContainer}>
+                    <div className={styles.videoWrapper} data-aos="fade-in">
+                        <iframe
+                            className={styles.video}
+                            src="https://www.youtube.com/embed/MBLKwxIfp1U"
+                            title="YouTube video player"
+                            width="560"
+                            height="315"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+
+
+                    <div className={styles.videoOverlay}>
+                        <img data-aos="fade-right" alt="Red Mascot Teaching" className={styles.videoMascot2} src="/assets/red-mascot-teach.webp" />
+                        <img data-aos="fade-left" alt="Blue Mascot Waving" className={styles.videoMascot1} src="/assets/blue-mascot-3.png" />
+
+                    </div>
+                </div>
+            </div> */}
+
 
 
         </section>

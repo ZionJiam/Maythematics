@@ -75,14 +75,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    aspect-ratio: 5/4;
+    aspect-ratio: 5/6;
     border-radius: 10px;
     overflow: hidden; // ensures img respects border radius
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
 
     @media (min-width: 768px) {
-        width: 450px;
+        width: 400px;
     }
 
     @media (min-width: 1024px) {
@@ -99,7 +99,7 @@
 
 .textContainer {
     // flex: 1;
-    max-width: 500px;
+    max-width: 550px;
 
     h2 {
         // margin-bottom: 1rem;
@@ -114,8 +114,29 @@
         font-size: 1rem;
         line-height: 1.6;
         color: $color-text;
-        font-weight: 300;
+        margin-bottom: 1rem;
     }
+
+            // Remove default list style if using <ul>
+        .descriptionList {
+            list-style: disc; // or none if you want custom bullet
+            padding-left: 1.25em; // space for bullet
+            margin: 0 0 1em 0;
+            font-weight: 300;
+                    font-size: 0.9rem;
+
+
+
+
+            li {
+            margin-bottom: 0.5em;
+
+            // Hanging indent effect
+            text-indent: -0.5em; 
+            padding-left: 0.5em;
+            }
+        }
+
 
 
     .quote {

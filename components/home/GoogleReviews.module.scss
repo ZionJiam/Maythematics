@@ -3,6 +3,7 @@
 .googleReviews {
   position: relative;
   text-align: center;
+  padding-bottom: 0;
 
 
   .reviewMascot {
@@ -288,6 +289,10 @@
   .dividerTop {
     transform: rotate(180deg);
     margin-top: -1px;
+  }
+
+  .dividerBottom{
+    background-color: #fffcf3;
   }
 }
 

@@ -27,7 +27,7 @@ const SpaceHighlights = () => {
                                 className={styles.descriptionContainer}
                             >
                                 <p className={styles.description}>
-                                    Our classrooms are thoughtfully designed with soft, pastel-inspired colours that create a calm and welcoming atmosphere. This environment helps students feel safe to ask questions, motivated to engage, and inspired to keep learning. More than just walls and desks, it’s a place where confidence takes root.
+                                    Pastel tones fill our space with energy and positivity, making students feel both welcomed and motivated to engage actively in every lesson.
                                 </p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const SpaceHighlights = () => {
                                 className={styles.descriptionContainer}
                             >
                                 <p className={styles.description}>
-                                    We believe students learn best when they feel at ease. That’s why each room is equipped with ergonomic chairs and spacious tables that encourage good posture and sustained focus. With comfort taken care of, students can concentrate fully on mastering Math.
+                                    We invest in ergonomic chairs and spacious tables designed to support your child’s posture, comfort, and focus throughout every lesson.
                                 </p>
                             </div>
                         </div>
@@ -72,14 +72,14 @@ const SpaceHighlights = () => {
                     <div className={styles.textContainer}>
                         <div className={styles.textContent}>
                             <h2 data-aos="fade-up" className="sectionTitle">
-                                Modern Tools
+                                Study in Best Light
                             </h2>
                             <div
                                 data-aos="fade-up"
                                 className={styles.descriptionContainer}
                             >
                                 <p className={styles.description}>
-                                    Learning comes alive with smart screens, iPads, and optimal lighting that reduces eye strain and keeps students alert. These tools turn lessons into interactive, engaging experiences — helping students not only follow explanations step by step but also truly understand and remember them.
+                                    Our classrooms are equipped with optimal lighting that reduces eye strain and keeps students alert, ensuring every study session is comfortable and productve.
                                 </p>
                             </div>
                         </div>

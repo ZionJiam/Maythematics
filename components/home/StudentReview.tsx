@@ -26,8 +26,7 @@ const StudentReview = () => {
                 <div data-aos="fade-up" className={styles.textContainer}>
                     <h2 className="sectionTitle">What Our <br /> Students Say</h2>
                     <p>
-                        Hear directly from our students at Maythematics about their learning journey, progress,
-                        and how our programme helped them achieve their academic goals.
+                        Discover firsthand experiences from our Maythematics students as they share their learning journey, progress, and how our programmes have helped them achieve their academic goals with confidence.
                     </p>
                     {/* <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link> */}
                     <SecondaryCtaButton text="See more testimonials" href="/testimonials" />
