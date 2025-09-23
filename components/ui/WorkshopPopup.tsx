@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/app/lib/supabaseClient";
 import styles from "./WorkshopPopup.module.scss";
+import { style } from "framer-motion/client";
 
 type WorkshopPopupData = {
     image_url: string;
@@ -50,6 +51,8 @@ export default function WorkshopPopup() {
 
     return (
         <div className={styles.overlay}>
+            <div className={styles.overlayClose} onClick={() => setShow(false)}></div>
+
             <div className={styles.popup}>
                 <button className={styles.closeBtn} onClick={() => setShow(false)}>
                     ✕
@@ -70,6 +73,7 @@ export default function WorkshopPopup() {
                     </a>
                 </div>
             </div>
+
         </div>
     );
 }

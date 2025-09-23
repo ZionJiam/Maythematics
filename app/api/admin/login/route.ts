@@ -36,7 +36,19 @@ export async function POST(req: NextRequest) {
     // 2. Authenticate with Supabase
     const { data, error } = await supabase.auth.signInWithPassword({ email, password });
 
+    
     if (error) return NextResponse.json({ error: error.message }, { status: 401 });
 
-    return NextResponse.json({ user: data.user });
+    // ✅ Set session cookies for server-side auth
+    const res = NextResponse.json({ user: data.user });
+    if (data.session) {
+        const { access_token, refresh_token, expires_at } = data.session;
+        res.cookies.set('sb-access-token', access_token, { httpOnly: true, path: '/' });
+        res.cookies.set('sb-refresh-token', refresh_token, { httpOnly: true, path: '/' });
+        if (typeof expires_at !== "undefined") {
+            res.cookies.set('sb-expires-at', expires_at.toString(), { httpOnly: true, path: '/' });
+        }
+    }
+
+    return res;
 }

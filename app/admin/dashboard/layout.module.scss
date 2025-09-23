@@ -1,0 +1,21 @@
+.layoutWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.sidebarOpen {
+  margin-left: 220px; // width of your sidebar
+  transition: margin-left 0.3s ease;
+}
+
+.sidebarClosed {
+  margin-left: 0px; // collapsed sidebar width
+  transition: margin-left 0.3s ease;
+}
+
+.layoutContainer {
+  flex: 1;
+  transition: margin-left 0.3s ease; // smooth animation
+  width: 100%;
+
+}
