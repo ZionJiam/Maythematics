@@ -5,8 +5,10 @@ import styles from "./ProgrammesTable.module.scss";
 import { section } from "framer-motion/client";
 
 const programmes = [
-    { title: "Primary 1-2", duration: "1.5 hours", classSize: "4", level: "Lower Primary" },
-    { title: "Primary 3-4", duration: "1.5 hours", classSize: "6-8", level: "Lower Primary" },
+    { title: "Primary 1", duration: "1.5 hours", classSize: "4", level: "Lower Primary" },
+    { title: "Primary 2", duration: "1.5 hours", classSize: "4", level: "Lower Primary" },
+    { title: "Primary 3", duration: "1.5 hours", classSize: "6-8", level: "Lower Primary" },
+    { title: "Primary 4", duration: "1.5 hours", classSize: "6-8", level: "Lower Primary" },
     { title: "Primary 5", duration: "2 hours", classSize: "6-10", level: "Upper Primary" },
     { title: "Primary 6", duration: "2 hours", classSize: "6-10", level: "Upper Primary" },
     { title: "Secondary 1", duration: "2 hours", classSize: "8-14", level: "Secondary" },

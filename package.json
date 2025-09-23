@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@netlify/next": "^1.4.9",
-    "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.57.4",
     "aos": "^2.3.4",
     "framer-motion": "^12.23.12",

@@ -3,7 +3,6 @@
 import { useState, useRef } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useRouter } from "next/navigation";
 import styles from "./page.module.scss";
 
 export default function AdminLoginPage() {
@@ -14,7 +13,6 @@ export default function AdminLoginPage() {
     const [error, setError] = useState("");
 
     const recaptchaRef = useRef<ReCAPTCHA>(null);
-    const router = useRouter();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -23,11 +21,11 @@ export default function AdminLoginPage() {
 
         if (!recaptchaRef.current) return;
 
-        try {
-            // Execute invisible reCAPTCHA
-            const token = await recaptchaRef.current.executeAsync();
-            recaptchaRef.current.reset();
+        // Execute invisible reCAPTCHA
+        const token = await recaptchaRef.current.executeAsync();
+        recaptchaRef.current.reset(); // Reset for next submit
 
+        try {
             const res = await fetch("/api/admin/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -35,14 +33,10 @@ export default function AdminLoginPage() {
             });
 
             const data = await res.json();
+            if (!res.ok) throw new Error(data.error || "Login failed");
 
-
-            if (!res.ok) {
-                setError(data.error || "Login failed");
-                return; // stop execution
-            }
-
-            router.push("/admin/dashboard");
+            console.log("Logged in user:", data.user);
+            // TODO: Redirect to /admin/dashboard
         } catch (err: any) {
             setError(err.message);
         } finally {
