@@ -9,6 +9,9 @@
     height: 100%;
     z-index: 1000;
 
+        // Default hidden (mobile)
+    transform: translateX(-100%);
+
     .navContainer {
         display: flex;
         justify-content: space-between;
@@ -93,9 +96,6 @@
             }
         }
     }
-
-    // Default hidden (mobile)
-    transform: translateX(-100%);
 
     &.open {
         transform: translateX(0);
