@@ -15,13 +15,18 @@ export const metadata = {
 export default function OurSpace() {
     return (
         <main className={`${styles.main} pageMarginTop`} >
-            <SubPageHeader color="red" header="Our Space" />
+                        <SubPageHeader color="red" header="Our Space" />
+
+        <div className='sectionYPadding'>
             <Slogan
-                header="A Learning Environment That Inspires"
+                header="A Space Designed for Learning"
                 text="At Maythematics, we’ve designed a learning environment where students feel comfortable, focused, and inspired. From bright classrooms and cosy study corners to a supportive atmosphere created by our tutors, every detail is built to keep students engaged and confident in their learning journey."
             />
             <SpaceHighlights />
+        </div>
             <SpaceVideoHighlights />
+
+
             <CTASection />
         </main>
     )

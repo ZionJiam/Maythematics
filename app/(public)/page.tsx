@@ -7,6 +7,7 @@ import Banner from '@/components/home/Banner';
 import Methodologies from '@/components/home/Methodologies';
 import Programme from '@/components/home/Programme';
 import styles from './page.module.css';
+import Services from '@/components/home/Services';
 
 
 export const metadata = {
@@ -44,11 +45,13 @@ export default function Home() {
       <main className={`${styles.main} pageMarginTop`} >
         <Banner />
         <WhyUsSection />
+                        <Services/>
+
         <Methodologies />
+         <StudentReview />
         <DayInThelife />
-        <StudentReview />
         <GoogleReviewSection />
-        <Programme />
+        {/* <Programme /> */}
 
         {/* <LessonSection /> */}
         {/* <LessonVideo /> */}

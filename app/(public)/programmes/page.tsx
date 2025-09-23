@@ -21,7 +21,6 @@ export default function Programmes() {
     return (
         <main className={`pageMarginTop`} >
             <SubPageHeader color="red" header="Our Programme" />
-            <Slogan header="Clarity, Confidence, Consistent Results in Math" text=" A proven blend of structure and personalisation — designed to give your child clarity, confidence, and consistent results in Math." />
 
             <Methodologies />
 
@@ -29,7 +28,7 @@ export default function Programmes() {
             <LessonModes />
             <ProgrammesTable />
 
-            <FAQ />
+            {/* <FAQ /> */}
             <CTAVideo />
             <CTASection />
         </main>
