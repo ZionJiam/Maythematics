@@ -80,7 +80,8 @@
     margin-top: 2rem;
     width: 90%;
     margin: 0 auto;
-
+    position: relative;
+    z-index: 2;
 
     .ctaParagraph {
         color: $color-text;
