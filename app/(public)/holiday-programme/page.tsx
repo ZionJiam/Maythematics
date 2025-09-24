@@ -10,6 +10,9 @@ export const metadata = {
     title: "Holiday Programme | Maythematics (MTM) ",
     description:
         "Sign up for our Holiday Programme catered towards PSLE Students to achive stellar results",
+    alternates: {
+        canonical: 'https://maythematics.com/holiday-programme',
+    },
 };
 
 export default function Workshop() {

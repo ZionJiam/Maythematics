@@ -14,6 +14,10 @@ export const metadata = {
     title: "Our Programme - Primary, Secondary & JC Math | Maythematics (MTM)",
     description:
         "Whether in person or online, every Maythematics lesson follows a structured, engaging approach. Explore our Primary and Secondary Math programmes today.",
+    alternates: {
+        canonical: 'https://maythematics.com/programmes',
+    },
+
 };
 
 export default function Programmes() {

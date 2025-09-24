@@ -7,6 +7,9 @@ export const metadata = {
   title: "Contact Us | Maythematics (MTM)",
   description:
     "Enquire about Maythematics Math tuition classes today. Reach out to our friendly team for class schedules, free trial, holiday programme, and more.",
+  alternates: {
+    canonical: 'https://maythematics.com/contact-us',
+  },
 };
 
 export default function About() {

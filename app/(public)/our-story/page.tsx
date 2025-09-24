@@ -11,6 +11,9 @@ export const metadata = {
   title: "Our Story | Maythematics (MTM)",
   description:
     "From home lessons to a flagship centre, Maythematics grew through passion and resilience to help students across Singapore shine in Math.",
+  alternates: {
+    canonical: 'https://maythematics.com/our-story',
+  },
 };
 
 

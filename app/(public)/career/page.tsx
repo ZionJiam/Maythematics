@@ -7,6 +7,9 @@ export const metadata = {
     title: "Join Us | Maythematics (MTM) ",
     description:
         "Passionate about teaching? Join the Maythematics (MTM) team as a dedicated tutor and inspire students to excel in Math through engaging lessons and a supportive environment.",
+    alternates: {
+        canonical: 'https://maythematics.com/career',
+    },
 };
 
 export default function Career() {

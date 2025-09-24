@@ -8,6 +8,10 @@ export const metadata = {
     title: "FAQ | Maythematics (MTM)",
     description:
         "Find answers to common questions about our Math programmes, teaching methods, fees, trial lessons, and how Maythematics helps students excel.",
+
+    alternates: {
+        canonical: 'https://maythematics.com/faq',
+    },
 };
 
 

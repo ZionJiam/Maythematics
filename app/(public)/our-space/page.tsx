@@ -10,6 +10,9 @@ export const metadata = {
     title: "Our Space | Maythematics MTM",
     description:
         "Discover our inspiring spaces, comfort focus, and usage of modern tools designed to help students focus, feel comfortable, and build confidence in Math.",
+    alternates: {
+        canonical: 'https://maythematics.com/our-space',
+    },
 };
 
 export default function OurSpace() {

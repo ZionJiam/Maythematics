@@ -11,6 +11,10 @@ export const metadata = {
     title: "Testimonials | Maythematics (MTM)",
     description:
         "Hear from our students and parents about the impact of teaching at Maythematics MTM. Discover real success stories and heartfelt testimonials that show how our tutors inspire confidence in Math.",
+    alternates: {
+        canonical: 'https://maythematics.com/testimonials',
+    },
+
 };
 
 

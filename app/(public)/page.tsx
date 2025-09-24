@@ -15,25 +15,27 @@ export const metadata = {
   description:
     "At Maythematics, we help students excel in Math with structured worksheets, engaging lessons, and supportive tutors. Trusted by parents across Singapore.",
   alternates: {
-    // canonical: "",
+    canonical: 'https://maythematics.com',
   },
   authors: [{ name: "Maythematics" }],
-  // openGraph: {
-  //   title: "Maythematics | Quality Primary, Secondary and JC Math Tuition in Singapore",
-  //   description: "Helping students build clarity, confidence, and results in Math.",
-  //   url: "https://maythematics.vercel.app",
-  //   siteName: "Maythematics",
-  //   images: [
-  //     {
-  //       url: "https://maythematics.vercel.app/og-image.jpg",
-  //       width: 1200,
-  //       height: 630,
-  //       alt: "Maythematics Logo",
-  //     },
-  //   ],
-  //   locale: "en_SG",
-  //   type: "website",
-  // }
+  metadataBase: new URL("https://maythematics.com"), // ensures absolute URLs
+
+  openGraph: {
+    title: "Maythematics | Quality Primary, Secondary and JC Math Tuition in Singapore",
+    description: "Helping students build clarity, confidence, and results in Math.",
+    url: "https://maythematics.com",
+    siteName: "Maythematics",
+    images: [
+      {
+        url: "https://maythematics.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Maythematics Logo",
+      },
+    ],
+    locale: "en_SG",
+    type: "website",
+  }
 };
 
 
@@ -45,10 +47,10 @@ export default function Home() {
       <main className={`${styles.main} pageMarginTop`} >
         <Banner />
         <WhyUsSection />
-                        <Services/>
+        <Services />
 
         <Methodologies />
-         <StudentReview />
+        <StudentReview />
         <DayInThelife />
         <GoogleReviewSection />
         {/* <Programme /> */}

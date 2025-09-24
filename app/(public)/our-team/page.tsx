@@ -9,6 +9,9 @@ export const metadata = {
   title: "Our Team | Maythematics (MTM)",
   description:
     "Meet the passionate Maythematics team — dedicated Math specialists who inspire confidence, spark curiosity, and guide every student to excel.",
+  alternates: {
+    canonical: 'https://maythematics.com/our-team',
+  },
 };
 
 
