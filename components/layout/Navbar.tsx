@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                         Testimonials
                     </Link>
 
-                    <Link href="/faq" className={`${styles.navLink} ${isActive("/faq") ? styles.active : ""}`}>
+                    <Link href="/faqs" className={`${styles.navLink} ${isActive("/faq") ? styles.active : ""}`}>
                         FAQs
                     </Link>
 
