@@ -21,7 +21,7 @@ const breakpointColumnsObj = {
 
 export default function ResultsMasonry() {
     const [results, setResults] = useState<ResultItem[]>([]);
-    const [visibleCount, setVisibleCount] = useState(9);
+    const [visibleCount, setVisibleCount] = useState(7);
 
     useEffect(() => {
         const fetchResults = async () => {
@@ -55,7 +55,7 @@ export default function ResultsMasonry() {
     };
 
     return (
-        <section className={`${styles.resultsMasonry} sectionYPadding`}>
+        <section id="messages" className={`${styles.resultsMasonry} sectionYPadding`}>
             <h2 className="sectionTitle">Our Hall of Fame</h2>
 
             <Masonry

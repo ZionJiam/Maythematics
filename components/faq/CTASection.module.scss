@@ -4,17 +4,14 @@
 .ctaSection {
     background-color: #fffcf3;
     text-align: center;
-    padding-bottom: 5rem;
-    padding-top: 6rem;
-
+    padding-bottom: 6rem;
     position: relative;
     margin-bottom: 2rem;
-
+    padding-top: 6rem;
 
 
     @media (min-width: 768px) {
         margin-bottom: 5rem;
-            padding-top: 10rem;
 
     }
 }
@@ -22,17 +19,18 @@
 .elementContainer {
     position: absolute;
     width: 100%;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     opacity: 0.2;
+    z-index: 10;
     top: 20%;
 
     .elements {
         // position: ;
         width: 50%;
         height: 100%;
-    
+        top: 0;
+
     }
 
     .elementRight {
@@ -43,7 +41,7 @@
 
         @media (min-width: 768px) {
             width: 250px;
-            right: -90px;
+            right: -140px;
         }
 
         @media (min-width: 1024px) {
@@ -60,7 +58,7 @@
 
         @media (min-width: 768px) {
             width: 300px;
-            right: -30px;
+            left: -180px;
         }
 
         @media (min-width: 1024px) {
@@ -74,11 +72,11 @@
 
 .ctaTextWrapper {
     margin-top: 2rem;
+    width: 90%;
+    max-width: 768px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    max-width: 768px;
-    width: 90%;
 
 
     .ctaParagraph {
@@ -91,9 +89,9 @@
             font-size: 1.5rem;
 
         }
+
     }
 }
-
 
 
 .ctaSectionButton {
@@ -128,19 +126,18 @@
     }
 }
 
-
 .mascotContainer {
     position: absolute;
-        bottom: -60px;
+    bottom: -55px;
     background-color: #fffcf3;
     width: 100%;
 
     @media (min-width: 768px) {
-        bottom: -120px;
+        bottom: -105px;
     }
 
     @media (min-width: 1024px) {
-        bottom: -120px;
+        bottom: -113px;
     }
 
 }
@@ -154,21 +151,16 @@
 
 
 
-
 .yellowMascot {
-    width: 100px;
+    width: 92px;
     position: relative;
-    z-index: 2;
+    height: auto;
 
     @media (min-width: 768px) {
-        width: 130px;
+        width: 120px;
     }
 
     @media (min-width: 1024px) {
-        width: 150px;
-
+        width: 145px;
     }
-
-
 }
-

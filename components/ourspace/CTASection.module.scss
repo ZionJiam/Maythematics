@@ -21,16 +21,18 @@
 .elementContainer {
     position: absolute;
     width: 100%;
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     opacity: 0.2;
+    z-index: 10;
+    top: 0;
 
     .elements {
         // position: ;
         width: 50%;
         height: 100%;
-        top: -80px
+        top: 0;
+
     }
 
     .elementRight {
@@ -41,7 +43,7 @@
 
         @media (min-width: 768px) {
             width: 250px;
-            right: -90px;
+            right: -140px;
         }
 
         @media (min-width: 1024px) {
@@ -58,7 +60,7 @@
 
         @media (min-width: 768px) {
             width: 300px;
-            right: -30px;
+            left: -180px;
         }
 
         @media (min-width: 1024px) {
@@ -67,6 +69,7 @@
 
     }
 }
+
 
 
 

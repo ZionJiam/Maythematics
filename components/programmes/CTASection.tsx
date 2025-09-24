@@ -30,7 +30,7 @@ export default function CTASection() {
                     data-aos="fade-up"
                     src="/assets/red-mascot.jpg"
                     alt="Blue Teaching Mascot"
-                    className={`${styles.reviewMascot} ${styles.redMascot}`}
+                    className={`${styles.reviewMascot} ${styles.blueMascot}`}
                 />
 
             </div>

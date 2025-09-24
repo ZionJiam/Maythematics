@@ -32,24 +32,17 @@ const StudentReview = () => {
                         <li>
                             <FaWhatsapp /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                         </li>
-                        <li>
-                            <FaTelegramPlane /> <a href="https://t.me/yourhandle" target="_blank" rel="noopener noreferrer">Telegram(Primary)</a>
-                        </li>
-                        <li>
-                            <FaTelegramPlane /> <a href="https://t.me/yourhandle" target="_blank" rel="noopener noreferrer">Telegram(Secondary)</a>
-                        </li>
                     </ul>
                 </div>
 
                 <div className={styles.socialsContainer}>
 
-                    <h3>Social Media</h3>
+                    <h3>Socials</h3>
 
                     <ul className={styles.socialList}>
                         <li className={styles.telephone}>
                             <FaTiktok /> <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer">Tiktok</a>
                         </li>
-
                         <li>
                             <FaInstagram /> <a href="https://www.instagram.com/maythematics" target="_blank" rel="noopener noreferrer">Instagram</a>
                         </li>
@@ -58,6 +51,12 @@ const StudentReview = () => {
                         </li>
                         <li>
                             <FaYoutube /> <a href="https://www.youtube.com/@maythematics" target="_blank" rel="noopener noreferrer">Youtube</a>
+                        </li>
+                        <li>
+                            <FaTelegramPlane /> <a href="https://t.me/maythematicstuition" target="_blank" rel="noopener noreferrer">Telegram(Primary)</a>
+                        </li>
+                        <li>
+                            <FaTelegramPlane /> <a href="https://t.me/maythematicsec" target="_blank" rel="noopener noreferrer">Telegram(Secondary)</a>
                         </li>
                     </ul>
                 </div>
