@@ -6,10 +6,11 @@ import TeamSection from '@/components/storyandteam/Team'
 import SubPageHeader from '@/components/ui/SubpageHeader'
 
 export const metadata = {
-  title: "Story and Team | Maythematics (MTM)",
+  title: "Our Team | Maythematics (MTM)",
   description:
-    "Learn more about our story, mission, and passionate team of tutors who guide students towards clarity, confidence, and consistent results in Math.",
+    "Meet the passionate Maythematics team — dedicated Math specialists who inspire confidence, spark curiosity, and guide every student to excel.",
 };
+
 
 export default function About() {
   return (

@@ -154,7 +154,21 @@ I strongly believe that every child has the ability to excel in math when given 
 What drives me is helping students build confidence in their abilities and showing them that math is not just numbers but also about problem-solving and thinking creatively. 
 
 Outside of teaching, I enjoy listening to music and spending quality time with my family and friends.`,
-        studentReviews: null
+        studentReviews: [
+            {
+                reviewer: "Ms Shel",
+                text: "I am so happy with my daughter's exam results! Thank you so much Teacher Mei Si for helping her!",
+            },
+            {
+                reviewer: "Ms Janelle",
+                text: "Thank you so much, Teacher Mei Si! You tutored Raenie well. She passed her Math. I’m so surprised and happy for her!",
+            },
+            {
+                reviewer: "Rui Yi",
+                text: "Hi Teacher Mei Si!! Thank you so much for helping me! The paper was one of the best papers I have done.",
+            },
+        ],
+
     },
 
     {
@@ -166,7 +180,12 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
 
         degree: "Bachelor of Computing in Computer Science, SIM (Current student)",
         description: "Hi, I’m Sammi, and I teach Mathematics from primary school to lower secondary levels. I’m passionate about helping students understand concepts in ways that make sense to them, rather than just following rules blindly. I believe Math can be interesting and enjoyable when it’s taught the right way, and I love seeing the moment when my students truly grasp a concept instead of disliking the topic. I always try different approaches and check in with my students—if one method doesn’t work, I’ll try another until they understand. My goal is to help students develop a love for Mathematics and to find it fun. Outside of teaching, I’m a dancer and I enjoy taking my dogs for walks whenever I’m free.",
-        studentReviews: null
+        studentReviews: [
+            {
+                reviewer: "Cindy",
+                text: "Teacher Sammi makes Math simple and interesting. My son looks forward to her lessons every week.",
+            },
+        ],
     },
     {
         name: "Venessa",
@@ -192,7 +211,7 @@ Outside of work, I enjoy staying active and keeping up with my fitness. As a new
 
         degree: "Bachelor of Computing (Computer Science) & Bachelor of Business, NTU",
         description: `I’m Tyler, and I like to make things better for people. I believe in the kaizen spirit—the philosophy of continuous, incremental improvement that involves everyone, every day, everywhere. At Maythematics, I’m always looking for ways to improve how our tutors provide the best education for our students while giving their parents peace of mind.
-My goal is for every student at Maythematics to feel proud of their progress and confident that what they learn here will serve them well, even long after they’ve moved on.
+\nMy goal is for every student at Maythematics to feel proud of their progress and confident that what they learn here will serve them well, even long after they’ve moved on.
 Outside of work, I make it a point to not work, take care of my health, and spend time with the people I love.`,
         studentReviews: null
     },

@@ -29,18 +29,15 @@
 
 
 .element6 {
-    top: 20px;
+    top: -70px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 100px;
     z-index: -1;
 
-    @media (max-width: 1123px) {
-        top: 5px;
-    }
 
     @media (max-width: 1023px) {
-        top: -80px;
+        top: -75px;
     }
 
 
@@ -50,14 +47,14 @@
 }
 
 .element8 {
-    top: 73px;
+    top: -45px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 120px;
     z-index: -1;
 
     @media (max-width: 1123px) {
-        top: 4vw;
+        top: -70px;
     }
 
     @media (max-width: 1023px) {

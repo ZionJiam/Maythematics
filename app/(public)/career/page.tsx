@@ -4,7 +4,7 @@ import JoinUsSection from '@/components/career/JoinUsSection'
 import CareerReason from '@/components/career/CareerReason'
 
 export const metadata = {
-    title: "Join Us1 | Maythematics (MTM) ",
+    title: "Join Us | Maythematics (MTM) ",
     description:
         "Passionate about teaching? Join the Maythematics (MTM) team as a dedicated tutor and inspire students to excel in Math through engaging lessons and a supportive environment.",
 };

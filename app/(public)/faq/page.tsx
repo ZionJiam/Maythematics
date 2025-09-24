@@ -5,10 +5,11 @@ import CTASection from '@/components/faq/CTASection'
 
 
 export const metadata = {
-    title: "Programme - Primary Secondary & JC Math | Maythematics (MTM) ",
+    title: "FAQ | Maythematics (MTM)",
     description:
-        "Whether in person or online, every Maythematics lesson follows a structured, engaging approach. Explore our Primary and Secondary Math programmes today.",
+        "Find answers to common questions about our Math programmes, teaching methods, fees, trial lessons, and how Maythematics helps students excel.",
 };
+
 
 export default function Programmes() {
 

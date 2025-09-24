@@ -11,7 +11,7 @@ import Slogan from '@/components/ui/Slogan'
 
 
 export const metadata = {
-    title: "Programme - Primary Secondary & JC Math | Maythematics (MTM) ",
+    title: "Programmes - Primary Secondary & JC Math | Maythematics (MTM)",
     description:
         "Whether in person or online, every Maythematics lesson follows a structured, engaging approach. Explore our Primary and Secondary Math programmes today.",
 };
