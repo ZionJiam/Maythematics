@@ -191,7 +191,7 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
     {
         name: "Venessa",
         startYear: 3000,
-        role: "Client success manager",
+        role: "Client Success Manager",
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
 
