@@ -23,16 +23,13 @@ const StudentReview = () => {
                 {/* <img alt="Contact Mascot" className={styles.contactMascot} src="/assets/contact-mascot.webp" /> */}
                 <h2 className={`sectionTitle ${styles.sectionTitle}`}>Any Enquiries? <br />Get in Touch</h2>
                 <div className={styles.cotactContainer}>
-                    <h3>Contacts</h3>
+                    <h3>Kindly send us a Whatsapp message to schedule a call or book an appointment for any walk-in(s).</h3>
                     <ul className={styles.contactList}>
-                        <li className={styles.telephone}>
-                            <FaPhoneAlt /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>
-                        </li>
-
                         <li>
-                            <FaWhatsapp /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                            <FaWhatsapp /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
                         </li>
                     </ul>
+                    {/* <p>Kindly send us a Whatsapp message to schedule a call or book an appointment for any walk-in(s).</p> */}
                 </div>
 
                 <div className={styles.socialsContainer}>

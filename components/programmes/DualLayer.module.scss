@@ -36,11 +36,11 @@
 .container {
 
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
     flex-direction: column;
 
     @media (min-width: 768px) {
-        gap: 6rem;
+        // gap: 6rem;
 
     }
 

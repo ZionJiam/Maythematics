@@ -92,7 +92,7 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
         imageUrlHover: "/images/team/Amy_2.webp",
         degree: "Bachelor of Communication and New Media, NUS",
-        description: "I’m Amy, passionate about helping young learners build a rock-solid foundation in Mathematics. I believe every child can thrive when given patience, encouragement, and the right guidance—and that learning should spark both confidence and curiosity. In my classes, I use clear explanations and step-by-step problem solving to make even difficult concepts manageable. Over the years, I’ve seen many hesitant learners grow into confident problem-solvers who are no longer afraid of Math. Before teaching, I worked as a journalist, but I found my true calling in education. Outside the classroom, I’m a mother of one and hope to build a big family, which helps me relate to the concerns and hopes of every parent I meet. To students: I’ll always celebrate your progress—no step is too small, and together we’ll turn Math into something you can feel proud of.",
+        description: "I’m Amy, passionate about helping young learners build a rock-solid foundation in Mathematics. I believe every child can thrive when given patience, encouragement, and the right guidance—and that learning should spark both confidence and curiosity.\n\nIn my classes, I use clear explanations and step-by-step problem solving to make even difficult concepts manageable. Over the years, I’ve seen many hesitant learners grow into confident problem-solvers who are no longer afraid of Math. Before teaching, I worked as a journalist, but I found my true calling in education.\n\nOutside the classroom, I’m a mother of one and hope to build a big family, which helps me relate to the concerns and hopes of every parent I meet.\n\nTo students: I’ll always celebrate your progress—no step is too small, and together we’ll turn Math into something you can feel proud of.",
         studentReviews: null
 
     },
@@ -123,19 +123,20 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         role: "Math Specialist",
         imageUrl: "/images/team/Lucas_1.webp",
         imageUrlHover: "/images/team/Lucas_2.webp",
-
+        youtubeUrl: "https://youtube.com/embed/jfP-Ly7IOXc?si=6tMppaeJfvg3UmAZ",
         degree: "Bachelor of Science in Mathematical Sciences, NTU (Current Student)",
-        description: "I'm Lucas, and I teach Mathematics at the secondary and junior-college levels at Maythematics. I'm passionate not only about the subject itself but also about the pedagogy behind it. Growing up, I struggled with Mathematics in primary school, so I understand how students might find it challenging. That's why I aim to empower them to enjoy the subject and build their confidence. My students often describe me as patient, energetic and approachable. I strive to make my classes a safe space where students can make mistakes, learn from them and grow. The legacy I hope to leave is for my students to one day look back on my lessons with fondness, wishing they could relive those classroom moments again. Outside of teaching, I'm a full-time Mathematics student. In my free time, I enjoy playing mahjong and tackling escape rooms with my friends.",
+        description: "I'm Lucas, and I teach Mathematics at the secondary and junior-college levels at Maythematics. I'm passionate not only about the subject itself but also about the pedagogy behind it.\n\nGrowing up, I struggled with Mathematics in primary school, so I understand how students might find it challenging. That's why I aim to empower them to enjoy the subject and build their confidence.\n\nMy students often describe me as patient, energetic and approachable. I strive to make my classes a safe space where students can make mistakes, learn from them and grow.\n\nThe legacy I hope to leave is for my students to one day look back on my lessons with fondness, wishing they could relive those classroom moments again. \n\nOutside of teaching, I'm a full-time Mathematics student. In my free time, I enjoy playing mahjong and tackling escape rooms with my friends.",
         studentReviews: null
     },
     {
         name: "Leanne",
         startYear: 3000,
         role: "Math Specialist",
+        youtubeUrl: "https://youtube.com/embed/VbiRDw3LS_Y?si=gBeb2T2ZgqQGIhN4",
         imageUrl: "/images/team/Leanne_1.webp",
         imageUrlHover: "/images/team/Leanne_2.webp",
         degree: "",
-        description: "I’m Leanne, passionate about helping students gain confidence in Mathematics. As a mom of three energetic boys, I know firsthand the importance of patience and encouragement in learning. I bring that same care into every class, ensuring that students feel supported as they try, learn, and improve. Parents often find comfort in knowing I balance both discipline and warmth in my approach. Outside of teaching, I’m a dedicated volunteer with a hamster welfare group. To students: I’ll always cheer you on—your effort matters more than getting it right the first time.",
+        description: "I’m Leanne, passionate about helping students gain confidence in Mathematics. As a mom of three energetic boys, I know firsthand the importance of patience and encouragement in learning.\n\nI bring that same care into every class, ensuring that students feel supported as they try, learn, and improve. Parents often find comfort in knowing I balance both discipline and warmth in my approach.\n\nOutside of teaching, I’m a dedicated volunteer with a hamster welfare group. To students: I’ll always cheer you on—your effort matters more than getting it right the first time.",
         studentReviews: null
     },
 
@@ -145,7 +146,7 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         role: "Math Specialist",
         imageUrl: "/images/team/Meisi_2.webp",
         imageUrlHover: "/images/team/Meisi_1.webp",
-
+        youtubeUrl: "https://youtube.com/embed/ePc-eYSXEIM?si=oYwECv31rN4Bfxrv",
         degree: "Bachelor of Business (Current Student)",
         description: `Hi, I'm Mei Si, and I teach Mathematics from Primary School to Lower Secondary level. I am passionate about making math simple, engaging and relatable for students by breaking down concepts into bite-sized content and connecting them to real-life applications.
 
@@ -177,7 +178,7 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
         role: "Math Specialist",
         imageUrl: "/images/team/Sammi_1.webp",
         imageUrlHover: "/images/team/Sammi_2.webp",
-
+        youtubeUrl: "https://youtube.com/embed/o8TkSMQN_9Q?si=WG_D5FS0-WOhbqOP",
         degree: "Bachelor of Computing in Computer Science, SIM (Current student)",
         description: "Hi, I’m Sammi, and I teach Mathematics from primary school to lower secondary levels. I’m passionate about helping students understand concepts in ways that make sense to them, rather than just following rules blindly. I believe Math can be interesting and enjoyable when it’s taught the right way, and I love seeing the moment when my students truly grasp a concept instead of disliking the topic. I always try different approaches and check in with my students—if one method doesn’t work, I’ll try another until they understand. My goal is to help students develop a love for Mathematics and to find it fun. Outside of teaching, I’m a dancer and I enjoy taking my dogs for walks whenever I’m free.",
         studentReviews: [

@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className={`${styles.column} col-30`}>
                         <h4>Our Location</h4>
                         <p>5 Jalan Masjid, Kembangan Court #01-13 (& #01-02)</p>
-                        <p>Phone: +65 8915 0859</p>
+                        <a className={styles.link} href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">Phone: +65 8915 0859</a>
                         <p>Hours: Mon-Fri 1-9pm, Sat-Sun 9-6pm, Closed on PH</p>
                     </div>
 

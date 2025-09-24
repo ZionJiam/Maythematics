@@ -12,7 +12,14 @@ interface AccordionItem {
 const data: AccordionItem[] = [
     { title: "Does Maythematics Provide Physical and Online Math Tuitions?", content: "Yes. Students can choose between physical and online math tuitions." },
     { title: "Are Online Math Tuitions effective?", content: "Online Math tuitions are effective if students pay attention, actively engage during lessons, and proactively submit their work for our teachers to check and mark." },
-    { title: "How long is each lesson?", content: "Primary 1 to 4: 1.5 hours (inclusive of 5 minutes break) \n\nPrimary 5 and 6: 2 hours (inclusive of 10 minutes break)\n\nSecondary 1 to 4: 2 hours (inclusive of 10 minutes break)\n\nJunior College 1 and 2: 2 hours (inclusive of 10 minutes break)" },
+    {
+        title: "When does your academic schedule start?", content: `We start the following year’s syllabus starting 1st November every year. For instance if your child is in Primary 4 in 2025, we will start Primary 5 syllabus on first week of November.
+
+Feel free to <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">contact us</a> for more details regarding the list of topics throughout the academic year.
+    ` },
+
+
+
     { title: "Where	are	the	physical lessons conducted?", content: "Kembangan Court #01-13 and #01-02\n5 Jln Masjid, Singapore 418924 \n(Right opposite Kembangan MRT)" },
     {
         title: "How	much are the lessons?", content: "Our lessons are priced at an average rate of $40/hour depending on the level.\nKindly contact us for more information."
@@ -46,10 +53,10 @@ export default function FAQ() {
                 <h3 data-aos="fade-up" className={`text-xl`}>Frequently Asked Questions</h3>
             </div>
 
-            <div className={styles.container}>
+            <div data-aos="fade-up" className={styles.container}>
 
                 {data.map((item, idx) => (
-                    <div data-aos="fade-up" key={idx} className={styles.accordion}>
+                    <div key={idx} className={styles.accordion}>
                         <button
                             className={`${styles.accordionButton} 
                   ${openIndex === idx ? styles.active : ''}

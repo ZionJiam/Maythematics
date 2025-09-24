@@ -41,7 +41,7 @@ const Story = () => {
         <section className={`${styles.story} sectionYPadding`}>
 
             <div className={`${styles.historyContainer} sectionYPadding`}>
-                <p className={`text-lg ${styles.timelineStart}`}>Hi, I’m May, the founder of Maythematics.</p>
+                <p data-aos-offset="-200" data-aos="fade-up" className={`text-lg ${styles.timelineStart}`}>Hi, I’m May, the founder of Maythematics.</p>
 
                 <div className={styles.innerContainer}>
                     <div className={styles.timelineEndDot} />
@@ -85,8 +85,10 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>2</span>
                                 </div>
-                                <h4>Riding Across Singapore</h4>
-                                <p>During my university years, I went the extra mile — literally. I got my motorcycle license so I could travel across Singapore, rain or shine, to teach. <br /><br />I often spent more time teaching than studying, but every moment was worth it. Those years shaped me as a teacher and deepened my love for this work.</p>
+                                <h4>Getting My Motorcycle License to Teach Around Singapore</h4>
+                                <p>Back in university, I was so passionate about teaching that I wanted to reach as many students as possible — no matter where they lived. That’s why I decided to get my motorcycle license.
+                                    <br /><br />It wasn’t easy. I went through countless falls, collected bruises, and braved many rainy rides that left me completely drenched on the way to students’ homes.
+                                    <br /><br />Also, I often spent more hours teaching than studying, but it was worth every moment.</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
@@ -108,11 +110,10 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>3</span>
                                 </div>
-                                <h4>Gaining Experience</h4>
-                                <p>After graduation, I joined an established Math tuition centre. There, I spent years refining my teaching methods, building experience, and learning what truly helps students thrive.</p>
+                                <h4>Building up experience</h4>
+                                <p>After graduating, I continued to sharpen my skills at an established Math tuition centre run by ex-MOE teachers where I spent years building experience, refining my teaching methods, and understanding what truly helps students thrive.</p>
                             </div>
-                            <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
-
+                            <img alt="Story Element 6" className={`${stylesElements.storyMascot} ${stylesElements.element6}`} src="/assets/yellow-mascot-2.webp" />
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
 
@@ -148,9 +149,9 @@ const Story = () => {
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-2.webp"
-                                caption="May, Husband and Baby Novi"
-                                shadowType="shadow1"
+                                src="/images/storyteam/story-11.webp"
+                                caption="May and Baby Novi"
+                                shadowType="shadow4"
                             />
 
                         </div>
@@ -170,10 +171,11 @@ const Story = () => {
                                 <h4>Teaching from a Tiny Home</h4>
                                 <p>Amidst the struggle, a small lifeline appeared: a few loyal students continued coming to my tiny two-room HDB for lessons.
                                     <br /><br />
-                                    Each time, my husband would carry baby Novi out of the house for hours, just so students could learn in a “conducive” space. I felt torn between wanting the best for my students and the guilt of sacrificing my own child’s comfort.</p>
+                                    Each time, my husband would carry our 1st born, Novi out of the house for hours, so that we can ensure students is able to learn in a more conducive space. I felt torn between wanting the best for my students and the guilt of sacrificing my own child’s comfort.
+                                </p>
                             </div>
                         </div>
-                        <div data-aos="fade-left" className={styles.imageContainer}>
+                        <div data-aos="fade-right" className={styles.imageContainer}>
 
                             <Polaroid
                                 src="/images/storyteam/story-3.webp"
@@ -193,28 +195,27 @@ const Story = () => {
                                     <span>6</span>
                                 </div>
                                 <h4>Discovering TikTok</h4>
-                                <p>One day, a student mentioned learning math tricks from TikTok. That sparked an idea: if I wanted to reach more students again, I had to go where they already were.
+                                <p>
+                                    Those days, I really missed being able to teach and make a positive difference to more students like how I was able to do so prior to Covid.
                                     <br /><br />
-                                    So, between breastfeeding breaks, I started creating short educational videos. I even went live on TikTok — at first, fewer than five people tuned in.
+                                    One day, a student mentioned learning math tricks from TikTok. That sparked an idea: To create Math content to help more students learn Math!
                                     <br /><br />
-                                    But I held onto one belief: as long as there was even one student willing to learn, I would teach.
-                                    <br /><br />
-                                    Slowly, children began signing up for lessons after discovering my videos. To my surprise, TikTok became the bridge to my students.</p>
+                                    So, between breastfeeding breaks and sometimes with my infant sitting beside me, I started creating short educational videos.
+                                </p>
                             </div>
-                            <img alt="Story Element 6" className={`${stylesElements.storyMascot} ${stylesElements.element6}`} src="/assets/yellow-mascot-2.webp" />
 
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-6.webp"
+                                src="/images/storyteam/story-5.webp"
                                 caption="Tiktok Live with her daughter"
-                                shadowType="shadow1"
+                                shadowType="shadow4"
                             />
 
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowRed}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowYellow}`}>
                         <TimelineDot styleColor='yellow' extendLine='left' />
 
                         <div className={`${styles.textWrapper}`}>
@@ -223,28 +224,30 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>7</span>
                                 </div>
-                                <h4>Outgrowing My Home</h4>
-                                <p>By the end of 2022, I was teaching 50 students at home every week.
+                                <h4>Never expected student base to grow</h4>
+
+                                <p>
+                                    I also started going live on TikTok to teach — at first, fewer than five people tuned in.
+
+                                    But I held on to one belief: as long as there is even one student willing to learn, I will teach.
                                     <br /><br />
-                                    That was when I knew it was time to take a leap of faith.
+                                    Back then, TikTok was still seen as just a dancing and entertainment app for teens.
+                                    I never imagined children would actually sign up for tuition through it.
                                     <br /><br />
-                                    In 2023, I poured out my life savings and opened my first tuition centre — right opposite Kembangan MRT. That single step marked the official beginning of Maythematics.
-                                    <br /><br />
-                                    Leveraging insights from the gaps I identified in my previous teaching experience, I was determined to set out to enhance several aspects of this industry that could make the experience better for the students, parents and the team.
+                                    To my surprise, children began signing up for Math tuitions at my house after discovering my videos.
                                 </p>
                             </div>
                         </div>
-                        <div data-aos="fade-left" className={styles.imageContainer}>
+                        <div data-aos="fade-right" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-4.webp"
-                                caption="More and More Students"
+                                src="/images/storyteam/story-7.webp"
+                                caption="Tiktok Live with her daughter"
                                 shadowType="shadow2"
                             />
-
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowRed}`}>
                         <TimelineDot styleColor='red' extendLine='right' />
 
                         <div className={`${styles.textWrapper}`}>
@@ -253,30 +256,80 @@ const Story = () => {
                                 <div className={`${styles.numbering}`}>
                                     <span>8</span>
                                 </div>
-                                <h4>Growing into a Team</h4>
-                                <p>
-                                    From there, Maythematics grew into a team of passionate teachers. Together, we’ve helped students transform — from failing to passing, from passes to distinctions.
-
-                                    Parents told us their children finally enjoyed Math, and word of mouth spread quickly.
-
-                                    Maythematics was born out of hardship, but it has grown through love, resilience, and an unshakable belief: with the right guidance, every child can shine in Math.
+                                <h4>Outgrowing My Home</h4>
+                                <p>By the end of 2022, I was teaching 50 students at home every week.
+                                    <br /><br />
+                                    That was when I knew it was time to take a leap of faith.
+                                    <br /><br />
+                                    In 2023, I poured out my life savings and opened my first tuition centre — right opposite Kembangan MRT. That single step marked the official beginning of Maythematics.
                                 </p>
-
                             </div>
                             <img alt="Story Element 8" className={`${stylesElements.storyMascot} ${stylesElements.element8}`} src="/assets/blue-mascot-1.png" />
 
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
+                                src="/images/storyteam/story-4.webp"
+                                caption="More and More Students"
+                                shadowType="shadow4"
+                            />
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowOdd} ${styles.rowBlue}`}>
+                        <TimelineDot styleColor='blue' extendLine='left' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.blue}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>9</span>
+                                </div>
+                                <h4>Beginnings of MTM</h4>
+                                <p>
+                                    Leveraging insights from the gaps I identified in my previous teaching experience, I was determined to set out to enhance several aspects of this industry that could make the experience better for the students, parents and the team.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div data-aos="fade-right" className={styles.imageContainer}>
+                            <Polaroid
                                 src="/images/storyteam/story-9.webp"
+                                caption="Maythematics Team"
+                                shadowType="shadow2"
+                            />
+
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" className={`${styles.row} ${styles.rowEven} ${styles.rowYellow}`}>
+                        <TimelineDot styleColor='yellow' extendLine='right' />
+
+                        <div className={`${styles.textWrapper}`}>
+
+                            <div className={`${styles.textInnerWrapper} ${styles.yellow}`}>
+                                <div className={`${styles.numbering}`}>
+                                    <span>10</span>
+                                </div>
+                                <h4>Growing a Team</h4>
+                                <p>
+                                    From there, Maythematics grew into a team of passionate teachers. Together, we’ve helped students transform — from failing to passing, from passes to distinctions. Parents told us their children finally enjoyed Math, and word of mouth spread quickly.
+                                    <br /><br />
+                                    Maythematics was born out of hardship, but it has grown through love, resilience, and an unshakable belief: with the right guidance, every child can shine in Math
+                                </p>
+                            </div>
+                            <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
+
+                        </div>
+                        <div data-aos="fade-left" className={styles.imageContainer}>
+                            <Polaroid
+                                src="/images/storyteam/story-10.webp"
                                 caption="Maythematics Team"
                                 shadowType="shadow4"
                             />
 
                         </div>
                     </div>
-
-
                 </div>
 
                 <p className={`text-lg  ${styles.timelineEnd}`}>

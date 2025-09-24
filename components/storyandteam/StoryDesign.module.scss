@@ -6,18 +6,15 @@
 
 
 .element4 {
-    top: -5px;
+    top: -70px;
     right: 0;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 110px;
 
-    @media (max-width: 1123px) {
-        top: -3.5vw;
-    }
 
     @media (max-width: 1023px) {
-        top: -75px;
+        top: -105px;
     }
 
     @media (max-width: 450px) {
@@ -29,12 +26,16 @@
 
 
 .element6 {
-    top: -70px;
+    top: -10px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 100px;
     z-index: -1;
 
+
+    @media (max-width: 1123px) {
+        top: -3.8vw;
+    }
 
     @media (max-width: 1023px) {
         top: -75px;

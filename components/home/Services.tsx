@@ -23,17 +23,17 @@ const programmes = [
 export default function ProgrammesSection() {
     return (
         <section className={`${styles.programmesSection} sectionYPadding`}>
-            <div className={styles.container}>
+            <div data-aos="fade-up" className={styles.container}>
                 <h2 className={` ${styles.title} sectionTitle`}>Math Tuition Programmes</h2>
                 <p className={styles.description}>
-                We offer Primary, Secondary, and Junior College Math Tuition to help students
-                excel with confidence. Our programmes are tailored to each level, focusing on skills, understanding, and exam readiness.
+                    We offer Primary, Secondary, and Junior College Math Tuition to help students
+                    excel with confidence. Our programmes are tailored to each level, focusing on skills, understanding, and exam readiness.
                 </p>
-          <Link href="/programmes" className={` ${styles.button} buttonYellow ctaButton`}>
-            Find out more
-          </Link>
+                <Link href="/programmes" className={` ${styles.button} buttonYellow ctaButton`}>
+                    Find out more
+                </Link>
             </div>
-            </section>
+        </section>
 
     );
 }
