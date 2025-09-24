@@ -9,6 +9,7 @@ const StudentReview = () => {
     return (
         <section className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.studentContainer}>
+                <h2 className={`sectionTitle d-block-768 ${styles.title}`}>The Maythematics Experience</h2>
                 <div data-aos="fade-up" className={styles.videoContainer}>
                     {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                     <iframe
@@ -22,7 +23,7 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle"> The Maythematics <br />Experience</h2>
+                    <h2 className="sectionTitle  d-none-768"> The Maythematics <br />Experience</h2>
                     <p>
                         Step into the daily journey of a student at Maythematics and discover how our unique environment and teaching approach make learning engaging — and why students genuinely look forward to every class
                     </p>

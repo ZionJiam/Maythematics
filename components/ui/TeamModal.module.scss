@@ -172,13 +172,20 @@
         }
     }
 
+
     .role,
     .degree,
     .yoe {
+        display: flex;
+        align-items: center;
         font-size: 0.9rem;
         font-weight: 600;
         margin-top: 0.5rem;
         color: $color-text;
+
+        svg {
+            margin-right: 0.5rem;
+        }
 
 
         @media (min-width: 768px) {

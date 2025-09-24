@@ -11,165 +11,207 @@ import TeamModal from "@/components/ui/TeamModal";
 const teamMembers = [
     {
         name: "May",
-        startYear: 2016,
+        startYear: 2011,
         role: "Founder of Maythematics",
         imageUrl: "/images/team/May_1.webp",
         imageUrlHover: "/images/team/May_2.webp",
         degree: "Bachelor of Communications, NUS",
-        description: `I’m May, founder of Maythematics and a Math educator with over 14 years of teaching experience.\nMany parents and students know me from TikTok, where I am recognised as a rising Math
-                        tutor-influencer for my clear, step-by-step explanations of even the toughest problems. I am
-                        passionate about making education fun, simple, and results-driven, and I have received
-                        consistent positive feedback that my lessons are easy to follow — with many students and
-                        parents attesting to real improvements through my regular teaching.
-                        \nBack in school, I achieved an A* for PSLE and Distinctions in both E-Math and A-Math
-                        not because I was the smartest, but because I worked the hardest — a value I now strive to
-                        instill in every student I teach. Over the years, I have had the privilege of guiding more than
-                        1,000 students across different levels and abilities, and today I also mentor and train our
-                        tutors to ensure every lesson at Maythematics is delivered with clarity, quality, and
-                        consistency.
-                        \nBeyond the classroom, I am a proud mother of three and hold Class 2B, 2A, 2, and 3
-                        licenses — meaning I can ride or drive almost anything on the road!
-                        \nPeople around me describe me as a bubbly and energetic person, while those who work
-                        closely with me also know that I am a perfectionist who sets very high standards for myself
-                        and my team.
-                        \nFun fact: I often receive compliments on my handwriting — a small reflection of the care
-                        and attention I put into every detail.`,
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        description: "Many parents and students know me from TikTok, where I am recognised as a rising Math tutor-influencer for my clear, step-by-step explanations of even the toughest problems.\n\nBack in school, I achieved an A* for PSLE and Distinctions in both E-Math and A-Math not because I was the smartest, but because I worked the hardest — a value I now strive to instill in every student I teach.\n\nI am passionate about making education fun, simple, and results-driven.\n\nOver the years, I have had the privilege of guiding more than 1,000 students across different levels and abilities, with many students and parents attesting to real improvements through my teaching.\n\nToday I also mentor and train our tutors to ensure every lesson at Maythematics is delivered with clarity, quality, and consistency.\n\nPeople around me describe me as a bubbly and energetic person, while those who work closely with me also know that I am a perfectionist who sets very high standards for myself and my team.\n\nFun fact: Most of the Math cheatsheets at our centre are personally handwritten by me, and I often receive compliments on my handwriting — a small reflection of the care and attention I put into every detail to ensure our students receive the very best support.",
+        studentReviews: null
     },
     {
         name: "Eunice",
-        startYear: 2024,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
         youtubeUrl: "https://youtube.com/embed/wHIbXQBQnK0?si=oIM8mjyONEbqj5D4",
         degree: "Bachelor of Engineering",
-        description: "Math was difficult for me when I was younger, but over time I grew to love the subject — eventually achieving distinctions throughout my academic journey from school to polytechnic to university. Before discovering my passion for teaching, I worked as an engineer, which strengthened my problem-solving skills and precision. Today, I teach Primary Math as well as Secondary 1–5 Emath and Amath, focusing on making concepts simple, structured, and approachable. Outside the classroom, I enjoy collecting figurines from blind boxes and Pop Marts — a hobby that keeps me curious and creative.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        description: `  Hi, I'm Eunice, a math tutor for primary and secondary students at Maythematics.
+
+My own journey with math transformed because of a few patient and passionate teachers who took extra time to guide me when I was struggling. Their dedication not only helped me understand concepts more deeply but also ignited a lasting love for the subject.
+
+This personal experience is why I firmly believe that passion and patience are foundational to creating a welcoming and effective learning environment. This approach aligns perfectly with the Maythematics philosophy of being Positive, Passionate, and Patient.
+
+I find joy in breaking down complex concepts into simpler, more understandable parts. Nothing is more rewarding than witnessing a student grasps something they once found difficult. Seeing their progress, no matter how small, gives me a sense of achievement.
+
+When I'm not teaching, I cherish quality time with my family and friends, and I have a fun fondness for the small thrill of opening blind boxes.
+        
+        `,
+        studentReviews: [
+            {
+                reviewer: "Jamie",
+                text: "Teacher Eunice has been such an great help to my son' s Maths tuition. My son works very well under her coaching. He is more motivated and confident for Maths now. Thank you teacher Eunice and Maythematics!! ",
+            },
+            {
+                reviewer: "Jason",
+                text: "Her lessons made Additional Math so much easier to understand!",
+            },
+        ],
     },
     {
         name: "Kelly",
-        startYear: 2016,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Kelly_1.webp",
         imageUrlHover: "/images/team/Kelly_2.webp",
         youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
-        degree: "Bachelor of Science (Data Science and Analytics), NUS",
-        description: "Having majored in Data Science and Analytics at NUS, I enjoy blending Math with technology to make concepts clearer and more engaging for students. Back in school, I graduated at the top of my cohort for Secondary 4 Additional Math — a subject I still love teaching today. Outside of lessons, you’ll probably find me at karaoke, where I bring the same joy and energy that I bring into the classroom.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Science in Data Science & Analytics",
+        description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
+
+I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
+
+In my classes, I focus on guiding students to understand the why behind each concept, so they build confidence instead of relying on memorisation.
+
+What drives me is seeing my students grow, not just in their results, but also in their confidence and problem-solving mindset.
+
+Outside of teaching, I enjoy going for long walks, which gives me time to reflect, and exploring new hobbies like crocheting!`,
+        studentReviews: [
+            {
+                reviewer: "Yi Zheng",
+                text: "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
+            },
+        ],
+
     },
-    {
-        name: "Jezabel",
-        role: "Math Specialist",
-        startYear: 2016,
-        imageUrl: "/images/team/Amy_1.webp",
-        imageUrlHover: "/images/team/Amy_2.webp",
-        degree: "B.Sc. in Mathematics, NUS",
-        description: "I’m passionate and driven about teaching my students Physics in a simple, concise yet interesting way! I’m always ready to give my all for my kids! Which is why I make it a point to build an individual relationship with every student, no matter how big my classes are. I’m sure to always make myself available for my students, even if it’s in the middle of the night (even at 4am 😇) , to help with any panic Physics calls! ",
-        studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
-    },
+    // {
+    //     name: "Jezabel",
+    //     role: "Math Specialist",
+    //     startYear: 2016,
+    //     imageUrl: "/images/team/Amy_1.webp",
+    //     imageUrlHover: "/images/team/Amy_2.webp",
+    //     degree: "Bachelor of Science in Chemistry & Biological Chemistry, NTU",
+    //     description: `I’m Jezebel, and I believe success in learning comes from effort, not “natural talent.” What often looks like talent is really hard work behind the scenes. That’s why I encourage students not to compare themselves with others, but to focus on steady, step-by-step improvement. As long as they are better today than yesterday, they’re on the right track. Parents value my patient and encouraging approach, knowing their child won’t feel pressured to compete but supported to grow. Outside of teaching, I enjoy reading, spending time with my family, and expressing myself through dance and singing. To my students: Math isn’t about being perfect—it’s about getting a little better every time.`,
+    //     studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
+    // },
     {
         name: "Amy",
         role: "Math Specialist",
-        startYear: 2016,
+        startYear: 3000,
         imageUrl: "/images/team/Amy_1.webp",
         youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
         imageUrlHover: "/images/team/Amy_2.webp",
-        degree: "Bachelor of Communications, NUS",
-        description: "I’m a Primary Math Teaching Specialist with distinctions in Math from Primary through JC. After graduating from NUS, I found my true calling in teaching — guiding younger students to build strong foundations and confidence in Math. I currently teach Primary Math and up to Secondary 2 Emath, where I focus on making concepts clear and approachable. Before becoming a tutor, I was a journalist, but as a mother of one (and hoping for more!), working with children has become both my passion and joy.",
-        studentReview: "Mr. Tyler makes math so fun and easy to understand! ingfoierwiowrgwirgw - Cheryl",
+        degree: "Bachelor of Communication and New Media, NUS",
+        description: "I’m Amy, passionate about helping young learners build a rock-solid foundation in Mathematics. I believe every child can thrive when given patience, encouragement, and the right guidance—and that learning should spark both confidence and curiosity. In my classes, I use clear explanations and step-by-step problem solving to make even difficult concepts manageable. Over the years, I’ve seen many hesitant learners grow into confident problem-solvers who are no longer afraid of Math. Before teaching, I worked as a journalist, but I found my true calling in education. Outside the classroom, I’m a mother of one and hope to build a big family, which helps me relate to the concerns and hopes of every parent I meet. To students: I’ll always celebrate your progress—no step is too small, and together we’ll turn Math into something you can feel proud of.",
+        studentReviews: null
+
     },
 
     {
         name: "Joan",
-        startYear: 2016,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Joan_1.webp",
         imageUrlHover: "/images/team/Joan_2.webp",
         youtubeUrl: "https://youtube.com/embed/o5MWiIY-4ao?si=gHTIlnaJLdkr9r7z",
         degree: "B.Sc. in Science Education, NTU",
-        description: "Back in school, I was part of the Gifted Education Programme and have carried that love for learning into my teaching today. Outside of lessons, I volunteer at a pet shelter and am a proud cat lover — something that helps me bring extra patience and care into the classroom.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        description: `I’m Joan, a primary and secondary math tutor at Maythematics. As a tutor, I love teaching and guiding young minds, and viewing the world through their unique perspectives. I learn from my students, as they learn from me. 
+
+When I was a student, I was deeply influenced by my teachers - and I still keep in contact with them now. Inspired by them, I started my tutoring journey in Secondary school, and have moved from tutoring community kids and peers, to tutoring my very own students.
+
+In my classroom, I aim to create a friendly, welcoming atmosphere. I invite my students to “Always Ask Questions”, no matter how silly they think they may be - those questions may be more important than they think! For younger students, I also work closely with parents so as to better serve my students’ needs. In contrast, I encourage older students to take charge of their own learning as I continue to provide support.
+
+I hope to continue inspiring students as I have been inspired myself; to develop in them the passion that spurs my own continued love for learning. Outside of class, this translates to a deep passion for reading, research and rumination.
+        
+        `,
+        studentReviews: null
+
     },
     {
         name: "Lucas",
-        startYear: 2016,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Lucas_1.webp",
         imageUrlHover: "/images/team/Lucas_2.webp",
 
-        degree: "Undergraduate of Science (Mathematical Science), NTU",
-        description: "I teach everything from Primary Math to Secondary 1–5 Emath and Amath, guiding students with clear, structured methods that build both skill and confidence. A bit of a perfectionist at heart, I put care into every explanation I give. Outside of teaching, I’m known for my big appetite despite my small frame — and for being a huge fan of Taylor Swift!",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Science in Mathematical Sciences, NTU (Current Student)",
+        description: "I'm Lucas, and I teach Mathematics at the secondary and junior-college levels at Maythematics. I'm passionate not only about the subject itself but also about the pedagogy behind it. Growing up, I struggled with Mathematics in primary school, so I understand how students might find it challenging. That's why I aim to empower them to enjoy the subject and build their confidence. My students often describe me as patient, energetic and approachable. I strive to make my classes a safe space where students can make mistakes, learn from them and grow. The legacy I hope to leave is for my students to one day look back on my lessons with fondness, wishing they could relive those classroom moments again. Outside of teaching, I'm a full-time Mathematics student. In my free time, I enjoy playing mahjong and tackling escape rooms with my friends.",
+        studentReviews: null
     },
     {
         name: "Leanne",
-        startYear: 2016,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Leanne_1.webp",
         imageUrlHover: "/images/team/Leanne_2.webp",
-
-        degree: "B.Sc. in Science Education, NTU",
-        description: "As a mother of three energetic boys, I understand the importance of patience, encouragement, and structure in helping children learn effectively. Outside of teaching, I dedicate time to volunteering with a hamster welfare group — a role that reflects my nurturing nature both inside and outside the classroom.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "",
+        description: "I’m Leanne, passionate about helping students gain confidence in Mathematics. As a mom of three energetic boys, I know firsthand the importance of patience and encouragement in learning. I bring that same care into every class, ensuring that students feel supported as they try, learn, and improve. Parents often find comfort in knowing I balance both discipline and warmth in my approach. Outside of teaching, I’m a dedicated volunteer with a hamster welfare group. To students: I’ll always cheer you on—your effort matters more than getting it right the first time.",
+        studentReviews: null
     },
 
     {
-        name: "Meisi",
-        startYear: 2016,
+        name: "Mei Si",
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Meisi_2.webp",
         imageUrlHover: "/images/team/Meisi_1.webp",
 
-        degree: "B.Sc. in Science Education, NTU",
-        description: "I love making Math fun and easy to understand, helping students build both confidence and strong foundations. Outside of lessons, I enjoy running — I’ve even completed a half marathon! — and I’m a big animal lover with a soft spot for both cats and dogs.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Business (Current Student)",
+        description: `Hi, I'm Mei Si, and I teach Mathematics from Primary School to Lower Secondary level. I am passionate about making math simple, engaging and relatable for students by breaking down concepts into bite-sized content and connecting them to real-life applications.
+
+I strongly believe that every child has the ability to excel in math when given the right support, encouragement and guidance. In my class, I aim to make tuition exciting and fun rather than dreadful, creating a friendly learning environment where students feel comfortable asking questions and exploring new ideas. 
+
+What drives me is helping students build confidence in their abilities and showing them that math is not just numbers but also about problem-solving and thinking creatively. 
+
+Outside of teaching, I enjoy listening to music and spending quality time with my family and friends.`,
+        studentReviews: null
     },
 
     {
         name: "Sammi",
-        startYear: 2016,
+        startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Sammi_1.webp",
         imageUrlHover: "/images/team/Sammi_2.webp",
 
-        degree: "B.Sc. in Science Education, NTU",
-        description: "From a young age, I worked many part-time jobs, which taught me resilience, responsibility, and the value of hard work — qualities I bring into my teaching every day. I love creating Math notes and worksheets to make learning clearer and more enjoyable for my students. Outside the classroom, I’m a dancer at heart and enjoy building Lego, crafting handmade things, and cooking, which keep me creative and full of energy.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Computing in Computer Science, SIM (Current student)",
+        description: "Hi, I’m Sammi, and I teach Mathematics from primary school to lower secondary levels. I’m passionate about helping students understand concepts in ways that make sense to them, rather than just following rules blindly. I believe Math can be interesting and enjoyable when it’s taught the right way, and I love seeing the moment when my students truly grasp a concept instead of disliking the topic. I always try different approaches and check in with my students—if one method doesn’t work, I’ll try another until they understand. My goal is to help students develop a love for Mathematics and to find it fun. Outside of teaching, I’m a dancer and I enjoy taking my dogs for walks whenever I’m free.",
+        studentReviews: null
     },
     {
-        name: "Ven",
-        startYear: 2016,
-        role: "???",
+        name: "Venessa",
+        startYear: 3000,
+        role: "Admin",
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
 
-        degree: "B.Sc. in Science Education, NTU",
-        description: "With a degree in Communications and Sociology and a diploma in Applied Drama and Psychology, I bring both empathy and organisation to my role. Outside of work, I love dogs and volunteer regularly at a dog shelter. I also spent two years teaching singing and have performed at various events — music has always been a joyful part of my life.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Communications & Sociology",
+        description: `Hi, I’m Venessa, and I manage client relations here at Maythematics. I understand that finding the right academic support can be a stressful and emotional process for many parents. That’s why I believe in building strong, trustworthy relationships through clear communication and empathy. Just as our tutors are the go-to support for students, I strive to be that dependable point of contact for parents—helping them feel confident and reassured every step of the way.
+
+Outside of work, I enjoy staying active and keeping up with my fitness. As a new mom, I’m also focused on spending meaningful time with my family and embracing all the special moments that come with this new chapter.`,
+        studentReviews: null
+
     },
     {
         name: "Tyler",
-        startYear: 2016,
+        startYear: 3000,
         role: "Strategic Growth Architect",
         youtubeUrl: "https://youtube.com/embed/3lzs-mTaB4E?si=He288-szlUEnjr6s",
         imageUrl: "/images/team/Tyler_1.webp",
         imageUrlHover: "/images/team/Tyler_2.webp",
 
-        degree: "Bachelor of Computer Science (Artificial Intelligence) & Bachelor of Business, (Analytics), NTU",
-        description: "With a Double Degree in Computer Science and Data Analytics from NTU, I not only specialise in teaching Primary and Secondary Math but also support the centre’s operations, finance, marketing, and HR. I’m passionate about helping students succeed in Math while driving the continued growth of Maythematics. Outside of work, you’ll often find me on the basketball court.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "Bachelor of Computing (Computer Science) & Bachelor of Business, NTU",
+        description: `I’m Tyler, and I like to make things better for people. I believe in the kaizen spirit—the philosophy of continuous, incremental improvement that involves everyone, every day, everywhere. At Maythematics, I’m always looking for ways to improve how our tutors provide the best education for our students while giving their parents peace of mind.
+My goal is for every student at Maythematics to feel proud of their progress and confident that what they learn here will serve them well, even long after they’ve moved on.
+Outside of work, I make it a point to not work, take care of my health, and spend time with the people I love.`,
+        studentReviews: null
     },
     {
         name: "Jovial",
-        startYear: 2016,
-        role: "???",
+        startYear: 3000,
+        role: "Operations Manager",
         imageUrl: "/images/team/Jovial_1.webp",
         imageUrlHover: "/images/team/Jovial_2.webp",
 
-        degree: "B.Sc. in Science Education, NTU",
-        description: "From managing systems to keeping everything on track, I’m also the tech guy behind our teaching equipment, student portal, and livestream setups. I enjoy using technology to make learning seamless for both our tutors and students.",
-        studentReview: "Ms. Sophia helped me love science for the first time!",
+        degree: "",
+        description: `Hi, I'm Jovial, and I'm the Operations Manager.
+
+From fixing the printer to setting up livestreams, I’m the go-to person for keeping things running smoothly at Maythematics. I’m passionate about using technology to improve the way we work and teach, always looking for smarter ways to support the team and enhance the learning experience.
+
+Outside of work, I am very committed to taking care of my family as I am very blessed to have a lovely wife and 3 daughters. I also love playing badminton!
+        `,
+        studentReviews: null
+
     },
 
 
@@ -210,7 +252,7 @@ const Team = () => {
                                 imageUrlHover={member.imageUrlHover}
                                 degree={member.degree}
                                 description={member.description}
-                                studentReview={member.studentReview}
+                                studentReviews={member.studentReviews} // 👈 updated here
                                 onClick={() => setSelectedMember(member)}
                                 data-aos="fade-up"
                             />

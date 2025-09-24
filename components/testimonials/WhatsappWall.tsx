@@ -7,41 +7,36 @@ import Masonry from "react-masonry-css";
 const testimonials = [
     {
         image: "/images/testimonials/message1.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    },
-    {
-        image: "/images/testimonials/message2.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    },
-    {
-        image: "/images/testimonials/message3.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
     },
     {
         image: "/images/testimonials/message4.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
     }
     ,
     {
         image: "/images/testimonials/message5.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
+    },
+    {
+        image: "/images/testimonials/message7.webp",
+    },
+    {
+        image: "/images/testimonials/message8.webp",
+    },
+    {
+        image: "/images/testimonials/message9.webp",
+    },
+    {
+        image: "/images/testimonials/message3.webp",
+    },
+    {
+        image: "/images/testimonials/message2.webp",
     },
     {
         image: "/images/testimonials/message6.webp",
-        student: "Darren",
-        school: "River Valley High",
-        achievement: "Jumped from 60% → 85% in Math"
-    }
+    },
+    {
+        image: "/images/testimonials/message10.webp",
+    },
+
 ];
 
 const breakpointColumnsObj = {

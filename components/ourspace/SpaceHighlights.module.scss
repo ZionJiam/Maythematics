@@ -44,10 +44,12 @@
     border-radius: 10px;
     overflow: hidden; // ensures img respects border radius
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-height: 250px;
 
 
     @media (min-width: 768px) {
         width: 500px;
+        max-height: none;
     }
 
     @media (min-width: 1024px) {

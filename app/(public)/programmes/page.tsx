@@ -20,7 +20,7 @@ export default function Programmes() {
 
     return (
         <main className={`pageMarginTop`} >
-            <SubPageHeader color="red" header="Our Programme" />
+            <SubPageHeader color="red" header="Math Programme" />
 
             <Methodologies />
 

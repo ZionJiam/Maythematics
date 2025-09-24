@@ -9,7 +9,7 @@ const reasons = [
         title: 'Positive, Patient, and Passionate',
         description: 'At MTM, our team goes beyond teaching to inspire confidence, spark enjoyment, and deliver real results. Because children learn best from tutors who truly care.',
         cta: 'Meet our tutors',
-        href: '/story-and-team#team',
+        href: '/our-team',
     },
     {
         image: '/images/shine_approach_small.webp',
@@ -20,8 +20,8 @@ const reasons = [
     },
     {
         image: '/images/whyus3.webp',
-        title: 'Visible Improvement in Just 6 months',
-        description: '9 in 10 students see measurable progress in their Math results within 6 months of joining us. For Secondary 1 students, 9 in 10 who start the year in G2 are promoted to G3 by year’s end.',
+        title: 'At least 1 Grade Improvement in 6 months',
+        description: '9 in 10 students see at least 1 grade improvement in their Math results within 6 months of joining us. For Secondary 1 students, 9 in 10 who start the year in G2 are promoted to G3 by year’s end.',
         cta: 'View our results',
         href: '/testimonials#messages',
     }

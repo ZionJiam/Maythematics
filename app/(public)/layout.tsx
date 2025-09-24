@@ -61,7 +61,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingWhatsApp />
-        <WorkshopPopup />
+        {/* <WorkshopPopup /> */}
       </main>
     </>
   );

@@ -9,6 +9,7 @@ const StudentReview = () => {
     return (
         <section id="shine" className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.studentContainer}>
+                <h2 className={`sectionTitle d-block-768 ${styles.title}`}>Our SHINE Approach</h2>
                 <div data-aos="fade-up" className={styles.imageContainer}>
 
                     <img
@@ -21,12 +22,11 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">Our SHINE Approach</h2>
+                    <h2 className="sectionTitle d-none-768">Our SHINE Approach</h2>
                     <p>
                         At MTM, we believe every child has the potential to SHINE.
-                        Our SHINE Approach is what makes learning effective, enjoyable, and resultsdriven.
-                        We don’t just teach Math — we care about the entire learning experience. We want
-                        our students to shine by                    
+                        Our SHINE Approach is what makes learning effective, enjoyable, and results-driven.
+                        We don’t just teach Math — we care about the entire learning experience.
                     </p>
                     {/* <Link href="/testimonials" className={` ${styles.button} buttonYellow ctaButton`}>See More Testimonials</Link> */}
                     <SecondaryCtaButton text="Learn more about Our SHINE Approach" href="/programmes?#shine" />

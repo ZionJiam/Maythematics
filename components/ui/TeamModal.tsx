@@ -4,6 +4,12 @@ import styles from "./TeamModal.module.scss";
 import { useEffect, useState } from "react";
 import { FaUserTie, FaGraduationCap, FaCalendarAlt } from "react-icons/fa";
 
+
+interface StudentReview {
+    reviewer: string
+    text: string
+}
+
 interface TeamModalProps {
     member: {
         name: string;
@@ -11,8 +17,8 @@ interface TeamModalProps {
         imageUrl: string;
         degree: string;
         description: string;
-        studentReview: string;
-        startYear: number;
+        studentReviews?: StudentReview[] | null
+        startYear: number; // 👈 allow null or omit entirely
         youtubeUrl?: string; // <-- new field
     };
     onClose: () => void;
@@ -48,9 +54,12 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                                 <h4 className={styles.role}>
                                     <FaUserTie className={styles.icon} /> {member.role}
                                 </h4>
-                                <p className={styles.degree}>
-                                    <FaGraduationCap className={styles.icon} /> {member.degree}
-                                </p>
+
+                                {member.degree && member.degree.trim() !== "" && (
+                                    <p className={styles.degree}>
+                                        <FaGraduationCap className={styles.icon} /> {member.degree}
+                                    </p>
+                                )}
                                 {currentYear - member.startYear >= 3 && (
                                     <p className={styles.yoe}>
                                         <FaCalendarAlt className={styles.icon} />{" "}
@@ -61,8 +70,11 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                         </div>
 
                         <p className={styles.description}>{member.description}</p>
-                        <blockquote>“{member.studentReview}”</blockquote>
-
+                        {member.studentReviews?.map((review, idx) => (
+                            <blockquote key={idx}>
+                                “{review.text}” — <span>{review.reviewer}</span>
+                            </blockquote>
+                        ))}
                         {member.youtubeUrl && (
                             <div className={styles.videoWrapper}>
                                 <iframe

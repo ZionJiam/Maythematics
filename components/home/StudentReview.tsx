@@ -9,6 +9,7 @@ const StudentReview = () => {
     return (
         <section className={`${styles.studentReview} sectionYPadding`}>
             <div className={styles.studentContainer}>
+                <h2 className={`sectionTitle d-block-768 ${styles.title}`}>What Our <br /> Students Say</h2>
                 <div data-aos="fade-up" className={styles.videoContainer}>
                     {/* <img className={styles.video} src="/images/studentreview-thumbnail.png" /> */}
                     <iframe
@@ -24,7 +25,7 @@ const StudentReview = () => {
                 </div>
 
                 <div data-aos="fade-up" className={styles.textContainer}>
-                    <h2 className="sectionTitle">What Our <br /> Students Say</h2>
+                    <h2 className="sectionTitle d-none-768">What Our <br /> Students Say</h2>
                     <p>
                         Discover firsthand experiences from our Maythematics students as they share their learning journey, progress, and how our programmes have helped them achieve their academic goals with confidence.
                     </p>

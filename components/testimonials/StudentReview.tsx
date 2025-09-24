@@ -11,22 +11,28 @@ interface Review {
 
 const reviews: Review[] = [
     {
-        name: "Chloe’s Journey",
+        name: "What Our\nStudents Say",
         description:
-            "Chloe improved from AL6 to AL2 after receiving targeted extra worksheets on her weaker topics. The workshop was especially helpful, as many of the questions discussed appeared in her exam.",
+            "Discover firsthand experiences from our Maythematics students as they share their learning journey, progress, and how our programmes have helped them achieve their academic goals with confidence.",
+        videoUrl: "https://youtube.com/embed/E2A8CtSdjAk?si=VKYh5qEHoSgsvJU_",
+    },
+    {
+        name: "Chloe’s story - \nAL6 to AL2 (PSLE)",
+        description:
+            "Watch how Chloe credits her improvement from AL6 to AL2 after receiving targeted help in her weaker topics, as well as how our PSLE workshops helped her spot the right questions to prepare better for PSLE.",
         videoUrl: "https://youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI",
     },
     {
         name: "Singh Family",
         description:
-            "Ethan went from AL5 to AL1 through consistent practice and personalised coaching. The mock tests gave him the confidence to ace his exams.",
+            "Watch how the Singh Family testifies how we build confidence and mastery in their child’s Math, and how their child is always so happy attending tuitions!",
         videoUrl: "https://www.youtube.com/embed/6z3ETPvOhcE?si=vPPXCREVGhEUUOd4",
     },
 
     {
         name: "Amylia and Norrida",
         description:
-            "Ethan went from AL5 to AL1 through consistent practice and personalised coaching. The mock tests gave him the confidence to ace his exams.",
+            "Watch how Norrida shares about the commitment, dedication and sincerity of our tutor — qualities that truly make learning a positive experience. \n\nListen to Amylia, who explains how our tutor relates questions to real-life examples, making abstract concepts easier to grasp. Thanks to this approach, Amylia not only improved her confidence but also attained Top in her level!",
         videoUrl: "https://www.youtube.com/embed/2ADfj6sBekg?si=QLPY9aUxj6eoagqv",
     },
 
@@ -39,6 +45,7 @@ const StudentReview = () => {
             <div className={`${styles.container}`}>
                 {reviews.map((review, index) => (
                     <div key={index} className={`${styles.reviewItem} sectionYPadding`}>
+                        <h2 className={`sectionTitle d-block-768 ${styles.title}`}>{review.name}</h2>
                         <div className={styles.videoContainer}>
                             <iframe
                                 loading="lazy"
@@ -52,7 +59,7 @@ const StudentReview = () => {
                         </div>
 
                         <div className={styles.textContainer}>
-                            <h2 className="sectionTitle">{review.name}</h2>
+                            <h2 className={`sectionTitle d-none-768 ${styles.title}`}>{review.name}</h2>
                             <p>{review.description}</p>
                         </div>
                     </div>

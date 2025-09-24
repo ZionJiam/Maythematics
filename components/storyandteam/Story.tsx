@@ -41,7 +41,7 @@ const Story = () => {
         <section className={`${styles.story} sectionYPadding`}>
 
             <div className={`${styles.historyContainer} sectionYPadding`}>
-                <p className={`text-lg ${styles.timelineStart}`}>How it all started</p>
+                <p className={`text-lg ${styles.timelineStart}`}>Hi, I’m May, the founder of Maythematics.</p>
 
                 <div className={styles.innerContainer}>
                     <div className={styles.timelineEndDot} />
@@ -60,13 +60,13 @@ const Story = () => {
                                     <span>1</span>
                                 </div>
                                 <h4>Where It All Began — Teaching from the Heart</h4>
-                                <p>Teaching has always been my passion. Helping students overcome their fear of Math and watching their confidence grow gave me a deep sense of purpose. <br/><br/>My journey began at home, teaching my younger siblings. After junior college, I started part-time tutoring. What began as just a way to earn extra money soon became my calling.</p>
+                                <p>Teaching has always been my passion. Helping students overcome their fear of Math and watching their confidence grow gave me a deep sense of purpose. <br /><br />My journey began at home, teaching my younger siblings. After junior college, I started part-time tutoring. What began as just a way to earn extra money soon became my calling.</p>
                             </div>
 
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-7.webp"
+                                src="/images/storyteam/story-0.webp"
                                 caption="May teaching her younger siblings"
                                 shadowType="shadow3"
                             />
@@ -86,7 +86,7 @@ const Story = () => {
                                     <span>2</span>
                                 </div>
                                 <h4>Riding Across Singapore</h4>
-                                <p>During my university years, I went the extra mile — literally. I got my motorcycle license so I could travel across Singapore, rain or shine, to teach. <br/><br/>I often spent more time teaching than studying, but every moment was worth it. Those years shaped me as a teacher and deepened my love for this work.</p>
+                                <p>During my university years, I went the extra mile — literally. I got my motorcycle license so I could travel across Singapore, rain or shine, to teach. <br /><br />I often spent more time teaching than studying, but every moment was worth it. Those years shaped me as a teacher and deepened my love for this work.</p>
                             </div>                        </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
@@ -111,13 +111,13 @@ const Story = () => {
                                 <h4>Gaining Experience</h4>
                                 <p>After graduation, I joined an established Math tuition centre. There, I spent years refining my teaching methods, building experience, and learning what truly helps students thrive.</p>
                             </div>
-                                                        <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
+                            <img alt="Story Element 4" className={`${stylesElements.storyMascot} ${stylesElements.element4}`} src="/assets/red-mascot-teach.webp" />
 
                         </div>
                         <div data-aos="fade-right" className={styles.imageContainer}>
 
-                                                        <Polaroid
-                                src="/images/storyteam/story-4.webp"
+                            <Polaroid
+                                src="/images/storyteam/story3.webp"
                                 caption="May teaching at her home"
                                 shadowType="shadow2"
                             />
@@ -137,12 +137,12 @@ const Story = () => {
                                 </div>
                                 <h4>The Crossroads of 2021</h4>
                                 <p>Then COVID-19 struck. At that time, I was pregnant, and vaccines for expectant mothers were not yet declared safe. To continue at my workplace, I would have needed to be vaccinated.
-<br/><br/>
-I faced a heartbreaking choice: continue my career and risk my baby’s health, or step away from the job I loved.
-<br/><br/>
-I chose my baby. I quit.
-<br/><br/>
-My husband also lost his job as a Pilates instructor. Overnight, we had no stable income and survived by doing Grab deliveries. It was a season of humility, fear, and uncertainty.</p>
+                                    <br /><br />
+                                    I faced a heartbreaking choice: continue my career and risk my baby’s health, or step away from the job I loved.
+                                    <br /><br />
+                                    I chose my baby. I quit.
+                                    <br /><br />
+                                    My husband also lost his job as a Pilates instructor. Overnight, we had no stable income and survived by doing Grab deliveries. It was a season of humility, fear, and uncertainty.</p>
                             </div>
 
                         </div>
@@ -169,8 +169,8 @@ My husband also lost his job as a Pilates instructor. Overnight, we had no stabl
                                 </div>
                                 <h4>Teaching from a Tiny Home</h4>
                                 <p>Amidst the struggle, a small lifeline appeared: a few loyal students continued coming to my tiny two-room HDB for lessons.
-<br/><br/>
-Each time, my husband would carry baby Novi out of the house for hours, just so students could learn in a “conducive” space. I felt torn between wanting the best for my students and the guilt of sacrificing my own child’s comfort.</p>
+                                    <br /><br />
+                                    Each time, my husband would carry baby Novi out of the house for hours, just so students could learn in a “conducive” space. I felt torn between wanting the best for my students and the guilt of sacrificing my own child’s comfort.</p>
                             </div>
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
@@ -194,12 +194,12 @@ Each time, my husband would carry baby Novi out of the house for hours, just so 
                                 </div>
                                 <h4>Discovering TikTok</h4>
                                 <p>One day, a student mentioned learning math tricks from TikTok. That sparked an idea: if I wanted to reach more students again, I had to go where they already were.
-<br/><br/>
-So, between breastfeeding breaks, I started creating short educational videos. I even went live on TikTok — at first, fewer than five people tuned in.
-<br/><br/>
-But I held onto one belief: as long as there was even one student willing to learn, I would teach.
-<br/><br/>
-Slowly, children began signing up for lessons after discovering my videos. To my surprise, TikTok became the bridge to my students.</p>
+                                    <br /><br />
+                                    So, between breastfeeding breaks, I started creating short educational videos. I even went live on TikTok — at first, fewer than five people tuned in.
+                                    <br /><br />
+                                    But I held onto one belief: as long as there was even one student willing to learn, I would teach.
+                                    <br /><br />
+                                    Slowly, children began signing up for lessons after discovering my videos. To my surprise, TikTok became the bridge to my students.</p>
                             </div>
                             <img alt="Story Element 6" className={`${stylesElements.storyMascot} ${stylesElements.element6}`} src="/assets/yellow-mascot-2.webp" />
 
@@ -225,15 +225,18 @@ Slowly, children began signing up for lessons after discovering my videos. To my
                                 </div>
                                 <h4>Outgrowing My Home</h4>
                                 <p>By the end of 2022, I was teaching 50 students at home every week.
-<br/><br/>
-That was when I knew it was time to take a leap of faith.
-<br/><br/>
-In 2023, I poured out my life savings and opened my first tuition centre — right opposite Kembangan MRT. That single step marked the official beginning of Maythematics.</p>
+                                    <br /><br />
+                                    That was when I knew it was time to take a leap of faith.
+                                    <br /><br />
+                                    In 2023, I poured out my life savings and opened my first tuition centre — right opposite Kembangan MRT. That single step marked the official beginning of Maythematics.
+                                    <br /><br />
+                                    Leveraging insights from the gaps I identified in my previous teaching experience, I was determined to set out to enhance several aspects of this industry that could make the experience better for the students, parents and the team.
+                                </p>
                             </div>
                         </div>
                         <div data-aos="fade-left" className={styles.imageContainer}>
                             <Polaroid
-                                src="/images/storyteam/story-8.webp"
+                                src="/images/storyteam/story-4.webp"
                                 caption="More and More Students"
                                 shadowType="shadow2"
                             />
@@ -254,9 +257,9 @@ In 2023, I poured out my life savings and opened my first tuition centre — rig
                                 <p>
                                     From there, Maythematics grew into a team of passionate teachers. Together, we’ve helped students transform — from failing to passing, from passes to distinctions.
 
-Parents told us their children finally enjoyed Math, and word of mouth spread quickly.
+                                    Parents told us their children finally enjoyed Math, and word of mouth spread quickly.
 
-Maythematics was born out of hardship, but it has grown through love, resilience, and an unshakable belief: with the right guidance, every child can shine in Math.
+                                    Maythematics was born out of hardship, but it has grown through love, resilience, and an unshakable belief: with the right guidance, every child can shine in Math.
                                 </p>
 
                             </div>
@@ -283,7 +286,7 @@ Maythematics was born out of hardship, but it has grown through love, resilience
             </div>
 
 
-                        {/* <div className={`${styles.storyContainer} sectionYPadding`}>
+            {/* <div className={`${styles.storyContainer} sectionYPadding`}>
 
                 <div className={styles.videoContainer}>
                     <div className={styles.videoWrapper} data-aos="fade-in">

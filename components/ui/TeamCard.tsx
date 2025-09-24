@@ -3,6 +3,11 @@
 import { useState } from "react";
 import styles from "./TeamCard.module.scss";
 
+type StudentReview = {
+    reviewer: string;
+    text: string;
+};
+
 interface TeamCardProp {
     name: string;
     role: string;
@@ -10,7 +15,7 @@ interface TeamCardProp {
     imageUrlHover: string;
     degree: string;
     description: string;
-    studentReview: string;
+    studentReviews?: StudentReview[] | null;// 👈 allow null or omit entirely
     onClick: () => void;
 }
 
@@ -21,7 +26,7 @@ const TeamCard: React.FC<TeamCardProp> = ({
     imageUrlHover,
     degree,
     description,
-    studentReview,
+    studentReviews,
     onClick,
     ...rest
 }) => {

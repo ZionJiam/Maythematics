@@ -15,10 +15,10 @@ export default function ProgrammesTables() {
     return (
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.container}>
-            <div className={styles.titleContainer}>
-                <h3 data-aos="fade-up" className={`text-xl`}>Our Programme Structure</h3>
-            </div>
-                            <table data-aos="fade-up" className={styles.table}>
+                <div className={styles.titleContainer}>
+                    <h3 data-aos="fade-up" className={`text-xl`}>Our Programme Structure</h3>
+                </div>
+                <table data-aos="fade-up" className={styles.table}>
                     <thead>
                         <tr>
                             <th>Programme</th>
@@ -36,7 +36,7 @@ export default function ProgrammesTables() {
                         ))}
                     </tbody>
                 </table>
-                <p data-aos="fade-up">*Ratio : Teacher-to-Student</p>
+                <p data-aos="fade-up">*Ratio: Maximum Teacher-Student Ratio</p>
             </div>
         </section>
     );

@@ -33,7 +33,8 @@ const Footer = () => {
                     <div className={styles.column}>
                         <h4>Our Services</h4>
                         <Link href="/programmes" className={styles.link}>Our Programme</Link>
-                        <Link href="/holiday-programme" className={styles.link}>Holiday Programme</Link>
+                        <Link href="/faq" className={styles.link}>FAQs</Link>
+                        {/* <Link href="/holiday-programme" className={styles.link}>Holiday Programme</Link> */}
                     </div>
 
                     {/* Other Pages */}
@@ -41,7 +42,6 @@ const Footer = () => {
                         <h4>Explore</h4>
 
                         <Link href="/testimonials" className={styles.link}>Testimonials</Link>
-                        <Link href="/faq" className={styles.link}>FAQs</Link>
                         <Link href="/contact-us" className={styles.link}>Contact Us</Link>
                     </div>
 

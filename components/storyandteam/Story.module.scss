@@ -127,10 +127,9 @@
         position: relative;
         display: flex;
         justify-content: space-evenly;
-        flex-direction: column;
-        padding: 4rem 0;
-
-        gap: 1rem;
+        flex-direction: column-reverse;
+        gap: 4rem;
+        padding: 2rem 0;
         z-index: 2;
 
 
@@ -207,7 +206,7 @@
     }
 
     .rowOdd {
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         @media (min-width: 1024px) {
             flex-direction: row-reverse;
