@@ -52,17 +52,17 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                             <div className={styles.mainInfo}>
                                 <h2 className={styles.name}>{member.name}</h2>
                                 <h4 className={styles.role}>
-                                    <FaUserTie className={styles.icon} /> {member.role}
+                                    <FaUserTie size={20} className={styles.icon} /> {member.role}
                                 </h4>
 
                                 {member.degree && member.degree.trim() !== "" && (
                                     <p className={styles.degree}>
-                                        <FaGraduationCap className={styles.icon} /> {member.degree}
+                                        <FaGraduationCap size={20} className={styles.icon} /> {member.degree}
                                     </p>
                                 )}
                                 {currentYear - member.startYear >= 3 && (
                                     <p className={styles.yoe}>
-                                        <FaCalendarAlt className={styles.icon} />{" "}
+                                        <FaCalendarAlt size={20} className={styles.icon} />{" "}
                                         {currentYear - member.startYear} years of experience
                                     </p>
                                 )}
