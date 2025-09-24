@@ -26,7 +26,7 @@ const StudentReview = () => {
                     <h3>Contacts</h3>
                     <ul className={styles.contactList}>
                         <li className={styles.telephone}>
-                            <FaPhoneAlt /> <a href="tel:+6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>
+                            <FaPhoneAlt /> <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>
                         </li>
 
                         <li>
