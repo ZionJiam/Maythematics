@@ -1,35 +1,23 @@
 import type { NextConfig } from "next";
 
 // next.config.js
-const nextConfig = {
+const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
   async headers() {
-    const headers = [];
-    if (process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production') {
-      headers.push({
+    // Only keep headers you actually need
+    return [
+      {
+        source: '/:path*',
         headers: [
           {
-            key: 'X-Robots-Tag',
-            value: 'noindex',
+            key: 'Permissions-Policy',
+            value: 'picture-in-picture=(self "https://www.youtube.com")',
           },
         ],
-        source: '/:path*',
-      });
-    }
-
-    headers.push({
-      headers: [
-        {
-          key: 'Permissions-Policy',
-          value: 'picture-in-picture=(self "https://www.youtube.com")',
-        },
-      ],
-      source: '/:path*',
-    });
-
-    return headers;
+      },
+    ];
   },
 };
 

@@ -1,4 +1,9 @@
-# public/robots.txt
-
+# *
 User-agent: *
-Disallow: /
+Disallow: /admin
+
+# Host
+Host: https://maythematics.com
+
+# Sitemaps
+Sitemap: https://maythematics.com/sitemap.xml
