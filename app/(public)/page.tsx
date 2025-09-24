@@ -19,7 +19,6 @@ export const metadata = {
   },
   authors: [{ name: "Maythematics" }],
   metadataBase: new URL("https://maythematics.com"), // ensures absolute URLs
-
   openGraph: {
     title: "Maythematics | Quality Primary, Secondary and JC Math Tuition in Singapore",
     description: "Helping students build clarity, confidence, and results in Math.",
@@ -27,7 +26,7 @@ export const metadata = {
     siteName: "Maythematics",
     images: [
       {
-        url: "https://maythematics.com/logo.png",
+        url: "https://maythematics.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Maythematics Logo",
