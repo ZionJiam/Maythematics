@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./ResultMasonry.module.scss";
 import Masonry from "react-masonry-css";
-import { supabase } from "@/app/lib/supabaseClient";
 
 interface ResultItem {
     src: string;
@@ -20,35 +19,12 @@ const breakpointColumnsObj = {
 };
 
 export default function ResultsMasonry() {
-    const [results, setResults] = useState<ResultItem[]>([]);
-    const [visibleCount, setVisibleCount] = useState(7);
+    // Hardcoded results
+    const results: ResultItem[] = Array.from({ length: 8 }, (_, i) => ({
+        src: `/images/results/results-${i + 1}.webp`,
+    }));
 
-    useEffect(() => {
-        const fetchResults = async () => {
-            // 👇 list all files inside bucket "results"
-            const { data, error } = await supabase.storage.from("results").list("", {
-                limit: 100,
-                offset: 0,
-                sortBy: { column: "name", order: "asc" },
-            });
-
-
-            if (error) {
-                console.error("Error fetching results:", error.message);
-                return;
-            }
-
-            if (data) {
-                const publicURL = process.env.NEXT_PUBLIC_SUPABASE_URL + "/storage/v1/object/public/results/";
-                const items: ResultItem[] = data.map((file) => ({
-                    src: `${publicURL}${file.name}`,
-                }));
-                setResults(items);
-            }
-        };
-
-        fetchResults();
-    }, []);
+    const [visibleCount, setVisibleCount] = useState(6);
 
     const handleSeeMore = () => {
         setVisibleCount(results.length);
