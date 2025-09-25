@@ -85,7 +85,7 @@
 
     .ctaParagraph {
         color: $color-text;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 0.9rem;
 
         @media (min-width: 768px) {
@@ -108,7 +108,6 @@
 
 .ctaSectionButton {
     margin-top: 2rem;
-    // width: 80%;
     max-width: 300px;
     position: relative;
     z-index: 2;
@@ -154,6 +153,8 @@
     bottom: -50px;
     background-color: #fffcf3;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     @media (min-width: 768px) {
         bottom: -80px;
