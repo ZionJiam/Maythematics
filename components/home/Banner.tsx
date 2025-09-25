@@ -34,9 +34,9 @@ const Banner = () => {
           different <br className='d-none-768' />parts of Singapore choose to travel <br className='d-none-768' /> weekly for our
           <span className={`${styles.textBigger} ${styles.blue}`}> Math tuition</span>. */}
           Discover how we help students <span className={`${styles.textBigger} ${styles.red}`}>SHINE</span> <br className='d-none-768' />
-          
-          
-          in <span className={`${styles.textBigger} ${styles.yellow}`}>Mathematics</span> with <span className={`${styles.textBigger} ${styles.blue}`}>Confidence</span>,<br className='d-none-768' /> 
+
+
+          in <span className={`${styles.textBigger} ${styles.yellow}`}>Mathematics</span> with <span className={`${styles.textBigger} ${styles.blue}`}>Confidence</span>, <br className='d-none-768' />
           <span className={`${styles.textBigger} ${styles.teal}`}>Enjoyment</span> and <span className={`${styles.textBigger} ${styles.purple}`}>Real Results</span>
         </h1>
         <div data-aos="fade-in" data-aos-delay="400" >
