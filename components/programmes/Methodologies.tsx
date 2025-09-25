@@ -66,7 +66,7 @@ export default function ShineSection() {
                             </button>
                             <div
                                 className={styles.accordionContent}
-                                style={{ maxHeight: openIndex === idx ? '500px' : '0px' }}
+                                style={{ maxHeight: openIndex === idx ? '800px' : '0px' }}
                             >
                                 <p>{item.content}</p>
                             </div>
