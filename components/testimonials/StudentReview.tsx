@@ -14,13 +14,13 @@ const reviews: Review[] = [
         name: "What Our\nStudents Say",
         description:
             "Discover firsthand experiences from our Maythematics students as they share their learning journey, progress, and how our programmes have helped them achieve their academic goals with confidence.",
-        videoUrl: "https://youtube.com/embed/E2A8CtSdjAk?si=VKYh5qEHoSgsvJU_",
+        videoUrl: "https://www.youtube.com/embed/E2A8CtSdjAk?si=VKYh5qEHoSgsvJU_",
     },
     {
         name: "Chloe’s story - \nAL6 to AL2 (PSLE)",
         description:
             "Watch how Chloe credits her improvement from AL6 to AL2 after receiving targeted help in her weaker topics, as well as how our PSLE workshops helped her spot the right questions to prepare better for PSLE.",
-        videoUrl: "https://youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI",
+        videoUrl: "https://www.youtube.com/embed/L7xRSzB7MQw?si=HhFNmiQ1zH_8lnLI",
     },
     {
         name: "Singh Family",

@@ -14,7 +14,7 @@ const StudentReview = () => {
                     <iframe
                         loading="lazy"
                         className={styles.video}
-                        src="https://youtube.com/embed/ouX7EXKiWGA?si=yPfiFiFD35qB0y6e"
+                        src="https://www.youtube.com/embed/ouX7EXKiWGA?si=yPfiFiFD35qB0y6e"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
