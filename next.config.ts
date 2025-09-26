@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         destination: '/testimonials',
         permanent: true, // 301 redirect
       },
+      {
+        source: '/classes',
+        destination: '/programmes',
+        permanent: true, // 301 redirect
+      },
     ];
   },
 };
