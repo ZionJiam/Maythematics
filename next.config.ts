@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
-// next.config.js
 const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // HTTP headers
   async headers() {
-    // Only keep headers you actually need
     return [
       {
         source: '/:path*',
@@ -16,6 +16,22 @@ const nextConfig: NextConfig = {
             value: 'picture-in-picture=(self "https://www.youtube.com")',
           },
         ],
+      },
+    ];
+  },
+
+  // URL redirects
+  async redirects() {
+    return [
+      {
+        source: '/ourstory',
+        destination: '/our-story',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/testimonial',
+        destination: '/testimonials',
+        permanent: true, // 301 redirect
       },
     ];
   },
