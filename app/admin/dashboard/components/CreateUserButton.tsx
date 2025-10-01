@@ -88,9 +88,13 @@ export default function CreateUserButton({ onCreated }: CreateUserButtonProps) {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  minLength={6}
+                  minLength={8} // ✅ at least 8 characters
+                  pattern="^(?=.*[!@#$%^&*(),.?':{}|<>]).{8,}$" // ✅ at least 1 special character
+                  title="Password must be at least 8 characters long and contain at least one special character"
                 />
               </label>
+
+
 
               <label>
                 Role

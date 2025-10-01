@@ -129,7 +129,9 @@ export default function DashboardPage() {
             <th>Full Name</th>
             <th>Email</th>
             <th>Role</th>
-            <th>Actions</th>
+            {isAdmin && (
+              <th>Actions</th>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -138,26 +140,24 @@ export default function DashboardPage() {
               <td>{u.full_name}</td>
               <td>{u.email}</td>
               <td>{u.role}</td>
-              <td className={styles.buttonCell}>
-                <button
-                  className={styles.editButton}
-                  onClick={() => handleEditUser(u)}
-                  disabled={!isAdmin} // disable for non-admin
-                  title={!isAdmin ? "Only admins can edit users" : undefined}
-                >
-                  Edit
-                </button>
+              {isAdmin && (   // ✅ Only render Action cell if admin
+                <td className={styles.buttonCell}>
+                  <button
+                    className={styles.editButton}
+                    onClick={() => handleEditUser(u)}
+                  >
+                    Edit
+                  </button>
 
-                <DeleteUserButton
-                  userId={u.id}
-                  username={u.full_name}
-                  onDeleted={() => {
-                    setUsersData((prev) => prev.filter((x) => x.id !== u.id));
-                    toast.success(`User "${u.full_name}" deleted successfully`);
-                  }}
-                  disabled={!isAdmin} // disable for non-admin
-                />
-              </td>
+                  <DeleteUserButton
+                    userId={u.id}
+                    username={u.full_name}
+                    onDeleted={() => {
+                      setUsersData((prev) => prev.filter((x) => x.id !== u.id));
+                    }}
+                  />
+                </td>
+              )}
 
             </tr>
           ))}
