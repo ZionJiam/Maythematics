@@ -1,0 +1,150 @@
+.container {
+  padding: 2rem;
+  max-width: 1124px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.message {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+/* Card layout */
+.card {
+  display: flex;
+  gap: 1.25rem;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: flex-start;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Left: image column */
+.left {
+  flex: 0 0 360px;
+  min-width: 160px;
+  max-width: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Placeholder if no image */
+.imagePlaceholder {
+  padding: 2rem;
+  color: #999;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Right: content column */
+.right {
+  flex: 1;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.buttonField {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* Frontend status card */
+.frontendStatusCard {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  .meta {
+    margin-bottom: 0.25rem;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+}
+
+
+/* Active/Inactive Cards (Notion-like subtle) */
+.activeCard {
+  color: #0f5132;
+  background: #e6f4ea; // soft green
+  border: 1px solid #d1e7dd;
+}
+
+.inactiveCard {
+  color: #444;
+  background: #f5f5f5; // light gray
+  border: 1px solid #e0e0e0;
+}
+
+/* CTA / link button */
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: #2563eb; // dark neutral for Notion-style
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: #1657e3;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .right {
+    padding: 0rem;
+  }
+
+  .left {
+    min-height: 240px;
+    max-height: 360px;
+  }
+}

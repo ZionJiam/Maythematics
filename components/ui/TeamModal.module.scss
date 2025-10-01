@@ -99,7 +99,6 @@
         object-position: top; // show top part of image
         background-color: #fffcf3;
 
-
     }
 
     @media (min-width: 768px) {
@@ -142,6 +141,8 @@
         img {
             object-fit: cover;
             width: 100%;
+            background-color: #fffcf3;
+
         }
 
         @media (min-width: 768px) {

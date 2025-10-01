@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { LogOut, User, Wallet, MessageSquare } from "lucide-react";
+import { LogOut, User, Users, MessageSquare } from "lucide-react";
 import { TbChevronCompactRight } from "react-icons/tb";
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 
@@ -41,8 +41,8 @@ export default function Sidebar({ isOpen, toggleSidebar, username }: SidebarProp
 
       <div className={styles.navContainer}>
         <nav className={styles.nav}>
-          <Link href="/admin/dashboard/account-managemnt" className={styles.nav__item}>
-            <Wallet size={20} /> <span>Accounts</span>
+          <Link href="/admin/dashboard/user" className={styles.nav__item}>
+            <Users size={20} /> <span>Accounts</span>
           </Link>
           <Link href="/admin/dashboard/popup" className={styles.nav__item}>
             <MessageSquare size={20} /> <span>Popup</span>

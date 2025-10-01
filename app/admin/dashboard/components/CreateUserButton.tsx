@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import styles from "./Button.module.scss";
+import { toast } from "react-hot-toast";
 
 interface CreateUserButtonProps {
   onCreated: () => void;
@@ -35,7 +36,7 @@ export default function CreateUserButton({ onCreated }: CreateUserButtonProps) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Failed to create user");
 
-      alert("User created successfully!");
+      toast.success(`User "${fullName}" created successfully!`);
       setFullName("");
       setEmail("");
       setPassword("");
@@ -43,7 +44,7 @@ export default function CreateUserButton({ onCreated }: CreateUserButtonProps) {
       closeModal();
       onCreated();
     } catch (err: any) {
-      alert("Error creating user: " + err.message);
+      toast.error(`Error creating user: ${err.message}`);
     } finally {
       setLoading(false);
     }
@@ -93,17 +94,29 @@ export default function CreateUserButton({ onCreated }: CreateUserButtonProps) {
 
               <label>
                 Role
-                <select value={role} onChange={(e) => setRole(e.target.value)} required>
+                <select
+                  value={role}
+                  onChange={(e) => setRole(e.target.value)}
+                  required
+                >
                   <option value="user">User</option>
                   <option value="admin">Admin</option>
                 </select>
               </label>
 
               <div className={styles.modalActions}>
-                <button className={styles.createButton} type="submit" disabled={loading}>
+                <button
+                  className={styles.createButton}
+                  type="submit"
+                  disabled={loading}
+                >
                   {loading ? "Creating..." : "Create"}
                 </button>
-                <button className={styles.closeButton} type="button" onClick={closeModal}>
+                <button
+                  className={styles.closeButton}
+                  type="button"
+                  onClick={closeModal}
+                >
                   Cancel
                 </button>
               </div>
