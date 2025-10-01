@@ -42,7 +42,7 @@ export default function Sidebar({ isOpen, toggleSidebar, username }: SidebarProp
       <div className={styles.navContainer}>
         <nav className={styles.nav}>
           <Link href="/admin/dashboard/user" className={styles.nav__item}>
-            <Users size={20} /> <span>Accounts</span>
+            <Users size={20} /> <span>Users</span>
           </Link>
           <Link href="/admin/dashboard/popup" className={styles.nav__item}>
             <MessageSquare size={20} /> <span>Popup</span>

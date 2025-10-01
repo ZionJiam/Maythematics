@@ -49,7 +49,7 @@ export default function AdminLoginPage() {
       console.log("Login successful:", data.user);
 
       // Redirect to admin dashboard
-      router.push("/admin/dashboard");
+      router.push("/admin/dashboard/user");
     } catch (err: any) {
       setError(err.message);
     } finally {
