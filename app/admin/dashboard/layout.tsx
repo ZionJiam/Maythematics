@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import Sidebar from "./layout/Sidebar";
 import styles from "./layout.module.scss";
+import { useRouter } from "next/navigation";   // ✅ Import router
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = createClientComponentClient();
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [username, setUsername] = useState("User");
   const [loading, setLoading] = useState(true);
+  const router = useRouter();   // ✅ Initialize router
 
   const toggleSidebar = () => setIsSidebarOpen(prev => !prev);
 
@@ -18,7 +20,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       try {
         const { data: { user }, error: userError } = await supabase.auth.getUser();
         if (userError || !user) {
+
           console.error("Not logged in or error fetching user:", userError);
+          router.push("/admin");   // ✅ Redirect to /admin if not logged in
           return;
         }
 
