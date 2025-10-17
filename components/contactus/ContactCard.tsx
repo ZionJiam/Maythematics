@@ -38,10 +38,10 @@ const StudentReview = () => {
 
                     <ul className={styles.socialList}>
                         <li className={styles.telephone}>
-                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer">Tiktok(Official)</a>
+                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer">Tiktok (Official)</a>
                         </li>
                         <li className={styles.telephone}>
-                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics" target="_blank" rel="noopener noreferrer">Tiktok(Our Founder's)</a>
+                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics" target="_blank" rel="noopener noreferrer">Tiktok (Our Founder's)</a>
                         </li>
                         <li>
                             <FaInstagram /> <a href="https://www.instagram.com/maythematics" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -53,10 +53,10 @@ const StudentReview = () => {
                             <FaYoutube /> <a href="https://www.youtube.com/@maythematics" target="_blank" rel="noopener noreferrer">Youtube</a>
                         </li>
                         <li>
-                            <FaTelegramPlane /> <a href="https://t.me/maythematicstuition" target="_blank" rel="noopener noreferrer">Telegram(Primary)</a>
+                            <FaTelegramPlane /> <a href="https://t.me/maythematicstuition" target="_blank" rel="noopener noreferrer">Telegram (Primary)</a>
                         </li>
                         <li>
-                            <FaTelegramPlane /> <a href="https://t.me/maythematicsec" target="_blank" rel="noopener noreferrer">Telegram(Secondary)</a>
+                            <FaTelegramPlane /> <a href="https://t.me/maythematicsec" target="_blank" rel="noopener noreferrer">Telegram (Secondary)</a>
                         </li>
                     </ul>
                 </div>
