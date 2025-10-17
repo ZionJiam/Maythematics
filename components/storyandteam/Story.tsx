@@ -333,7 +333,7 @@ const Story = () => {
                 </div>
 
                 <p className={`text-lg  ${styles.timelineEnd}`}>
-                    What started as home-based lessons grew into our first flagship centre at Kembangan MRT in 2023, and by 2025, into a bigger space to welcome even more families. Along the way, the true reward has been seeing children and parents from all over Singapore gain confidence and joy in Math.
+                    What started as home-based lessons grew into our first flagship centre opposite Kembangan MRT in 2023, and by 2025, into a bigger space to welcome even more families. Along the way, the true reward has been seeing children and parents from all over Singapore gain confidence and joy in Math.
                 </p>
 
             </div>

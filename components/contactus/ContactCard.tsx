@@ -38,7 +38,10 @@ const StudentReview = () => {
 
                     <ul className={styles.socialList}>
                         <li className={styles.telephone}>
-                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer">Tiktok</a>
+                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics_official" target="_blank" rel="noopener noreferrer">Tiktok(Official)</a>
+                        </li>
+                        <li className={styles.telephone}>
+                            <FaTiktok /> <a href="https://www.tiktok.com/@maythematics" target="_blank" rel="noopener noreferrer">Tiktok(Our Founder's)</a>
                         </li>
                         <li>
                             <FaInstagram /> <a href="https://www.instagram.com/maythematics" target="_blank" rel="noopener noreferrer">Instagram</a>
