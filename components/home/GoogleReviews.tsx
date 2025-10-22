@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import SlideUpImage from "@/components/ui/SlideUpImage";
 import styles from "./GoogleReviews.module.scss";
-import { FaGoogle, FaFacebook } from "react-icons/fa";
 
 
 const reviews = [
@@ -25,26 +23,25 @@ const reviews = [
     },
     {
         id: 3,
-        name: "neo jinxia",
-        profileImage: "/images/google-pfp/pfp-5.png",
-
+        name: "mika",
+        profileImage: "/images/google-pfp/mika.png",
         content:
-            "Before joining Maythematics, my daughter Chloe got AL7 in PSLE and hated Math. After joining Maythematics Math Tuition, she gradually gained interest and started loving Math more. she eventually achieved A1 in G2 Maths consistently from weighted assessments to EOY. This allowed her to move up to G3 Maths in Secondary 2. She continued to score 85% for Sec 2 Emaths EOY and is currently taking both E and Amath classes with them now. Appreciate the help with all the teachers at Maythematics - Teacher May, Claire, Eunice, Lucas who helped my daughter ace Math - highly recommend anyone of you to give this tuition centre a try for your child to do well for Mathematics",
+            "I had a great experience in maythematics. This tuition centre has the best teachers especially teacher lucas making the class more engaging and fun. I used to hate maths but in this tuition centre, it made me start to like maths again"
     },
     {
         id: 4,
-        name: "Karen wee",
-        profileImage: "/images/google-pfp/pfp-4.png",
+        name: "Y Mok",
+        profileImage: "/images/google-pfp/ymok.png",
         content:
-            "Teacher Claire’s tutelage helped my daughter understand what she couldn’t before, and improved her math grades by a few levels. My daughter has become much more confident in the subject and enjoys her lessons. Thank you Maythematics ❤️",
+            "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
     },
     {
         id: 5,
-        name: "Bessy_LKY",
-        profileImage: "/images/google-pfp/pfp-3.png",
+        name: "Denis Lim",
+        profileImage: "/images/google-pfp/denis-lim.png",
 
         content:
-            "I've been with maythematics for a year, during my O level year. the teachers there are really friendly and encouraging and they motivated me do want to try harder for maths. for both amath and emath, I had been consistently failing in sec 3. in sec 4, I slowly saw improvements from getting a pass to finally getting a2 (emath) and b3 (amath) in O levels! I'm super happy about my tremendous progress and I'm so grateful for teacher may and teacher claire for supporting me throughout this tough year!!",
+            "Can go from F9 to B3 if u don’t believe come and try it for yourself! Very kind, professional and thoughtful teacher. May is very focused in class. Even though sometimes it can get quite challenging but she really pushes you to improve your scores. She will always use the time wisely and you will definitely get your worth. She really puts in 200% of her effort. To think back, she even had to rush over to my house to have lunch while giving me tuition. I feel so appreciative and grateful towards her. 😊 To know that her tuition center is doing so well today makes me really happy. To have a teacher is easy but to have a good teacher is a rare chance.",
     },
     {
         id: 6,
@@ -85,6 +82,14 @@ const reviews = [
         profileImage: "/images/google-pfp/pfp-10.png",
         content:
             "I have been sending my daughter, who is in Primary 6, to this place for six months, and her math score has improved significantly from AL4 to AL1. Teacher May is both professional and passionate, and thanks to her, math has now become my daughter’s favorite subject—something I never expected. I highly recommend this place for anyone looking to boost their child’s math skills!"
+    },
+
+    {
+        id: 11,
+        name: "Esther Ruth Dino",
+        profileImage: "/images/google-pfp/esther.png",
+        content:
+            "i love maythematics because the centre is very conducive and its a productive place to learn in! adding on, im under teacher lucas and he is a great teacher!! because teacher lucas explains mathematics clearly and makes complex topics easy to understand. he's always patient and takes time to ensure everyone keeps up."
     },
 
 ];
