@@ -53,14 +53,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                             About Us
                         </div>
                         <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
-                            <Link href="/our-story" className={`${styles.dropdownLink} ${isActive("/our-story") ? styles.active : ""}`}>
-                                Our Story
-                            </Link>
                             <Link href="/our-team" className={`${styles.dropdownLink} ${isActive("/our-team") ? styles.active : ""}`}>
                                 Our Team
                             </Link>
                             <Link href="/our-space" className={`${styles.dropdownLink} ${isActive("/our-space") ? styles.active : ""}`}>
                                 Our Space
+                            </Link>
+                            <Link href="/our-story" className={`${styles.dropdownLink} ${isActive("/our-story") ? styles.active : ""}`}>
+                                Our Story
                             </Link>
                         </div>
                     </div>

@@ -23,9 +23,9 @@ const Footer = () => {
                     {/* About Section */}
                     <div className={styles.column}>
                         <h4>About Us</h4>
-                        <Link href="/our-story" className={styles.link}>Our Story</Link>
                         <Link href="/our-team" className={styles.link}>Our Team</Link>
                         <Link href="/our-space" className={styles.link}>Our Space</Link>
+                        <Link href="/our-story" className={styles.link}>Our Story</Link>
                         <Link href="/career" className={styles.link}>Join Us</Link>
                     </div>
 
