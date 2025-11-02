@@ -88,20 +88,7 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         Parents value my patient and encouraging approach, knowing their child won’t feel pressured to compete but supported to grow. 
         
         Outside of teaching, I enjoy reading, spending time with my family, and expressing myself through dance and singing. To my students: Math isn’t about being perfect—it’s about getting a little better every time.`,
-        studentReviews: [
-            {
-                reviewer: "",
-                text: "She is friendly and guides us in detail, always pointing out errors clearly and showing how to correct them. Even when my questions went beyond the lesson, she took the effort to check and explain so I could understand better and score higher.",
-            },
-            {
-                reviewer: "",
-                text: "She was patient and willing to guide me from the basics, even though I felt completely lost at first. Her encouragement motivated me to keep practising, and she even shared extra resources to help me improve. She is a caring and supportive coach.",
-            },
-            {
-                reviewer: "",
-                text: "She helped me check that I understood each question properly, showed me where I could explain my steps better, and pointed out where I was repeating myself. She even went the extra mile to prepare beyond the syllabus so her explanations matched exactly what I needed. It was the most helpful feedback I’ve ever received—clear, detailed, and easy to apply.",
-            },
-        ],
+        studentReviews: null
     },
     {
         name: "Amy",
