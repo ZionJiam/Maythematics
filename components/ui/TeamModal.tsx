@@ -72,7 +72,8 @@ const TeamModal: React.FC<TeamModalProps> = ({ member, onClose }) => {
                         <p className={styles.description}>{member.description}</p>
                         {member.studentReviews?.map((review, idx) => (
                             <blockquote key={idx}>
-                                “{review.text}” — <span>{review.reviewer}</span>
+                                “{review.text}”
+                                {review.reviewer && <span> — {review.reviewer}</span>}
                             </blockquote>
                         ))}
                         {member.youtubeUrl && (
