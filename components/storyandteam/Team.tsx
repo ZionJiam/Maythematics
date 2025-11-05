@@ -135,6 +135,23 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         studentReviews: null
     },
     {
+        name: "Jasmine",
+        role: "Math Specialist",
+        startYear: 3000,
+        imageUrl: "/images/team/Jasmine_1.webp",
+        imageUrlHover: "/images/team/Jasmine_2.webp",
+        youtubeUrl: "https://youtube.com/embed/yGsGHmH7kJ4",
+
+        degree: "Former MOE School Teacher (11 Years Teaching Experience)",
+        description: `I’m Jasmine, a Primary School Math tutor with 11 years of MOE teaching experience and experience as a PSLE Math marker. Having once struggled with Math myself, I understand how discouraging it can feel — but I also know how the right support can make all the difference. My goal is to help every child build confidence in problem-solving and develop a positive attitude towards learning Math.
+        
+        In my classes, I create a safe and supportive space where students feel comfortable making mistakes and asking questions. I believe there’s always more than one way to learn, so I present alternative solutions to suit different learning styles. My students often describe my lessons as encouraging and full of “lightbulb” moments where concepts finally click.
+        
+        Outside of class, I’m a mother of three — from a teenager to a toddler — so I understand the challenges parents face. I enjoy spending time with my family and staying active through daily workouts to keep up with both my children and my students!
+        `,
+        studentReviews: null
+    },
+    {
         name: "Leanne",
         startYear: 3000,
         role: "Math Specialist",
