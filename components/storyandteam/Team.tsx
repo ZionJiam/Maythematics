@@ -203,13 +203,30 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
         imageUrlHover: "/images/team/Sammi_2.webp",
         youtubeUrl: "https://youtube.com/embed/o8TkSMQN_9Q?si=WG_D5FS0-WOhbqOP",
         degree: "Bachelor of Computing in Computer Science, SIM (Current student)",
-        description: "Hi, I’m Sammi, and I teach Mathematics from primary school to lower secondary levels. I’m passionate about helping students understand concepts in ways that make sense to them, rather than just following rules blindly. I believe Math can be interesting and enjoyable when it’s taught the right way, and I love seeing the moment when my students truly grasp a concept instead of disliking the topic. I always try different approaches and check in with my students—if one method doesn’t work, I’ll try another until they understand. My goal is to help students develop a love for Mathematics and to find it fun. Outside of teaching, I’m a dancer and I enjoy taking my dogs for walks whenever I’m free.",
+        description: `Hi, I’m Sammi, and I teach Mathematics from primary school to lower secondary levels. I’m passionate about helping students understand concepts in ways that make sense to them, rather than just following rules blindly. I believe Math can be interesting and enjoyable when it’s taught the right way, and I love seeing the moment when my students truly grasp a concept instead of disliking the topic. I always try different approaches and check in with my students—if one method doesn’t work, I’ll try another until they understand. My goal is to help students develop a love for Mathematics and to find it fun. 
+        
+        Outside of teaching, I’m a dancer and I enjoy taking my dogs for walks whenever I’m free.`,
         studentReviews: [
             {
                 reviewer: "Cindy",
                 text: "Teacher Sammi makes Math simple and interesting. My son looks forward to her lessons every week.",
             },
         ],
+    },
+
+        {
+        name: "Kai Teng",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Kaiteng_1.webp",
+        imageUrlHover: "/images/team/Kaiteng_2.webp",
+        degree: "Bachelor of Science in Mathematical Sciences, NTU",
+        description: `Hi, I’m Kai Teng! I have three years of experience providing private Math tuition alongside my degree studies. I’m deeply passionate about helping students feel less overwhelmed and more confident when tackling challenging math questions.
+
+I’ve loved math since I was young, and having taken the N-Level route and completed a five-year secondary school journey, I truly believe that progress comes from patience, consistent effort, and being given the time to grow. This perspective shapes the way I teach. In my lessons, I break down questions step by step, regularly check for understanding, and actively seek students’ feedback so I can adapt my teaching to suit their learning needs.
+
+What motivates me most is building trust and confidence—creating a safe and supportive environment where students feel comfortable asking questions and learning from mistakes. Beyond teaching, I enjoy spending quality time with my family, who have instilled in me the values of understanding, patience, and meaningful connection, which I carry into every lesson I teach.`,
+        studentReviews: null
     },
     {
         name: "Venessa",
