@@ -1,0 +1,225 @@
+@use '../../app/\(public\)/styles/variables' as *;
+;
+
+
+.ctaSection {
+    background-color: #fffcf3;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    position: relative;
+    margin-bottom: 2rem;
+
+
+
+    @media (min-width: 768px) {
+        margin-bottom: 5rem;
+
+    }
+}
+
+.elementContainer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.2;
+    z-index: 10;
+    top: 0;
+
+    .elements {
+        // position: ;
+        width: 50%;
+        height: 100%;
+        top: 0;
+
+    }
+
+    .elementRight {
+        position: absolute;
+        width: 150px;
+        height: auto;
+        right: -80px;
+
+        @media (min-width: 768px) {
+            width: 250px;
+            right: -140px;
+        }
+
+        @media (min-width: 1024px) {
+            // width: 0px;
+        }
+
+    }
+
+    .elementLeft {
+        position: absolute;
+        width: 180px;
+        height: auto;
+        left: -100px;
+
+        @media (min-width: 768px) {
+            width: 300px;
+            left: -180px;
+        }
+
+        @media (min-width: 1024px) {
+            // width: 350px;
+        }
+
+    }
+}
+
+
+
+
+.ctaTextWrapper {
+    margin-top: 2rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    max-width: 768px;
+    width: 90%;
+
+
+    .ctaParagraph {
+        color: $color-text;
+        font-weight: 500;
+        font-size: 1.25rem;
+
+
+        @media (min-width: 1024px) {
+            font-size: 1.5rem;
+
+        }
+
+    }
+}
+
+
+
+.ctaSectionButton {
+    margin-top: 2rem;
+    max-width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.sloganTitle {
+    text-align: center;
+    width: 100%;
+
+
+    .red {
+        color: $color-red;
+    }
+
+    .teal {
+        color: $color-teal;
+    }
+
+
+    .yellow {
+        color: $color-yellow;
+    }
+
+    .blue {
+        color: $color-blue;
+    }
+}
+
+
+.mascotContainer {
+    position: absolute;
+    bottom: -50px;
+    background-color: #fffcf3;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        bottom: -100px;
+    }
+
+    @media (min-width: 1024px) {
+        bottom: -103px;
+    }
+
+}
+
+.reviewMascot {
+    height: 100%;
+    height: auto;
+
+
+}
+
+
+
+.yellowMascot {
+    width: 110px;
+    position: relative;
+    top: 10px;
+    height: auto;
+
+    @media (min-width: 768px) {
+        width: 135px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 160px;
+    }
+}
+
+
+.socialsWrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.socialsLabel {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+
+    svg {
+      font-size: 1.1rem;
+      color:$color-red;
+      flex-shrink: 0;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #c62828;
+      }
+    }
+  }
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .socialList {
+    gap: 0.5rem 1rem;
+  }
+}
+
+

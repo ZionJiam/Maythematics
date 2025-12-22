@@ -1,6 +1,7 @@
 import SubPageHeader from '@/components/ui/SubpageHeader'
 import styles from './page.module.css'
 import ContactCard from '@/components/contactus/ContactCard'
+import CTASection from '@/components/contactus/CTASection';
 
 
 export const metadata = {
@@ -17,6 +18,8 @@ export default function About() {
     <main className={`${styles.main} pageMarginTop`} >
       <SubPageHeader color="red" header="Contact Us" />
       <ContactCard />
+      <CTASection />
+      
     </main>
   )
 }
