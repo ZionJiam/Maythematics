@@ -90,6 +90,26 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         Outside of teaching, I enjoy reading, spending time with my family, and expressing myself through dance and singing. To my students: Math isn’t about being perfect—it’s about getting a little better every time.`,
         studentReviews: null
     },
+
+            {
+        name: "Claresta",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Claresta_1.webp",
+        imageUrlHover: "/images/team/Claresta_2.webp",
+        degree: "Bachelor of System Engineering",
+        description: `Hi, I’m Claresta, a Math tutor who believes that learning goes beyond grades — it’s about building confidence, resilience, and belief in oneself.
+
+Before focusing fully on tutoring, I worked closely with youths in mentoring and experiential learning environments, where I witnessed how patience, guidance, and encouragement can positively shape mindsets and lives. This experience deeply influences the way I teach today.
+
+I have been a private Math tutor since mid-2022, supporting students of different abilities and learning styles. In my lessons, I focus on breaking down concepts clearly and helping students understand the “why” behind each question, so they can build confidence instead of relying on memorisation.
+
+What drives me most is seeing students grow — not just in their results, but in their willingness to try, improve, and believe in themselves.
+`,
+        studentReviews: null
+
+    },
+
     {
         name: "Amy",
         role: "Math Specialist",
@@ -194,6 +214,7 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
         ],
 
     },
+
 
     {
         name: "Sammi",
