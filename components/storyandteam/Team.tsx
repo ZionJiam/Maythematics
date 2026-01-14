@@ -91,13 +91,15 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         studentReviews: null
     },
 
-            {
+    {
         name: "Claresta",
         startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Claresta_1.webp",
         imageUrlHover: "/images/team/Claresta_2.webp",
         degree: "Bachelor of System Engineering",
+        youtubeUrl: "https://youtube.com/embed/_imtgYbpOd8",
+
         description: `Hi, I’m Claresta, a Math tutor who believes that learning goes beyond grades — it’s about building confidence, resilience, and belief in oneself.
 
 Before focusing fully on tutoring, I worked closely with youths in mentoring and experiential learning environments, where I witnessed how patience, guidance, and encouragement can positively shape mindsets and lives. This experience deeply influences the way I teach today.
@@ -235,13 +237,14 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
         ],
     },
 
-        {
+    {
         name: "Kai Teng",
         startYear: 3000,
         role: "Math Specialist",
         imageUrl: "/images/team/Kaiteng_1.webp",
         imageUrlHover: "/images/team/Kaiteng_2.webp",
         degree: "Bachelor of Science in Mathematical Sciences, NTU",
+        youtubeUrl: "https://youtube.com/embed/uXmaYydQWhY",
         description: `Hi, I’m Kai Teng! I have three years of experience providing private Math tuition alongside my degree studies. I’m deeply passionate about helping students feel less overwhelmed and more confident when tackling challenging math questions.
 
 I’ve loved math since I was young, and having taken the N-Level route and completed a five-year secondary school journey, I truly believe that progress comes from patience, consistent effort, and being given the time to grow. This perspective shapes the way I teach. In my lessons, I break down questions step by step, regularly check for understanding, and actively seek students’ feedback so I can adapt my teaching to suit their learning needs.
