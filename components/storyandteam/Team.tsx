@@ -26,7 +26,7 @@ const teamMembers = [
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
         youtubeUrl: "https://youtube.com/embed/wHIbXQBQnK0?si=oIM8mjyONEbqj5D4",
-        degree: "Bachelor of Engineering",
+        degree: "Bachelor of Engineering, SIT",
         description: `  Hi, I'm Eunice, a math tutor for primary and secondary students at Maythematics.
 
 My own journey with math transformed because of a few patient and passionate teachers who took extra time to guide me when I was struggling. Their dedication not only helped me understand concepts more deeply but also ignited a lasting love for the subject.
@@ -97,7 +97,7 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         role: "Math Specialist",
         imageUrl: "/images/team/Claresta_1.webp",
         imageUrlHover: "/images/team/Claresta_2.webp",
-        degree: "Bachelor of System Engineering",
+        degree: "Bachelor of Systems Engineering, SIT & DigiPen (Joint Degree)",
         youtubeUrl: "https://youtube.com/embed/_imtgYbpOd8",
 
         description: `Hi, I’m Claresta, a Math tutor who believes that learning goes beyond grades — it’s about building confidence, resilience, and belief in oneself.
@@ -192,7 +192,7 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         imageUrl: "/images/team/Meisi_2.webp",
         imageUrlHover: "/images/team/Meisi_1.webp",
         youtubeUrl: "https://youtube.com/embed/ePc-eYSXEIM?si=oYwECv31rN4Bfxrv",
-        degree: "Bachelor of Business (Current Student)",
+        degree: "Bachelor of Business, SIT (Current Student)",
         description: `Hi, I'm Mei Si, and I teach Mathematics from Primary School to Lower Secondary level. I am passionate about making math simple, engaging and relatable for students by breaking down concepts into bite-sized content and connecting them to real-life applications.
 
 I strongly believe that every child has the ability to excel in math when given the right support, encouragement and guidance. In my class, I aim to make tuition exciting and fun rather than dreadful, creating a friendly learning environment where students feel comfortable asking questions and exploring new ideas. 
