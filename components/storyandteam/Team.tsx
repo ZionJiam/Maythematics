@@ -22,7 +22,7 @@ const teamMembers = [
     {
         name: "Eunice",
         startYear: 3000,
-        role: "Math Specialist",
+        role: "Senior Math Specialist",
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
         youtubeUrl: "https://youtube.com/embed/wHIbXQBQnK0?si=oIM8mjyONEbqj5D4",
@@ -56,7 +56,7 @@ When I'm not teaching, I cherish quality time with my family and friends, and I 
         imageUrl: "/images/team/Kelly_1.webp",
         imageUrlHover: "/images/team/Kelly_2.webp",
         youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
-        degree: "Bachelor of Science in Data Science & Analytics",
+        degree: "Bachelor of Science in Data Science & Analytics, NUS",
         description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
 
 I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
@@ -114,7 +114,7 @@ What drives me most is seeing students grow — not just in their results, but i
 
     {
         name: "Amy",
-        role: "Math Specialist",
+        role: "Senior Math Specialist",
         startYear: 3000,
         imageUrl: "/images/team/Amy_1.webp",
         youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
@@ -259,7 +259,7 @@ What motivates me most is building trust and confidence—creating a safe and su
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
 
-        degree: "Bachelor of Communications & Sociology",
+        degree: "Double Major in Communications & Sociology, (State University of New York at Buffalo)",
         description: `Hi, I’m Venessa, and I manage client relations here at Maythematics. I understand that finding the right academic support can be a stressful and emotional process for many parents. That’s why I believe in building strong, trustworthy relationships through clear communication and empathy. Just as our tutors are the go-to support for students, I strive to be that dependable point of contact for parents—helping them feel confident and reassured every step of the way.
 
 Outside of work, I enjoy staying active and keeping up with my fitness. As a new mom, I’m also focused on spending meaningful time with my family and embracing all the special moments that come with this new chapter.`,

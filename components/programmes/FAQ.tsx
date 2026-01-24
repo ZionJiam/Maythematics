@@ -19,8 +19,12 @@ Feel free to <a href="https://wa.me/6589150859" target="_blank" rel="noopener no
     ` },
 
 
+    {
+title: "Where are the physical lessons conducted?",
+content: "East Branch:\nKembangan Court #01-13 and #01-02\n5 Jln Masjid, Singapore 418924\n(Right opposite Kembangan MRT)\n\nWest Branch:\n54A Jln Jurong Kechil, Singapore\n(3min walk from Beauty World MRT)"
+},
 
-    { title: "Where	are	the	physical lessons conducted?", content: "Kembangan Court #01-13 and #01-02\n5 Jln Masjid, Singapore 418924 \n(Right opposite Kembangan MRT)" },
+
     {
         title: "How	much are the lessons?", content: "Our lessons are priced at an average rate of $40/hour depending on the level.\nKindly contact us for more information."
     },
