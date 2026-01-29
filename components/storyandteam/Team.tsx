@@ -252,6 +252,26 @@ I’ve loved math since I was young, and having taken the N-Level route and comp
 What motivates me most is building trust and confidence—creating a safe and supportive environment where students feel comfortable asking questions and learning from mistakes. Beyond teaching, I enjoy spending quality time with my family, who have instilled in me the values of understanding, patience, and meaningful connection, which I carry into every lesson I teach.`,
         studentReviews: null
     },
+
+
+    {
+        name: "Jean",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Jean_1.webp",
+        imageUrlHover: "/images/team/Jean_2.webp",
+        degree: "Bachelor of Science in Mathematical Sciences with Honours (Distinction), Minor in Modern Languages (Thai), NTU",
+        description: `Hi! I’m Jean, a Math Tutor at Maythematics, and I love helping students realise that math isn’t as scary as it seems. It can actually be pretty fun!
+
+I believe math is a journey that takes time, practice, and plenty of mistakes (and that one bad paper is definitely not the end of the world). My teaching style is clear, patient, and step-by-step, because skipping workings often leads to confusion and very expensive mistakes (marks lost from careless mistakes).
+
+Having gone from fearing math exams to loving the subject enough to pursue it as a degree in university, I’m driven to help students build confidence and enjoy doing math.
+
+When I’m not teaching, you’ll probably find me riding motorbikes, learning Thai, or dreaming about owning a few bikes of my own.`,
+        studentReviews: null
+    },
+
+
     {
         name: "Venessa",
         startYear: 3000,
