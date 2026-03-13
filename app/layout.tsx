@@ -8,6 +8,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     const pathname = usePathname();
     const isAdmin = pathname?.startsWith("/admin");
 
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Maythematics",
+        "url": "https://maythematics.com",
+        "logo": "https://maythematics.com/logo.png"
+    };
+
     return (
         <html lang="en">
             <body>
@@ -40,6 +48,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `}
                     </Script>
                 )}
+
+                {/* Schema.org structured data */}
+                {!isAdmin && (
+                    <Script
+                        id="schema-org"
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+                    />
+                )}
+
                 {children}
             </body>
         </html>
