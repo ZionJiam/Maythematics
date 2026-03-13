@@ -8,13 +8,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     const pathname = usePathname();
     const isAdmin = pathname?.startsWith("/admin");
 
-    const schema = {
+    const schema = [
+    {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Maythematics",
         "url": "https://maythematics.com",
         "logo": "https://maythematics.com/logo.png"
-    };
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://maythematics.com",
+        "name": "Maythematics",
+        "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://maythematics.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+        }
+    }
+    ];
 
     return (
         <html lang="en">
