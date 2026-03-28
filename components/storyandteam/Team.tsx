@@ -261,6 +261,7 @@ What motivates me most is building trust and confidence—creating a safe and su
         imageUrl: "/images/team/Jean_1.webp",
         imageUrlHover: "/images/team/Jean_2.webp",
         degree: "Bachelor of Science in Mathematical Sciences with Honours (Distinction), Minor in Modern Languages (Thai), NTU",
+        youtubeUrl: "https://youtube.com/embed/HglR6bHLies?si=6bszP45EKPEnlsTB",
         description: `Hi! I’m Jean, a Math Tutor at Maythematics, and I love helping students realise that math isn’t as scary as it seems. It can actually be pretty fun!
 
 I believe math is a journey that takes time, practice, and plenty of mistakes (and that one bad paper is definitely not the end of the world). My teaching style is clear, patient, and step-by-step, because skipping workings often leads to confusion and very expensive mistakes (marks lost from careless mistakes).
