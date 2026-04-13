@@ -3,6 +3,10 @@ import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
 
 
+import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
+import { trackCTA } from '@/lib/gtag';
+
+const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 
 export default function CTASection() {
@@ -18,7 +22,7 @@ export default function CTASection() {
                 <p className={`${styles.ctaParagraph}`}>
                     Spots are filling up fast — secure your place today and level up your Math!
                 </p>
-                <Link className={`${styles.ctaSectionButton} ctaButton buttonRed`} href="/">Sign Up Now</Link>
+                <a onClick={() => trackCTA(' WhatsApp - Workshop')} className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Sign Up Now</a>
 
             </div>
 

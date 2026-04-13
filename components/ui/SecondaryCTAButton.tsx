@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import styles from "./SecondaryCTAButton.module.scss";
+import { trackCTA } from "@/lib/gtag";
 
 interface SecondaryCtaButtonPropos {
     text: string;
