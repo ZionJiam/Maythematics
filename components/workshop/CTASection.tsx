@@ -1,3 +1,6 @@
+'use client'
+
+
 import styles from './CTASection.module.scss';
 import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
