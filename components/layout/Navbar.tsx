@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from "next/navigation"; // <-- Import hook
 import styles from './Navbar.module.scss';
 import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
+import { trackCTA } from "@/lib/gtag";
 
 
 const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
@@ -90,13 +91,14 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                 </div>
 
                 <div>
-                    <Link
+                    <a
                         href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackCTA('WhatsApp - Navbar')}
                         className={`ctaButton ${styles.ctaButton}`}>
                         WhatsApp Us
-                    </Link>
+                    </a>
                 </div>
 
                 <div className={styles.mobileMenuButton}>

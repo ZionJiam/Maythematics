@@ -1,3 +1,6 @@
+'use client'
+
+import { trackCTA } from '@/lib/gtag';
 import styles from './CTASection.module.scss';
 import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
@@ -19,7 +22,7 @@ export default function CTASection() {
             <div data-aos="fade-up" className={styles.ctaTextWrapper}>
                 <p className={`${styles.ctaParagraph}`}>
                     Our classrooms are more than just spaces — they’re safe, inspiring places where students grow in focus, confidence, and results. The best way to experience it is to see it for yourself.                </p>
-                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Chat with Us</a>
+                <a onClick={() => trackCTA('WhatsApp - Our Space')} className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Chat with Us</a>
             </div>
 
             <div className={styles.mascotContainer}>

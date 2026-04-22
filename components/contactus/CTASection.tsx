@@ -1,5 +1,8 @@
+'use client'
+
 import styles from './CTASection.module.scss';
 import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
+import { trackCTA } from '@/lib/gtag';
 import { FaTiktok, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaTelegramPlane, FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -22,7 +25,7 @@ export default function CTASection() {
                 <p className={`${styles.ctaParagraph}`}>
                         Have a question or thinking of joining us? We’re here to help. Reach out to speak with our team, find the right class for your child, or arrange a trial class to one of our centres.
                     </p>
-                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Get in Touch</a>
+                <a onClick={() => trackCTA('WhatsApp - Contact Us')} className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Get in Touch</a>
             </div>
 
               {/* Secondary contact methods */}

@@ -1,3 +1,6 @@
+'use client'
+
+import { trackCTA } from '@/lib/gtag';
 import styles from './CTASection.module.scss';
 import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
@@ -21,7 +24,7 @@ export default function CTASection() {
                 <p className={`${styles.ctaParagraph}`}>
                     Not sure which class fits best? Have a chat with us. Our team will guide you in finding the right starting point for your child.
                 </p>
-                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Get Started Today</a>
+                <a onClick={() => trackCTA('WhatsApp - Programmes')} className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Get Started Today</a>
             </div>
 
             <div className={styles.mascotContainer}>

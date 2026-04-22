@@ -1,7 +1,10 @@
+'use client'
+
 import styles from './CTASection.module.scss';
 import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
 import { trialClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
+import { trackCTA } from '@/lib/gtag';
 
 
 
@@ -33,7 +36,7 @@ export default function CTASection() {
                 </h2>
 
                 <p className={`${styles.ctaParagraph}`}>Every week, hundreds of students walk through our doors — some to prepare for examinations, others to rebuild confidence, all to discover that Math can be clear and enjoyable. We’d love for your child to be part of this journey too.</p>
-                <a className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Arrange a Trial Class</a>
+                <a onClick={() => trackCTA('WhatsApp - Home')} className={`${styles.ctaSectionButton} ctaButton buttonRed`} href={whatsappLink} target="_blank" rel="noopener noreferrer">Arrange a Trial Class</a>
 
             </div>
 
