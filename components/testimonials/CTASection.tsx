@@ -5,11 +5,9 @@ import Link from 'next/link';
 import SlideUpImage from '../ui/SlideUpImage';
 import { trackCTA } from '@/lib/gtag';
 
-import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
+import { trialClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 
-const whatsappLink = `https://api.whatsapp.com/send/?phone=${generalClassWhatsApp.number}&text=${encodeURIComponent(generalClassWhatsApp.message)}`;
-
-
+const whatsappLink = `https://api.whatsapp.com/send/?phone=${trialClassWhatsApp.number}&text=${encodeURIComponent(trialClassWhatsApp.message)}`;
 
 
 export default function CTASection() {

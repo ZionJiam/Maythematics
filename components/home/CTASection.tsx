@@ -8,7 +8,7 @@ import { trackCTA } from '@/lib/gtag';
 
 
 
-const whatsappLink = `https://wa.me/${trialClassWhatsApp.number}?text=${encodeURIComponent(trialClassWhatsApp.message)}`;
+const whatsappLink = `https://api.whatsapp.com/send/?phone=${trialClassWhatsApp.number}&text=${encodeURIComponent(trialClassWhatsApp.message)}`;
 
 
 export default function CTASection() {
