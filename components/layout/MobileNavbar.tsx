@@ -8,7 +8,7 @@ import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 import { BiSolidDownArrow, BiSolidUpArrow } from "react-icons/bi";
 
 
-const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
+const whatsappLink = `https://api.whatsapp.com/send/?phone=${generalClassWhatsApp.number}&text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 
 interface MobileNavbarProps {

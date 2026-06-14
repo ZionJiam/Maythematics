@@ -92,27 +92,6 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
     },
 
     {
-        name: "Claresta",
-        startYear: 3000,
-        role: "Math Specialist",
-        imageUrl: "/images/team/Claresta_1.webp",
-        imageUrlHover: "/images/team/Claresta_2.webp",
-        degree: "Bachelor of Systems Engineering, SIT & DigiPen (Joint Degree)",
-        youtubeUrl: "https://youtube.com/embed/_imtgYbpOd8",
-
-        description: `Hi, I’m Claresta, a Math tutor who believes that learning goes beyond grades — it’s about building confidence, resilience, and belief in oneself.
-
-Before focusing fully on tutoring, I worked closely with youths in mentoring and experiential learning environments, where I witnessed how patience, guidance, and encouragement can positively shape mindsets and lives. This experience deeply influences the way I teach today.
-
-I have been a private Math tutor since mid-2022, supporting students of different abilities and learning styles. In my lessons, I focus on breaking down concepts clearly and helping students understand the “why” behind each question, so they can build confidence instead of relying on memorisation.
-
-What drives me most is seeing students grow — not just in their results, but in their willingness to try, improve, and believe in themselves.
-`,
-        studentReviews: null
-
-    },
-
-    {
         name: "Amy",
         role: "Senior Math Specialist",
         startYear: 3000,
@@ -171,17 +150,6 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         
         Outside of class, I’m a mother of three — from a teenager to a toddler — so I understand the challenges parents face. I enjoy spending time with my family and staying active through daily workouts to keep up with both my children and my students!
         `,
-        studentReviews: null
-    },
-    {
-        name: "Leanne",
-        startYear: 3000,
-        role: "Math Specialist",
-        youtubeUrl: "https://youtube.com/embed/VbiRDw3LS_Y?si=gBeb2T2ZgqQGIhN4",
-        imageUrl: "/images/team/Leanne_1.webp",
-        imageUrlHover: "/images/team/Leanne_2.webp",
-        degree: "",
-        description: "I’m Leanne, passionate about helping students gain confidence in Mathematics. As a mom of three energetic boys, I know firsthand the importance of patience and encouragement in learning.\n\nI bring that same care into every class, ensuring that students feel supported as they try, learn, and improve. Parents often find comfort in knowing I balance both discipline and warmth in my approach.\n\nOutside of teaching, I’m a dedicated volunteer with a hamster welfare group. To students: I’ll always cheer you on—your effort matters more than getting it right the first time.",
         studentReviews: null
     },
 

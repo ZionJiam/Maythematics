@@ -6,7 +6,7 @@ import { generalClassWhatsApp } from '@/app/(public)/data/WhatsAppData';
 import { trackCTA } from '@/lib/gtag'
 
 
-const whatsappLink = `https://wa.me/${generalClassWhatsApp.number}?text=${encodeURIComponent(generalClassWhatsApp.message)}`;
+const whatsappLink = `https://api.whatsapp.com/send/?phone=${generalClassWhatsApp.number}&text=${encodeURIComponent(generalClassWhatsApp.message)}`;
 
 export default function FloatingWhatsApp() {
     const [visible, setVisible] = useState(true);
