@@ -14,6 +14,6 @@ export const trackCTA = (label: string) => {
       });
     }
   } catch (e) {
-    // GA blocked, silently ignore
+    console.error('Error tracking CTA:', e);
   }
 }
