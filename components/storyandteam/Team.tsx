@@ -185,6 +185,68 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
 
     },
 
+    {
+        name: "Jemma",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Jemma_1.webp",
+        imageUrlHover: "/images/team/Jemma_2.webp",
+        youtubeUrl: "https://youtube.com/embed/vVX9GY4CjO8?si=TBXC4zQcfskS24wb",
+        degree: "Bachelor of Science in Marketing (SUSS)",
+        description: `Hi everyone, I’m Teacher Jemma!
+
+On my off days, I enjoy rock climbing with my friends, and one day I realised that climbing feels a lot like learning Math. Every failed attempt is not the end, it’s just another chance to adjust, learn and try again. That’s the same mindset I hope to build in my students: confidence, resilience, and curiosity.
+
+I believe Math should feel engaging and meaningful instead of stressful or purely memorisation-based. I enjoy breaking difficult concepts into simple, relatable steps and incorporating fun quizzes and games to keep students actively involved during lessons.
+
+Over the past two years of teaching, one of the most rewarding parts has been watching students slowly gain confidence in themselves and realise they are capable of solving problems they once found impossible.
+
+I’m Teacher Jemma, and I look forward to learning and growing with your child at Maythematics!
+        `,
+        studentReviews: [],
+    },
+
+    {
+        name: "Vernon",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Vernon_1.webp",
+        imageUrlHover: "/images/team/Vernon_2.webp",
+        youtubeUrl: "https://youtube.com/embed/91hcvI_rh5k?si=usyYE7EEJct_YAF9",
+        degree: "University of London - BSc Accounting and Finance",
+        description: `Hi everyone I am Vernon. 
+
+        Many students struggle with Mathematics not due to a lack of ability, but because they gradually lose confidence when faced with challenging problems.
+
+        My teaching approach focuses not only on building conceptual understanding, but also on developing students’ confidence to think independently. After guiding students through a question, I encourage them to solve similar problems on their own and explain their reasoning step-by-step. This helps them understand the logic behind each method rather than relying solely on memorisation.
+
+        Over time, students become more comfortable analysing problems, asking meaningful questions, and breaking complex tasks into manageable steps. These habits strengthen critical thinking, resilience, and problem-solving skills that extend beyond the classroom.
+
+        I believe meaningful progress occurs when students learn to view difficult questions not as evidence of inability, but as opportunities to apply structured thinking, curiosity, and confidence.
+        
+        `,
+        studentReviews: [],
+    },
+
+    {
+        name: "Axelle",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Axelle_1.webp",
+        imageUrlHover: "/images/team/Axelle_2.webp",
+        youtubeUrl: "",
+        degree: "Bachelor of Engineering in Electrical and Electronics, NTU",
+        description: `Hi I'm Axelle! I believe that most students do not struggle because they are incapable of doing Math. More often, they simply have not yet found a learning approach that works for them.
+
+My goal is to break complex concepts into simple, relatable steps and help students build strong foundations, good learning habits, and the confidence to persevere through challenges.
+
+One of my greatest joys as a tutor is witnessing a student's transformation — from feeling overwhelmed and discouraged to becoming confident, independent learners who are even able to help others.
+
+Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece comes together step by step to create something meaningful.
+        `,
+        studentReviews: [],
+    },
+
 
     {
         name: "Sammi",
