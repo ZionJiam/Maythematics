@@ -192,7 +192,7 @@ Outside of teaching, I enjoy listening to music and spending quality time with m
         imageUrl: "/images/team/Jemma_1.webp",
         imageUrlHover: "/images/team/Jemma_2.webp",
         youtubeUrl: "https://youtube.com/embed/vVX9GY4CjO8?si=TBXC4zQcfskS24wb",
-        degree: "Bachelor of Science in Marketing (SUSS)",
+        degree: "Bachelor of Science in Marketing, SUSS (Current Student)",
         description: `Hi everyone, I’m Teacher Jemma!
 
 On my off days, I enjoy rock climbing with my friends, and one day I realised that climbing feels a lot like learning Math. Every failed attempt is not the end, it’s just another chance to adjust, learn and try again. That’s the same mindset I hope to build in my students: confidence, resilience, and curiosity.
@@ -213,7 +213,7 @@ I’m Teacher Jemma, and I look forward to learning and growing with your child 
         imageUrl: "/images/team/Vernon_1.webp",
         imageUrlHover: "/images/team/Vernon_2.webp",
         youtubeUrl: "https://youtube.com/embed/91hcvI_rh5k?si=usyYE7EEJct_YAF9",
-        degree: "University of London - BSc Accounting and Finance",
+        degree: "BSc Accounting and Finance, University of London",
         description: `Hi everyone I am Vernon. 
 
         Many students struggle with Mathematics not due to a lack of ability, but because they gradually lose confidence when faced with challenging problems.
@@ -310,7 +310,7 @@ When I’m not teaching, you’ll probably find me riding motorbikes, learning T
         imageUrl: "/images/team/Ven_1.webp",
         imageUrlHover: "/images/team/Ven_2.webp",
 
-        degree: "Double Major in Communications & Sociology, (State University of New York at Buffalo)",
+        degree: "Double Major in Communications & Sociology, State University of New York at Buffalo",
         description: `Hi, I’m Venessa, and I manage client relations here at Maythematics. I understand that finding the right academic support can be a stressful and emotional process for many parents. That’s why I believe in building strong, trustworthy relationships through clear communication and empathy. Just as our tutors are the go-to support for students, I strive to be that dependable point of contact for parents—helping them feel confident and reassured every step of the way.
 
 Outside of work, I enjoy staying active and keeping up with my fitness. As a new mom, I’m also focused on spending meaningful time with my family and embracing all the special moments that come with this new chapter.`,
