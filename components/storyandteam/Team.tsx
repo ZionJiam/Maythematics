@@ -247,6 +247,24 @@ Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece c
         studentReviews: [],
     },
 
+    {
+        name: "Sania",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Sania_1.webp",
+        imageUrlHover: "/images/team/Sania_2.webp",
+        youtubeUrl: "https://youtube.com/embed/MIBWooohEf4?si=wXpm7S6RIeQ_1-Uj",
+        degree: "Bachelor of Social Sciences in Double Major - Economics and Public Policy & Global Affairs, NTU",
+        description: `Growing up, I realised that Math can feel very different depending on how it is taught. When it is presented as a list of formulas to memorise, it can feel overwhelming and frustrating. But when students are guided to understand the logic behind each step, Math becomes a lot less scary (and sometimes even satisfying).
+
+That is the kind of learning experience I hope to create for my students. I enjoy helping students break down confusing questions, spot patterns, and slowly build the confidence to say, “Oh wait, I actually know how to do this.” To me, one of the best parts of teaching is watching a student move from feeling stuck to feeling capable.
+
+My teaching style is patient, encouraging, and structured. I believe that students should feel comfortable making mistakes, asking questions, and trying again, because that is often where real learning happens. Rather than simply giving students the answer, I guide them to understand the thought process behind it so they can approach future questions with more independence.
+
+I’m Teacher Sania, and I look forward to helping your child build confidence, curiosity, and a stronger foundation in Math at Maythematics!
+        `,
+        studentReviews: [],
+    },
 
     {
         name: "Sammi",
