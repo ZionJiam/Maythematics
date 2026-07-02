@@ -273,7 +273,7 @@ I’m Teacher Sania, and I look forward to helping your child build confidence, 
         imageUrl: "/images/team/Jeremiah_1.webp",
         imageUrlHover: "/images/team/Jeremiah_2.webp",
         youtubeUrl: "https://youtube.com/embed/y1LEd56v84k?si=7670dEDQncKUtpC_",
-        degree: "University at Buffalo - Singapore Institute of Management",
+        degree: "Bachelor of Psychology - University at Buffalo, SIM",
         description: `Hi, I'm Jeremiah, and I believe that learning Mathematics should be about developing the ability to think, not just the ability to score.
 
         Rather than giving students methods to memorise, I challenge them to recognise patterns, ask questions, and develop the confidence to solve unfamiliar problems independently. My goal is to help students build a strong mathematical foundation that stays with them long after the exam is over.
