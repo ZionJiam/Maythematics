@@ -267,6 +267,26 @@ I’m Teacher Sania, and I look forward to helping your child build confidence, 
     },
 
     {
+        name: "Jeremiah",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Jeremiah_1.webp",
+        imageUrlHover: "/images/team/Jeremiah_2.webp",
+        youtubeUrl: "https://youtube.com/embed/y1LEd56v84k?si=7670dEDQncKUtpC_",
+        degree: "University at Buffalo - Singapore Institute of Management",
+        description: `Hi, I'm Jeremiah, and I believe that learning Mathematics should be about developing the ability to think, not just the ability to score.
+
+        Rather than giving students methods to memorise, I challenge them to recognise patterns, ask questions, and develop the confidence to solve unfamiliar problems independently. My goal is to help students build a strong mathematical foundation that stays with them long after the exam is over.
+
+One of the most rewarding parts of teaching is witnessing students achieve things they once thought were beyond their reach. Over the years, I have had the privilege of helping students improve from failing School Math to achieving an A within a single semester, while also guiding students to attain Silver in the Singapore Mathematical Olympiad. These experiences continually remind me that with the right guidance, consistent effort, and belief in themselves, every student is capable of making remarkable progress.
+
+Beyond the classroom, I am deeply involved in developing teaching resources and refining lesson materials to make complex ideas clear, logical, and accessible. I am always looking for better ways to explain concepts because I believe that a great explanation can spark a student's confidence and curiosity.
+
+Outside of teaching, I enjoy playing board games and strategy-based computer games that emphasise teamwork, communication, and problem-solving. I find that many of the same skills needed in games—planning ahead, adapting to new situations, and thinking critically—are just as valuable in Mathematics. `,
+        studentReviews: [],
+    },
+
+    {
         name: "Sammi",
         startYear: 3000,
         role: "Math Specialist",
