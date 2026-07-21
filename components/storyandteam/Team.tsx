@@ -358,7 +358,7 @@ Outside of work, I enjoy staying active and keeping up with my fitness. As a new
     {
         name: "Tyler",
         startYear: 3000,
-        role: "Strategic Growth Architect",
+        role: "Head of Operations & Systems",
         youtubeUrl: "https://youtube.com/embed/3lzs-mTaB4E?si=He288-szlUEnjr6s",
         imageUrl: "/images/team/Tyler_1.webp",
         imageUrlHover: "/images/team/Tyler_2.webp",
