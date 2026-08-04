@@ -340,6 +340,26 @@ When I’m not teaching, you’ll probably find me riding motorbikes, learning T
         studentReviews: null
     },
 
+    {
+        name: "Samiha",
+        startYear: 3000,
+        role: "Math Specialist",
+        imageUrl: "/images/team/Samiha_1.webp",
+        imageUrlHover: "/images/team/Samiha_2.webp",
+        degree: "Bachelor of Science- BSc, Computer Science, 2nd Major in Quantitative Finance, SMU",
+
+        description: `Hi, I'm Samiha, a Mathematics tutor at Maythematics!
+
+From primary school all the way through university, I've always found myself helping my peers make sense of the math we were learning in class. I love breaking big, intimidating concepts down into small, digestible ideas, and I care more about teaching why something works than asking students to memorise it.
+
+This is also why I tutor. While volunteering, I worked with a student who felt deeply insecure about his ability in math. Over time, with patience and encouragement, I watched that insecurity turn into confidence! I could see it in the way his eyes lit up when he solved a problem, and in how readily he started volunteering answers in class. That transformation is exactly what draws me to tutoring: helping students build confidence not just in math, but in themselves.
+
+My approach is simple — always understand the why. I'd rather a student truly grasp the logic behind a formula than memorise it without meaning. I also make it a priority to build genuine rapport with my students, so they feel safe asking questions and feel comfortable making mistakes along the way.
+
+Outside of tutoring, I'm an avid runner and a lover of number and logic puzzles. I could easily bury myself in puzzle books for a whole day!`,
+        studentReviews: null
+    },
+
 
     {
         name: "Venessa",

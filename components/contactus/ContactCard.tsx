@@ -28,7 +28,7 @@ const StudentReview = () => {
                             <h3>Maythematics @ Kembangan</h3>
 
                             <p className={styles.address}>
-                                5 Jln Masjid, #01-13(& #01-02) <br />Kembangan Court, 418924
+                                5 Jln Masjid, #01-07 <br />Kembangan Court, 418924
                             </p>
 
                             <div className={styles.meta}>
