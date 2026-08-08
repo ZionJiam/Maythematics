@@ -1,7 +1,12 @@
 @use '../../app/\(public\)/styles/variables' as *;
 
 
-.section {}
+:global(.faqTableHeader) {
+    background-color: $color-red;
+    color: white;
+    font-weight: 600;
+}
+
 
 
 .titleContainer {
@@ -81,8 +86,7 @@
 .icon {
     font-size: 1rem;
     display: flex;
-    align-items: center
-;
+    align-items: center;
 }
 
 .accordionContent {
@@ -91,12 +95,11 @@
     background-color: #f9f9f9;
     padding: 0 1rem;
 
-    p {
+    div {
         margin: 1rem 0;
         color: #444;
         font-size: 1rem;
         font-weight: 300;
-        white-space: pre-line;
 
 
         @media (max-width: 767px) {

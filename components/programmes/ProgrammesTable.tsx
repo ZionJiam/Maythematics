@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./ProgrammesTable.module.scss";
 
 const programmes = [
-    { title: "Primary 1-2", duration: "1.5 hours", tsRatio: 4, level: "Lower Primary" },
+    { title: "Primary 1-2", duration: "1.5 hours", tsRatio: 6, level: "Lower Primary" },
     { title: "Primary 3-4", duration: "2 hours", tsRatio: 8, level: "Middle Primary" },
     { title: "Primary 5-6", duration: "2 hours", tsRatio: 10, level: "Upper Primary" },
     { title: "Secondary 1-5", duration: "2 hours", tsRatio: 12, level: "Secondary" },
