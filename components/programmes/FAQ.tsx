@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './FAQ.module.scss';
 import { ChevronDown } from "lucide-react";
+import { trackCTA } from '@/lib/gtag';
 
 interface AccordionItem {
     title: string;
@@ -68,7 +69,7 @@ const data: AccordionItem[] = [
     },
 
     {
-        title: "How do I arrange for a replacement class?", content: `All make-up lessons are arranged via our Whatsapp Customer Support Hotline <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer">+65 8915 0859</a>`
+        title: "How do I arrange for a replacement class?", content: `All make-up lessons are arranged via our Whatsapp Customer Support Hotline <a href="https://wa.me/6589150859" target="_blank" rel="noopener noreferrer" data-track="WhatsApp - FAQ Answers">+65 8915 0859</a>`
     },
 
     {
@@ -92,7 +93,7 @@ Feel free to <a href="https://wa.me/6589150859" target="_blank" rel="noopener no
   <div style="border:1px solid #eee;border-radius:8px;padding:16px;background-color:white;">
     <h4 style="font-weight:700;margin-bottom:8px;">Maythematics @ Kembangan</h4>
     <p>5 Jln Masjid, #01-07 Kembangan Court, Singapore 418924</p>
-    <p style="margin-top:8px;"><strong>WhatsApp:</strong> <a class="faqWhatsappLink" style="color:inherit;text-decoration:underline;" href="https://api.whatsapp.com/send/?phone=6589150859&text=${encodeURIComponent('Hi, I would like to enquire about physical lessons at Kembangan branch.')}" target="_blank" rel="noopener noreferrer">+65 8915 0859</a></p>
+    <p style="margin-top:8px;"><strong>WhatsApp:</strong> <a class="faqWhatsappLink" style="color:inherit;text-decoration:underline;" href="https://api.whatsapp.com/send/?phone=6589150859&text=${encodeURIComponent('Hi, I would like to enquire about physical lessons at Kembangan branch.')}" target="_blank" rel="noopener noreferrer" data-track="WhatsApp - FAQ Answers">+65 8915 0859</a></p>
     <p style="margin-top:8px;"><strong>Opening Hours</strong></p>
     <ul style="padding-left:18px;margin-top:4px;">
       <li>Mon – Fri: 1:00 PM – 9:00 PM</li>
@@ -104,7 +105,7 @@ Feel free to <a href="https://wa.me/6589150859" target="_blank" rel="noopener no
   <div style="border:1px solid #eee;border-radius:8px;padding:16px;background-color:white;">
     <h4 style="font-weight:700;margin-bottom:8px;">Maythematics @ Beauty World</h4>
     <p>54A Jln Jurong Kechil, Singapore 598580</p>
-    <p style="margin-top:8px;"><strong>WhatsApp:</strong> <a class="faqWhatsappLink" style="color:inherit;text-decoration:underline;" href="https://api.whatsapp.com/send/?phone=6589150859&text=${encodeURIComponent('Hi, I would like to enquire about physical lessons at Beauty World branch.')}" target="_blank" rel="noopener noreferrer">+65 8915 0859</a></p>
+    <p style="margin-top:8px;"><strong>WhatsApp:</strong> <a class="faqWhatsappLink" style="color:inherit;text-decoration:underline;" href="https://api.whatsapp.com/send/?phone=6589150859&text=${encodeURIComponent('Hi, I would like to enquire about physical lessons at Beauty World branch.')}" target="_blank" rel="noopener noreferrer" data-track="WhatsApp - FAQ Answers">+65 8915 0859</a></p>
     <p style="margin-top:8px;"><strong>Opening Hours</strong></p>
     <ul style="padding-left:18px;">
       <li>Mon – Fri: 1:00 PM – 9:00 PM</li>
@@ -123,6 +124,13 @@ export default function FAQ() {
 
     const toggleAccordion = (index: number) => {
         setOpenIndex(prevIndex => (prevIndex === index ? null : index));
+    };
+
+    const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+        const link = (e.target as HTMLElement).closest<HTMLElement>('a[data-track]');
+        if (link) {
+            trackCTA(link.dataset.track!);
+        }
     };
 
     return (
@@ -154,7 +162,7 @@ export default function FAQ() {
                             className={styles.accordionContent}
                             style={{ maxHeight: openIndex === idx ? '1000px' : '0px' }}
                         >
-                            <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
+                            <div onClick={handleContentClick} dangerouslySetInnerHTML={{ __html: item.content }}></div>
                         </div>
                     </div>
                 ))}
