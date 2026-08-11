@@ -85,6 +85,22 @@ export default function ClassTypesComparison() {
                         </tbody>
                     </table>
                 </div>
+
+                <div className={styles.mobileCards}>
+                    {rows.map((row, idx) => (
+                        <div data-aos="fade-up" key={idx} className={styles.mobileCard}>
+                            <h4 className={styles.mobileFeature}>{row.feature}</h4>
+                            <div className={styles.mobileBlock}>
+                                <span className={`${styles.mobileLabel} ${styles.mobileLabelRegular}`}>Regular Class</span>
+                                <p>{row.regular}</p>
+                            </div>
+                            <div className={styles.mobileBlock}>
+                                <span className={`${styles.mobileLabel} ${styles.mobileLabelFocus}`}>Focus Class</span>
+                                <p>{row.focus}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
             <div className={styles.videoOverlay}></div>
 

@@ -32,9 +32,6 @@ export default function ProgrammesSection() {
                 <Link href="/programmes" className={` ${styles.button} buttonYellow ctaButton`}>
                     Find out more
                 </Link>
-                <p className={styles.classTypesPromo}>
-                    Not sure whether Regular or Focus Class suits your child? <Link href="/class-types">Compare both formats →</Link>
-                </p>
             </div>
         </section>
 
