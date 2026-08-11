@@ -1,6 +1,6 @@
 import SubPageHeader from '@/components/ui/SubpageHeader'
-import ClassTypesComparison from '@/components/classtypes/ClassTypesComparison'
 import WhichClassFits from '@/components/classtypes/WhichClassFits'
+import ClassTypesComparison from '@/components/classtypes/ClassTypesComparison'
 import CTASection from '@/components/classtypes/CTASection'
 import styles from './page.module.css'
 
@@ -17,8 +17,8 @@ export default function ClassTypes() {
     return (
         <main className={`${styles.main} pageMarginTop`}>
             <SubPageHeader color="red" header="Type of Classes" />
-            <ClassTypesComparison />
             <WhichClassFits />
+            <ClassTypesComparison />
             <CTASection />
         </main>
     );

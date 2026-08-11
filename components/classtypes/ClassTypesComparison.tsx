@@ -61,6 +61,9 @@ export default function ClassTypesComparison() {
     return (
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.container}>
+                <div className={styles.titleContainer}>
+                    <h3 data-aos="fade-up" className={`text-xl`}>At a Glance</h3>
+                </div>
 
                 <div className={styles.tableWrapper}>
                     <table data-aos="fade-up" className={styles.table}>
@@ -83,6 +86,8 @@ export default function ClassTypesComparison() {
                     </table>
                 </div>
             </div>
+            <div className={styles.videoOverlay}></div>
+
         </section>
     );
 }

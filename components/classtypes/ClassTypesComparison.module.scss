@@ -1,6 +1,8 @@
 @use '../../app/\(public\)/styles/variables' as *;
 
 .section {
+    position: relative;
+
     .container {
         max-width: 1124px;
         margin: 0 auto;
@@ -9,11 +11,23 @@
 }
 
 
+.titleContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+    }
+}
+
 .tableWrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     border-radius: 0.75rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 1;
 }
 
 .table {
@@ -68,4 +82,23 @@
 
 .featureCell {
     font-weight: 700;
+}
+
+/* Overlay covering bottom half of the video */
+.videoOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* full viewport width */
+    height: 50%;
+    /* half the height of the video container */
+    // background: #fffcf3;
+    background-color: #fffcf3;
+
+    /* rounded corners matching video bottom */
+    pointer-events: none;
+    /* so clicks go through to video if needed */
+    z-index: 0;
+
 }
