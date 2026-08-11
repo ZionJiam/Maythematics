@@ -17,7 +17,7 @@ const reviews: Review[] = [
         videoUrl: "https://www.youtube.com/embed/E2A8CtSdjAk?si=VKYh5qEHoSgsvJU_",
     },
     {
-        name: "Chloe’s story -\nAL7 to A1 (PSLE)",
+        name: "Chloe’s story -\nAL7 to A1 (Secondary)",
         description:
             "Watch how Chloe credits her improvement from AL7 to A1 for PSLE Math, before going on to score A1 in Secondary 2 and A1 in Secondary 3 Maths throughout from Secondary 1 to 4, after attending lessons here at Maythematics.",
         videoUrl: "https://www.youtube.com/embed/SJ_VXLU1gs0?si=oyxG2-raOsunMQLk",

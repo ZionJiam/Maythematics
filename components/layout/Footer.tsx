@@ -33,6 +33,7 @@ const Footer = () => {
                     <div className={styles.column}>
                         <h4>Our Services</h4>
                         <Link href="/programmes" className={styles.link}>Our Programme</Link>
+                        <Link href="/class-types" className={styles.link}>Class Types</Link>
                         <Link href="/faqs" className={styles.link}>FAQs</Link>
                         {/* <Link href="/holiday-programme" className={styles.link}>Holiday Programme</Link> */}
                     </div>

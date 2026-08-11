@@ -3,6 +3,7 @@ import SubPageHeader from '@/components/ui/SubpageHeader'
 import Methodologies from '@/components/programmes/Methodologies'
 import DualLayer from '@/components/programmes/DualLayer'
 import ProgrammesTable from '@/components/programmes/ProgrammesTable'
+import ClassTypesOverview from '@/components/programmes/ClassTypesOverview'
 import LessonModes from '@/components/programmes/LessonModes'
 import FAQ from '@/components/programmes/FAQ'
 import CTASection from '@/components/programmes/CTASection'
@@ -31,6 +32,7 @@ export default function Programmes() {
             <DualLayer />
             <LessonModes />
             <ProgrammesTable />
+            <ClassTypesOverview />
 
             {/* <FAQ /> */}
             <CTAVideo />

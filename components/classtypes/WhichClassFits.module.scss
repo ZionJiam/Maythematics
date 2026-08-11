@@ -1,0 +1,78 @@
+@use '../../app/\(public\)/styles/variables' as *;
+
+.section {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+.titleContainer {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+
+    p {
+        color: $color-text-light;
+        margin-top: 0.5rem;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.card {
+    flex: 1;
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding-left: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    li {
+        color: $color-text;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+.regular {
+    background-color: $color-blue-light;
+
+    h4 {
+        color: $color-blue;
+    }
+}
+
+.focus {
+    background-color: $color-yellow-light;
+
+    h4 {
+        color: $color-text;
+    }
+}

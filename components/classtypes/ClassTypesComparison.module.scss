@@ -1,0 +1,71 @@
+@use '../../app/\(public\)/styles/variables' as *;
+
+.section {
+    .container {
+        max-width: 1124px;
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+
+
+.tableWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.table {
+    width: 100%;
+    min-width: 640px;
+    border-collapse: collapse;
+    background-color: #fff;
+
+    th,
+    td {
+        padding: 1rem;
+        border: 1px solid #eee;
+        text-align: left;
+        vertical-align: top;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    th {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    td {
+        color: $color-text;
+    }
+
+    td:not(.featureCell) {
+        font-weight: 400;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #fafafa;
+
+    }
+}
+
+.featureHeader {
+    color: $color-text;
+    width: 18%;
+}
+
+.regularHeader {
+    background-color: $color-blue;
+    color: white;
+}
+
+.focusHeader {
+    background-color: $color-yellow;
+    color: white;
+}
+
+.featureCell {
+    font-weight: 700;
+}

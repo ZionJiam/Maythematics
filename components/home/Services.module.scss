@@ -39,4 +39,16 @@
       background-color: #ffa500;
     }
   }
+
+  .classTypesPromo {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: $color-text;
+
+    a {
+      color: $color-red;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
 }
