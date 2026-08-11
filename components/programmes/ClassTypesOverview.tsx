@@ -9,7 +9,7 @@ export default function ClassTypesOverview() {
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.container}>
                 <div data-aos="fade-up" className={styles.titleContainer}>
-                    <h3 className={`text-xl`}>Two Type of Classes Available</h3>
+                    <h3 className={`text-xl`}>Two Types of Classes Available</h3>
                 </div>
 
                 <div className={styles.cards}>

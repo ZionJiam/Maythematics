@@ -16,7 +16,7 @@ export const metadata = {
 export default function ClassTypes() {
     return (
         <main className={`${styles.main} pageMarginTop`}>
-            <SubPageHeader color="red" header="Type of Classes" />
+            <SubPageHeader color="red" header="Types of Classes" />
             <WhichClassFits />
             <ClassTypesComparison />
             <CTASection />

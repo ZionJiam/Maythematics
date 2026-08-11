@@ -82,7 +82,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </button>
             <div className={`${styles.submenu} ${isProgrammeOpen ? styles.submenuOpen : ''}`}>
               <Link href="/programmes" className={`${isActive("/programmes") ? styles.active : ""}`} onClick={handleLinkClick}>Programmes</Link>
-              <Link href="/class-types" className={`${isActive("/class-types") ? styles.active : ""}`} onClick={handleLinkClick}>Class Types</Link>
+              <Link href="/class-types" className={`${isActive("/class-types") ? styles.active : ""}`} onClick={handleLinkClick}>Types of Classes</Link>
             </div>
           </div>
 

@@ -76,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                                 Programmes
                             </Link>
                             <Link href="/class-types" className={`${styles.dropdownLink} ${isActive("/class-types") ? styles.active : ""}`}>
-                                Class Types
+                                Types of Classes
                             </Link>
                         </div>
                     </div>
