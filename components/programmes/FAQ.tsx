@@ -58,7 +58,8 @@ const data: AccordionItem[] = [
     </tbody>
   </table>
 </div>
-<p style="font-size:0.8rem;color:#666;margin-top:8px;">These fees stated are excluding 9% GST.</p>`
+<p style="font-size:0.8rem;color:#666;margin-top:8px;">These fees stated are excluding 9% GST.</p>
+<p style="font-size:0.9rem;margin-top:8px;">Not sure which is right for your child? <a href="/class-types" style="text-decoration:underline;">See our full Regular vs Focus Class comparison</a>.</p>`
     },
     { title: "Do you offer trial lesson?", content: "We offer for a single paid trial lesson" },
 

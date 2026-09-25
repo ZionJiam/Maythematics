@@ -20,15 +20,18 @@ interface MobileNavbarProps {
 const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isLessonsOpen, setIsLessonsOpen] = useState(false);
+  const [isProgrammeOpen, setIsProgrammeOpen] = useState(false);
   const pathname = usePathname();
 
   const toggleAbout = () => setIsAboutOpen(prev => !prev);
   const toggleLessons = () => setIsLessonsOpen(prev => !prev);
+  const toggleProgramme = () => setIsProgrammeOpen(prev => !prev);
 
   useEffect(() => {
     if (!isOpen) {
       setIsAboutOpen(false);
       setIsLessonsOpen(false);
+      setIsProgrammeOpen(false);
     }
   }, [isOpen]);
 
@@ -64,7 +67,24 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-          <Link href="/programmes" className={`${isActive("/programmes") ? styles.active : ""}`} onClick={handleLinkClick}>Our Programme</Link>
+          {/* Our Programme Dropdown */}
+          <div className={styles.dropdown}>
+            <button
+              className={`${styles.dropdownToggle} ${isActive("/programmes") ? styles.active : ""} ${isActive("/class-types") ? styles.active : ""}`}
+              onClick={toggleProgramme}
+            >
+              Our Programme
+              {isProgrammeOpen ? (
+                <BiSolidUpArrow className={styles.arrow} size={12} />
+              ) : (
+                <BiSolidDownArrow className={styles.arrow} size={12} />
+              )}
+            </button>
+            <div className={`${styles.submenu} ${isProgrammeOpen ? styles.submenuOpen : ''}`}>
+              <Link href="/programmes" className={`${isActive("/programmes") ? styles.active : ""}`} onClick={handleLinkClick}>Programmes</Link>
+              <Link href="/class-types" className={`${isActive("/class-types") ? styles.active : ""}`} onClick={handleLinkClick}>Types of Classes</Link>
+            </div>
+          </div>
 
           {/* <Link href="/holiday-programme" className={`${isActive("/holiday-programme") ? styles.active : ""}`} onClick={handleLinkClick}>Holiday Programme</Link> */}
 

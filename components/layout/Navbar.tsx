@@ -67,9 +67,19 @@ const Navbar: React.FC<NavbarProps> = ({ onMobileNavOpen, isMobileNavOpen, class
                     </div>
 
 
-                    <Link href="/programmes" className={`${styles.navLink} ${isActive("/programmes") ? styles.active : ""}`}>
-                        Our Programme
-                    </Link>
+                    <div className={styles.dropdown}>
+                        <div className={`${styles.navLink} ${isActive("/programmes") ? styles.active : ""} ${isActive("/class-types") ? styles.active : ""}`}>
+                            Our Programme
+                        </div>
+                        <div className={`${styles.dropdownContent} ${styles.dropdownContent}`}>
+                            <Link href="/programmes" className={`${styles.dropdownLink} ${isActive("/programmes") ? styles.active : ""}`}>
+                                Programmes
+                            </Link>
+                            <Link href="/class-types" className={`${styles.dropdownLink} ${isActive("/class-types") ? styles.active : ""}`}>
+                                Types of Classes
+                            </Link>
+                        </div>
+                    </div>
 
                     {/* <Link href="/holiday-programme" className={`${styles.navLink} ${styles.linkBlue} ${isActive("/holiday-programme") ? styles.active : ""}`}>
                         Holiday Programme

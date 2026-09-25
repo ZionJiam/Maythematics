@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import styles from "./ProgrammesTable.module.scss";
 
 const programmes = [
@@ -37,6 +38,7 @@ export default function ProgrammesTables() {
                     </tbody>
                 </table>
                 <p data-aos="fade-up">*Ratio: Maximum Teacher-Student Ratio</p>
+
             </div>
         </section>
     );
