@@ -1,5 +1,5 @@
 @use '../../app/\(public\)/styles/variables' as *;
-;
+@use '../../app/\(public\)/styles/motion' as motion;
 
 
 .ctaSection {
@@ -9,6 +9,8 @@
 
     position: relative;
     margin-bottom: 2rem;
+
+    @include motion.aos-tuning;
 
 
 
@@ -86,6 +88,7 @@
         color: $color-text;
         font-weight: 500;
         font-size: 1.25rem;
+        text-wrap: pretty;
 
 
         @media (min-width: 1024px) {
@@ -103,6 +106,16 @@
     max-width: 300px;
     position: relative;
     z-index: 2;
+}
+
+// Two-class selector so this transition list overrides the global .ctaButton one.
+.ctaTextWrapper .ctaSectionButton {
+    transition: background-color 0.25s ease, color 0.25s ease, transform 160ms motion.$ease-out;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+        transform: scale(0.97);
+    }
 }
 
 .sloganTitle {

@@ -19,10 +19,56 @@ const teamMembers = [
         description: "Many parents and students know me from TikTok, where I am recognised as a rising Math tutor-influencer for my clear, step-by-step explanations of even the toughest problems.\n\nBack in school, I achieved an A* for PSLE and Distinctions in both E-Math and A-Math not because I was the smartest, but because I worked the hardest — a value I now strive to instill in every student I teach.\n\nI am passionate about making education fun, simple, and results-driven.\n\nOver the years, I have had the privilege of guiding more than 1,000 students across different levels and abilities, with many students and parents attesting to real improvements through my teaching.\n\nToday I also mentor and train our tutors to ensure every lesson at Maythematics is delivered with clarity, quality, and consistency.\n\nPeople around me describe me as a bubbly and energetic person, while those who work closely with me also know that I am a perfectionist who sets very high standards for myself and my team.\n\nFun fact: Most of the Math cheatsheets at our centre are personally handwritten by me, and I often receive compliments on my handwriting — a small reflection of the care and attention I put into every detail to ensure our students receive the very best support.",
         studentReviews: null
     },
+
+    {
+        name: "Kelly",
+        startYear: 3000,
+        role: "Senior Math Specialist",
+        imageUrl: "/images/team/Kelly_1.webp",
+        imageUrlHover: "/images/team/Kelly_2.webp",
+        youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
+        degree: "Bachelor of Science in Data Science & Analytics, NUS",
+        description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
+
+I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
+
+In my classes, I focus on guiding students to understand the why behind each concept, so they build confidence instead of relying on memorisation.
+
+What drives me is seeing my students grow, not just in their results, but also in their confidence and problem-solving mindset.
+
+Outside of teaching, I enjoy going for long walks, which gives me time to reflect, and exploring new hobbies like crocheting!`,
+        studentReviews: [
+            {
+                reviewer: "Yi Zheng",
+                text: "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
+            },
+        ],
+
+    },
+
+    {
+        name: "Axelle",
+        startYear: 3000,
+        role: "Senior Math Specialist",
+        imageUrl: "/images/team/Axelle_1.webp",
+        imageUrlHover: "/images/team/Axelle_2.webp",
+        youtubeUrl: "",
+        degree: "Bachelor of Engineering in Electrical and Electronics, NTU",
+        description: `Hi I'm Axelle! I believe that most students do not struggle because they are incapable of doing Math. More often, they simply have not yet found a learning approach that works for them.
+
+My goal is to break complex concepts into simple, relatable steps and help students build strong foundations, good learning habits, and the confidence to persevere through challenges.
+
+One of my greatest joys as a tutor is witnessing a student's transformation — from feeling overwhelmed and discouraged to becoming confident, independent learners who are even able to help others.
+
+Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece comes together step by step to create something meaningful.
+        `,
+        studentReviews: [],
+    },
+
     {
         name: "Eunice",
         startYear: 3000,
-        role: "Senior Math Specialist",
+        role: "Lead Math Specialist",
         imageUrl: "/images/team/Eunice_1.webp",
         imageUrlHover: "/images/team/Eunice_2.webp",
         youtubeUrl: "https://youtube.com/embed/wHIbXQBQnK0?si=oIM8mjyONEbqj5D4",
@@ -49,31 +95,40 @@ When I'm not teaching, I cherish quality time with my family and friends, and I 
             },
         ],
     },
+
     {
-        name: "Kelly",
+        name: "Amy",
+        role: "Lead Math Specialist",
         startYear: 3000,
-        role: "Math Specialist",
-        imageUrl: "/images/team/Kelly_1.webp",
-        imageUrlHover: "/images/team/Kelly_2.webp",
-        youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
-        degree: "Bachelor of Science in Data Science & Analytics, NUS",
-        description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
-
-I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
-
-In my classes, I focus on guiding students to understand the why behind each concept, so they build confidence instead of relying on memorisation.
-
-What drives me is seeing my students grow, not just in their results, but also in their confidence and problem-solving mindset.
-
-Outside of teaching, I enjoy going for long walks, which gives me time to reflect, and exploring new hobbies like crocheting!`,
-        studentReviews: [
-            {
-                reviewer: "Yi Zheng",
-                text: "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
-            },
-        ],
+        imageUrl: "/images/team/Amy_1.webp",
+        youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
+        imageUrlHover: "/images/team/Amy_2.webp",
+        degree: "Bachelor of Communication and New Media, NUS",
+        description: "I’m Amy, passionate about helping young learners build a rock-solid foundation in Mathematics. I believe every child can thrive when given patience, encouragement, and the right guidance—and that learning should spark both confidence and curiosity.\n\nIn my classes, I use clear explanations and step-by-step problem solving to make even difficult concepts manageable. Over the years, I’ve seen many hesitant learners grow into confident problem-solvers who are no longer afraid of Math. Before teaching, I worked as a journalist, but I found my true calling in education.\n\nOutside the classroom, I’m a mother of one and hope to build a big family, which helps me relate to the concerns and hopes of every parent I meet.\n\nTo students: I’ll always celebrate your progress—no step is too small, and together we’ll turn Math into something you can feel proud of.",
+        studentReviews: null
 
     },
+
+    {
+        name: "Jeremiah",
+        startYear: 3000,
+        role: "Lead Math Specialist",
+        imageUrl: "/images/team/Jeremiah_1.webp",
+        imageUrlHover: "/images/team/Jeremiah_2.webp",
+        youtubeUrl: "https://youtube.com/embed/y1LEd56v84k?si=7670dEDQncKUtpC_",
+        degree: "Bachelor of Psychology - University at Buffalo, SIM",
+        description: `Hi, I'm Jeremiah, and I believe that learning Mathematics should be about developing the ability to think, not just the ability to score.
+
+        Rather than giving students methods to memorise, I challenge them to recognise patterns, ask questions, and develop the confidence to solve unfamiliar problems independently. My goal is to help students build a strong mathematical foundation that stays with them long after the exam is over.
+
+One of the most rewarding parts of teaching is witnessing students achieve things they once thought were beyond their reach. Over the years, I have had the privilege of helping students improve from failing School Math to achieving an A within a single semester, while also guiding students to attain Silver in the Singapore Mathematical Olympiad. These experiences continually remind me that with the right guidance, consistent effort, and belief in themselves, every student is capable of making remarkable progress.
+
+Beyond the classroom, I am deeply involved in developing teaching resources and refining lesson materials to make complex ideas clear, logical, and accessible. I am always looking for better ways to explain concepts because I believe that a great explanation can spark a student's confidence and curiosity.
+
+Outside of teaching, I enjoy playing board games and strategy-based computer games that emphasise teamwork, communication, and problem-solving. I find that many of the same skills needed in games—planning ahead, adapting to new situations, and thinking critically—are just as valuable in Mathematics. `,
+        studentReviews: [],
+    },
+
     {
         name: "Jezebel",
         role: "Math Specialist",
@@ -89,19 +144,6 @@ Outside of teaching, I enjoy going for long walks, which gives me time to reflec
         
         Outside of teaching, I enjoy reading, spending time with my family, and expressing myself through dance and singing. To my students: Math isn’t about being perfect—it’s about getting a little better every time.`,
         studentReviews: null
-    },
-
-    {
-        name: "Amy",
-        role: "Senior Math Specialist",
-        startYear: 3000,
-        imageUrl: "/images/team/Amy_1.webp",
-        youtubeUrl: "https://youtube.com/embed/HTLzY2lfTlU?si=AjZTgVfnHbNaoLpw",
-        imageUrlHover: "/images/team/Amy_2.webp",
-        degree: "Bachelor of Communication and New Media, NUS",
-        description: "I’m Amy, passionate about helping young learners build a rock-solid foundation in Mathematics. I believe every child can thrive when given patience, encouragement, and the right guidance—and that learning should spark both confidence and curiosity.\n\nIn my classes, I use clear explanations and step-by-step problem solving to make even difficult concepts manageable. Over the years, I’ve seen many hesitant learners grow into confident problem-solvers who are no longer afraid of Math. Before teaching, I worked as a journalist, but I found my true calling in education.\n\nOutside the classroom, I’m a mother of one and hope to build a big family, which helps me relate to the concerns and hopes of every parent I meet.\n\nTo students: I’ll always celebrate your progress—no step is too small, and together we’ll turn Math into something you can feel proud of.",
-        studentReviews: null
-
     },
 
     {
@@ -124,6 +166,7 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         studentReviews: null
 
     },
+
     {
         name: "Lucas",
         startYear: 3000,
@@ -135,6 +178,7 @@ I hope to continue inspiring students as I have been inspired myself; to develop
         description: "I'm Lucas, and I teach Mathematics at the secondary and junior-college levels at Maythematics. I'm passionate not only about the subject itself but also about the pedagogy behind it.\n\nGrowing up, I struggled with Mathematics in primary school, so I understand how students might find it challenging. That's why I aim to empower them to enjoy the subject and build their confidence.\n\nMy students often describe me as patient, energetic and approachable. I strive to make my classes a safe space where students can make mistakes, learn from them and grow.\n\nThe legacy I hope to leave is for my students to one day look back on my lessons with fondness, wishing they could relive those classroom moments again. \n\nOutside of teaching, I'm a full-time Mathematics student. In my free time, I enjoy playing mahjong and tackling escape rooms with my friends.",
         studentReviews: null
     },
+
     {
         name: "Jasmine",
         role: "Math Specialist",
@@ -229,25 +273,6 @@ I’m Teacher Jemma, and I look forward to learning and growing with your child 
     },
 
     {
-        name: "Axelle",
-        startYear: 3000,
-        role: "Math Specialist",
-        imageUrl: "/images/team/Axelle_1.webp",
-        imageUrlHover: "/images/team/Axelle_2.webp",
-        youtubeUrl: "",
-        degree: "Bachelor of Engineering in Electrical and Electronics, NTU",
-        description: `Hi I'm Axelle! I believe that most students do not struggle because they are incapable of doing Math. More often, they simply have not yet found a learning approach that works for them.
-
-My goal is to break complex concepts into simple, relatable steps and help students build strong foundations, good learning habits, and the confidence to persevere through challenges.
-
-One of my greatest joys as a tutor is witnessing a student's transformation — from feeling overwhelmed and discouraged to becoming confident, independent learners who are even able to help others.
-
-Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece comes together step by step to create something meaningful.
-        `,
-        studentReviews: [],
-    },
-
-    {
         name: "Sania",
         startYear: 3000,
         role: "Math Specialist",
@@ -263,26 +288,6 @@ My teaching style is patient, encouraging, and structured. I believe that studen
 
 I’m Teacher Sania, and I look forward to helping your child build confidence, curiosity, and a stronger foundation in Math at Maythematics!
         `,
-        studentReviews: [],
-    },
-
-    {
-        name: "Jeremiah",
-        startYear: 3000,
-        role: "Math Specialist",
-        imageUrl: "/images/team/Jeremiah_1.webp",
-        imageUrlHover: "/images/team/Jeremiah_2.webp",
-        youtubeUrl: "https://youtube.com/embed/y1LEd56v84k?si=7670dEDQncKUtpC_",
-        degree: "Bachelor of Psychology - University at Buffalo, SIM",
-        description: `Hi, I'm Jeremiah, and I believe that learning Mathematics should be about developing the ability to think, not just the ability to score.
-
-        Rather than giving students methods to memorise, I challenge them to recognise patterns, ask questions, and develop the confidence to solve unfamiliar problems independently. My goal is to help students build a strong mathematical foundation that stays with them long after the exam is over.
-
-One of the most rewarding parts of teaching is witnessing students achieve things they once thought were beyond their reach. Over the years, I have had the privilege of helping students improve from failing School Math to achieving an A within a single semester, while also guiding students to attain Silver in the Singapore Mathematical Olympiad. These experiences continually remind me that with the right guidance, consistent effort, and belief in themselves, every student is capable of making remarkable progress.
-
-Beyond the classroom, I am deeply involved in developing teaching resources and refining lesson materials to make complex ideas clear, logical, and accessible. I am always looking for better ways to explain concepts because I believe that a great explanation can spark a student's confidence and curiosity.
-
-Outside of teaching, I enjoy playing board games and strategy-based computer games that emphasise teamwork, communication, and problem-solving. I find that many of the same skills needed in games—planning ahead, adapting to new situations, and thinking critically—are just as valuable in Mathematics. `,
         studentReviews: [],
     },
 
@@ -320,7 +325,6 @@ I’ve loved math since I was young, and having taken the N-Level route and comp
 What motivates me most is building trust and confidence—creating a safe and supportive environment where students feel comfortable asking questions and learning from mistakes. Beyond teaching, I enjoy spending quality time with my family, who have instilled in me the values of understanding, patience, and meaningful connection, which I carry into every lesson I teach.`,
         studentReviews: null
     },
-
 
     {
         name: "Jean",
@@ -360,21 +364,38 @@ Outside of tutoring, I'm an avid runner and a lover of number and logic puzzles.
         studentReviews: null
     },
 
-
     {
-        name: "Venessa",
+        name: "Alex",
         startYear: 3000,
-        role: "Client Success Manager",
-        imageUrl: "/images/team/Ven_1.webp",
-        imageUrlHover: "/images/team/Ven_2.webp",
+        role: "Math Specialist",
+        imageUrl: "/images/team/Alex_1.webp",
+        imageUrlHover: "/images/team/Alex_2.webp",
+        youtubeUrl: "https://youtube.com/embed/67jI6ri_9VI?si=7O5t5IjZdeH1Qjc9",
+        degree: "Bachelor of Science in Mathematical Sciences (Specialisation in Pure Mathematics), NTU",
+        description: `Hi, I’m Alex, a Math tutor at Maythematics!
 
-        degree: "Double Major in Communications & Sociology, State University of New York at Buffalo",
-        description: `Hi, I’m Venessa, and I manage client relations here at Maythematics. I understand that finding the right academic support can be a stressful and emotional process for many parents. That’s why I believe in building strong, trustworthy relationships through clear communication and empathy. Just as our tutors are the go-to support for students, I strive to be that dependable point of contact for parents—helping them feel confident and reassured every step of the way.
+Math didn’t always come easily to me. When I was younger, I struggled with it too. Things began to click after I received help in upper secondary, and that experience sparked an interest that led me to pursue a degree in Mathematics.
 
-Outside of work, I enjoy staying active and keeping up with my fitness. As a new mom, I’m also focused on spending meaningful time with my family and embracing all the special moments that come with this new chapter.`,
+That’s why I understand how discouraging it can feel to stare at a question and not know where to begin—and how much the right guidance can help.
+
+A classroom where questions are welcome
+
+In my three years of teaching, I’ve supported students through learning gaps, careless mistakes and a lack of confidence. I’ve also seen students progress from failing to passing, with some going on to achieve As and Bs.
+
+My students describe me as patient and encouraging. When someone asks a question, I welcome it—it often helps others who were wondering the same thing. As students work through a problem, I recognise and praise correct working, while gently guiding them when they take a wrong turn, helping them understand how to move forward.
+
+I also introduce thought-provoking questions that encourage students to think beyond memorised steps and explore why a method works.
+
+One of my most memorable moments was seeing a student who had cried in frustration over word problems eventually shed tears of joy while working through them. Moments like these remind me that progress is about both understanding Math and feeling more confident attempting it.
+
+Beyond the classroom
+
+I enjoy gaming with friends and programming my own games. I even built a Japanese language-learning game to support my own learning! I love figuring out how things work, and I bring that curiosity into my lessons.
+
+My goal is for every student to feel comfortable saying, “I don’t understand yet,” and confident enough to try the next step.`,
         studentReviews: null
-
     },
+
     {
         name: "Tyler",
         startYear: 3000,
@@ -389,6 +410,7 @@ Outside of work, I enjoy staying active and keeping up with my fitness. As a new
 Outside of work, I make it a point to not work, take care of my health, and spend time with the people I love.`,
         studentReviews: null
     },
+
     {
         name: "Jovial",
         startYear: 3000,

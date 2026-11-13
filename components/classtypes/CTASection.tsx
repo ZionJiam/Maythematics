@@ -19,7 +19,7 @@ export default function CTASection() {
 
 
 
-            <div data-aos="fade-up" className={styles.ctaTextWrapper}>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" className={styles.ctaTextWrapper}>
                 <p className={`${styles.ctaParagraph}`}>
                     Still not sure whether Regular Class or Focus Class is the right fit? Chat with us and we&apos;ll help you decide based on your child&apos;s learning style and needs.
                 </p>
@@ -30,6 +30,9 @@ export default function CTASection() {
 
                 <img
                     data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-out-quart"
+                    data-aos-delay="150"
                     src="/assets/red_mascot_teach_2.webp"
                     alt="Red Teaching Mascot"
                     className={`${styles.reviewMascot} ${styles.redMascot}`}

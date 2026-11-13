@@ -1,13 +1,20 @@
 @use '../../app/\(public\)/styles/variables' as *;
+@use '../../app/\(public\)/styles/motion' as motion;
 
 .section {
     position: relative;
+
+    @include motion.aos-tuning;
 }
 
 .titleContainer {
     text-align: center;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
+
+    h3 {
+        text-wrap: balance;
+    }
 
     p {
         color: $color-text-light;
@@ -66,7 +73,9 @@
 }
 
 .image {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: motion.$shadow-image;
+    outline: 1px solid rgba(0, 0, 0, 0.08);
+    outline-offset: -1px;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 1rem;
@@ -93,6 +102,7 @@
         font-size: 1rem;
         line-height: 1.6;
         font-weight: 300;
+        text-wrap: pretty;
     }
 }
 
@@ -100,4 +110,24 @@
     white-space: pre-line;
     color: $color-red;
     margin-bottom: 1rem;
+    text-wrap: balance;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 400ms motion.$ease-out, transform 400ms motion.$ease-out;
+    transition-delay: calc(var(--i, 0) * 60ms + 100ms);
+}
+
+.textContainer:global(.aos-animate) .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transform: none;
+        transition-delay: 0ms;
+    }
 }
