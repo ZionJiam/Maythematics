@@ -62,11 +62,11 @@ export default function ClassTypesComparison() {
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.container}>
                 <div className={styles.titleContainer}>
-                    <h3 data-aos="fade-up" className={`text-xl`}>At a Glance</h3>
+                    <h3 data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" className={`text-xl`}>At a Glance</h3>
                 </div>
 
                 <div className={styles.tableWrapper}>
-                    <table data-aos="fade-up" className={styles.table}>
+                    <table data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" className={styles.table}>
                         <thead>
                             <tr>
                                 <th className={styles.featureHeader}>Feature</th>
@@ -88,7 +88,7 @@ export default function ClassTypesComparison() {
 
                 <div className={styles.mobileCards}>
                     {rows.map((row, idx) => (
-                        <div data-aos="fade-up" key={idx} className={styles.mobileCard}>
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" key={idx} className={styles.mobileCard}>
                             <h4 className={styles.mobileFeature}>{row.feature}</h4>
                             <div className={styles.mobileBlock}>
                                 <span className={`${styles.mobileLabel} ${styles.mobileLabelRegular}`}>Regular Class</span>

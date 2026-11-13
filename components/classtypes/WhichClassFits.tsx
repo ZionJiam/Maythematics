@@ -36,25 +36,27 @@ const rows: ClassRow[] = [
     },
 ];
 
+const stagger = (index: number) => ({ "--i": index }) as React.CSSProperties;
+
 export default function WhichClassFits() {
     return (
         <section className={`${styles.section} sectionYPadding`}>
             <div className={styles.titleContainer}>
-                <h3 data-aos="fade-up" className={`text-xl`}>Which Class Is Right for Your Child?</h3>
+                <h3 data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" className={`text-xl`}>Which Class Is Right for Your Child?</h3>
             </div>
 
             <div className={styles.container}>
                 {rows.map((row, idx) => (
                     <div key={idx} className={styles.row}>
-                        <div data-aos="fade-up" className={styles.imageContainer}>
+                        <div data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-out-quart" className={styles.imageContainer}>
                             <img src={row.image} alt={row.alt} className={styles.image} loading="lazy" />
                         </div>
 
-                        <div data-aos="fade-up" className={styles.textContainer}>
-                            <h4 className={styles.title}>{row.name}</h4>
+                        <div data-aos="fade" data-aos-duration="300" className={styles.textContainer}>
+                            <h4 className={`${styles.title} ${styles.reveal}`} style={stagger(0)}>{row.name}</h4>
                             <ul>
                                 {row.reasons.map((reason, reasonIdx) => (
-                                    <li key={reasonIdx}>{reason}</li>
+                                    <li key={reasonIdx} className={styles.reveal} style={stagger(reasonIdx + 1)}>{reason}</li>
                                 ))}
                             </ul>
                         </div>

@@ -1,0 +1,25 @@
+// Strong ease-out for entrances and press/hover feedback.
+$ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+
+// Layered shadows read softer and more natural than a single blur.
+$shadow-card: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.05);
+$shadow-image: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.06), 0 10px 24px -4px rgba(0, 0, 0, 0.14);
+
+// Include inside a section root: shortens AOS fade-up travel from 100px to 16px, drops movement for reduced-motion users.
+@mixin aos-tuning {
+    :global([data-aos='fade-up']) {
+        transform: translate3d(0, 16px, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        :global([data-aos]) {
+            transform: none;
+        }
+    }
+}
+
+@mixin hover-capable {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}
