@@ -21,48 +21,18 @@ const teamMembers = [
     },
 
     {
-        name: "Kelly",
+        name: "Tyler",
         startYear: 3000,
-        role: "Senior Math Specialist",
-        imageUrl: "/images/team/Kelly_1.webp",
-        imageUrlHover: "/images/team/Kelly_2.webp",
-        youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
-        degree: "Bachelor of Science in Data Science & Analytics, NUS",
-        description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
+        role: "Head of Operations & Systems",
+        youtubeUrl: "https://youtube.com/embed/3lzs-mTaB4E?si=He288-szlUEnjr6s",
+        imageUrl: "/images/team/Tyler_1.webp",
+        imageUrlHover: "/images/team/Tyler_2.webp",
 
-I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
-
-In my classes, I focus on guiding students to understand the why behind each concept, so they build confidence instead of relying on memorisation.
-
-What drives me is seeing my students grow, not just in their results, but also in their confidence and problem-solving mindset.
-
-Outside of teaching, I enjoy going for long walks, which gives me time to reflect, and exploring new hobbies like crocheting!`,
-        studentReviews: [
-            {
-                reviewer: "Yi Zheng",
-                text: "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
-            },
-        ],
-
-    },
-
-    {
-        name: "Axelle",
-        startYear: 3000,
-        role: "Senior Math Specialist",
-        imageUrl: "/images/team/Axelle_1.webp",
-        imageUrlHover: "/images/team/Axelle_2.webp",
-        youtubeUrl: "",
-        degree: "Bachelor of Engineering in Electrical and Electronics, NTU",
-        description: `Hi I'm Axelle! I believe that most students do not struggle because they are incapable of doing Math. More often, they simply have not yet found a learning approach that works for them.
-
-My goal is to break complex concepts into simple, relatable steps and help students build strong foundations, good learning habits, and the confidence to persevere through challenges.
-
-One of my greatest joys as a tutor is witnessing a student's transformation — from feeling overwhelmed and discouraged to becoming confident, independent learners who are even able to help others.
-
-Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece comes together step by step to create something meaningful.
-        `,
-        studentReviews: [],
+        degree: "Bachelor of Computing (Computer Science) & Bachelor of Business, NTU",
+        description: `I’m Tyler, and I like to make things better for people. I believe in the kaizen spirit—the philosophy of continuous, incremental improvement that involves everyone, every day, everywhere. At Maythematics, I’m always looking for ways to improve how our tutors provide the best education for our students while giving their parents peace of mind.
+\nMy goal is for every student at Maythematics to feel proud of their progress and confident that what they learn here will serve them well, even long after they’ve moved on.
+Outside of work, I make it a point to not work, take care of my health, and spend time with the people I love.`,
+        studentReviews: null
     },
 
     {
@@ -126,6 +96,51 @@ One of the most rewarding parts of teaching is witnessing students achieve thing
 Beyond the classroom, I am deeply involved in developing teaching resources and refining lesson materials to make complex ideas clear, logical, and accessible. I am always looking for better ways to explain concepts because I believe that a great explanation can spark a student's confidence and curiosity.
 
 Outside of teaching, I enjoy playing board games and strategy-based computer games that emphasise teamwork, communication, and problem-solving. I find that many of the same skills needed in games—planning ahead, adapting to new situations, and thinking critically—are just as valuable in Mathematics. `,
+        studentReviews: [],
+    },
+
+    {
+        name: "Kelly",
+        startYear: 3000,
+        role: "Senior Math Specialist",
+        imageUrl: "/images/team/Kelly_1.webp",
+        imageUrlHover: "/images/team/Kelly_2.webp",
+        youtubeUrl: "https://youtube.com/embed/5VaWaRQR5ns?si=ddeqDl72IdgxoE-y",
+        degree: "Bachelor of Science in Data Science & Analytics, NUS",
+        description: `Hi, I’m Kelly, a Math tutor at Maythematics. I’m passionate about helping students see that Math can be clear, logical, and even enjoyable.
+
+I believe in patience, perseverance, and creating a supportive space where students feel encouraged to keep trying.
+
+In my classes, I focus on guiding students to understand the why behind each concept, so they build confidence instead of relying on memorisation.
+
+What drives me is seeing my students grow, not just in their results, but also in their confidence and problem-solving mindset.
+
+Outside of teaching, I enjoy going for long walks, which gives me time to reflect, and exploring new hobbies like crocheting!`,
+        studentReviews: [
+            {
+                reviewer: "Yi Zheng",
+                text: "My daughter has been attending classes here since the start of the year (Sec 1) and I'm glad to say Math is her best subject in school and she has been scoring A1 for the past 3 weighted assessments. Having a good tuition teacher really helps. I am confident that she will do well for her end of year exams too due to her teacher Ms Kelly. Thank you for all the guidance and explaining new concepts in a way that the kids understand.",
+            },
+        ],
+
+    },
+
+    {
+        name: "Axelle",
+        startYear: 3000,
+        role: "Senior Math Specialist",
+        imageUrl: "/images/team/Axelle_1.webp",
+        imageUrlHover: "/images/team/Axelle_2.webp",
+        youtubeUrl: "",
+        degree: "Bachelor of Engineering in Electrical and Electronics, NTU",
+        description: `Hi I'm Axelle! I believe that most students do not struggle because they are incapable of doing Math. More often, they simply have not yet found a learning approach that works for them.
+
+My goal is to break complex concepts into simple, relatable steps and help students build strong foundations, good learning habits, and the confidence to persevere through challenges.
+
+One of my greatest joys as a tutor is witnessing a student's transformation — from feeling overwhelmed and discouraged to becoming confident, independent learners who are even able to help others.
+
+Outside of teaching, I enjoy building LEGO. Just like Mathematics, every piece comes together step by step to create something meaningful.
+        `,
         studentReviews: [],
     },
 
@@ -397,21 +412,6 @@ My goal is for every student to feel comfortable saying, “I don’t understand
     },
 
     {
-        name: "Tyler",
-        startYear: 3000,
-        role: "Head of Operations & Systems",
-        youtubeUrl: "https://youtube.com/embed/3lzs-mTaB4E?si=He288-szlUEnjr6s",
-        imageUrl: "/images/team/Tyler_1.webp",
-        imageUrlHover: "/images/team/Tyler_2.webp",
-
-        degree: "Bachelor of Computing (Computer Science) & Bachelor of Business, NTU",
-        description: `I’m Tyler, and I like to make things better for people. I believe in the kaizen spirit—the philosophy of continuous, incremental improvement that involves everyone, every day, everywhere. At Maythematics, I’m always looking for ways to improve how our tutors provide the best education for our students while giving their parents peace of mind.
-\nMy goal is for every student at Maythematics to feel proud of their progress and confident that what they learn here will serve them well, even long after they’ve moved on.
-Outside of work, I make it a point to not work, take care of my health, and spend time with the people I love.`,
-        studentReviews: null
-    },
-
-    {
         name: "Jovial",
         startYear: 3000,
         role: "Operations Manager",
@@ -428,6 +428,7 @@ Outside of work, I am very committed to taking care of my family as I am very bl
         studentReviews: null
 
     },
+
 
 
     // Add more members here...
